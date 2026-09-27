@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:14,870
+Nine percent, twenty-four and a half percent, sixty-six and a half percent. Those are real numbers from the course code. Sample that distribution a thousand times and the favourite should come up six hundred sixty-five times. It came up six hundred thirty. This is Liam, in for Bear.
+
+2
+00:00:14,870 --> 00:00:25,560
+Run it a thousand times. The math says six sixty-five. You get six hundred thirty. A gap that size is unusual — about one run in fifty. But unusual is not the same as wrong.
+
+3
+00:00:25,560 --> 00:00:40,430
+Where does sixty-six and a half percent come from? Three raw scores — one, two, three — go into softmax. Subtract the largest, exponentiate, divide by the total. Out comes zero point six six five two. That is the only thing this video borrows from softmax.
+
+4
+00:00:40,430 --> 00:00:56,090
+Expected count is one multiplication. Zero point six six five two, times a thousand draws, is six hundred sixty-five point two four. That is not a prediction about any single run. It is the long-run average, if you repeated the whole thousand-draw experiment over and over.
+
+5
+00:00:56,090 --> 00:01:10,060
+Here is what actually ran. Seed seven, a thousand draws, straight from main dot py. Index zero: one hundred and two. Index one: two hundred and sixty-eight. Index two, the favourite: six hundred and thirty. Not six sixty-five. Six hundred and thirty.
+
+6
+00:01:10,060 --> 00:01:25,720
+Thirty-five point two four draws short. About five percent below the expected count. In sampling terms that is two point four standard deviations — roughly a one in fifty result. Fair warning: this picture is built for the video. The two numbers are real. The shape around them is mine.
+
+7
+00:01:25,720 --> 00:01:45,130
+So does that settle it? No — but not because the gap is ordinary. It is not. Only about one run in fifty lands this low. It settles nothing because this is a single draw, from one fixed seed, looked at after the fact. A one in fifty result is a reason to test, not a verdict. What would settle it is repetition — many runs, and a check on where six hundred thirty really falls.
+
+8
+00:01:45,130 --> 00:02:03,880
+The honest verdict. Expected count is what the math predicts. Observed count is what happened once. Six hundred thirty is genuinely low — about one in fifty. And a seed makes that run repeatable, not correct. What this video does not establish is that zero point six six five two is wrong. One seeded run, read after the fact, cannot show that.
+
+9
+00:02:03,880 --> 00:02:24,210
+Your turn. Paste this into Claude: run the lesson one sampler a hundred times, with a hundred different seeds, a thousand draws each. Plot how often index two comes up, and mark where six hundred and thirty falls. I calculated that it should land in the tail, about one run in fifty. But that is arithmetic, not a measurement. A hundred runs turn it into one. And if the plot disagrees with my number, the plot is right.
+
+10
+00:02:24,210 --> 00:02:27,240
+Expected, Observed. At Nik Bear Brown.

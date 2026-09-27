@@ -1,0 +1,5 @@
+# Rendered media is the Canvas deliverable, not a repo artifact.
+*.mp4
+__pycache__/
+*.pyc
+.DS_Store

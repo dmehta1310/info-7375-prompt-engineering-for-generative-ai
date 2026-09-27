@@ -1,0 +1,322 @@
+{
+  "metadata": {
+    "title": "Token, Not Word",
+    "slug": "token-not-word",
+    "topic": "TOKENIZATION",
+    "purpose": "Why a language model is unreliable at character-level questions: it reads frequency-shaped tokens, not letters.",
+    "brand": "claude",
+    "ground": "#F2F0E9",
+    "engine": "kokoro",
+    "voice_kokoro": "am_onyx",
+    "aspect": "16:9",
+    "clock": "narration",
+    "note": "All token ids/counts are cl100k_base via tiktoken 0.14.0 — GPT-4's tokenizer, NOT Claude's. Verified executably; see FACTCHECK.md. B05 carries two open screenshot slots (see PROMPTS.md). B06's top row is Claude's SPOKEN grouping (straw/ber/ry) and carries no token ids — it is not tokenizer output. palette/style_preset intentionally unset: this is a course reel, not a claude-liam branded episode.",
+    "build": {
+      "at": "2026-09-26T22:15:10",
+      "cut": "master",
+      "filled": 9,
+      "of": 9,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "COLD OPEN",
+      "lane": "manim",
+      "narration_text": "Hi, I'm Tushar. Quick question: how many times does the letter r appear in the word strawberry? Easy — you just counted them. But ask a language model, and the answer starts somewhere strange: not with the letters at all, but with how it even reads the word. Let me show you.",
+      "engine": "kokoro",
+      "voice": "am_onyx",
+      "estimated_duration_s": 8,
+      "new_visual_element": "the word strawberry, whole",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "lane": "manim",
+        "motion": "drawon"
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B00_TenLetters",
+        "production_viz": {
+          "label": "strawberry",
+          "mechanic": "the question, and the word still whole"
+        }
+      },
+      "render_duration_s": 13.958333333333334,
+      "actual_duration_s": 13.95,
+      "audio_file": "mp3/beat-B00.mp3",
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B00.mp4",
+        "filled_by": "manim",
+        "at": "2026-09-26T22:15:10"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "THE SPLIT",
+      "lane": "manim",
+      "narration_text": "A language model doesn't read letters, and it doesn't even read words. It reads tokens — chunks of text. Run strawberry through GPT-4's tokenizer, and it comes back in three pieces: stur, aw, berry. Ten letters go in; three chunks come out. It never sees ten letters. It sees three.",
+      "engine": "kokoro",
+      "voice": "am_onyx",
+      "estimated_duration_s": 15,
+      "new_visual_element": "strawberry splits into three labelled token boxes",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "lane": "manim",
+        "motion": "drawon"
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B01_ThreeTokens",
+        "production_viz": {
+          "label": "str / aw / berry · 496 675 15717",
+          "mechanic": "word splits into three labelled boxes; 10 characters -> 3 tokens counts up"
+        }
+      },
+      "render_duration_s": 15.5,
+      "actual_duration_s": 15.49,
+      "audio_file": "mp3/beat-B01.mp3",
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B01.mp4",
+        "filled_by": "manim",
+        "at": "2026-09-26T22:15:10"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "THE SPLIT",
+      "lane": "manim",
+      "narration_text": "So find the r's using only those three chunks. One's hiding in stur, none in aw, and two are tucked inside berry. The letters you're counting are scattered inside pieces the model treats as single symbols — you're asking it about something it can't quite see. And it gets weirder.",
+      "engine": "kokoro",
+      "voice": "am_onyx",
+      "estimated_duration_s": 15,
+      "new_visual_element": "the three r's light up inside the boxes",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "lane": "manim",
+        "motion": "drawon"
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B02_ScatteredRs",
+        "production_viz": {
+          "label": "one r / no r / two r",
+          "mechanic": "terracotta stamps the r at str[2] and berry[2],[3]"
+        }
+      },
+      "render_duration_s": 14.791666666666666,
+      "actual_duration_s": 14.78,
+      "audio_file": "mp3/beat-B02.mp3",
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B02.mp4",
+        "filled_by": "manim",
+        "at": "2026-09-26T22:15:10"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "FREQUENCY",
+      "lane": "manim",
+      "narration_text": "Watch this. Put a space in front of the word, and those same ten letters stop being three tokens and collapse into one. Same letters, different split. Why? Tokens are built from whatever appears often in training text. Words usually follow a space, so strawberry with a space in front earns its own token — bare strawberry at the start of a line doesn't. The split tracks frequency, not spelling.",
+      "engine": "kokoro",
+      "voice": "am_onyx",
+      "estimated_duration_s": 18,
+      "new_visual_element": "three boxes collapse into one",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "lane": "manim",
+        "motion": "drawon"
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B03_SpaceCollapse",
+        "production_viz": {
+          "label": "3 boxes -> 1 box · 73700",
+          "mechanic": "ReplacementTransform collapses the row; counts move 10/3 -> 11/1"
+        }
+      },
+      "render_duration_s": 19.625,
+      "actual_duration_s": 19.61,
+      "audio_file": "mp3/beat-B03.mp3",
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B03.mp4",
+        "filled_by": "manim",
+        "at": "2026-09-26T22:15:10"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "FREQUENCY",
+      "lane": "manim",
+      "narration_text": "And not meaning, either. Take unbelievable. You'd expect un, believe, able. But you get un, belie, vable. Belie happens to be a real word, but it has nothing to do with believing, and vable isn't a word at all. Meanwhile berry shows up whole inside raspberry, the same token reused. These are just frequency-shaped fragments from a fixed vocabulary. Which raises the real question: with all this working against it, does the model actually get my question wrong?",
+      "engine": "kokoro",
+      "voice": "am_onyx",
+      "estimated_duration_s": 18,
+      "new_visual_element": "unbelievable splits against meaning; berry recurs in raspberry",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "lane": "manim",
+        "motion": "drawon"
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B04_NotMeaning",
+        "production_viz": {
+          "label": "un / belie / vable · berry = 15717",
+          "mechanic": "two rows; terracotta ring marks the shared berry token"
+        }
+      },
+      "render_duration_s": 22.25,
+      "actual_duration_s": 22.23,
+      "audio_file": "mp3/beat-B04.mp3",
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B04.mp4",
+        "filled_by": "manim",
+        "at": "2026-09-26T22:15:10"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "THE HONEST LIMIT",
+      "lane": "manim",
+      "narration_text": "So I asked. On September twenty-second, I put it to Claude. Strawberry — three r's, correct. Blueberry — two, also correct. So let me be careful about what that means. This explains why counting letters is unreliable — it does not prove the model gets it wrong. It clearly can, especially on common words. One caveat: I used GPT-4's tokenizer; Claude's vocabulary differs, so the exact pieces would too. The idea carries over — the specific tokens don't. But one more thing in Claude's answer is worth slowing down for.",
+      "engine": "kokoro",
+      "voice": "am_onyx",
+      "estimated_duration_s": 24,
+      "new_visual_element": "two dated Claude screenshots + what this does not establish",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "lane": "manim",
+        "motion": "static"
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B05_DidItFail",
+        "production_viz": {
+          "label": "both correct — and the boundary of the claim",
+          "mechanic": "two dated screenshot slots side by side; the does/does-not caption beneath"
+        }
+      },
+      "render_duration_s": 29.75,
+      "actual_duration_s": 29.71,
+      "audio_file": "mp3/beat-B05.mp3",
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B05.mp4",
+        "filled_by": "manim",
+        "at": "2026-09-26T22:15:10"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "THE HONEST LIMIT",
+      "lane": "manim",
+      "narration_text": "Look at how Claude actually found those r's — it grouped the word as straw, ber, ree. But that's not how the tokenizer splits it. The real tokens were stur, aw, berry. Both carve up the same ten letters, and both give the right count — but the boundaries fall in different places. So even when the model explains its own answer, the grouping it shows you isn't the one it runs on. A confident, correct-sounding explanation still isn't a window into the machinery behind it.",
+      "engine": "kokoro",
+      "voice": "am_onyx",
+      "estimated_duration_s": 30,
+      "new_visual_element": "Claude's spoken grouping above the real token split",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "lane": "manim",
+        "motion": "drawon"
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B06_TellSplit",
+        "production_viz": {
+          "label": "straw/ber/ry (no ids) vs str/aw/berry 496 675 15717",
+          "mechanic": "two rows of equal width on a shared baseline; ticks up for the spoken grouping, down for the real token boundaries"
+        }
+      },
+      "render_duration_s": 25.875,
+      "actual_duration_s": 25.87,
+      "audio_file": "mp3/beat-B06.mp3",
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B06.mp4",
+        "filled_by": "manim",
+        "at": "2026-09-26T22:15:10"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "act": "OUTRO",
+      "lane": "manim",
+      "narration_text": "So — how many r's in strawberry? Three. You knew it instantly. But now you know what the model has to get past to say the same thing: it never saw the word the way you do — just frequency-shaped chunks, with the letters buried inside. Same answer, completely different path. And that gap is the whole thing worth remembering.",
+      "engine": "kokoro",
+      "voice": "am_onyx",
+      "estimated_duration_s": 10,
+      "new_visual_element": "closing card",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "lane": "manim",
+        "motion": "fade"
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "BOUT_Closing",
+        "production_viz": {
+          "label": "frequency-shaped chunks",
+          "mechanic": "closing card, two lines and a terracotta rule"
+        }
+      },
+      "render_duration_s": 16.375,
+      "actual_duration_s": 16.36,
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "build": {
+        "status": "MANIM",
+        "src": "manim/BOUT.mp4",
+        "filled_by": "manim",
+        "at": "2026-09-26T22:15:10"
+      }
+    },
+    {
+      "beat_id": "BTHX",
+      "act": "THANKS",
+      "lane": "manim",
+      "narration_text": "Thanks for watching. And since you made it this far, here's how a model reads my thank you.",
+      "engine": "kokoro",
+      "voice": "am_onyx",
+      "estimated_duration_s": 6,
+      "new_visual_element": "Thank you! splits into its real cl100k_base tokens, then fades out",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "lane": "manim",
+        "motion": "fade"
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "BTHX_ThankYou",
+        "production_viz": {
+          "label": "Thank / ' you' / ! · 13359 499 0",
+          "mechanic": "phrase splits into three labelled token boxes (leading space shown); gentle fade to cream"
+        }
+      },
+      "actual_duration_s": 5.16,
+      "audio_file": "mp3/beat-BTHX.mp3",
+      "render_duration_s": 5.166666666666667,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/BTHX.mp4",
+        "filled_by": "manim",
+        "at": "2026-09-26T22:15:10"
+      }
+    }
+  ]
+}

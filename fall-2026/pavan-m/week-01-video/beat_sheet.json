@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "title": "Expected vs Observed",
+    "course": "INFO7375 -- Prompt Engineering for Generative AI",
+    "assignment": "Week 01 Video -- Chapter 1 Concept Explainer",
+    "concept": "Expected count vs. observed count",
+    "student": "Pavan Jayant Majji",
+    "voice_kokoro": "af_bella",
+    "background": "white (cream on intro slide only)",
+    "total_runtime_s": 129.45,
+    "source_of_real_numbers": "lessons/01-randomness-and-first-prompts/code/main.py -- logits=[1,2,3], seed=7 (plus seeds 42 and 99 for B04)",
+    "required_disclosures": {
+      "constructed_illustration": "B05's coin-flip analogy is an illustrative stand-in, not output from main.py. Decision: not separately labeled on-screen -- the narration itself ('Think of flipping a fair coin...') makes the illustrative, hypothetical framing clear from context.",
+      "boundary_statement": "Stated explicitly in B06 narration: 'This shows one seeded run deviates from expectation. It doesn't tell us how much deviation is normal versus suspicious.'"
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "Intro",
+      "narration_text": null,
+      "audio_file": null,
+      "scene": "BeatIntro",
+      "note": "Silent title card -- course/week/topic kicker + student name, cream background",
+      "actual_duration_s": 6.31
+    },
+    {
+      "beat_id": "B00",
+      "narration_text": "If a machine tells you there's a sixty-six percent chance of blue, and you try it a thousand times, how many blues do you actually get? Not what you'd think.",
+      "audio_file": "mp3/beat-B00.mp3",
+      "scene": "Beat00Hook",
+      "actual_duration_s": 9.19
+    },
+    {
+      "beat_id": "B01",
+      "narration_text": "This comes from real code. Three raw scores, called logits: one, two, three. A function called softmax turns them into probabilities -- it squashes any set of numbers into values between zero and one that add up to one, so the biggest score ends up as the most likely outcome.",
+      "audio_file": "mp3/beat-B01.mp3",
+      "scene": "Beat01Setup",
+      "on_screen_source_label": "Source: main.py -- logits=[1, 2, 3]",
+      "actual_duration_s": 18.34
+    },
+    {
+      "beat_id": "B02",
+      "narration_text": "If blue is sixty-six point five percent likely, and we try a thousand times, simple math says we should see it six hundred sixty-five point two four times.",
+      "audio_file": "mp3/beat-B02.mp3",
+      "scene": "Beat02Expected",
+      "on_screen_source_label": "Source: main.py -- softmax(logits=[1, 2, 3])",
+      "actual_duration_s": 10.08
+    },
+    {
+      "beat_id": "B03",
+      "narration_text": "So I actually ran it. A thousand real draws, seeded so it's reproducible. Blue came up six hundred thirty times. Not six hundred sixty-five.",
+      "audio_file": "mp3/beat-B03.mp3",
+      "scene": "Beat03Observed",
+      "on_screen_source_label": "Source: main.py -- 1000 samples, seed=7",
+      "actual_duration_s": 9.91
+    },
+    {
+      "beat_id": "B04",
+      "narration_text": "Let's try it again with different seeds. Same probabilities, same thousand draws -- but seed forty-two lands blue at six hundred seventy-one, and seed ninety-nine lands it at six hundred forty. Neither one hits six hundred sixty-five exactly. Three different seeds, three different observed counts, all circling the same expected value without ever landing on it.",
+      "audio_file": "mp3/beat-B04.mp3",
+      "scene": "Beat04SecondSeeds",
+      "on_screen_source_label": "Source: main.py -- seeds 42 & 99",
+      "note": "Row-highlight cycles through all three seeds twice, showing each count's distance from the expected value",
+      "actual_duration_s": 22.54
+    },
+    {
+      "beat_id": "B05",
+      "narration_text": "That gap isn't a bug. Think of flipping a fair coin ten times -- you expect five heads, but getting four or six doesn't mean the coin is broken. Expected value is a property of the whole distribution. Observed count is just one draw from it, and draws jitter.",
+      "audio_file": "mp3/beat-B05.mp3",
+      "scene": "Beat05Combined (Beat05Coin + Beat06Comparison concatenated)",
+      "constructed_illustration": true,
+      "on_screen_source_label": "Source: main.py -- expected vs. observed, seed=7 (on the comparison-bars half only; the coin-flip half is the constructed analogy)",
+      "actual_duration_s": 16.37
+    },
+    {
+      "beat_id": "B06",
+      "narration_text": "One caveat. This run used a fixed seed, so it repeats every time: six hundred thirty, always. That's repeatability, not truth. This shows one seeded run deviates from expectation. It doesn't tell us how much deviation is normal versus suspicious.",
+      "audio_file": "mp3/beat-B06.mp3",
+      "scene": "Beat07Boundary",
+      "note": "Contains the required boundary disclosure -- see metadata.required_disclosures",
+      "actual_duration_s": 17.3
+    },
+    {
+      "beat_id": "B07",
+      "narration_text": "So here's the takeaway. A model's probability is a prediction about many trials, not a guarantee about any one trial. Expected value tells you the average over infinite tries. The count in front of you is just one messy draw. That gap isn't an error. It's randomness working exactly as it should.",
+      "audio_file": "mp3/beat-B07.mp3",
+      "scene": "Beat08Recap",
+      "note": "'prediction' and 'guarantee' pulse-highlighted to land emphasis on the two key words",
+      "actual_duration_s": 19.18
+    }
+  ]
+}

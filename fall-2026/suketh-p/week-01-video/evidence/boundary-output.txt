@@ -1,0 +1,31 @@
+==========================================================================
+  The cliff, derived — boundary_analysis.py
+  Reference (unmodified): /Users/sukethreddyprodutoor/Desktop/Prompt Engineering/course/lessons/01-randomness-and-first-prompts/code/main.py
+==========================================================================
+
+[1] the cliff is -1075*ln(2), not an arbitrary number
+    smallest subnormal  2^-1074        = 5e-324
+    round-to-zero below 2^-1075        = 0.0
+    so exp(z) == 0.0 once z < -1075*ln2 = -745.133219102  (predicted)
+    bisection of the real boundary      = -745.133219102  (measured)
+    prediction matches measurement      : True
+    -> first integer past it            = -746   floor(-745.133219) = -746, which is exactly the integer the empirical sweep in B07 landed on
+
+[2] past the cliff, distinct outcomes become indistinguishable
+    logits    [0, -800, -900]
+    linear    [1.0, 0.0, 0.0]
+    log space [0.0, -800.0, -900.0]
+    linear reports outcomes 1 and 2 as equal : True
+    they are actually 100 nats apart
+
+[3] log space carries what linear space cannot represent
+    [1, 2, 3]      linear lost []       log-space lost []
+    [0, -800]      linear lost [1]      log-space lost []
+    [0, -5000]     linear lost [1]      log-space lost []
+
+[4] on moderate inputs the log-space form reproduces the reference
+    reference        [0.09003057317038046, 0.24472847105479764, 0.6652409557748218]
+    exp(log-space)   [0.09003057317038043, 0.24472847105479764, 0.6652409557748218]
+    max abs diff     2.7755575615628914e-17
+    agree to 1e-12   : True
+

@@ -1,0 +1,68 @@
+==========================================================================
+  mutation_check.py — Chapter 1 Assessment 10, applied to this film
+==========================================================================
+
+baseline: 29 tests, 0 failing
+  green, as required before mutating.
+
+[CAUGHT]  drop the max-subtraction
+    died 21/29 · survived 8/29
+      survived: TestB02Overflow.test_raw_exponential_raises_rather_than_returning_inf
+      survived: TestB03DenominatorFloor.test_it_holds_even_when_all_other_weights_vanish
+      survived: TestTheCliffIsDerivable.test_log_space_loses_nothing_where_linear_does
+      survived: TestTheCliffIsDerivable.test_prediction_matches_the_measured_boundary
+      survived: TestTheCliffIsDerivable.test_that_derivation_explains_the_746_in_the_video
+      survived: TestTheCliffIsDerivable.test_the_boundary_is_minus_1075_ln2
+      survived: TestTheCliffIsDerivable.test_the_real_cost_is_ties_not_just_smallness
+      survived: TestTheCliffIsDerivable.test_the_remedy_does_not_change_the_answer
+
+[CAUGHT]  pair probabilities with reversed labels
+    died 11/29 · survived 18/29
+      survived: TestB02Overflow.test_raw_exponential_raises_rather_than_returning_inf
+      survived: TestB02Overflow.test_the_ceiling_figure_on_screen_is_the_real_one
+      survived: TestB02Overflow.test_the_shift_turns_that_into_a_clean_answer
+      survived: TestB03DenominatorFloor.test_denominator_is_at_least_one_for_every_case_shown
+      survived: TestB03Distribution.test_sums_to_one_within_tolerance_not_exactly
+      survived: TestB03Intermediates.test_peak_weight_is_exactly_one_not_approximately
+      survived: TestB03Intermediates.test_shifted_scores_are_minus_two_minus_one_zero
+      survived: TestB03Intermediates.test_total_weight_matches_the_figure_on_screen
+      … and 10 more
+
+[CAUGHT]  accept temperature=0 instead of raising
+    died 2/29 · survived 27/29
+      survived: TestB02Overflow.test_raw_exponential_raises_rather_than_returning_inf
+      survived: TestB02Overflow.test_the_ceiling_figure_on_screen_is_the_real_one
+      survived: TestB02Overflow.test_the_shift_turns_that_into_a_clean_answer
+      survived: TestB03DenominatorFloor.test_denominator_is_at_least_one_for_every_case_shown
+      survived: TestB03DenominatorFloor.test_it_holds_even_when_all_other_weights_vanish
+      survived: TestB03Distribution.test_matches_chapters_published_table_to_ten_places
+      survived: TestB03Distribution.test_sums_to_one_within_tolerance_not_exactly
+      survived: TestB03Intermediates.test_peak_weight_is_exactly_one_not_approximately
+      … and 19 more
+
+[CAUGHT]  clamp probabilities below 1e-12 to 0.0
+    died 2/29 · survived 27/29
+      survived: TestB02Overflow.test_raw_exponential_raises_rather_than_returning_inf
+      survived: TestB02Overflow.test_the_ceiling_figure_on_screen_is_the_real_one
+      survived: TestB02Overflow.test_the_shift_turns_that_into_a_clean_answer
+      survived: TestB03DenominatorFloor.test_denominator_is_at_least_one_for_every_case_shown
+      survived: TestB03DenominatorFloor.test_it_holds_even_when_all_other_weights_vanish
+      survived: TestB03Distribution.test_matches_chapters_published_table_to_ten_places
+      survived: TestB03Distribution.test_sums_to_one_within_tolerance_not_exactly
+      survived: TestB03Intermediates.test_peak_weight_is_exactly_one_not_approximately
+      … and 19 more
+
+--------------------------------------------------------------------------
+mutation score: 4/4 caught
+Every mutation was caught by at least one test.
+
+What the SURVIVOR list actually shows — the point of the exercise:
+  Removing the max-subtraction leaves 8 assertions green, and they
+  are almost exactly the tests that never call probabilities() at
+  all: the closed-form derivation tests and the raw math.exp
+  overflow test. Those exercise the MATHEMATICS directly, so they
+  are blind to a defect in the implementation. That is a real
+  coverage boundary in my own suite, not a reassurance — and it is
+  Chapter 1's question in practice: ask what would still be wrong
+  if this test passed.
+

@@ -1,0 +1,295 @@
+{
+  "metadata": {
+    "title": "Repeatable Is Not the Same as True",
+    "slug": "yash-s-seed-repeatable",
+    "topic": "Randomness and first prompts",
+    "register": "Plain",
+    "audience": "Students",
+    "engine": "kokoro",
+    "voice_kokoro": "af_bella",
+    "concept": "A seed makes a run repeatable; it does not make the answer true.",
+    "source_script": "lessons/01-randomness-and-first-prompts/code/main.py",
+    "target_runtime_seconds": 150,
+    "author": "Yash Saraf",
+    "note": "All numeric evidence generated directly from the unmodified course function sample()/probabilities() in main.py, on this machine, 2026-09-25. B04's second seed uses the same function called with seed=99 instead of the default seed=7 -- main.py itself was not edited.",
+    "build": {
+      "at": "2026-09-26T16:35:09",
+      "cut": "master",
+      "filled": 7,
+      "of": 7,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "HOOK",
+      "narration_text": "If I run the exact same sampling script twice, with nothing changed, will I get the exact same answer? Let's find out.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ShellSession",
+          "props": {
+            "title": "main.py",
+            "host": "yash",
+            "path": "chapter-1",
+            "command": "python3 main.py",
+            "out": [],
+            "caret": true
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": "2026-09-26T18:49:16.817770+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 10,
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 7.57,
+      "render_duration_s": 7.583333333333333,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "remotion:ShellSession",
+        "at": "2026-09-26T16:35:09"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "EVIDENCE-SAME",
+      "narration_text": "Here's run one: outcome zero got 102, outcome one got 268, outcome two got 630. And run two, same seed, same script: 102, 268, 630. Not close. Identical, down to the last digit. This isn't a lucky coincidence between two runs -- it happens every single time you repeat this exact command on this machine.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ShellSession",
+          "props": {
+            "title": "main.py -- seed 7, twice",
+            "host": "yash",
+            "path": "chapter-1",
+            "command": "sample([1,2,3], seed=7)",
+            "out": [
+              {
+                "text": "run A: {0: 102, 1: 268, 2: 630}",
+                "cls": "hi"
+              },
+              {
+                "text": "run B: {0: 102, 1: 268, 2: 630}",
+                "cls": "hi"
+              }
+            ],
+            "caret": false
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": "2026-09-26T19:04:21.188960+00:00"
+          }
+        }
+      },
+      "mechanism_shown": true,
+      "real_data": true,
+      "source_note": "Captured directly by calling sample() from main.py with seed=7, twice, back to back.",
+      "estimated_duration_s": 25,
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 24.51,
+      "render_duration_s": 24.541666666666668,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "remotion:ShellSession",
+        "at": "2026-09-26T16:35:09"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "MECHANISM",
+      "narration_text": "The seed doesn't hand-pick these numbers. It fixes the starting state of Python's random generator. Same starting state means the exact same sequence of weighted draws comes out, every time you ask. Nothing about the concept 'outcome two is likely' changes -- what's fixed is which specific sequence of coin-flip-like decisions the generator will make, in what order.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "MedhavyConceptCard",
+          "props": {
+            "sparkLine": "Same seed, same starting state.",
+            "heading": "What a seed actually fixes",
+            "body": "Fixes the generator's starting state -- not the outcomes.",
+            "evidenceNote": "Diagram -- illustrative, not literal source code"
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": "2026-09-26T18:53:50.133632+00:00"
+          }
+        }
+      },
+      "constructed": true,
+      "estimated_duration_s": 20,
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 22.49,
+      "render_duration_s": 22.5,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "remotion:MedhavyConceptCard",
+        "at": "2026-09-26T16:35:09"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "EVIDENCE-DIFFERENT",
+      "narration_text": "Now change exactly one thing: the seed, from 7 to 99. Same logits, same thousand draws. The counts move: 93, 267, 640, instead of 102, 268, 630. Same underlying probabilities. A different draw.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "MedhavyTwoColumnCard",
+          "props": {
+            "sparkLine": "Change one thing: the seed.",
+            "leftHeader": "seed = 7",
+            "leftItems": [
+              "0: 102",
+              "1: 268",
+              "2: 630"
+            ],
+            "rightHeader": "seed = 99",
+            "rightItems": [
+              "0: 93",
+              "1: 267",
+              "2: 640"
+            ]
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": "2026-09-26T20:32:02.122318+00:00"
+          }
+        }
+      },
+      "mechanism_shown": true,
+      "real_data": true,
+      "source_note": "Captured directly by calling sample() from main.py with seed=99 instead of the default.",
+      "estimated_duration_s": 25,
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 19.29,
+      "render_duration_s": 19.291666666666668,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "remotion:MedhavyTwoColumnCard",
+        "at": "2026-09-26T16:35:09"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "INSIGHT",
+      "narration_text": "Here's the part that actually matters. Say a model gives you an answer, you ask again with the same setup, and it gives you the identical answer. It's tempting to read that repetition as proof the answer is right. But repeatability and correctness are two completely different properties. A wrong answer, produced by a deterministic bug, would repeat exactly as reliably as a right one. The repetition only tells you the machinery didn't change between asks -- it says nothing about whether the machinery was correct in the first place.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "MedhavyTwoColumnCard",
+          "props": {
+            "sparkLine": "Repeatable != correct.",
+            "leftHeader": "repeatable",
+            "leftItems": [
+              "same script",
+              "same inputs",
+              "same output, every time"
+            ],
+            "rightHeader": "correct",
+            "rightItems": [
+              "matches reality",
+              "checked independently",
+              "NOT guaranteed by repetition"
+            ]
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": "2026-09-26T20:30:56.970160+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 25,
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 32.66,
+      "render_duration_s": 32.666666666666664,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "remotion:MedhavyTwoColumnCard",
+        "at": "2026-09-26T16:35:09"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "LIMIT",
+      "narration_text": "One boundary, plainly stated: this only shows that one seed, on one machine, reproduces itself right now. It does not show whether these exact counts would survive a different Python version, a different operating system, or a future update to the random module. That would need its own separate test.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "MedhavyConceptCard",
+          "props": {
+            "sparkLine": "One boundary, plainly stated.",
+            "heading": "What this does not show",
+            "body": "Only shown: one seed, one machine, reproducing right now.",
+            "evidenceNote": "Limitation, not a finding"
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": "2026-09-26T18:57:16.982631+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 15,
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 18.79,
+      "render_duration_s": 18.791666666666668,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "remotion:MedhavyConceptCard",
+        "at": "2026-09-26T16:35:09"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "OUTRO",
+      "narration_text": "So next time a result repeats itself perfectly, that tells you the process is deterministic. It doesn't tell you the process is right. Those are two different questions, and only one of them was answered here.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "MedhavyConceptCard",
+          "props": {
+            "sparkLine": "Two different questions.",
+            "heading": "Repeatable is not the same as true",
+            "body": "Repeating proves it's deterministic -- not that it's right."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": "2026-09-26T18:58:27.035636+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 12,
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 12.44,
+      "render_duration_s": 12.458333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "remotion:MedhavyConceptCard",
+        "at": "2026-09-26T16:35:09"
+      }
+    }
+  ],
+  "constructed_illustrations": [
+    "B02's seed -> generator state -> draws diagram is an illustrative simplification of the mechanism, not literal source code, and is labelled as a diagram on screen."
+  ],
+  "sources": {
+    "chapter": "chapters/01-randomness-and-first-prompts.md",
+    "code": "lessons/01-randomness-and-first-prompts/code/main.py",
+    "reproduce_with": "python3 -c \"import sys; sys.path.insert(0,'lessons/01-randomness-and-first-prompts/code'); from main import sample; print(sample([1,2,3], seed=7)); print(sample([1,2,3], seed=7)); print(sample([1,2,3], seed=99))\""
+  }
+}

@@ -1,0 +1,179 @@
+1
+00:00:00,000 --> 00:00:03,845
+Chapter One starts with three scores: one, two, and three.
+
+2
+00:00:03,845 --> 00:00:10,806
+Before softmax turns them into probabilities, the course code subtracts the largest score from all three.
+
+3
+00:00:10,806 --> 00:00:12,795
+Why change every number first?
+
+4
+00:00:12,795 --> 00:00:19,888
+In the next few minutes, I will show the calculation, the reason it works, and one thing it does not prove.
+
+5
+00:00:19,888 --> 00:00:23,998
+This narration is synthetic and generated locally with Kokoro.
+
+6
+00:00:23,998 --> 00:00:25,911
+Softmax does three things.
+
+7
+00:00:25,911 --> 00:00:28,191
+First, exponentiate each score.
+
+8
+00:00:28,191 --> 00:00:30,987
+Second, add those exponential weights.
+
+9
+00:00:30,987 --> 00:00:34,371
+Third, divide each weight by the shared total.
+
+10
+00:00:34,371 --> 00:00:37,314
+The results are positive and sum to one.
+
+11
+00:00:37,314 --> 00:00:39,742
+A score is not yet a probability.
+
+12
+00:00:39,742 --> 00:00:44,156
+Softmax is the transformation that creates the distribution.
+
+13
+00:00:44,156 --> 00:00:48,459
+I ran the Chapter One reference program exactly as provided.
+
+14
+00:00:48,459 --> 00:01:00,293
+For scores one, two, and three, it prints these probabilities: about zero point zero nine zero zero, zero point two four four seven, and zero point six six five two.
+
+15
+00:01:00,293 --> 00:01:05,098
+These are recorded outputs, not numbers invented for the animation.
+
+16
+00:01:05,098 --> 00:01:09,186
+The largest score still receives the largest probability.
+
+17
+00:01:09,186 --> 00:01:10,651
+The maximum is three.
+
+18
+00:01:10,651 --> 00:01:12,884
+Subtract three from every score.
+
+19
+00:01:12,884 --> 00:01:14,628
+One becomes negative two.
+
+20
+00:01:14,628 --> 00:01:16,372
+Two becomes negative one.
+
+21
+00:01:16,372 --> 00:01:17,698
+Three becomes zero.
+
+22
+00:01:17,698 --> 00:01:24,744
+Notice what stays fixed: the gap from one score to the next is still one, and the order is unchanged.
+
+23
+00:01:24,744 --> 00:01:30,256
+We moved the whole group together; we did not change their relative preference.
+
+24
+00:01:30,256 --> 00:01:34,090
+Now exponentiate negative two, negative one, and zero.
+
+25
+00:01:34,090 --> 00:01:41,473
+The weights are about zero point one three five three, zero point three six seven nine, and exactly one.
+
+26
+00:01:41,473 --> 00:01:45,094
+Their total is about one point five zero three two.
+
+27
+00:01:45,094 --> 00:01:51,554
+Dividing by that total produces the same three probabilities printed by the course program.
+
+28
+00:01:51,554 --> 00:01:53,400
+The intermediates changed.
+
+29
+00:01:53,400 --> 00:01:55,814
+The intended distribution did not.
+
+30
+00:01:55,814 --> 00:02:00,772
+The lesson also tests two equal scores: one thousand and one thousand.
+
+31
+00:02:00,772 --> 00:02:04,597
+Subtracting the maximum turns them into zero and zero.
+
+32
+00:02:04,597 --> 00:02:06,935
+Exponentiation gives one and one.
+
+33
+00:02:06,935 --> 00:02:09,910
+Normalization gives one half and one half.
+
+34
+00:02:09,910 --> 00:02:19,260
+The shared offset of one thousand carried no information about which option was preferred, so removing it changes nothing important.
+
+35
+00:02:19,260 --> 00:02:21,249
+Here is the general reason.
+
+36
+00:02:21,249 --> 00:02:28,100
+Exponential of z sub i minus m equals exponential of z sub i times exponential of negative m.
+
+37
+00:02:28,100 --> 00:02:31,120
+That same factor appears in every weight.
+
+38
+00:02:31,120 --> 00:02:36,644
+It can be factored out of the denominator and cancelled with the numerator.
+
+39
+00:02:36,644 --> 00:02:42,243
+This is why subtracting one shared constant preserves the normalized ratios.
+
+40
+00:02:42,243 --> 00:02:46,810
+It is an algebraic identity, not a coincidence in one example.
+
+41
+00:02:46,810 --> 00:02:55,838
+This explanation establishes a narrower claim: max subtraction avoids unnecessarily large positive exponentials in this calculation.
+
+42
+00:02:55,838 --> 00:02:59,600
+It does not prove that the original scores are correct.
+
+43
+00:02:59,600 --> 00:03:02,609
+It does not make the most likely token true.
+
+44
+00:03:02,609 --> 00:03:10,133
+And, as Chapter One warns, it does not prove the teaching function is safe for every imaginable extreme input.
+
+45
+00:03:10,133 --> 00:03:12,800
+Stable arithmetic is not an answer key.

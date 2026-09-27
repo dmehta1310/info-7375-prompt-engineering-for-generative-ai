@@ -1,0 +1,28 @@
+{
+ "source": "research/llm_scale.py (cited figures: Brown et al. 2020, arXiv:2005.14165)",
+ "script_output": {
+  "gpt3_train_tokens": 300000000000,
+  "words_per_token": 0.75,
+  "seconds_per_year": 31557600,
+  "reading_years_by_rate": {
+   "150": 2851.9,
+   "200": 2138.9,
+   "250": 1711.2,
+   "300": 1426.0
+  }
+ },
+ "derived_steps": {
+  "words": 225000000000.0,
+  "minutes_at_250_wpm": 900000000.0
+ },
+ "extension": {
+  "note": "Not printed by llm_scale.py. reading_years() x (24 / 8) for 8 hours of reading per day.",
+  "hours_per_day": 8,
+  "reading_years_by_rate": {
+   "300": 4277.9,
+   "250": 5133.5,
+   "200": 6416.8,
+   "150": 8555.8
+  }
+ }
+}

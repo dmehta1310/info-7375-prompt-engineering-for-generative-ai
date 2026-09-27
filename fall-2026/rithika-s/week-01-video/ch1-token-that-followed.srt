@@ -1,0 +1,383 @@
+1
+00:00:00,000 --> 00:00:01,000
+Here is a sentence.
+
+2
+00:00:01,458 --> 00:00:03,875
+It is wrong — the moon is not made of
+cheese.
+
+3
+00:00:04,500 --> 00:00:07,458
+But suppose a language model reads it
+during training.
+
+4
+00:00:08,042 --> 00:00:10,542
+What does it learn to predict comes after
+the word green?
+
+5
+00:00:14,458 --> 00:00:15,792
+Before any math, the setup.
+
+6
+00:00:16,375 --> 00:00:19,292
+A model in pretraining never sees a
+fact-checker.
+
+7
+00:00:19,333 --> 00:00:23,292
+It sees text, chopped into pieces called
+tokens — roughly words.
+
+8
+00:00:23,958 --> 00:00:28,125
+Its whole job is this: given the tokens so
+far, guess the next one.
+
+9
+00:00:28,667 --> 00:00:31,708
+So take everything up to green, and ask
+what comes next.
+
+10
+00:00:32,292 --> 00:00:34,708
+That guess is the only thing it is ever
+scored on.
+
+11
+00:00:35,042 --> 00:00:36,958
+Now, the answer to the question I asked.
+
+12
+00:00:37,458 --> 00:00:40,458
+As far as training is concerned, the
+correct answer is cheese.
+
+13
+00:00:41,042 --> 00:00:42,000
+Not rock.
+
+14
+00:00:42,000 --> 00:00:45,417
+Because the model is not scored against
+the world — it is scored against this
+
+15
+00:00:45,417 --> 00:00:48,625
+text, and in this text, the word after
+green was cheese.
+
+16
+00:00:49,458 --> 00:00:54,125
+Training builds an answer key from the
+sentence itself: a one on cheese, a zero
+
+17
+00:00:54,125 --> 00:00:55,125
+on everything else.
+
+18
+00:00:55,708 --> 00:00:58,042
+Rock, which is true of the moon, gets a
+zero.
+
+19
+00:00:58,333 --> 00:00:59,625
+So how does a guess become a number?
+
+20
+00:01:00,167 --> 00:01:02,583
+The model gives every candidate word a raw
+score.
+
+21
+00:01:03,333 --> 00:01:04,333
+Rock gets four.
+
+22
+00:01:04,750 --> 00:01:05,750
+Cheese gets one.
+
+23
+00:01:06,083 --> 00:01:07,083
+Gas gets zero.
+
+24
+00:01:07,750 --> 00:01:09,125
+Light gets minus a half.
+
+25
+00:01:09,667 --> 00:01:13,333
+These are called logits, and they are not
+probabilities yet — they can be negative,
+
+26
+00:01:13,333 --> 00:01:15,667
+and they do not add up to anything in
+particular.
+
+27
+00:01:16,125 --> 00:01:18,042
+That is what the next four steps fix.
+
+28
+00:01:18,375 --> 00:01:21,000
+Step two looks strange, so let me say why
+it is here.
+
+29
+00:01:21,542 --> 00:01:24,667
+We find the largest score — four — and
+subtract it from all of them.
+
+30
+00:01:25,333 --> 00:01:26,375
+Rock becomes zero.
+
+31
+00:01:27,125 --> 00:01:28,542
+Cheese becomes minus three.
+
+32
+00:01:29,167 --> 00:01:33,250
+The ranking has not changed, and it turns
+out the final answer does not change
+
+33
+00:01:33,250 --> 00:01:38,250
+either. It is done because the next step
+uses exponentials, which blow up on large
+
+34
+00:01:38,250 --> 00:01:40,333
+numbers. This keeps them small.
+
+35
+00:01:40,625 --> 00:01:42,458
+Step three: exponentiate.
+
+36
+00:01:42,917 --> 00:01:45,125
+Raise e to the power of each shifted
+score.
+
+37
+00:01:45,833 --> 00:01:48,000
+Rock, being zero, becomes exactly one.
+
+38
+00:01:48,542 --> 00:01:51,625
+Cheese becomes about zero point zero five.
+
+39
+00:01:51,667 --> 00:01:54,958
+Notice what that did — it made every
+number positive, and it stretched the
+
+40
+00:01:54,958 --> 00:01:58,833
+gaps. A three point lead in score became a
+twenty to one lead here.
+
+41
+00:01:59,333 --> 00:02:00,333
+Add them up: one point zero seven nine
+two.
+
+42
+00:02:02,417 --> 00:02:04,792
+Step four: divide each one by that total.
+
+43
+00:02:05,333 --> 00:02:08,250
+This is the move that turns scores into
+probabilities.
+
+44
+00:02:08,875 --> 00:02:13,542
+Because every row is divided by the same
+number, and that number is the sum of all
+
+45
+00:02:13,542 --> 00:02:18,542
+the rows, the results are guaranteed to
+land between zero and one and to add up to
+
+46
+00:02:18,542 --> 00:02:19,542
+exactly one.
+
+47
+00:02:20,042 --> 00:02:22,750
+Nothing is left over, and nothing is
+invented.
+
+48
+00:02:23,042 --> 00:02:24,083
+And here is the result.
+
+49
+00:02:24,750 --> 00:02:26,958
+Rock: ninety-two point seven percent.
+
+50
+00:02:27,000 --> 00:02:29,375
+Cheese: four point six.
+
+51
+00:02:29,458 --> 00:02:31,250
+Gas: one point seven.
+
+52
+00:02:31,292 --> 00:02:33,250
+Light: one point zero.
+
+53
+00:02:33,292 --> 00:02:35,583
+Add them: exactly one hundred percent.
+
+54
+00:02:35,583 --> 00:02:39,667
+Look at the bar — that is the model's
+entire belief about what comes next, and
+
+55
+00:02:39,667 --> 00:02:41,250
+almost all of it sits on rock.
+
+56
+00:02:41,667 --> 00:02:43,042
+Which is correct about the moon.
+
+57
+00:02:43,417 --> 00:02:44,500
+And, for training, wrong.
+
+58
+00:02:44,833 --> 00:02:46,125
+This is the part that proves it.
+
+59
+00:02:46,667 --> 00:02:48,833
+On the left, the corpus we have: green
+cheese.
+
+60
+00:02:49,500 --> 00:02:52,750
+The last token is cheese, so the answer
+key puts its one on cheese.
+
+61
+00:02:53,417 --> 00:02:56,875
+On the right, imagine the corpus said the
+true thing instead: grey rock.
+
+62
+00:02:57,500 --> 00:03:00,792
+Same model, same four scores — nothing
+about the network changed.
+
+63
+00:03:01,167 --> 00:03:02,542
+But the answer key moved.
+
+64
+00:03:02,917 --> 00:03:04,042
+Its one is on rock now.
+
+65
+00:03:04,542 --> 00:03:06,875
+The target follows the sentence, not the
+fact.
+
+66
+00:03:07,208 --> 00:03:09,958
+If it followed the fact, these two columns
+would be identical.
+
+67
+00:03:10,292 --> 00:03:11,292
+Now the consequence.
+
+68
+00:03:11,958 --> 00:03:16,500
+The loss measures how wrong the model is,
+and it reads exactly one number: the
+
+69
+00:03:16,500 --> 00:03:19,250
+probability it gave the token that
+actually came next.
+
+70
+00:03:20,083 --> 00:03:25,333
+Cheese got four point six percent, so the
+penalty is three point zero eight.
+
+71
+00:03:25,333 --> 00:03:28,750
+Had the text said rock, that identical
+prediction would have scored zero point
+
+72
+00:03:28,750 --> 00:03:29,750
+zero eight.
+
+73
+00:03:30,625 --> 00:03:32,125
+One last thing, and it matters.
+
+74
+00:03:32,708 --> 00:03:35,292
+Everything you just watched is about
+pretraining only.
+
+75
+00:03:35,917 --> 00:03:40,833
+There is a whole second stage afterwards —
+post-training, including preference tuning
+
+76
+00:03:40,833 --> 00:03:42,750
+and R.L.H.F.
+
+77
+00:03:42,833 --> 00:03:47,292
+— whose job is to steer the model toward
+answers people judge correct.
+
+78
+00:03:47,750 --> 00:03:51,292
+That is a different objective with a
+different target, and none of it appeared
+
+79
+00:03:51,292 --> 00:03:56,917
+here. This also does not establish that
+models must be wrong: most real text is
+
+80
+00:03:56,917 --> 00:04:00,792
+broadly true, so copying it and being
+accurate usually agree.
+
+81
+00:04:01,458 --> 00:04:04,375
+And none of these numbers were measured —
+they are constructed.
+
+82
+00:04:04,708 --> 00:04:09,750
+So, in one sentence: pretraining scores
+the model against the token that came next
+
+83
+00:04:09,750 --> 00:04:11,917
+in the text, not against what is true.
+
+84
+00:04:12,375 --> 00:04:13,667
+That is the whole idea.
+

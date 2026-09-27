@@ -1,0 +1,46 @@
+========================================================================
+  "Shifted, Not Changed" — claim verification
+  Python 3.12.7 (CPython) · macOS-26.6.2-arm64-arm-64bit
+  Reference: /Users/sukethreddyprodutoor/Desktop/Prompt Engineering/course/lessons/01-randomness-and-first-prompts/code/main.py
+========================================================================
+
+[1] max-subtraction rewrites every intermediate value
+    logits   [1, 2, 3]   peak 3
+    shifted  [-2, -1, 0]
+    weights  [0.1353352832366127, 0.36787944117144233, 1.0]
+    total    1.5032147244080551
+    largest weight is exactly 1.0 : True
+
+[2] the normalized distribution is the same either way
+    shifted path  [0.09003057317038046, 0.24472847105479764, 0.6652409557748218]
+    direct  path  [0.09003057317038045, 0.24472847105479764, 0.6652409557748219]
+    max abs diff  1.1102230246251565e-16
+    agrees to 1e-12          : True
+    sums to 1 within 1e-12   : True
+    matches chapter's table  : True
+
+[3] without the shift, the raw exponential overflows
+    exp(1000) raw   -> OverflowError: math range error
+    shifted [1000,1000] -> [0.5, 0.5]
+    largest representable float: 1.797693e+308
+    exp overflows above score gap ~709.7827
+
+[4] after the shift the denominator is always >= 1
+    [1, 2, 3]        total 1.5032147244080551     >= 1 : True
+    [1000, 1000]     total 2.0                    >= 1 : True
+    [0, -800]        total 1.0                    >= 1 : True
+    [-5, -5, -5]     total 3.0                    >= 1 : True
+    [0.0, -1000000000.0] total 1.0                    >= 1 : True
+
+[5] BOUNDARY — the shift fixes the large end only; a small term can still underflow to exactly 0.0
+    smallest normal float: 2.225074e-308
+    [0, -700]    -> [1.0, 9.85967654375977e-305]       true p1 ~ 1e-304
+    [0, -745]    -> [1.0, 5e-324]                      true p1 ~ 1e-324
+    [0, -746]    -> [1.0, 0.0]                         true p1 ~ 1e-324  <-- HARD ZERO
+    [0, -800]    -> [1.0, 0.0]                         true p1 ~ 1e-347  <-- HARD ZERO
+    Chapter 1: 'Keep the tested claim narrower than the slogan "numerically stable."'
+
+[ctx] a distribution is not the sample you happened to see
+    counts (outcome order) [102, 268, 630]
+    outcome 2: expected 665.24 vs observed 630
+

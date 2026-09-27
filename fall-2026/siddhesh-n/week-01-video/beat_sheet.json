@@ -1,0 +1,136 @@
+{
+  "metadata": {
+    "title": "Shift the Scores, Keep the Chances",
+    "slug": "nikam-week-01-max-subtraction",
+    "student": "Siddhesh Nikam",
+    "course": "INFO 7375 — Prompt Engineering for Generative AI",
+    "week": 1,
+    "concept": "Why subtracting the maximum changes softmax intermediates but not the distribution",
+    "purpose": "Explain one Chapter 1 mechanism completely with the course reference program's actual output, an official large-score test, an algebraic reason, and a precise boundary.",
+    "engine": "kokoro",
+    "voice_kokoro": "af_bella",
+    "voice_speed": 0.94,
+    "synthetic_narration": true,
+    "clock": "narration",
+    "runtime_seconds": 192.8,
+    "visual_style": "Original motion graphics using the course figure language: white canvas, serif headings, dark outlines, gray support text, red emphasis, gold footer rule.",
+    "course_source_revision": "cc6dbf177bc956975636e2fc1d4fed1ee4129d34",
+    "date": "2026-09-26"
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "QUESTION",
+      "title": "Shift the Scores, Keep the Chances",
+      "narration_text": "Chapter One starts with three scores: one, two, and three. Before softmax turns them into probabilities, the course code subtracts the largest score from all three. Why change every number first? In the next few minutes, I will show the calculation, the reason it works, and one thing it does not prove. This narration is synthetic and generated locally with Kokoro.",
+      "visual": "Three score boxes feed a MAX = 3 box, then a question mark; synthetic-voice disclosure stays visible.",
+      "takeaway": "One subtraction changes the working numbers—not the final chances.",
+      "source_claims": [
+        "Chapter 1 § The subtraction that changes nothing important"
+      ],
+      "boundary": false,
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 23.45
+    },
+    {
+      "beat_id": "B01",
+      "act": "DEFINITION",
+      "title": "Softmax Has Three Steps",
+      "narration_text": "Softmax does three things. First, exponentiate each score. Second, add those exponential weights. Third, divide each weight by the shared total. The results are positive and sum to one. A score is not yet a probability. Softmax is the transformation that creates the distribution.",
+      "visual": "EXPONENTIATE, ADD, and DIVIDE boxes appear as a left-to-right pipeline.",
+      "takeaway": "Scores → positive weights → one normalized distribution.",
+      "source_claims": [
+        "Chapter 1 softmax definition"
+      ],
+      "boundary": false,
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 19.61
+    },
+    {
+      "beat_id": "B02",
+      "act": "REAL OUTPUT",
+      "title": "The Course Program's Actual Output",
+      "narration_text": "I ran the Chapter One reference program exactly as provided. For scores one, two, and three, it prints these probabilities: about zero point zero nine zero zero, zero point two four four seven, and zero point six six five two. These are recorded outputs, not numbers invented for the animation. The largest score still receives the largest probability.",
+      "visual": "A labeled ACTUAL RUN receipt reveals the three full-precision probabilities from course main.py.",
+      "takeaway": "Recorded run: the ordering survives normalization.",
+      "source_claims": [
+        "lessons/01-randomness-and-first-prompts/code/main.py output"
+      ],
+      "boundary": false,
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 24.48
+    },
+    {
+      "beat_id": "B03",
+      "act": "MECHANISM",
+      "title": "Subtract the Same Maximum",
+      "narration_text": "The maximum is three. Subtract three from every score. One becomes negative two. Two becomes negative one. Three becomes zero. Notice what stays fixed: the gap from one score to the next is still one, and the order is unchanged. We moved the whole group together; we did not change their relative preference.",
+      "visual": "Rows animate from [1,2,3] through a shared −3 operation to [−2,−1,0]; gap markers remain 1.",
+      "takeaway": "Shared offsets preserve every pairwise gap.",
+      "source_claims": [
+        "Chapter 1 line: [1,2,3] shifts to [−2,−1,0]"
+      ],
+      "boundary": false,
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 20.52
+    },
+    {
+      "beat_id": "B04",
+      "act": "WORKED EXAMPLE",
+      "title": "The Intermediate Numbers Become Safe",
+      "narration_text": "Now exponentiate negative two, negative one, and zero. The weights are about zero point one three five three, zero point three six seven nine, and exactly one. Their total is about one point five zero three two. Dividing by that total produces the same three probabilities printed by the course program. The intermediates changed. The intended distribution did not.",
+      "visual": "Shifted scores become weight bars, then normalize into probability bars using course values.",
+      "takeaway": "Largest shifted exponent = 0, so its weight = 1.",
+      "source_claims": [
+        "Chapter 1 published weights and total",
+        "course main.py probabilities"
+      ],
+      "boundary": false,
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 25.01
+    },
+    {
+      "beat_id": "B05",
+      "act": "OFFICIAL TEST",
+      "title": "A Large-Score Test from Chapter 1",
+      "narration_text": "The lesson also tests two equal scores: one thousand and one thousand. Subtracting the maximum turns them into zero and zero. Exponentiation gives one and one. Normalization gives one half and one half. The shared offset of one thousand carried no information about which option was preferred, so removing it changes nothing important.",
+      "visual": "Official test flows through four boxes: [1000,1000], [0,0], [1,1], [0.5,0.5].",
+      "takeaway": "[1000, 1000] → [0.5, 0.5] without overflow.",
+      "source_claims": [
+        "test_main.py test_02",
+        "Chapter 1 official large-score explanation"
+      ],
+      "boundary": false,
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 22.9
+    },
+    {
+      "beat_id": "B06",
+      "act": "WHY IT WORKS",
+      "title": "The Shared Factor Cancels",
+      "narration_text": "Here is the general reason. Exponential of z sub i minus m equals exponential of z sub i times exponential of negative m. That same factor appears in every weight. It can be factored out of the denominator and cancelled with the numerator. This is why subtracting one shared constant preserves the normalized ratios. It is an algebraic identity, not a coincidence in one example.",
+      "visual": "The common exp(−m) factor is boxed in numerator and denominator, then crossed out simultaneously.",
+      "takeaway": "Common factor above and below → same probability ratio.",
+      "source_claims": [
+        "Chapter 1 max-subtraction derivation"
+      ],
+      "boundary": false,
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 27.0
+    },
+    {
+      "beat_id": "B07",
+      "act": "BOUNDARY",
+      "title": "What This Does Not Establish",
+      "narration_text": "This explanation establishes a narrower claim: max subtraction avoids unnecessarily large positive exponentials in this calculation. It does not prove that the original scores are correct. It does not make the most likely token true. And, as Chapter One warns, it does not prove the teaching function is safe for every imaginable extreme input. Stable arithmetic is not an answer key.",
+      "visual": "A vertical boundary separates ESTABLISHES from DOES NOT ESTABLISH; three unsupported claims receive red crosses.",
+      "takeaway": "Overflow protection is not truth, calibration, or universal safety.",
+      "source_claims": [
+        "Chapter 1 implementation limitation and truth boundary"
+      ],
+      "boundary": true,
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 25.44
+    }
+  ]
+}

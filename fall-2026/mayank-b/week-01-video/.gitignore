@@ -1,0 +1,10 @@
+clips/
+media/
+_qc/frames/
+*.verified.json
+build-state.json
+_render.log
+.DS_Store
+__pycache__/
+*-slate.mp4
+_name-test/

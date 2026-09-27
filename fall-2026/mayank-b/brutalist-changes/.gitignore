@@ -1,0 +1,19 @@
+# This folder holds only a patch and docs. Never commit toolkit installs or generated output.
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+# toolkit sources belong upstream, not here (and .ts/.tsx/.js fail the course repo's CI)
+*.ts
+*.tsx
+*.js
+*.jsx
+# generated media
+*.mp4
+*.mp3
+*.wav
+renders/
+clips/
+media/

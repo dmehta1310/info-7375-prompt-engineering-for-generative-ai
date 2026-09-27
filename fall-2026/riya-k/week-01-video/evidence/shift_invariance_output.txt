@@ -1,0 +1,64 @@
+======================================================================
+BEAT 2/3: the intermediates move, the distribution does not
+======================================================================
+
+--- naive: exp(logit) ---
+  logits: [1, 2, 3]
+  peak_subtracted: 0.0
+  shifted_logits: [1.0, 2.0, 3.0]
+  exp_weights: [2.718281828459045, 7.38905609893065, 20.085536923187668]
+  sum_of_weights: 30.192874850577365
+  probabilities: [0.09003057317038045, 0.24472847105479764, 0.6652409557748219]
+
+--- lesson: exp(logit - max) ---
+  logits: [1, 2, 3]
+  peak_subtracted: 3
+  shifted_logits: [-2, -1, 0]
+  exp_weights: [0.1353352832366127, 0.36787944117144233, 1.0]
+  sum_of_weights: 1.5032147244080551
+  probabilities: [0.09003057317038046, 0.24472847105479764, 0.6652409557748218]
+
+sum of weights changed by a factor of: 20.085536923187668
+which is exp(max) = exp(3) = 20.085536923187668
+
+probabilities identical to the last bit? False
+max absolute difference: 1.1102230246251565e-16
+lesson main.probabilities([1,2,3]) agrees? True
+
+======================================================================
+BEAT 4: [1000, 1000] -- where the naive path stops existing
+======================================================================
+
+naive_probabilities([1000, 1000]) -> OverflowError: math range error
+exp(1000) is the failure point; largest float is 1.7976931348623157e+308
+lesson.probabilities([1000, 1000]) -> [0.5, 0.5]
+
+and the same shift applied to an UNEQUAL pair keeps the asymmetry:
+  lesson.probabilities([1000, 1001]) -> [0.2689414213699951, 0.7310585786300049]
+  lesson.probabilities([0, 1])       -> [0.2689414213699951, 0.7310585786300049]
+  identical? True
+
+======================================================================
+BEAT 5: what the distribution does NOT settle -- expected vs observed
+======================================================================
+
+probabilities: [0.09003057317038046, 0.24472847105479764, 0.6652409557748218]
+expected counts over 1000 draws: [90.03057317038046, 244.72847105479764, 665.2409557748218]
+observed counts (seed=7): {1: 268, 2: 630, 0: 102}
+  token 0: expected 90.03  observed 102  diff +11.97
+  token 1: expected 244.73  observed 268  diff +23.27
+  token 2: expected 665.24  observed 630  diff -35.24
+
+lesson demo() verbatim:
+{
+  "probabilities": [
+    0.09003057317038046,
+    0.24472847105479764,
+    0.6652409557748218
+  ],
+  "counts": {
+    "1": 268,
+    "2": 630,
+    "0": 102
+  }
+}

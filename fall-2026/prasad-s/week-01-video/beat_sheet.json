@@ -1,0 +1,782 @@
+{
+  "metadata": {
+    "title": "Less Room to Wander",
+    "slug": "less-room-to-wander",
+    "topic": "INFO 7375 · WEEK 1 · RANDOMNESS AND FIRST PROMPTS",
+    "builder": "ai-explainer (free beginner path)",
+    "register": "Plain",
+    "audience": "INFO 7375 students",
+    "brand": "student — no channel persona",
+    "persona": "none (synthetic narrator, disclosed)",
+    "voice": "af_bella",
+    "engine": "kokoro",
+    "voice_kokoro": "af_bella",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "greeting": "Namaste, Prasad",
+    "folderLabel": "Prasad S · INFO 7375",
+    "in_for_bear": false,
+    "author": "Prasad S",
+    "question": "Does the gap between a predicted sample count and the actual count shrink as one outcome becomes more dominant (lower temperature)?",
+    "method": "Unedited lessons/01-randomness-and-first-prompts/code/main.py; logits [1,2,3]; seed 7; n=1000; temperature 1.0 and 0.5",
+    "evidence": [
+      "evidence/temp-1.0.json",
+      "evidence/temp-0.5.json",
+      "evidence/ANALYSIS.md"
+    ],
+    "toolkit": {
+      "repo": "https://github.com/nikbearbrown/brutalist.art",
+      "revision": "6a8380ae169cca81e0633664a65c958f5c12ab4b"
+    },
+    "disclosure": "Synthetic narration (Kokoro af_bella). Claude interface is reconstructed, not a screen recording. Not Prasad's voice, not Bear, not an official or endorsed video.",
+    "deviations_from_skill_defaults": [
+      "No claude-liam persona or @NikBearBrown branding (course prerequisite: do not imply Bear or endorsement).",
+      "Outro is FormACard, not ClaudeTitleOutro (its @NikBearBrown handle is hardcoded; OUTRO-LOCK scopes it to claude-liam reels only).",
+      "Voice af_bella instead of am_onyx (am_onyx is the Liam/Bear voice in this toolkit).",
+      "Single ASK (B00, the actual run); no extra composer micro-beats before each chart.",
+      "LOGO LAW: brand label only where the component supports brandLabel (not ExecutedData, ReqBars, FormACard)."
+    ],
+    "status": "narration signed off by Prasad S (PEDAGOGY.md, 2026-09-26); audio generated; review cut pending",
+    "build": {
+      "at": "2026-09-26T21:33:37",
+      "cut": "master",
+      "filled": 11,
+      "of": 11,
+      "slates": [],
+      "skin_warnings": [
+        "BOUT: palette=claude but the outro is 'FormACard' — OUTRO LAW wants ClaudeTitleOutro"
+      ]
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "cold open",
+      "narration_text": "Namaste. This is a synthetic narrator, Kokoro's Bella voice, reading a script Prasad reviewed. It isn't Prasad, and it isn't anyone official. A model samples its answers from a distribution. When one answer gets more dominant, does the sample land closer to what the math predicts? One small experiment: two temperatures, same seed.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 22,
+      "shot": {
+        "type": "REMOTION",
+        "classification": "SHOW",
+        "evidence": [
+          "evidence/temp-1.0.json counts['2']=630",
+          "evidence/temp-0.5.json counts['2']=849",
+          "evidence/ANALYSIS.md expected 665.24 / 866.8"
+        ],
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Greeting 'Namaste, Prasad' and topic label 'RECONSTRUCTED UI' on screen"
+          },
+          {
+            "at": 0.15,
+            "event": "The run prompt types into the composer"
+          },
+          {
+            "at": 0.55,
+            "event": "Running indicator: 'running probabilities() and sample()...'"
+          },
+          {
+            "at": 0.7,
+            "event": "Three result lines land: expected vs observed at 1.0 and 0.5, seed 7"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Namaste, Prasad",
+            "topic": "INFO 7375 · WEEK 1 · RECONSTRUCTED UI",
+            "segment": "Less Room to Wander",
+            "command": "Run main.py's sample() at temperature 1.0 and 0.5: logits [1, 2, 3], seed 7, 1,000 draws. How far is the top token from its expected count?",
+            "runningText": "running probabilities() and sample()…",
+            "output": [
+              "temp 1.0: expected 665.24, observed 630",
+              "temp 0.5: expected 866.8, observed 849",
+              "same seed (7) both runs"
+            ],
+            "folderLabel": "Prasad S · INFO 7375",
+            "modelLabel": "Opus 5.5",
+            "effortLabel": "Medium",
+            "durationSeconds": 21.27,
+            "largeText": true
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": "2026-09-27T00:30:50.175669+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 21.27,
+      "render_duration_s": 21.291666666666668,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-09-26T21:33:37"
+      },
+      "tts_phoneme_overrides": {
+        "Namaste": {
+          "count": 1,
+          "from": "nˈæmæst",
+          "to": "nˌʌməstˈeɪ"
+        },
+        "Prasad": {
+          "count": 2,
+          "from": "pɹˈæsæd",
+          "to": "pɹəsˈɑːd"
+        }
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "executive summary (BLUF)",
+      "lead_silence_s": 0.8,
+      "narration_text": "Lower the temperature and the sample has less room to wander. That part is guaranteed. Whether one run lands closer is a different question, and one seeded run can't settle it.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "REMOTION",
+        "classification": "SHOW",
+        "evidence": [
+          "evidence/ANALYSIS.md reasoning + limitation paragraphs"
+        ],
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Writer types 'Lower the temperature and / the sample gets more accurate'"
+          },
+          {
+            "at": 0.35,
+            "event": "'accurate' turns terracotta, is deleted, 'tightly bunched' is typed"
+          },
+          {
+            "at": 0.6,
+            "event": "'One seeded run shows the gap, / not the rule.' is typed; final text holds"
+          }
+        ],
+        "remotion": {
+          "pattern": "BrutalistHesitantWriter",
+          "props": {
+            "text": "Lower the temperature and\nthe sample gets more accurate.\nOne seeded run shows the gap,\nnot the rule.",
+            "triggerWords": "accurate",
+            "replacementWords": "tightly bunched",
+            "seed": "less-room-to-wander-b01",
+            "brandLabel": "Prasad S · INFO 7375",
+            "durationSeconds": 11.09,
+            "charMs": 25,
+            "mistakeRate": 0,
+            "hesitateWithin": 0,
+            "hesitateBetween": 0,
+            "fontSize": 100,
+            "jitter": 0
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": "2026-09-26T23:25:34.552939+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 11.09,
+      "render_duration_s": 11.125,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "remotion:BrutalistHesitantWriter",
+        "at": "2026-09-26T21:33:37"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "mechanism — the reference code",
+      "narration_text": "This is the course's reference code, untouched. Scores come in. The biggest is subtracted for stability, everything is divided by the temperature, then exponentiated and normalized. A smaller temperature stretches the gaps between scores, so the favorite pulls further ahead. Temperature reshapes the odds. It doesn't change which answer is right.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 21,
+      "shot": {
+        "type": "REMOTION",
+        "classification": "SHOW",
+        "evidence": [
+          "lessons/01-randomness-and-first-prompts/code/main.py:9-17 (verbatim)",
+          "lessons/01-randomness-and-first-prompts/docs/en.md:27"
+        ],
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Verbatim probabilities() source on screen"
+          },
+          {
+            "at": 0.2,
+            "event": "'peak = max(logits)' line is the focus as 'subtracted for stability' is spoken"
+          },
+          {
+            "at": 0.35,
+            "event": "'(x - peak) / temperature' is the focus as 'divided by the temperature' is spoken"
+          },
+          {
+            "at": 0.5,
+            "event": "exp + normalize lines are the focus"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "main.py — course reference code, unedited (lines 9–17)",
+            "code": "def probabilities(logits, temperature=1.0):\n    if not logits or not math.isfinite(temperature) or temperature <= 0:\n        raise ValueError(\"Need logits and a positive finite temperature\")\n    if not all(math.isfinite(x) for x in logits):\n        raise ValueError(\"Logits must be finite\")\n    peak = max(logits)\n    weights = [math.exp((x - peak) / temperature) for x in logits]\n    total = sum(weights)\n    return [weight / total for weight in weights]",
+            "language": "python",
+            "sparkLine": "Temperature reshapes odds.",
+            "durationSeconds": 21.99,
+            "largeText": true
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": "2026-09-27T00:47:38.136240+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 21.99,
+      "render_duration_s": 22.0,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "remotion:ClaudeCodeBeat",
+        "at": "2026-09-26T21:33:37"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "the distribution sharpens",
+      "narration_text": "Same three scores, two temperatures. At 1.0, the top token gets about two-thirds of the probability. Drop to 0.5 and it jumps to about eighty-seven percent, while the other two shrink. The scores didn't change. Only how confidently the model bets on its favorite.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 18,
+      "shot": {
+        "type": "REMOTION",
+        "classification": "SHOW",
+        "evidence": [
+          "evidence/temp-1.0.json probabilities",
+          "evidence/temp-0.5.json probabilities",
+          "other two = probabilities[0] + probabilities[1]"
+        ],
+        "show": [
+          {
+            "at": "two-thirds",
+            "event": "Row 'Top token · temp 1.0' 66.5% and its bar"
+          },
+          {
+            "at": "87",
+            "event": "Row 'Top token · temp 0.5' 86.7% and its bar"
+          },
+          {
+            "at": "other two shrink",
+            "event": "Rows 'Other two' 33.5% then 13.3% (sum of tokens 0 and 1)"
+          }
+        ],
+        "remotion": {
+          "pattern": "ExecutedData",
+          "props": {
+            "title": "Same Scores, Two Temperatures",
+            "mode": "table",
+            "rows": [
+              {
+                "label": "Top token · temp 1.0",
+                "value": 66.5,
+                "at": 5.2
+              },
+              {
+                "label": "Top token · temp 0.5",
+                "value": 86.7,
+                "at": 10.2
+              },
+              {
+                "label": "Other two · temp 1.0",
+                "value": 33.5,
+                "at": 12.0
+              },
+              {
+                "label": "Other two · temp 0.5",
+                "value": 13.3,
+                "at": 12.4
+              }
+            ],
+            "note": "Other two = sum of tokens 0 and 1 · evidence/temp-*.json",
+            "columnLabels": [
+              "Outcome",
+              "Probability (%)"
+            ]
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": "2026-09-27T01:17:34.479380+00:00"
+          },
+          "row_timing": "each row on its spoken phrase (faster-whisper word timestamps): 'two-thirds' 5.2 s, '87' 10.2 s, 'the other two shrink' 12.0-12.4 s; inside ExecutedData's fixed 15 s",
+          "note": "ReqBars replaced 2026-09-26: its compare-series numbers are terracotta text (2.74:1 on cream), failing GATE T §8.3."
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 18.3,
+      "render_duration_s": 18.333333333333332,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "remotion:ExecutedData",
+        "at": "2026-09-26T21:33:37"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "framework + worked example — expected vs observed",
+      "narration_text": "Here's the yardstick: expected count is probability times a thousand draws. At temperature 1.0 that predicts 665 top-token picks. The run got 630, about 35 short. At 0.5 the prediction is 867, and the run got 849, about 18 short. The gap roughly halved.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 18,
+      "shot": {
+        "type": "REMOTION",
+        "classification": "SHOW",
+        "evidence": [
+          "evidence/ANALYSIS.md table rows (665.24/630/~35; 866.8/849/~18)"
+        ],
+        "show": [
+          {
+            "at": "yardstick",
+            "event": "Title and column labels; note with 'Expected = probability x 1,000'"
+          },
+          {
+            "at": "665",
+            "event": "Row 'Temp 1.0 expected 665.24' appears"
+          },
+          {
+            "at": "630",
+            "event": "Row 'Temp 1.0 observed 630' appears"
+          },
+          {
+            "at": "867",
+            "event": "Row 'Temp 0.5 expected 866.8' appears"
+          },
+          {
+            "at": "849",
+            "event": "Row 'Temp 0.5 observed 849' appears"
+          }
+        ],
+        "remotion": {
+          "pattern": "ExecutedData",
+          "props": {
+            "title": "Top Token: Predicted vs. Counted",
+            "mode": "table",
+            "columnLabels": [
+              "Top token, 1,000 draws",
+              "Count"
+            ],
+            "rows": [
+              {
+                "label": "Temp 1.0 · expected",
+                "value": 665.24,
+                "at": 7.3
+              },
+              {
+                "label": "Temp 1.0 · observed",
+                "value": 630,
+                "at": 11.1
+              },
+              {
+                "label": "Temp 0.5 · expected",
+                "value": 866.8,
+                "at": 14.5
+              },
+              {
+                "label": "Temp 0.5 · observed",
+                "value": 849,
+                "at": 14.8
+              }
+            ],
+            "note": "Expected = probability × 1,000 · Source: evidence/temp-*.json, evidence/ANALYSIS.md"
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": "2026-09-26T23:04:09.054038+00:00"
+          },
+          "row_timing": "rows 1-2 on their spoken numbers (faster-whisper word timestamps); ExecutedData is registered at a fixed 15 s and freeze-held after, so rows 3-4 appear as 'At 0.5' is spoken (14.5 s), ~2-4 s before their numbers"
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 23.36,
+      "render_duration_s": 23.375,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "remotion:ExecutedData",
+        "at": "2026-09-26T21:33:37"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "the prediction",
+      "narration_text": "Before the temperature 0.5 run, Prasad predicted the direction: the gap would get closer. It did, both in raw counts and measured in standard deviations, the fairer ruler. But a prediction coming true once is where the careful part starts, not where it ends.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 15,
+      "shot": {
+        "type": "REMOTION",
+        "classification": "CARD",
+        "evidence": [
+          "evidence/ANALYSIS.md prediction + verdict (verbatim)",
+          "timing (prediction before the 0.5 run): Prasad's statement, 2026-09-26"
+        ],
+        "show": [
+          {
+            "at": 0.0,
+            "event": "First quoted line: the prediction"
+          },
+          {
+            "at": 0.4,
+            "event": "Second quoted line: the verdict"
+          },
+          {
+            "at": 0.6,
+            "event": "Attribution colophon"
+          }
+        ],
+        "remotion": {
+          "pattern": "FormACard",
+          "props": {
+            "lines": [
+              "“My prediction was: the gap would get closer.”",
+              "“So my prediction was right, both in raw count and in standard-deviation terms.”"
+            ],
+            "meta": [
+              "Prasad S · evidence/ANALYSIS.md (verbatim)"
+            ],
+            "dark": false
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": "2026-09-26T23:27:05.771680+00:00"
+          },
+          "note": "WantQuote rejected 2026-09-26: it hardcodes 'Data: Anthropic, What 81,000 People Want from AI (2026)' on screen (false attribution)."
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 17.09,
+      "render_duration_s": 17.125,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "remotion:FormACard",
+        "at": "2026-09-26T21:33:37"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "guaranteed vs. this run",
+      "narration_text": "Two different things are shrinking. The spread, how far a thousand draws usually wander, drops from about fifteen to about eleven. The math guarantees that as the favorite gets more dominant. But this run's miss also shrank in spread units, from 2.4 to 1.7. The math doesn't promise that. One run can land anywhere in its spread.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 23,
+      "shot": {
+        "type": "REMOTION",
+        "classification": "SHOW",
+        "evidence": [
+          "evidence/ANALYSIS.md: +-14.9, +-10.7, 2.4 SD, 1.7 SD, 'guaranteed by the math'"
+        ],
+        "show": [
+          {
+            "at": "spread",
+            "event": "Spread rows appear: 14.9 then 10.7"
+          },
+          {
+            "at": "guarantees",
+            "event": "Hold on the two spread rows"
+          },
+          {
+            "at": "2.4",
+            "event": "Miss-in-SDs rows appear: 2.4 then 1.7"
+          }
+        ],
+        "remotion": {
+          "pattern": "ExecutedData",
+          "props": {
+            "title": "Guaranteed vs. This Run",
+            "mode": "table",
+            "columnLabels": [
+              "Measure",
+              "Value"
+            ],
+            "rows": [
+              {
+                "label": "Spread · temp 1.0",
+                "value": 14.9,
+                "at": 6.0
+              },
+              {
+                "label": "Spread · temp 0.5",
+                "value": 10.7,
+                "at": 6.9
+              },
+              {
+                "label": "Miss in SDs · 1.0",
+                "value": 2.4,
+                "at": 14.3
+              },
+              {
+                "label": "Miss in SDs · 0.5",
+                "value": 1.7,
+                "at": 14.8
+              }
+            ],
+            "note": "Spread = typical wander (±1 SD) of 1,000 draws · Source: evidence/ANALYSIS.md"
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": "2026-09-26T23:05:06.276765+00:00"
+          },
+          "row_timing": "rows 1-2 on their spoken numbers (faster-whisper word timestamps); ExecutedData is registered at a fixed 15 s and freeze-held after, so rows 3-4 appear ~0.3-1.2 s before '2.4'/'1.7' are spoken"
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 21.85,
+      "render_duration_s": 21.875,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "remotion:ExecutedData",
+        "at": "2026-09-26T21:33:37"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "falsifiability — the shared seed",
+      "narration_text": "Here's the catch. Both runs used seed 7, so they drew from the same stream of random numbers. That ties them together; they aren't two independent tests. A different seed could show a bigger gap or a smaller one, at either temperature. And nothing here says what happens at 2.0, because that run hasn't been done.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 21,
+      "shot": {
+        "type": "REMOTION",
+        "classification": "SHOW",
+        "evidence": [
+          "lessons/01-randomness-and-first-prompts/code/main.py:19-24 (verbatim)",
+          "evidence/ANALYSIS.md limitation paragraph"
+        ],
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Verbatim sample() source on screen"
+          },
+          {
+            "at": 0.15,
+            "event": "'seed=7' default and 'random.Random(seed)' are the focus as 'seed 7' is spoken"
+          },
+          {
+            "at": 0.7,
+            "event": "Hold while the untested-2.0 limitation is spoken"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "main.py — course reference code, unedited (lines 19–24)",
+            "code": "def sample(logits, count=1000, seed=7, temperature=1.0):\n    if type(count) is not int or count < 0:\n        raise ValueError(\"Count must be nonnegative\")\n    rng = random.Random(seed)\n    return dict(Counter(rng.choices(range(len(logits)),\n                                   probabilities(logits, temperature), k=count)))",
+            "language": "python",
+            "sparkLine": "Same seed, same stream.",
+            "durationSeconds": 19.63,
+            "largeText": false
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": "2026-09-27T00:48:27.428894+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 19.63,
+      "render_duration_s": 19.666666666666668,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "remotion:ClaudeCodeBeat",
+        "at": "2026-09-26T21:33:37"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "act": "verdict",
+      "lead_silence_s": 0.5,
+      "narration_text": "Let's recap with Claude. Lower temperature concentrates probability on the top token: sixty-six and a half percent at 1.0, eighty-six point seven at 0.5. The top token missed its expected count by about 35 at 1.0 and about 18 at 0.5. The expected spread shrinks as the favorite dominates; that part is guaranteed. Landing closer in standard-deviation terms may be this seed's luck, because both runs shared seed 7.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 28,
+      "shot": {
+        "type": "REMOTION",
+        "classification": "SHOW",
+        "evidence": [
+          "recaps B03-B07"
+        ],
+        "show": [
+          {
+            "at": 0.1,
+            "event": "Verdict card; line 1 (66.5% -> 86.7%)"
+          },
+          {
+            "at": 0.35,
+            "event": "Line 2 (missed by ~35 -> ~18)"
+          },
+          {
+            "at": 0.6,
+            "event": "Line 3 (spread shrink is guaranteed)"
+          },
+          {
+            "at": 0.8,
+            "event": "Line 4 (seed luck, shared seed 7)"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Less Room to Wander",
+            "artifactHeading": "What this experiment shows",
+            "artifactLines": [
+              "Lower temperature concentrates probability on the top token: 66.5% at 1.0, 86.7% at 0.5.",
+              "The top token missed its expected count by about 35 at 1.0 and about 18 at 0.5.",
+              "The expected spread shrinks as the favorite dominates — that part is guaranteed.",
+              "Landing closer in standard-deviation terms may be this seed's luck: both runs shared seed 7."
+            ],
+            "brandLabel": "Prasad S · INFO 7375",
+            "durationSeconds": 32.27
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": "2026-09-26T23:07:16.766930+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 32.27,
+      "render_duration_s": 32.291666666666664,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "remotion:ClaudeVerdictArtifact",
+        "at": "2026-09-26T21:33:37"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "act": "your turn",
+      "narration_text": "I ran a softmax sampler on logits [1, 2, 3], 1,000 draws, seed 7, at temperatures 1.0 and 0.5, and compared the top token's expected and observed counts. Help me design a follow-up: (1) repeat the comparison across 20 different seeds and add temperature 2.0, (2) report each gap in standard deviations, (3) tell me whether the 'gap shrinks' pattern survives or was one seed's luck. Check three things in the answer: does it use different seeds so the runs are independent, does it measure gaps in standard deviations instead of raw counts, and does it say plainly when the evidence is too thin to call a pattern? Take it and run it on your own sampler.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 38,
+      "shot": {
+        "type": "REMOTION",
+        "classification": "SHOW",
+        "evidence": [
+          "scaffolded task: three-point rubric in narration"
+        ],
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Greeting 'Your turn.'"
+          },
+          {
+            "at": 0.05,
+            "event": "Suggested prompt types into the composer while it is read aloud"
+          },
+          {
+            "at": 0.7,
+            "event": "Prompt holds while the three checks are spoken"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "INFO 7375 · WEEK 1 · RECONSTRUCTED UI",
+            "segment": "Less Room to Wander",
+            "command": "I ran a softmax sampler on logits [1, 2, 3], 1,000 draws, seed 7, at temperatures 1.0 and 0.5, and compared the top token's expected and observed counts. Help me design a follow-up: (1) repeat the comparison across 20 different seeds and add temperature 2.0, (2) report each gap in standard deviations, (3) tell me whether the 'gap shrinks' pattern survives or was one seed's luck.",
+            "runningText": "paste this into Claude…",
+            "folderLabel": "Prasad S · INFO 7375",
+            "modelLabel": "Opus 5.5",
+            "effortLabel": "Medium",
+            "durationSeconds": 42.77,
+            "largeText": true
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": "2026-09-26T23:09:05.578620+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 42.77,
+      "render_duration_s": 42.791666666666664,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-09-26T21:33:37"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "act": "outro",
+      "narration_text": "Less Room to Wander. Narrated by a synthetic voice for Prasad S, INFO 7375.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 6,
+      "shot": {
+        "type": "REMOTION",
+        "classification": "CARD",
+        "evidence": [
+          "disclosure"
+        ],
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Title restated in serif with period"
+          },
+          {
+            "at": 0.3,
+            "event": "Colophon: author, course, synthetic-narration and reconstructed-UI disclosure"
+          }
+        ],
+        "remotion": {
+          "pattern": "FormACard",
+          "props": {
+            "lines": [
+              "Less Room to Wander."
+            ],
+            "meta": [
+              "Prasad S · INFO 7375 · Week 1",
+              "Synthetic narration (Kokoro af_bella) · Claude interface reconstructed · not an official or endorsed video"
+            ],
+            "dark": false
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": "2026-09-27T00:31:52.866953+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 7.51,
+      "render_duration_s": 7.541666666666667,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "remotion:FormACard",
+        "at": "2026-09-26T21:33:37"
+      },
+      "tts_phoneme_overrides": {
+        "Prasad": {
+          "count": 1,
+          "from": "pɹˈæsæd",
+          "to": "pɹəsˈɑːd"
+        }
+      }
+    }
+  ]
+}

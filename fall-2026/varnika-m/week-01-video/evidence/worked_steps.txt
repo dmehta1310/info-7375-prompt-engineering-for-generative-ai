@@ -1,0 +1,16 @@
+# Worked steps for the video, computed 2026-09-26 with Python 3.12.14 using the lesson's own probabilities().
+# [1, 2, 3] is the lesson demo input. [-1, 2, 3] is a CONSTRUCTED example (proposed by Claude Code, adopted by me) to show the shortcut failing on a negative score.
+# Lesson tests: python3.12 lessons/01-randomness-and-first-prompts/code/tests/test_main.py -v -> Ran 6 tests, OK
+
+== lesson demo input: scores [1, 2, 3]
+  divide-by-sum shortcut: [0.1667, 0.3333, 0.5] sum 6
+  step 1a subtract max 3 -> [-2, -1, 0]
+  step 1b exp -> [0.135335, 0.367879, 1.0] total 1.503215
+  step 2 weight/total -> [0.09, 0.2447, 0.6652]
+  main.probabilities() -> [0.09, 0.2447, 0.6652] sum 1.0
+== CONSTRUCTED example: scores [-1, 2, 3]
+  divide-by-sum shortcut: [-0.25, 0.5, 0.75] sum 4
+  step 1a subtract max 3 -> [-4, -1, 0]
+  step 1b exp -> [0.018316, 0.367879, 1.0] total 1.386195
+  step 2 weight/total -> [0.0132, 0.2654, 0.7214]
+  main.probabilities() -> [0.0132, 0.2654, 0.7214] sum 1.0

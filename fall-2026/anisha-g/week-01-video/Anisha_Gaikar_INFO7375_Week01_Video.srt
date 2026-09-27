@@ -1,0 +1,159 @@
+1
+00:00:00,000 --> 00:00:01,398
+Run the sampler once.
+
+2
+00:00:01,398 --> 00:00:03,861
+Then run it again with the same seed.
+
+3
+00:00:03,861 --> 00:00:05,525
+The counts match exactly.
+
+4
+00:00:05,525 --> 00:00:08,254
+Does that agreement make the result true?
+
+5
+00:00:08,254 --> 00:00:08,454
+No.
+
+6
+00:00:08,454 --> 00:00:19,703
+In the next few minutes, I will show what a seed controls, reproduce Chapter One's actual output, and mark the boundary between replaying a process and checking a claim.
+
+7
+00:00:19,703 --> 00:00:23,830
+This narration is synthetic and generated locally with Kokoro.
+
+8
+00:00:23,830 --> 00:00:29,354
+The course sample function receives logits, a count, a seed, and a temperature.
+
+9
+00:00:29,354 --> 00:00:32,711
+It first converts the logits into probabilities.
+
+10
+00:00:32,711 --> 00:00:38,165
+Then random dot Random, with the seed, creates a local pseudorandom generator.
+
+11
+00:00:38,165 --> 00:00:43,969
+That generator makes weighted selections, and a Counter totals the selected labels.
+
+12
+00:00:43,969 --> 00:00:49,004
+The seed starts the generator; it never changes the probability formula.
+
+13
+00:00:49,004 --> 00:00:52,507
+I ran the unmodified Chapter One reference program.
+
+14
+00:00:52,507 --> 00:00:59,718
+Its constructed input is logits one, two, and three; count one thousand; temperature one; and seed seven.
+
+15
+00:00:59,718 --> 00:01:08,440
+It prints label zero, one hundred two times; label one, two hundred sixty-eight times; and label two, six hundred thirty times.
+
+16
+00:01:08,440 --> 00:01:13,866
+These are observed counts from the real program, not invented animation values.
+
+17
+00:01:13,866 --> 00:01:19,832
+Now call the same function a second time with seed seven and every other input unchanged.
+
+18
+00:01:19,832 --> 00:01:25,998
+The second run again gives one hundred two, two hundred sixty-eight, and six hundred thirty.
+
+19
+00:01:25,998 --> 00:01:28,143
+The equality check returns true.
+
+20
+00:01:28,143 --> 00:01:37,192
+This is the useful promise: when debugging, I can reset the generator to the same starting state and replay this particular experiment.
+
+21
+00:01:37,192 --> 00:01:40,542
+Next, I changed only the seed from seven to eight.
+
+22
+00:01:40,542 --> 00:01:44,763
+The logits, probabilities, count, and temperature stayed fixed.
+
+23
+00:01:44,763 --> 00:01:53,540
+The observed counts changed to label zero, seventy-six; label one, two hundred thirty-nine; and label two, six hundred eighty-five.
+
+24
+00:01:53,540 --> 00:01:56,890
+The distribution used for sampling did not change.
+
+25
+00:01:56,890 --> 00:02:01,982
+The particular pseudorandom sequence, and therefore this finite sample, did.
+
+26
+00:02:01,982 --> 00:02:10,050
+Chapter One's test calls sample with logits one and two, then compares that result with another call using the same defaults.
+
+27
+00:02:10,050 --> 00:02:14,181
+The test passes because the default seed is seven in both calls.
+
+28
+00:02:14,181 --> 00:02:16,053
+That is a repeatability test.
+
+29
+00:02:16,053 --> 00:02:21,281
+It checks whether this implementation can replay its output under the same setup.
+
+30
+00:02:21,281 --> 00:02:24,444
+It does not compare any label with an answer key.
+
+31
+00:02:24,444 --> 00:02:28,969
+Look at the function's inputs: logits, count, seed, and temperature.
+
+32
+00:02:28,969 --> 00:02:33,760
+There is no source, answer key, evidence check, or correctness argument.
+
+33
+00:02:33,760 --> 00:02:39,683
+So the function can tell us which labels were selected and whether a run can be repeated.
+
+34
+00:02:39,683 --> 00:02:43,742
+It cannot tell us whether a selected label describes reality.
+
+35
+00:02:43,742 --> 00:02:47,602
+Repeating a mistake perfectly still preserves the mistake.
+
+36
+00:02:47,602 --> 00:02:50,353
+The complete claim is small but important.
+
+37
+00:02:50,353 --> 00:02:58,016
+A seed fixes the starting state of the pseudorandom selection process, so a run can be replayed under the same setup.
+
+38
+00:02:58,016 --> 00:03:03,715
+Changing the seed can change the observed sample while leaving the probabilities fixed.
+
+39
+00:03:03,715 --> 00:03:07,514
+This explanation establishes repeatability of the process.
+
+40
+00:03:07,514 --> 00:03:13,016
+It does not establish truth, correctness, or factual support for any sampled output.

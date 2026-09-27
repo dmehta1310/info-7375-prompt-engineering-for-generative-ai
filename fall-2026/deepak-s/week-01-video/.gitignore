@@ -1,0 +1,4 @@
+# The 1080p master is the deliverable. The repository root ignores *.mp4 at any
+# depth (.gitignore:33), so re-include only this one file. Render intermediates
+# (media/, clips/, mp3/, the 4K slate cut) are not copied here at all.
+!/video/temperature-concentration-control.mp4

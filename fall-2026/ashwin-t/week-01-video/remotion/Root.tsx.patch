@@ -1,0 +1,25 @@
+diff --git a/runtime/remotion/src/Root.tsx b/runtime/remotion/src/Root.tsx
+index b8b80af..72a5401 100644
+--- a/runtime/remotion/src/Root.tsx
++++ b/runtime/remotion/src/Root.tsx
+@@ -737,6 +737,8 @@ import {GitHubCodeDiff,    gitHubCodeDiffSchema}    from './scenes/GitHubCodeDif
+ import {GitHubCallChain,   gitHubCallChainSchema}   from './scenes/GitHubCallChain';
+ import {GitHubChurn,       gitHubChurnSchema}       from './scenes/GitHubChurn';
+ import {BadgeReveal}                               from './scenes/BadgeReveal';
++// INFO 7375 Week 1 — shared-offset explainer (w1-softmax-offset)
++import {SoftmaxOffset, softmaxOffsetSchema} from './scenes/SoftmaxOffset';
+ 
+ export const RemotionRoot: React.FC = () => {
+   return (
+@@ -4363,6 +4365,11 @@ export const RemotionRoot: React.FC = () => {
+           badgeScale: 0.5,
+         }}
+       />
++      <Composition id="SoftmaxOffset" component={SoftmaxOffset}
++        durationInFrames={450} fps={30} width={1920} height={1080}
++        schema={softmaxOffsetSchema}
++        defaultProps={softmaxOffsetSchema.parse({mode: 'pipeline'})}
++        calculateMetadata={({props}) => ({durationInFrames: Math.max(30, Math.ceil(props.durationS * 30))})} />
+     </>
+   );
+ };

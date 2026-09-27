@@ -1,0 +1,629 @@
+{
+  "metadata": {
+    "title": "Expected, Observed",
+    "slug": "claude-liam-expected-vs-observed",
+    "topic": "CHAPTER 1 · SAMPLING",
+    "register": "Teardown",
+    "audience": "Claude",
+    "brand": "claude-liam",
+    "engine": "kokoro",
+    "voice_kokoro": "am_onyx",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "folderLabel": "@NikBearBrown",
+    "greeting": "Namaste, Liam",
+    "greeting_note": "hello lexicon: Hindi, one word (Liam takes the one-word budget). Wagwan check: charsum('claude-liam-expected-vs-observed') = 3162, 3162 % 10 == 2, not 0 — no Wagwan.",
+    "clock": "narration",
+    "purpose": "INFO 7375 Week 1 graded assignment. ONE concept from Chapter 1: expected count (665.24) vs observed count (630) — a sampling gap is not evidence the probabilities are wrong.",
+    "author": "Arundhati Kandelkar",
+    "evidence": "Every number on screen is printed by lessons/01-randomness-and-first-prompts/code/main.py, unmodified, seed=7, count=1000. Verified 2026-09-26. Derived arithmetic (665.24, 35.24, 5.3%) is recomputed from those printed values, never hand-estimated.",
+    "scope_note": "SOFTMAX IS DELIBERATELY ONE BEAT (B02), not a derivation. The assignment's dominant failure mode is covering several concepts badly; the max-subtraction is a SEPARATE listed concept. B02 exists only to source the 0.6652 that B03 multiplies, and says so on screen.",
+    "constructed_disclosure": "B05 is the ONLY constructed illustration. Its two numbers (665.24, 630) are real; the gap diagram around them is authored for this video and is labelled 'CONSTRUCTED ILLUSTRATION' on screen for its full duration.",
+    "claude_response_disclosure": "No Claude chat transcript or generated conversational response appears on screen. The composer beats (B00, B08) show a prompt being TYPED, not a claimed Claude answer; B00's output lines are the three findings this video itself demonstrates, not a transcript.",
+    "tags": [
+      "INFO 7375",
+      "sampling",
+      "softmax",
+      "expected value",
+      "randomness",
+      "Chapter 1"
+    ],
+    "build": {
+      "at": "2026-09-26T18:46:12",
+      "cut": "master",
+      "filled": 10,
+      "of": 10,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "ASK",
+      "narration_text": "Nine percent, twenty-four and a half percent, sixty-six and a half percent. Those are real numbers from the course code. Sample that distribution a thousand times and the favourite should come up six hundred sixty-five times. It came up six hundred thirty. This is Liam, in for Bear.",
+      "estimated_duration_s": 17,
+      "audio_file": "mp3/beat-B00.mp3",
+      "new_visual_element": "Cold open — the composer asks the question the reel answers",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "type-on",
+        "show": [
+          {
+            "at": "0.00",
+            "event": "Cream Claude composer, serif greeting 'Namaste, Liam' above the card"
+          },
+          {
+            "at": "0.10",
+            "event": "The ask types itself into the composer, character by character"
+          },
+          {
+            "at": "0.62",
+            "event": "Send button arms terracotta; runningText 'running main.py…' appears"
+          },
+          {
+            "at": "0.74",
+            "event": "Three result lines land in sequence beneath the composer"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Namaste, Liam",
+            "topic": "CHAPTER 1 · SAMPLING",
+            "segment": "Expected, Observed",
+            "command": "main.py says index 2 has probability 0.6652. Over 1000 draws that predicts 665.24 hits. The run returned 630. Is the probability wrong?",
+            "runningText": "running main.py…",
+            "folderLabel": "@NikBearBrown",
+            "output": [
+              "expected 665.24  ·  observed 630",
+              "the gap is 35.24 draws — about 5%",
+              "one run of 1000 cannot settle it"
+            ],
+            "durationSeconds": 14.87
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": "2026-09-26T21:14:24.924730+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 14.87,
+      "render_duration_s": 14.875,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-09-26T18:46:12"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "BLUF",
+      "narration_text": "Run it a thousand times. The math says six sixty-five. You get six hundred thirty. A gap that size is unusual — about one run in fifty. But unusual is not the same as wrong.",
+      "estimated_duration_s": 13,
+      "lead_silence_s": 0.8,
+      "audio_file": "mp3/beat-B01.mp3",
+      "new_visual_element": "Hesitant-writer executive summary; the misconception is typed, then corrected",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "type-on",
+        "show": [
+          {
+            "at": "0.00",
+            "event": "Empty cream page; 0.8s of silence before the first character (lead_silence_s)"
+          },
+          {
+            "at": "0.08",
+            "event": "Writer types the first three lines, hesitating mid-phrase"
+          },
+          {
+            "at": "0.55",
+            "event": "Types 'That looks broken.' — the word 'broken' renders in terracotta: it is doomed"
+          },
+          {
+            "at": "0.68",
+            "event": "Long pause. The writer deletes 'broken' character by character"
+          },
+          {
+            "at": "0.80",
+            "event": "Types 'normal' in its place. The corrected sentence holds to the cut"
+          }
+        ],
+        "remotion": {
+          "pattern": "BrutalistHesitantWriter",
+          "props": {
+            "text": "Run it a thousand times.\nThe math says 665.\nYou get 630.\nThat gap is proof.",
+            "triggerWords": "proof",
+            "replacementWords": "unusual",
+            "seed": "expected-observed-b01",
+            "fontSize": 146,
+            "align": "left",
+            "ink": "#3D3929",
+            "accent": "#D97757",
+            "bg": "#FAF9F5",
+            "durationSeconds": 10.69,
+            "charMs": 10,
+            "mistakeRate": 2,
+            "hesitateBetween": 5,
+            "hesitateWithin": 0
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": "2026-09-26T21:54:56.615242+00:00"
+          }
+        }
+      },
+      "authoring_note": "CORRECTION = the reel's actual misconception, per EXECUTIVE-SUMMARY LAW. Single-word trigger is FORCED, not a style choice: BrutalistHesitantWriter.tsx:133 matches triggers against single whitespace-delimited tokens (triggers.indexOf(core.toLowerCase())), so a multi-word phrase can never match — see FRICTIONAL.md 2026-09-26. 'broken' -> 'normal' flips the whole sentence, which is what the law actually asks for.",
+      "actual_duration_s": 10.69,
+      "render_duration_s": 10.708333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "remotion:BrutalistHesitantWriter",
+        "at": "2026-09-26T18:46:12"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "SOURCE",
+      "narration_text": "Where does sixty-six and a half percent come from? Three raw scores — one, two, three — go into softmax. Subtract the largest, exponentiate, divide by the total. Out comes zero point six six five two. That is the only thing this video borrows from softmax.",
+      "estimated_duration_s": 21,
+      "audio_file": "mp3/beat-B02.mp3",
+      "new_visual_element": "SoftmaxInOneBeat — three logits become three probabilities, in one pass",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "illustrate",
+        "show": [
+          {
+            "at": "0.05",
+            "event": "Row 1: the three logits 1, 2, 3 land as mono chips"
+          },
+          {
+            "at": "0.28",
+            "event": "Row 2: each chip slides down and re-labels to -2, -1, 0 (peak subtracted)"
+          },
+          {
+            "at": "0.50",
+            "event": "Row 3: values become 0.1353, 0.3679, 1.0000 — the exponentials"
+          },
+          {
+            "at": "0.70",
+            "event": "A divisor bar draws under the row with the real sum 1.5032"
+          },
+          {
+            "at": "0.84",
+            "event": "Row 4 resolves to 0.0900, 0.2447, 0.6652; only 0.6652 takes terracotta"
+          },
+          {
+            "at": "0.92",
+            "event": "Footer chip: 'this reel uses ONE of these numbers'"
+          }
+        ],
+        "remotion": {
+          "pattern": "SoftmaxInOneBeat",
+          "props": {
+            "sparkLine": "Where 0.6652 comes from.",
+            "durationSeconds": 14.87
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": "2026-09-26T22:06:48.366997+00:00"
+          }
+        }
+      },
+      "authoring_note": "SCOPE GUARD. This beat sources one number and explicitly hands off. The max-subtraction is a different listed concept and is NOT taught here. All four rows are real: exp(-2)=0.13533, exp(-1)=0.36788, exp(0)=1.0, sum=1.50321.",
+      "actual_duration_s": 14.87,
+      "render_duration_s": 14.875,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "remotion:SoftmaxInOneBeat",
+        "at": "2026-09-26T18:46:12"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "EXPECTED",
+      "narration_text": "Expected count is one multiplication. Zero point six six five two, times a thousand draws, is six hundred sixty-five point two four. That is not a prediction about any single run. It is the long-run average, if you repeated the whole thousand-draw experiment over and over.",
+      "estimated_duration_s": 21,
+      "audio_file": "mp3/beat-B03.mp3",
+      "new_visual_element": "ExpectedCount — the multiplication performs itself, then is bounded",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "illustrate",
+        "show": [
+          {
+            "at": "0.06",
+            "event": "0.6652409557748218 types across the frame at full printed precision"
+          },
+          {
+            "at": "0.24",
+            "event": "'x 1000' swings in beneath it; the multiplication rule draws"
+          },
+          {
+            "at": "0.42",
+            "event": "A counter spins up from 0 and settles on 665.24 in terracotta"
+          },
+          {
+            "at": "0.66",
+            "event": "Caption strikes through 'what this run will do'"
+          },
+          {
+            "at": "0.78",
+            "event": "and replaces it with 'the average over many runs' — the bound, on the spoken word"
+          }
+        ],
+        "remotion": {
+          "pattern": "ExpectedCount",
+          "props": {
+            "sparkLine": "One multiplication.",
+            "durationSeconds": 15.66
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": "2026-09-26T22:07:22.528223+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 15.66,
+      "render_duration_s": 15.666666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "remotion:ExpectedCount",
+        "at": "2026-09-26T18:46:12"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "OBSERVED",
+      "narration_text": "Here is what actually ran. Seed seven, a thousand draws, straight from main dot py. Index zero: one hundred and two. Index one: two hundred and sixty-eight. Index two, the favourite: six hundred and thirty. Not six sixty-five. Six hundred and thirty.",
+      "estimated_duration_s": 21,
+      "audio_file": "mp3/beat-B04.mp3",
+      "new_visual_element": "ObservedCounts — the real Counter output, bars growing to their true values",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "illustrate",
+        "show": [
+          {
+            "at": "0.04",
+            "event": "The verbatim JSON block from main.py fades in at left, key order 1/2/0 as printed"
+          },
+          {
+            "at": "0.22",
+            "event": "Three bars build at right, each growing as its count is spoken"
+          },
+          {
+            "at": "0.34",
+            "event": "Bar 0 grows to 102"
+          },
+          {
+            "at": "0.48",
+            "event": "Bar 1 grows to 268"
+          },
+          {
+            "at": "0.62",
+            "event": "Bar 2 grows to 630 and takes terracotta"
+          },
+          {
+            "at": "0.80",
+            "event": "A dashed rule drops at 665.24 — the bar visibly stops short of it"
+          }
+        ],
+        "remotion": {
+          "pattern": "ObservedCounts",
+          "props": {
+            "sparkLine": "What actually ran.",
+            "durationSeconds": 13.97
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": "2026-09-26T22:07:51.821223+00:00"
+          }
+        }
+      },
+      "authoring_note": "The JSON block reproduces the printed key order (1, 2, 0) rather than sorting it — see FRICTIONAL.md. Bars are drawn in index order and labelled, so the reordering is visible rather than silently tidied.",
+      "actual_duration_s": 13.97,
+      "render_duration_s": 14.0,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "remotion:ObservedCounts",
+        "at": "2026-09-26T18:46:12"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "GAP",
+      "narration_text": "Thirty-five point two four draws short. About five percent below the expected count. In sampling terms that is two point four standard deviations — roughly a one in fifty result. Fair warning: this picture is built for the video. The two numbers are real. The shape around them is mine.",
+      "estimated_duration_s": 22,
+      "audio_file": "mp3/beat-B05.mp3",
+      "new_visual_element": "TheGap — the 35.24 difference, explicitly labelled as a constructed illustration",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "illustrate",
+        "show": [
+          {
+            "at": "0.00",
+            "event": "'CONSTRUCTED ILLUSTRATION' chip is present from frame 1 and never leaves"
+          },
+          {
+            "at": "0.10",
+            "event": "A number line draws; 630 and 665.24 land as two marks"
+          },
+          {
+            "at": "0.34",
+            "event": "The span between them fills terracotta; '35.24' counts up over it"
+          },
+          {
+            "at": "0.52",
+            "event": "'≈ 5.3% below expected' resolves under the span"
+          },
+          {
+            "at": "0.74",
+            "event": "Footnote types: 'numbers real · diagram authored for this video'"
+          }
+        ],
+        "remotion": {
+          "pattern": "TheGap",
+          "props": {
+            "sparkLine": "Thirty-five draws short.",
+            "constructed": true,
+            "durationSeconds": 15.66
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": "2026-09-26T22:08:24.763207+00:00"
+          }
+        }
+      },
+      "authoring_note": "ASSIGNMENT REQUIREMENT: 'Label constructed illustrations as constructed.' The chip is on screen for the beat's full duration, not flashed. 35.24 = 665.2409557748218 - 630; 35.24/665.24 = 5.297%.",
+      "actual_duration_s": 15.66,
+      "render_duration_s": 15.666666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "remotion:TheGap",
+        "at": "2026-09-26T18:46:12"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "FALSIFIABILITY",
+      "narration_text": "So does that settle it? No — but not because the gap is ordinary. It is not. Only about one run in fifty lands this low. It settles nothing because this is a single draw, from one fixed seed, looked at after the fact. A one in fifty result is a reason to test, not a verdict. What would settle it is repetition — many runs, and a check on where six hundred thirty really falls.",
+      "estimated_duration_s": 26,
+      "audio_file": "mp3/beat-B06.mp3",
+      "new_visual_element": "WhatWouldSettleIt — one run versus many runs, and where the evidence actually lives",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "illustrate",
+        "show": [
+          {
+            "at": "0.06",
+            "event": "Left panel: a single tick at 630 — one lonely observation"
+          },
+          {
+            "at": "0.22",
+            "event": "'Can this refute 0.6652?' resolves beneath it, then stamps NO"
+          },
+          {
+            "at": "0.42",
+            "event": "Right panel: ticks accumulate into a spread centred near 665"
+          },
+          {
+            "at": "0.64",
+            "event": "The 630 tick re-appears inside that spread, unremarkable"
+          },
+          {
+            "at": "0.82",
+            "event": "The right panel dims to ~45% and a terracotta rule labels it 'NOT RUN IN THIS VIDEO'"
+          }
+        ],
+        "remotion": {
+          "pattern": "WhatWouldSettleIt",
+          "props": {
+            "sparkLine": "One run proves nothing.",
+            "durationSeconds": 19.41
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": "2026-09-26T22:09:06.282668+00:00"
+          }
+        }
+      },
+      "authoring_note": "Right panel is a SCHEMATIC of an experiment not performed — it is dimmed and captioned as such, so it can never read as data I collected. Legibility contract: dimmed panel stays at 45%, above the 40% floor.",
+      "actual_duration_s": 19.41,
+      "render_duration_s": 19.416666666666668,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "remotion:WhatWouldSettleIt",
+        "at": "2026-09-26T18:46:12"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "VERDICT",
+      "narration_text": "The honest verdict. Expected count is what the math predicts. Observed count is what happened once. Six hundred thirty is genuinely low — about one in fifty. And a seed makes that run repeatable, not correct. What this video does not establish is that zero point six six five two is wrong. One seeded run, read after the fact, cannot show that.",
+      "estimated_duration_s": 24,
+      "audio_file": "mp3/beat-B07.mp3",
+      "new_visual_element": "Verdict artifact page — the four claims, and the named boundary",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "static",
+        "show": [
+          {
+            "at": "0.08",
+            "event": "Claude window opens on the artifact view, titled 'Expected, Observed'"
+          },
+          {
+            "at": "0.20",
+            "event": "Line 1 lands: expected = what the math predicts"
+          },
+          {
+            "at": "0.36",
+            "event": "Line 2: observed = what happened once"
+          },
+          {
+            "at": "0.52",
+            "event": "Line 3: a seed buys repeatability, not correctness"
+          },
+          {
+            "at": "0.70",
+            "event": "Line 4 lands in terracotta — the boundary this video does NOT cross"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "Expected, Observed",
+            "artifactHeading": "What this does and does not establish",
+            "artifactLines": [
+              "Expected count 665.24 — what the math predicts.",
+              "Observed count 630 — what happened, once.",
+              "630 is ~2.4 sd below expected: about 1 run in 50.",
+              "NOT ESTABLISHED: that 0.6652 is wrong — one run cannot show it."
+            ],
+            "sparkLine": "What it does not establish.",
+            "durationSeconds": 18.75,
+            "width": 1700,
+            "fontSize": 46
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": "2026-09-26T22:20:31.759229+00:00"
+          }
+        }
+      },
+      "authoring_note": "ASSIGNMENT REQUIREMENT (2 pts): 'Name one thing your explanation does not establish.' Stated plainly, in terracotta, unhedged.",
+      "actual_duration_s": 18.75,
+      "render_duration_s": 18.75,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "remotion:ClaudeWindow",
+        "at": "2026-09-26T18:46:12"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "act": "HANDOFF",
+      "narration_text": "Your turn. Paste this into Claude: run the lesson one sampler a hundred times, with a hundred different seeds, a thousand draws each. Plot how often index two comes up, and mark where six hundred and thirty falls. I calculated that it should land in the tail, about one run in fifty. But that is arithmetic, not a measurement. A hundred runs turn it into one. And if the plot disagrees with my number, the plot is right.",
+      "estimated_duration_s": 31,
+      "audio_file": "mp3/beat-B08.mp3",
+      "new_visual_element": "Handoff — the viewer's prompt, read aloud and discussed",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "type-on",
+        "show": [
+          {
+            "at": "0.00",
+            "event": "Composer returns, greeting reads 'Your turn.' — persona dropped"
+          },
+          {
+            "at": "0.08",
+            "event": "The prompt types itself as it is read aloud, verbatim"
+          },
+          {
+            "at": "0.55",
+            "event": "runningText 'paste this into Claude…' appears under the armed send button"
+          },
+          {
+            "at": "0.70",
+            "event": "Two result lines land: what to look for in the answer"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "CHAPTER 1 · SAMPLING",
+            "segment": "Run the experiment this video skipped",
+            "command": "Take lessons/01-randomness-and-first-prompts/code/main.py. Run sample([1,2,3]) 100 times with 100 different seeds, 1000 draws each. Plot the distribution of the count for index 2, and mark where 630 falls in it. Then tell me: is 630 an ordinary result or a surprising one?",
+            "runningText": "paste this into Claude…",
+            "folderLabel": "@NikBearBrown",
+            "output": [
+              "look for: the spread, not the single number",
+              "the prediction to check: ~1 run in 50"
+            ],
+            "durationSeconds": 20.33
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": "2026-09-26T22:44:52.653519+00:00"
+          }
+        }
+      },
+      "authoring_note": "HANDOFF LAW: the prompt is read ALOUD verbatim and then discussed (what it does, what to look for) before the invitation. It extends the episode into the viewer's own work rather than saying 'learn more'.",
+      "actual_duration_s": 20.33,
+      "render_duration_s": 20.333333333333332,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B08.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-09-26T18:46:12"
+      }
+    },
+    {
+      "beat_id": "B09",
+      "act": "OUTRO",
+      "narration_text": "Expected, Observed. At Nik Bear Brown.",
+      "estimated_duration_s": 9,
+      "audio_file": "mp3/beat-B09.mp3",
+      "new_visual_element": "Title-restate outro card",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "static",
+        "show": [
+          {
+            "at": "0.10",
+            "event": "Title restates poster-style in serif with the terracotta period"
+          },
+          {
+            "at": "0.40",
+            "event": "@NikBearBrown resolves beneath it"
+          },
+          {
+            "at": "0.55",
+            "event": "Slug-seeded mascot performs its animation — translation and axis-aligned scale only"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Expected, Observed",
+            "slug": "claude-liam-expected-vs-observed",
+            "mascotAnimation": "nod",
+            "durationSeconds": 3.03
+          },
+          "rendered": {
+            "out": "media/B09.mp4",
+            "at": "2026-09-26T21:18:36.197036+00:00"
+          }
+        }
+      },
+      "authoring_note": "OUTRO-LOCK: exact title restate, hardcoded @NikBearBrown, slug-seeded mascot, NO subline. Spoken, never scored. PIXEL-ART LAW: 'nod' is foot-anchored scaleY, no rotation.",
+      "actual_duration_s": 3.03,
+      "render_duration_s": 3.0416666666666665,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B09.mp4",
+        "filled_by": "remotion:ClaudeTitleOutro",
+        "at": "2026-09-26T18:46:12"
+      }
+    }
+  ]
+}

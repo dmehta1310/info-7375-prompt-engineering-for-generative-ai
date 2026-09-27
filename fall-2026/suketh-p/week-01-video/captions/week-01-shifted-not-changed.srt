@@ -1,0 +1,452 @@
+1
+00:00:00,000 --> 00:00:01,667
+Chapter One hands you three scores —
+
+2
+00:00:01,667 --> 00:00:02,375
+one, two, three —
+
+3
+00:00:02,375 --> 00:00:03,583
+and asks for probabilities.
+
+4
+00:00:04,125 --> 00:00:06,083
+But the reference code does something odd before it
+
+5
+00:00:06,083 --> 00:00:07,000
+does any of that.
+
+6
+00:00:07,000 --> 00:00:09,042
+It finds the largest score, and subtracts it from
+
+7
+00:00:09,042 --> 00:00:09,875
+all of them.
+
+8
+00:00:09,875 --> 00:00:11,125
+Every number in the middle changes.
+
+9
+00:00:11,417 --> 00:00:12,417
+The answer does not.
+
+10
+00:00:12,500 --> 00:00:15,042
+This is Suketh Produtoor's Week One explainer for INFO
+
+11
+00:00:15,417 --> 00:00:16,792
+seven three seven five.
+
+12
+00:00:16,833 --> 00:00:18,500
+The narration is synthetic —
+
+13
+00:00:18,542 --> 00:00:19,542
+Kokoro, running locally.
+
+14
+00:00:20,472 --> 00:00:21,888
+Here is the whole idea in one breath.
+
+15
+00:00:22,180 --> 00:00:24,888
+Subtracting the max makes softmax overflow-safe.
+
+16
+00:00:24,930 --> 00:00:26,263
+Every number in the middle changes.
+
+17
+00:00:26,638 --> 00:00:27,638
+The answer does not.
+
+18
+00:00:27,763 --> 00:00:30,180
+That wording matters, because the word people usually reach
+
+19
+00:00:30,180 --> 00:00:30,972
+for is stable —
+
+20
+00:00:30,972 --> 00:00:33,388
+and stable claims more than this code can actually
+
+21
+00:00:33,388 --> 00:00:34,388
+pay for.
+
+22
+00:00:34,430 --> 00:00:35,930
+Watch where the difference shows up.
+
+23
+00:00:36,540 --> 00:00:38,123
+Start with why the subtraction is there.
+
+24
+00:00:38,415 --> 00:00:40,082
+Two scores of one thousand.
+
+25
+00:00:40,082 --> 00:00:42,332
+Exponentiate them the way the formula is written, and
+
+26
+00:00:42,332 --> 00:00:44,248
+Python does not hand back an enormous number.
+
+27
+00:00:44,540 --> 00:00:45,040
+It refuses —
+
+28
+00:00:45,040 --> 00:00:46,832
+overflow error, math range error.
+
+29
+00:00:47,290 --> 00:00:49,373
+Double precision stops near ten to the three hundred
+
+30
+00:00:49,373 --> 00:00:51,540
+and eighth, and the exponential crosses that at about
+
+31
+00:00:51,832 --> 00:00:53,040
+seven hundred and ten.
+
+32
+00:00:53,082 --> 00:00:54,082
+Now shift first:
+
+33
+00:00:54,248 --> 00:00:56,498
+the same input returns one half, one half.
+
+34
+00:00:57,210 --> 00:00:58,168
+So shift first.
+
+35
+00:00:58,168 --> 00:00:59,085
+Take one, two, three.
+
+36
+00:00:59,085 --> 00:00:59,585
+Find the peak —
+
+37
+00:00:59,585 --> 00:01:00,543
+that is three.
+
+38
+00:01:00,543 --> 00:01:01,627
+Subtract it from everything:
+
+39
+00:01:01,627 --> 00:01:03,377
+minus two, minus one, zero.
+
+40
+00:01:03,377 --> 00:01:04,377
+Now exponentiate.
+
+41
+00:01:04,585 --> 00:01:06,793
+Zero point one three five, zero point three six
+
+42
+00:01:06,835 --> 00:01:07,877
+eight, and exactly one —
+
+43
+00:01:07,918 --> 00:01:09,793
+because e to the zero is one.
+
+44
+00:01:09,835 --> 00:01:10,377
+Add them:
+
+45
+00:01:10,377 --> 00:01:11,752
+one point five oh three two.
+
+46
+00:01:11,752 --> 00:01:13,418
+Divide through, and there is the distribution —
+
+47
+00:01:13,418 --> 00:01:15,168
+roughly nine, twenty-four, and sixty-seven percent.
+
+48
+00:01:16,820 --> 00:01:17,737
+Why is that allowed?
+
+49
+00:01:17,737 --> 00:01:18,903
+Write the shifted version out.
+
+50
+00:01:19,153 --> 00:01:21,028
+Every numerator picks up a factor of e to
+
+51
+00:01:21,028 --> 00:01:22,153
+the minus m over T.
+
+52
+00:01:22,487 --> 00:01:24,653
+Every term in the denominator picks up that same
+
+53
+00:01:24,653 --> 00:01:25,403
+factor.
+
+54
+00:01:25,403 --> 00:01:27,278
+It is a common factor, top and bottom —
+
+55
+00:01:27,278 --> 00:01:29,112
+so it cancels, and what is left is the
+
+56
+00:01:29,112 --> 00:01:30,278
+formula we started with.
+
+57
+00:01:30,570 --> 00:01:32,153
+The shift never reaches the ratio.
+
+58
+00:01:32,487 --> 00:01:33,820
+That is not a numerical trick.
+
+59
+00:01:34,112 --> 00:01:35,112
+That is algebra.
+
+60
+00:01:35,510 --> 00:01:37,343
+The algebra says the two paths agree.
+
+61
+00:01:37,968 --> 00:01:40,052
+That is a claim worth checking rather than trusting,
+
+62
+00:01:40,385 --> 00:01:42,552
+so the evidence script runs both of them and
+
+63
+00:01:42,552 --> 00:01:44,343
+prints the difference, with nothing rounded.
+
+64
+00:01:45,070 --> 00:01:46,278
+And here is the honest result.
+
+65
+00:01:46,570 --> 00:01:48,403
+The two paths agree to within one point one
+
+66
+00:01:48,445 --> 00:01:50,445
+times ten to the minus sixteen.
+
+67
+00:01:50,487 --> 00:01:51,070
+Not zero —
+
+68
+00:01:51,070 --> 00:01:53,737
+adjacent floats, one step apart, in two digits out
+
+69
+00:01:53,737 --> 00:01:54,737
+of fifty-three.
+
+70
+00:01:54,778 --> 00:01:57,945
+Identical in algebra; in floating point, merely indistinguishable.
+
+71
+00:01:58,320 --> 00:02:00,945
+Both match the chapter's published table to ten decimal
+
+72
+00:02:00,945 --> 00:02:01,903
+places.
+
+73
+00:02:01,903 --> 00:02:03,237
+Had I called them equal, I would have been
+
+74
+00:02:03,237 --> 00:02:04,987
+wrong in the last place of two numbers.
+
+75
+00:02:05,700 --> 00:02:07,117
+Now the part the slogan hides.
+
+76
+00:02:07,408 --> 00:02:08,783
+The shift protects the biggest term.
+
+77
+00:02:09,075 --> 00:02:10,283
+Nothing protects the smallest.
+
+78
+00:02:10,700 --> 00:02:12,617
+Scores of zero and minus eight hundred:
+
+79
+00:02:12,658 --> 00:02:15,533
+the function returns one point zero, and zero point
+
+80
+00:02:15,533 --> 00:02:15,908
+zero.
+
+81
+00:02:15,908 --> 00:02:18,242
+Exactly zero, for an outcome whose real share is
+
+82
+00:02:18,367 --> 00:02:20,492
+ten to the minus three hundred and forty-eighth.
+
+83
+00:02:20,533 --> 00:02:22,158
+And that cliff is not arbitrary —
+
+84
+00:02:22,158 --> 00:02:24,658
+it sits at minus one thousand seventy-five times the
+
+85
+00:02:24,658 --> 00:02:25,658
+natural log of two.
+
+86
+00:02:26,270 --> 00:02:28,020
+So let us be precise about what was earned.
+
+87
+00:02:28,270 --> 00:02:29,478
+What the subtraction guarantees:
+
+88
+00:02:29,812 --> 00:02:32,395
+the largest weight becomes exactly one, so the denominator
+
+89
+00:02:32,395 --> 00:02:34,437
+is never below one, and the top end cannot
+
+90
+00:02:34,437 --> 00:02:35,437
+overflow.
+
+91
+00:02:35,437 --> 00:02:36,437
+What it does not guarantee:
+
+92
+00:02:36,437 --> 00:02:38,353
+that small probabilities survive at all.
+
+93
+00:02:38,687 --> 00:02:41,187
+This explanation does not establish that the function is
+
+94
+00:02:41,187 --> 00:02:42,187
+numerically stable.
+
+95
+00:02:42,353 --> 00:02:44,145
+It establishes that it is overflow-safe.
+
+96
+00:02:44,187 --> 00:02:46,437
+Those are two different claims, and only one of
+
+97
+00:02:46,437 --> 00:02:47,437
+them was tested.
+
+98
+00:02:47,670 --> 00:02:48,212
+Your turn.
+
+99
+00:02:48,212 --> 00:02:49,337
+Paste this into Claude.
+
+100
+00:02:49,545 --> 00:02:51,712
+It asks for an input where the max-subtraction stops
+
+101
+00:02:51,712 --> 00:02:53,878
+helping, for which end of the float range breaks
+
+102
+00:02:53,878 --> 00:02:55,878
+and why, and then for the narrowest claim the
+
+103
+00:02:55,878 --> 00:02:56,920
+fix actually supports.
+
+104
+00:02:57,587 --> 00:02:58,045
+Run it —
+
+105
+00:02:58,045 --> 00:02:59,628
+but write your own prediction of where the floor
+
+106
+00:02:59,628 --> 00:03:01,128
+sits before you read the answer.
+
+107
+00:03:01,545 --> 00:03:04,045
+Then watch whether Claude names underflow, or whether it
+
+108
+00:03:04,045 --> 00:03:06,003
+just repeats the word stable back at you.
+
+109
+00:03:07,090 --> 00:03:08,090
+Shifted, not changed.
+
+110
+00:03:08,090 --> 00:03:10,632
+One subtraction rewrites every number in the middle and
+
+111
+00:03:10,632 --> 00:03:12,507
+leaves the answer exactly where it was.
+
+112
+00:03:12,923 --> 00:03:13,757
+Overflow-safe —
+
+113
+00:03:13,757 --> 00:03:15,048
+and no further than that.
+

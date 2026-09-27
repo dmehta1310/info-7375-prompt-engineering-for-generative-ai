@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "title": "Same Seed, Same Run — Not the Same as Truth",
+    "slug": "gaikar-week-01-seed-repeatability",
+    "student": "Anisha Gaikar",
+    "course": "INFO 7375 — Prompt Engineering for Generative AI",
+    "week": 1,
+    "concept": "A seed makes a run repeatable; it does not make the answer true",
+    "purpose": "Show exactly what the seed controls in Chapter 1's sampler, reproduce two real runs, and draw a precise boundary between repeatability and truth.",
+    "engine": "kokoro",
+    "voice_kokoro": "af_bella",
+    "voice_speed": 0.94,
+    "synthetic_narration": true,
+    "clock": "narration",
+    "runtime_seconds": 193.016,
+    "visual_style": "Original motion graphics aligned with the course figures: white canvas, serif headings, dark outlines, gray support text, red emphasis, and gold footer rule.",
+    "course_source_revision": "cc6dbf177bc956975636e2fc1d4fed1ee4129d34",
+    "date": "2026-09-26"
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "QUESTION",
+      "title": "Same Seed, Same Run",
+      "narration_text": "Run the sampler once. Then run it again with the same seed. The counts match exactly. Does that agreement make the result true? No. In the next few minutes, I will show what a seed controls, reproduce Chapter One's actual output, and mark the boundary between replaying a process and checking a claim. This narration is synthetic and generated locally with Kokoro.",
+      "visual": "Two identical seed-7 run cards lock together, followed by a large question: REPEATABLE equals TRUE?",
+      "takeaway": "Repeatable output is evidence about a process—not about the world.",
+      "source_claims": [
+        "Chapter 1: a seed makes a run repeatable without making its answer true"
+      ],
+      "boundary": false,
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 23.83
+    },
+    {
+      "beat_id": "B01",
+      "act": "MECHANISM",
+      "title": "Where the Seed Enters",
+      "narration_text": "The course sample function receives logits, a count, a seed, and a temperature. It first converts the logits into probabilities. Then random dot Random, with the seed, creates a local pseudorandom generator. That generator makes weighted selections, and a Counter totals the selected labels. The seed starts the generator; it never changes the probability formula.",
+      "visual": "The actual function inputs flow through probabilities, random.Random(seed), weighted choices, and Counter.",
+      "takeaway": "The seed initializes the selection sequence; probabilities come from the logits.",
+      "source_claims": [
+        "Chapter 1 reference code: sample() in main.py"
+      ],
+      "boundary": false,
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 25.17
+    },
+    {
+      "beat_id": "B02",
+      "act": "REAL OUTPUT",
+      "title": "The Course Program: Seed 7",
+      "narration_text": "I ran the unmodified Chapter One reference program. Its constructed input is logits one, two, and three; count one thousand; temperature one; and seed seven. It prints label zero, one hundred two times; label one, two hundred sixty-eight times; and label two, six hundred thirty times. These are observed counts from the real program, not invented animation values.",
+      "visual": "A labeled COURSE CONSTRUCTED INPUT receipt expands into three observed-count bars: 102, 268, 630.",
+      "takeaway": "Actual seed-7 run: {0: 102, 1: 268, 2: 630}.",
+      "source_claims": [
+        "Unmodified course main.py output at course revision cc6dbf1"
+      ],
+      "boundary": false,
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 24.86
+    },
+    {
+      "beat_id": "B03",
+      "act": "REPEATABILITY TEST",
+      "title": "Reset to 7, Replay the Sequence",
+      "narration_text": "Now call the same function a second time with seed seven and every other input unchanged. The second run again gives one hundred two, two hundred sixty-eight, and six hundred thirty. The equality check returns true. This is the useful promise: when debugging, I can reset the generator to the same starting state and replay this particular experiment.",
+      "visual": "Run A and Run B reveal matching rows; an equality bracket closes with PASS.",
+      "takeaway": "Same code + same inputs + same seed → the same recorded sample here.",
+      "source_claims": [
+        "Reproduction in code/seed_demo.py",
+        "Chapter 1 repeatability discussion"
+      ],
+      "boundary": false,
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 23.33
+    },
+    {
+      "beat_id": "B04",
+      "act": "CONTROLLED CHANGE",
+      "title": "Change Only the Seed",
+      "narration_text": "Next, I changed only the seed from seven to eight. The logits, probabilities, count, and temperature stayed fixed. The observed counts changed to label zero, seventy-six; label one, two hundred thirty-nine; and label two, six hundred eighty-five. The distribution used for sampling did not change. The particular pseudorandom sequence, and therefore this finite sample, did.",
+      "visual": "Locked-control badges stay fixed while seed 7 flips to seed 8 and the observed bars move to 76, 239, 685.",
+      "takeaway": "A new seed selects a different reproducible run from the same distribution.",
+      "source_claims": [
+        "Recorded seed-8 output from the course function"
+      ],
+      "boundary": false,
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 24.79
+    },
+    {
+      "beat_id": "B05",
+      "act": "WHAT PASSED",
+      "title": "What the Test Actually Establishes",
+      "narration_text": "Chapter One's test calls sample with logits one and two, then compares that result with another call using the same defaults. The test passes because the default seed is seven in both calls. That is a repeatability test. It checks whether this implementation can replay its output under the same setup. It does not compare any label with an answer key.",
+      "visual": "A compact code comparison resolves to PASS; below it, an evidence card names exactly what passed.",
+      "takeaway": "PASS means reproducible call—not verified content.",
+      "source_claims": [
+        "test_main.py repeatability test"
+      ],
+      "boundary": false,
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 22.46
+    },
+    {
+      "beat_id": "B06",
+      "act": "BOUNDARY",
+      "title": "The Function Has No Truth Input",
+      "narration_text": "Look at the function's inputs: logits, count, seed, and temperature. There is no source, answer key, evidence check, or correctness argument. So the function can tell us which labels were selected and whether a run can be repeated. It cannot tell us whether a selected label describes reality. Repeating a mistake perfectly still preserves the mistake.",
+      "visual": "Four accepted inputs enter the sampler; source, answer key, and verifier are shown outside the function with red crosses.",
+      "takeaway": "No verification mechanism enters the sampler.",
+      "source_claims": [
+        "Chapter 1 boundary: a seed is for replay, not judging content"
+      ],
+      "boundary": true,
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 23.16
+    },
+    {
+      "beat_id": "B07",
+      "act": "CONCLUSION",
+      "title": "Replay Is Not Verification",
+      "narration_text": "The complete claim is small but important. A seed fixes the starting state of the pseudorandom selection process, so a run can be replayed under the same setup. Changing the seed can change the observed sample while leaving the probabilities fixed. This explanation establishes repeatability of the process. It does not establish truth, correctness, or factual support for any sampled output.",
+      "visual": "A final two-column boundary: ESTABLISHES replayability; DOES NOT ESTABLISH truth, correctness, or support.",
+      "takeaway": "Seed = replay control. Seed ≠ truth check.",
+      "source_claims": [
+        "Chapter 1 seed summary and claim boundary"
+      ],
+      "boundary": true,
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 25.41
+    }
+  ]
+}

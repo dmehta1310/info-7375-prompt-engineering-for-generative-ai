@@ -1,0 +1,606 @@
+{
+  "metadata": {
+    "title": "Three Scores Are Not Yet Three Chances",
+    "slug": "three-scores-not-three-chances",
+    "topic": "CHAPTER 1 · SCORES TO CHANCES",
+    "register": "Plain",
+    "audience": "Claude",
+    "brand": "claude",
+    "engine": "kokoro",
+    "voice_kokoro": "am_onyx",
+    "persona": "Synthetic Kokoro am_onyx voice (disclosed in SOURCES.md and on the end card)",
+    "palette": "claude",
+    "style_preset": "claude",
+    "greeting": "Varnika",
+    "note": "INFO 7375 Week 01 video, Varnika M. ONE concept from Chapter 1 Part 2: three scores are not yet three chances. Real numbers from lessons/01-randomness-and-first-prompts/code/main.py (evidence/). Constructed inputs are labelled on screen. Narration approved by Varnika on 2026-09-26. Varnika later removed the line where the voice introduced itself; the synthetic-voice disclosure is in SOURCES.md.",
+    "build": {
+      "at": "2026-09-26T22:23:28",
+      "cut": "master",
+      "filled": 11,
+      "of": 11,
+      "slates": [],
+      "skin_warnings": [
+        "B10: palette=claude but the outro is 'un-annotated' — OUTRO LAW wants ClaudeTitleOutro"
+      ]
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "ASK",
+      "narration_text": "A model gives three options the scores one, two and three. So what are the chances of each? Not one, two and three. Scores are not chances. Let's see why.",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "lane": "bookend",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "composer: greeting 'Varnika'; question types itself"
+          },
+          {
+            "at": 0.5,
+            "event": "running indicator 'running main.py…'"
+          },
+          {
+            "at": 0.75,
+            "event": "three output lines: real main.py numbers + 'Reconstructed interface · not a Claude reply'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Varnika",
+            "command": "A model gives three options the scores 1, 2 and 3. What are the chances of each?",
+            "runningText": "running main.py…",
+            "output": [
+              "main.py (Python 3.12.14, 2026-09-26) prints:",
+              "scores 1, 2, 3  →  chances 0.090, 0.245, 0.665",
+              "Reconstructed interface · not a Claude reply"
+            ],
+            "segment": "Three Scores, Three Chances",
+            "topic": "CHAPTER 1 · SCORES TO CHANCES",
+            "folderLabel": "Varnika M"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": "2026-09-27T00:38:18.366701+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 8.53,
+      "render_duration_s": 8.541666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-09-26T22:23:28"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "OVERVIEW",
+      "narration_text": "A model's scores only rank its options. Before they can be chances, every one has to become positive, and together they must add up to one. Here's the conversion that does both.",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "lane": "bookend",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "heading 'Scores → Chances' and three cards (Scores / Rule 1 / Rule 2) stay on screen throughout"
+          },
+          {
+            "at": 0.0,
+            "event": "writer types 'A model's scores are its chances.'"
+          },
+          {
+            "at": 0.3,
+            "event": "'chances' highlighted, deleted, replaced by 'ranking — not its chances'"
+          },
+          {
+            "at": 0.6,
+            "event": "second line types: 'Probabilities must be positive and add up to one'"
+          }
+        ],
+        "remotion": {
+          "pattern": "BrutalistHesitantWriter",
+          "props": {
+            "text": "A model's scores are its chances.\nProbabilities must be positive and add up to one",
+            "triggerWords": "chances",
+            "replacementWords": "ranking — not its chances",
+            "mistakeRate": 0,
+            "seed": "varnika-three-scores",
+            "fontSize": 76,
+            "charMs": 26,
+            "hesitateBetween": 0,
+            "hesitateWithin": 0,
+            "contextTitle": "Scores → Chances",
+            "contextItems": [
+              {
+                "label": "Scores",
+                "detail": "only rank the options: 1, 2, 3"
+              },
+              {
+                "label": "Rule 1",
+                "detail": "no chance can be negative"
+              },
+              {
+                "label": "Rule 2",
+                "detail": "all chances add up to 1"
+              }
+            ],
+            "yOffset": -40
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": "2026-09-27T02:18:05.360781+00:00"
+          }
+        }
+      },
+      "lead_silence_s": 0.8,
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 10.07,
+      "render_duration_s": 10.083333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "remotion:BrutalistHesitantWriter",
+        "at": "2026-09-26T22:23:28"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "I — Scores Are Not Chances",
+      "narration_text": "Here are the three scores. The third option has the highest, so we know the order. But chances follow two rules. None can be negative. And together they must add up to one. Watch the total. These add up to six. So they're not chances yet.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "lane": "manim",
+        "visual_intent": "Three bars with numerals 1,2,3 over option labels A, B, C; two-rule checklist; total counter climbs to 6 and the sum rule fails.",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "three bars rise with numerals 1, 2, 3"
+          },
+          {
+            "at": 0.3,
+            "event": "checklist: 'No negatives' ✓"
+          },
+          {
+            "at": 0.5,
+            "event": "'Adds up to 1' row appears"
+          },
+          {
+            "at": 0.65,
+            "event": "total counter counts up to 6"
+          },
+          {
+            "at": 0.8,
+            "event": "'Adds up to 1' gets ✗ in terracotta"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B02_ScoresNotChances",
+        "production_viz": {
+          "scores": [
+            1,
+            2,
+            3
+          ],
+          "sum": 6,
+          "source": "evidence/main_py_output.txt (lesson demo input)"
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 12.61,
+      "render_duration_s": 12.625,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B02.mp4",
+        "filled_by": "manim",
+        "at": "2026-09-26T22:23:28"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "II — The Shortcut Breaks",
+      "narration_text": "The obvious fix: divide each score by the total. One sixth, two sixths, three sixths. That works here. But scores can be negative. Take minus one, two and three, an example we made up. The total is four, and minus one divided by four is minus a quarter. A negative chance. The shortcut breaks.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "lane": "manim",
+        "visual_intent": "Divide-by-total on [1,2,3] gives 0.167/0.333/0.500 (sums to 1). Swap to CONSTRUCTED [-1,2,3], total 4: first value becomes -0.25, below zero.",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "'score ÷ total' label; values 0.167, 0.333, 0.500 appear under bars"
+          },
+          {
+            "at": 0.35,
+            "event": "CONSTRUCTED EXAMPLE tag; scores become -1, 2, 3"
+          },
+          {
+            "at": 0.6,
+            "event": "total 4; -1 ÷ 4 = -0.25; first bar drops below the zero line"
+          },
+          {
+            "at": 0.85,
+            "event": "'negative chance' marked in terracotta"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B03_ShortcutBreaks",
+        "production_viz": {
+          "divide_by_sum_123": [
+            0.1667,
+            0.3333,
+            0.5
+          ],
+          "constructed": [
+            -1,
+            2,
+            3
+          ],
+          "divide_by_sum_constructed": [
+            -0.25,
+            0.5,
+            0.75
+          ],
+          "source": "evidence/worked_steps.txt"
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 16.06,
+      "render_duration_s": 16.083333333333332,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B03.mp4",
+        "filled_by": "manim",
+        "at": "2026-09-26T22:23:28"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "III — Step One: Positive Weights",
+      "narration_text": "The course code fixes this in two steps. Step one: turn every score into a positive weight. It subtracts the top score to keep the numbers small, then applies the exponential function, which turns any number into a positive one. A bigger score still gets a bigger weight.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "lane": "manim",
+        "visual_intent": "The real probabilities() code excerpt with the max and exp lines lit; then scores 1,2,3 → -2,-1,0 → 0.135,0.368,1.000.",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "code excerpt from main.py appears"
+          },
+          {
+            "at": 0.3,
+            "event": "'peak = max(logits)' line lit"
+          },
+          {
+            "at": 0.45,
+            "event": "row: 1, 2, 3 → minus 3 → -2, -1, 0"
+          },
+          {
+            "at": 0.65,
+            "event": "'math.exp' line lit"
+          },
+          {
+            "at": 0.75,
+            "event": "row: exp → 0.135, 0.368, 1.000, all positive"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B04_PositiveWeights",
+        "production_viz": {
+          "shifted": [
+            -2,
+            -1,
+            0
+          ],
+          "weights": [
+            0.135335,
+            0.367879,
+            1.0
+          ],
+          "source": "lessons/01-randomness-and-first-prompts/code/main.py lines 14-15; evidence/worked_steps.txt"
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 14.7,
+      "render_duration_s": 14.708333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B04.mp4",
+        "filled_by": "manim",
+        "at": "2026-09-26T22:23:28"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "IV — Step Two: Divide By The Total",
+      "narration_text": "Step two: add the weights, about one point five zero three, and divide each one by that total. Point zero nine, point two four five, point six six five. Exactly what main dot py prints. Nothing negative, they add up to one, and the top score still has the top chance.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "lane": "manim",
+        "visual_intent": "Weights sum to 1.503; each divided by it gives 0.090, 0.245, 0.665; total lands on 1.000; real main.py output shown beside.",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "weights 0.135, 0.368, 1.000 and their total 1.503"
+          },
+          {
+            "at": 0.35,
+            "event": "each weight ÷ 1.503 → 0.090, 0.245, 0.665 as bars"
+          },
+          {
+            "at": 0.6,
+            "event": "real main.py printed output panel appears alongside"
+          },
+          {
+            "at": 0.8,
+            "event": "total counter lands on 1.000"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B05_DivideByTotal",
+        "production_viz": {
+          "total": 1.503215,
+          "probabilities": [
+            0.09003057317038046,
+            0.24472847105479764,
+            0.6652409557748218
+          ],
+          "source": "evidence/main_py_output.txt"
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 15.4,
+      "render_duration_s": 15.416666666666666,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B05.mp4",
+        "filled_by": "manim",
+        "at": "2026-09-26T22:23:28"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "V — The Broken Case, Fixed",
+      "narration_text": "And the example that broke the shortcut? Minus one, two, three becomes about point zero one three, point two six five and point seven two one. Every chance positive, the same order as the scores, and a total of one.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "lane": "manim",
+        "visual_intent": "CONSTRUCTED [-1,2,3] through both steps: weights 0.018, 0.368, 1.000 (total 1.386) → 0.013, 0.265, 0.721; all positive, total 1.",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "CONSTRUCTED tag; scores -1, 2, 3"
+          },
+          {
+            "at": 0.3,
+            "event": "step 1 → weights 0.018, 0.368, 1.000"
+          },
+          {
+            "at": 0.55,
+            "event": "step 2 → 0.013, 0.265, 0.721 as bars, all above zero"
+          },
+          {
+            "at": 0.85,
+            "event": "total 1.000"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B06_BrokenCaseFixed",
+        "production_viz": {
+          "constructed": [
+            -1,
+            2,
+            3
+          ],
+          "probabilities": [
+            0.0132,
+            0.2654,
+            0.7214
+          ],
+          "source": "evidence/worked_steps.txt"
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 12.57,
+      "render_duration_s": 12.583333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B06.mp4",
+        "filled_by": "manim",
+        "at": "2026-09-26T22:23:28"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "VI — What This Does Not Tell You",
+      "narration_text": "Here's what this does not tell you. The conversion makes valid chances from whatever scores it's given. It never checks which option is correct. If the scores favour a wrong answer, you still get tidy chances that add up to one, for the wrong answer.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "lane": "manim",
+        "visual_intent": "CONSTRUCTED HYPOTHETICAL: an answer key marks option A correct; the chances are unchanged and 66.5% still sits on option C.",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "bars 0.090, 0.245, 0.665 from the real run"
+          },
+          {
+            "at": 0.3,
+            "event": "CONSTRUCTED HYPOTHETICAL tag; 'answer key: option A' tick"
+          },
+          {
+            "at": 0.6,
+            "event": "bars do not move; 0.665 on option C labelled 'wrong under this key'"
+          },
+          {
+            "at": 0.85,
+            "event": "line: 'Adds up to 1. Still not checked.'"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B07_NotATruthCheck",
+        "production_viz": {
+          "probabilities": [
+            0.09,
+            0.245,
+            0.665
+          ],
+          "hypothetical_answer_key": 0,
+          "source": "Chapter 1, 'Temperature is a concentration control' (constructed hypothetical)"
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 13.35,
+      "render_duration_s": 13.375,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B07.mp4",
+        "filled_by": "manim",
+        "at": "2026-09-26T22:23:28"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "act": "VERDICT",
+      "narration_text": "Scores rank. Two steps turn them into chances: make each positive, then divide by the total. And none of it checks whether the favourite is true.",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "lane": "bookend",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "verdict card; lines appear in narration order"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Three Scores Are Not Yet Three Chances",
+            "artifactHeading": "What the conversion does",
+            "artifactLines": [
+              "Scores rank the options.",
+              "Step 1: make every weight positive.",
+              "Step 2: divide by the total.",
+              "Result: chances that add up to 1.",
+              "Does NOT check which option is true."
+            ],
+            "brandLabel": "Varnika M · INFO 7375"
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": "2026-09-26T21:55:59.855718+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B08.mp3",
+      "actual_duration_s": 8.11,
+      "render_duration_s": 8.125,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B08.mp4",
+        "filled_by": "remotion:ClaudeVerdictArtifact",
+        "at": "2026-09-26T22:23:28"
+      }
+    },
+    {
+      "beat_id": "B09",
+      "act": "YOUR TURN",
+      "narration_text": "Your turn. Paste this into Claude: Here are three scores: 2, 0 and minus 3. Before calculating, predict which option gets the biggest chance and whether any chance can be negative. Then convert them to probabilities step by step and show that they add up to one. Make your prediction first. Then check Claude's arithmetic by running probabilities on the same scores in main dot py. If they disagree, trust the code you can run.",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "lane": "bookend",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "composer 'Your turn.'; suggested prompt types in; no answer shown"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "command": "Here are three scores: [2, 0, -3]. Before calculating, predict which option gets the biggest chance and whether any chance can be negative. Then convert them to probabilities step by step and show that they add up to one.",
+            "runningText": "paste this into Claude…",
+            "segment": "Your Turn",
+            "topic": "CHAPTER 1 · SCORES TO CHANCES",
+            "folderLabel": "Varnika M"
+          },
+          "rendered": {
+            "out": "media/B09.mp4",
+            "at": "2026-09-26T21:57:49.103316+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B09.mp3",
+      "actual_duration_s": 21.29,
+      "render_duration_s": 21.291666666666668,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B09.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-09-26T22:23:28"
+      }
+    },
+    {
+      "beat_id": "B10",
+      "act": "OUTRO",
+      "narration_text": "Three scores are not yet three chances.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "lane": "manim",
+        "visual_intent": "Title restated; credit line: Varnika M · INFO 7375 · Week 01; narration: Kokoro am_onyx (synthetic voice).",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "title 'Three Scores Are Not Yet Three Chances.' with terracotta period"
+          },
+          {
+            "at": 0.5,
+            "event": "credit line and synthetic-voice note"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B10_TitleOutro",
+        "production_viz": {
+          "note": "Own outro card instead of ClaudeTitleOutro, whose handle is hardcoded to @NikBearBrown (OUTRO-LOCK.md); a student reel must not imply the instructor's channel."
+        }
+      },
+      "audio_file": "mp3/beat-B10.mp3",
+      "actual_duration_s": 2.99,
+      "render_duration_s": 3.0,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B10.mp4",
+        "filled_by": "manim",
+        "at": "2026-09-26T22:23:28"
+      }
+    }
+  ]
+}

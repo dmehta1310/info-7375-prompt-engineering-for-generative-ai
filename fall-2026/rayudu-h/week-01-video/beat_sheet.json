@@ -1,0 +1,627 @@
+{
+  "metadata": {
+    "title": "Temperature Is Concentration, Not Truth.",
+    "slug": "temperature-is-concentration",
+    "topic": "TEMPERATURE · INFO 7375",
+    "register": "Plain",
+    "audience": "Students",
+    "brand": "claude",
+    "engine": "kokoro",
+    "voice_kokoro": "af_bella",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "greeting": "Namaste, Hemanth",
+    "greeting_note": "hello lexicon: Hindi, one word. Wagwan mod-10 rule is Bear's only and does not apply — this reel is not on the claude-liam channel.",
+    "color_semantics": "Claude fidelity palette throughout: cream #FAF9F5 page, warm ink #3D3929, terracotta #D97757 as the ONE accent. Manim beats use the same three on a white canvas.",
+    "note": "INFO 7375 Week 1 coursework explainer, not a channel reel. Deviations from ai-explainer defaults, each deliberate: (1) voice af_bella instead of am_onyx — the assignment brief specifies it as the plain teaching voice, so IN-FOR-BEAR LAW does not apply and no Liam/Bear persona is claimed; (2) outro is a REEL-LOCAL Manim scene (B08_TitleCredit in scenes.py), not ClaudeTitleOutro — the latter hardcodes @NikBearBrown (OUTRO-LOCK.md, scoped to claude-liam-* slugs only) and this reel is credited to its actual author; keeping the outro in-reel means the assignment adds nothing to the toolkit; (3) register Plain rather than Teardown, matching the teaching audience. ILLUSTRATE LAW: the Claude UI appears only at B00 (the student's prompt, no result lines), the B03 question micro-beat, B06 verdict, and B07 handoff. B01A/B02/B04/B05 are Manim figures. There are no ASK→RESULT pairs — see (4). EQUATIONS: rendered via the _math() unicode fallback in runtime/manim/animated_graphics.py — LaTeX is deliberately not installed, so MathTex degrades to italic serif Text and no raw TeX ever reaches the screen. EVIDENCE: every on-screen figure was reproduced locally from chapter1-course/lessons/01-randomness-and-first-prompts/code/main.py under Python 3.9.10 and 3.12.9; see SOURCES.md. (4) CLAUDE-UI BEATS SHOW PROMPTS, NEVER RESPONSES — deliberate deviation from COLD OPEN LAW and the ASK→RESULT running indicator. The assignment requires that any Claude response shown on screen be a real one, captured and dated; none here was. So B00 shows the student's prompt with no result lines, B03 drops 'rendering Manim…', and the composer model chip is blank in B00/B03/B07 (its default was a real model name). Changed 2026-09-25.",
+    "tags": [
+      "temperature",
+      "softmax",
+      "randomness",
+      "INFO 7375",
+      "prompt engineering",
+      "probability",
+      "Chapter 1"
+    ],
+    "build": {
+      "at": "2026-09-26T01:35:32",
+      "cut": "master",
+      "filled": 10,
+      "of": 10,
+      "slates": [],
+      "skin_warnings": [
+        "B08: palette=claude but the outro is 'un-annotated' — OUTRO LAW wants ClaudeTitleOutro"
+      ]
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "ASK",
+      "narration_text": "Everyone will tell you temperature is the creativity dial. Turn it up for wild, turn it down for accurate. That is not what the number does. One line of arithmetic shows what it actually controls — and the answer is not truth.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 17,
+      "shot": {
+        "type": "UI",
+        "source": "remotion",
+        "motion": "type",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "ClaudeComposerAsk on the cream page; greeting 'Namaste, Hemanth' in serif above the composer"
+          },
+          {
+            "at": 0.25,
+            "event": "the ask types itself into the composer, terracotta send button arms"
+          },
+          {
+            "at": 0.55,
+            "event": "spark line under the composer: 'the question this video answers' — the prompt is framed as the question, and no Claude answer is shown"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Namaste, Hemanth",
+            "topic": "TEMPERATURE · INFO 7375",
+            "segment": "Temperature Is Concentration, Not Truth.",
+            "command": "Chapter 1 gives me a softmax over the scores 1, 2, 3 and a temperature knob. Show me exactly what temperature changes and what it leaves alone — using the ratio between two outcomes, not a creativity metaphor. Then name the one thing that explanation still cannot establish.",
+            "runningText": "the question this video answers",
+            "folderLabel": "INFO 7375",
+            "modelLabel": "",
+            "effortLabel": ""
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": "2026-09-25T18:46:55.835031+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 13.91,
+      "audio_file": "mp3/beat-B00.mp3",
+      "render_duration_s": 13.916666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-09-26T01:35:32"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "BLUF",
+      "narration_text": "Temperature is a concentration control. It decides how concentrated the choice is — not how truthful it is. Get that backwards, and you will trust a number for the wrong reason.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 13,
+      "lead_silence_s": 0.8,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "type",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "cream page; the writer starts typing as the voice starts (no lead silence — the pipeline does not implement lead_silence_s)"
+          },
+          {
+            "at": 0.12,
+            "event": "'creativity' turns terracotta as the voice says 'concentration control' — the misconception, about to be struck"
+          },
+          {
+            "at": 0.2,
+            "event": "'creativity' is deleted and retyped as 'concentration': line 2 now reads 'a concentration control.'"
+          },
+          {
+            "at": 0.56,
+            "event": "'truthful' turns terracotta as the voice says 'not how truthful it is'"
+          },
+          {
+            "at": 0.73,
+            "event": "'truthful' is deleted and retyped as 'concentrated': line 4 now reads 'concentrated the choice is.'"
+          },
+          {
+            "at": 0.81,
+            "event": "corrected overview holds in ink, word-for-word the narration: 'Temperature is a concentration control. It decides how concentrated the choice is.'"
+          }
+        ],
+        "remotion": {
+          "pattern": "BrutalistHesitantWriter",
+          "props": {
+            "text": "Temperature is\na creativity control.\nIt decides how\ntruthful the choice is.",
+            "triggerWords": "creativity, truthful",
+            "replacementWords": "concentration, concentrated",
+            "face": "serif",
+            "fontSize": 145,
+            "lineSpacing": 1.3,
+            "align": "center",
+            "seed": "temperature-is-concentration",
+            "charMs": 20,
+            "mistakeRate": 0,
+            "hesitateWithin": 0,
+            "hesitateBetween": 0
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": "2026-09-25T18:25:22.648488+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 10.99,
+      "audio_file": "mp3/beat-B01.mp3",
+      "render_duration_s": 11.0,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "remotion:BrutalistHesitantWriter",
+        "at": "2026-09-26T01:35:32"
+      }
+    },
+    {
+      "beat_id": "B01A",
+      "act": "ANALOGY",
+      "narration_text": "Think of the contrast slider on a photo. Slide it up, and bright parts get brighter and dark parts get darker — everything pops. Slide it down, and it all washes toward the same flat grey. But the brightest pixel stays the brightest. Temperature is that slider, run backwards: lower temperature, higher contrast. It changes how much the outcomes differ — never which one is on top. And a high-contrast photo is not a more accurate photo.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 25,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "motion": "illustrate",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "white stage; 'The Contrast Slider' writes in; three grey swatches fade in at baseline separation, ink-stroked, labelled outcome 0 / 1 / 2"
+          },
+          {
+            "at": 0.12,
+            "event": "a terracotta marker drops onto the brightest swatch (outcome 2) and stays pinned there for the entire beat"
+          },
+          {
+            "at": 0.22,
+            "event": "on 'slide it up' the knob travels right; the swatches spread apart — outcome 2 to near-white, outcome 0 to near-ink; caption reads 'high contrast · low temperature'"
+          },
+          {
+            "at": 0.45,
+            "event": "on 'slide it down' the knob travels left; all three wash toward one flat grey; caption reads 'low contrast · high temperature'"
+          },
+          {
+            "at": 0.66,
+            "event": "knob returns to centre, swatches return to baseline; the pinned marker has not moved once"
+          },
+          {
+            "at": 0.7,
+            "event": "on 'run backwards' the caption swaps to 'lower temperature  →  higher contrast' — the inversion stated on screen, so 'slide it up' cannot be heard as 'turn temperature up'"
+          },
+          {
+            "at": 0.76,
+            "event": "on 'never which one is on top' the line 'the brightest never changes' lands beneath the marker"
+          },
+          {
+            "at": 0.88,
+            "event": "closing line 'a sharper photo is not a truer photo' holds; the foot caption 'analogy — illustrative, not measured' stays on screen throughout"
+          }
+        ],
+        "manim": {
+          "scene_class": "B01A_ContrastSlider",
+          "file": "scenes.py"
+        },
+        "rendered": {
+          "out": "media/B01A.mp4",
+          "at": ""
+        }
+      },
+      "actual_duration_s": 26.18,
+      "audio_file": "mp3/beat-B01A.mp3",
+      "render_duration_s": 26.208333333333332,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B01A.mp4",
+        "filled_by": "manim:B01A_ContrastSlider",
+        "at": "2026-09-26T01:35:32"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "FRAMEWORK",
+      "narration_text": "Here is the whole machine. Three scores — one, two, three. Exponentiate each one, divide by the total, and every outcome gets a probability. At temperature one those come out to zero point zero nine, zero point two four, and zero point six seven. That is the baseline. Every number after this is the same three scores, seen at a different temperature.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 25,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "motion": "illustrate",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "three score chips appear in a row: 1, 2, 3 (ink on white)"
+          },
+          {
+            "at": 0.22,
+            "event": "each chip sprouts exp(z/T) above it; the shared divisor bar draws in beneath"
+          },
+          {
+            "at": 0.5,
+            "event": "three bars grow to 0.0900, 0.2447, 0.6652 — values count up on the bars as they rise"
+          },
+          {
+            "at": 0.72,
+            "event": "sum readout settles at 1.000000 in terracotta — the one accent"
+          },
+          {
+            "at": 0.88,
+            "event": "label 'T = 1 · baseline' pins under the tallest bar; scores stay visible for the next beat"
+          }
+        ],
+        "manim": {
+          "scene_class": "B02_ScoresToProbs",
+          "file": "scenes.py"
+        },
+        "rendered": {
+          "out": "media/B02.mp4",
+          "at": ""
+        }
+      },
+      "actual_duration_s": 22.42,
+      "audio_file": "mp3/beat-B02.mp3",
+      "render_duration_s": 22.458333333333332,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B02.mp4",
+        "filled_by": "manim:B02_ScoresToProbs",
+        "at": "2026-09-26T01:35:32"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "ASK",
+      "narration_text": "So ask the machine the only question that isolates temperature: what happens to the ratio between two outcomes?",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 9,
+      "shot": {
+        "type": "UI",
+        "source": "remotion",
+        "motion": "reveal",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "cut to the Claude composer, the student's question already typed — the question B04's figure answers (the figure is the reel's own Manim scene, not a Claude output)"
+          },
+          {
+            "at": 0.45,
+            "event": "running indicator: 'the question the next figure answers'"
+          },
+          {
+            "at": 0.8,
+            "event": "send button pulses terracotta once, then cut"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "The ratio,",
+            "topic": "TEMPERATURE · INFO 7375",
+            "segment": "The Ratio",
+            "command": "Plot p2/p0 for the softmax over scores [1, 2, 3] at T = 0.5, 1, 2. Show the score gap staying fixed at 2 while only T changes, and check each ratio against exp(2/T).",
+            "runningText": "the question the next figure answers",
+            "output": [],
+            "folderLabel": "INFO 7375",
+            "modelLabel": "",
+            "effortLabel": ""
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": "2026-09-25T18:48:41.552241+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 7.17,
+      "audio_file": "mp3/beat-B03.mp3",
+      "render_duration_s": 7.208333333333333,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-09-26T01:35:32"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "MECHANISM",
+      "narration_text": "Divide outcome two by outcome zero. They share the same total underneath, so it cancels — what is left depends only on the gap between their scores, divided by T. That gap is fixed at two. At temperature zero point five the ratio is fifty-four point six. At one, seven point three nine. At two, just two point seven two — exactly e to the fourth, e squared, and e. No temperature can turn a positive gap negative, so no two outcomes ever swap places.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 26,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "motion": "illustrate",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "title; p₂/p₀ written as two fractions, each over the SAME total Σ exp(z / T) — the definition from B02"
+          },
+          {
+            "at": 0.12,
+            "event": "on 'so it cancels' the shared total is struck through top and bottom and falls away"
+          },
+          {
+            "at": 0.22,
+            "event": "what remains resolves into the identity p₂ / p₀ = exp((z₂ − z₀) / T), which rises to the top of the frame"
+          },
+          {
+            "at": 0.33,
+            "event": "on 'fixed at two' the gap pins: z₂ − z₀ = 2 (fixed), the beat's one terracotta element"
+          },
+          {
+            "at": 0.4,
+            "event": "table frame lands — T = 0.5 / 1 / 2 and the ordering strip — then each ratio and its bar arrive as the voice says it"
+          },
+          {
+            "at": 0.8,
+            "event": "on 'exactly e to the fourth, e squared, and e' the e-column lands: = e⁴, e², e¹"
+          },
+          {
+            "at": 0.9,
+            "event": "on 'no two outcomes ever swap places' the ordering strip darkens and grows — the conclusion the cancellation made inevitable"
+          }
+        ],
+        "manim": {
+          "scene_class": "B04_RatioCollapse",
+          "file": "scenes.py"
+        },
+        "rendered": {
+          "out": "media/B04.mp4",
+          "at": ""
+        }
+      },
+      "actual_duration_s": 31.25,
+      "audio_file": "mp3/beat-B04.mp3",
+      "render_duration_s": 31.25,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B04.mp4",
+        "filled_by": "manim:B04_RatioCollapse",
+        "at": "2026-09-26T01:35:32"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "BOUNDARY",
+      "narration_text": "Now the limit — what this does not establish. Push the temperature down and the best outcome dominates, but it never becomes certain: at zero point one the worst still holds two times ten to the minus nine. Temperature zero is refused outright — the function raises a value error. Concentration is not correctness. Turn the contrast all the way up on a photo of the wrong person, and all you get is a sharper picture of the wrong person.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 28,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "motion": "illustrate",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "a single temperature axis sweeps down from T = 1 toward 0"
+          },
+          {
+            "at": 0.24,
+            "event": "the outcome-2 bar grows toward full height but a visible sliver always remains for outcome 0"
+          },
+          {
+            "at": 0.42,
+            "event": "callout at T = 0.1: p₀ = 2.061060e-09 — 'small, not zero'"
+          },
+          {
+            "at": 0.6,
+            "event": "T = 0 is reached; the axis stops dead and a refusal card snaps in terracotta: ValueError: Need logits and a positive finite temperature"
+          },
+          {
+            "at": 0.8,
+            "event": "the bars dim and one line replaces them: 'concentration ≠ correctness'"
+          },
+          {
+            "at": 0.92,
+            "event": "that line holds alone on the white canvas"
+          },
+          {
+            "at": 0.86,
+            "event": "the three swatches from B01A return above the refusal card, at full high contrast — the analogy called back on the boundary beat"
+          },
+          {
+            "at": 0.93,
+            "event": "the line 'a sharper picture of the wrong person' lands beneath 'concentration ≠ correctness'"
+          }
+        ],
+        "manim": {
+          "scene_class": "B05_ConcentrationLimit",
+          "file": "scenes.py"
+        },
+        "rendered": {
+          "out": "media/B05.mp4",
+          "at": ""
+        }
+      },
+      "actual_duration_s": 26.3,
+      "audio_file": "mp3/beat-B05.mp3",
+      "render_duration_s": 26.333333333333332,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B05.mp4",
+        "filled_by": "manim:B05_ConcentrationLimit",
+        "at": "2026-09-26T01:35:32"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "VERDICT",
+      "narration_text": "So, one page. Temperature divides the score gap before exponentiating, so it rescales every ratio at once. The ordering is untouched — outcome two wins at every temperature we tested. The sampled counts agree: eight hundred forty-nine, six hundred thirty, four hundred sixty-nine, at seed seven. And none of that is evidence the answer is right.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 24,
+      "shot": {
+        "type": "UI",
+        "source": "remotion",
+        "motion": "reveal",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Claude artifact page opens on the cream ground, titled 'Temperature — one page'"
+          },
+          {
+            "at": 0.2,
+            "event": "line 1 reveals: the mechanism"
+          },
+          {
+            "at": 0.42,
+            "event": "line 2 reveals: ordering untouched"
+          },
+          {
+            "at": 0.64,
+            "event": "line 3 reveals: the seed-7 counts"
+          },
+          {
+            "at": 0.85,
+            "event": "line 4 reveals in terracotta: the boundary"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "sparkLine": "",
+            "artifactTitle": "Temperature — one page",
+            "artifactHeading": "What the number does",
+            "artifactLines": [
+              "Mechanism: p_i/p_k = exp((z_i − z_k)/T). Normalization cancels, so T rescales every ratio at once.",
+              "Verified: p₂/p₀ = 54.5981500331 / 7.3890560989 / 2.7182818285 at T = 0.5 / 1 / 2 — exactly e⁴ / e² / e¹.",
+              "Ordering [2, 1, 0] never changes. Seed 7, n = 1000: outcome 2 is drawn 849 / 630 / 469 times at T = 0.5 / 1 / 2 — at T = 2 the full count is 202 / 329 / 469, still in order.",
+              "Limit case: at T = 0.1 the worst outcome still holds 2.061060e-09 — small, not zero. T = 0 raises ValueError.",
+              "Boundary: concentration is not correctness. T cannot add information the program never received.",
+              "Reproduced: main.py run 3x under Python 3.9.10 and 3.12.9 — identical counts each time. Matched on these versions, not proven universal."
+            ]
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": "2026-09-26T05:25:44.331309+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 22.36,
+      "audio_file": "mp3/beat-B06.mp3",
+      "render_duration_s": 22.375,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "remotion:ClaudeVerdictArtifact",
+        "at": "2026-09-26T01:35:32"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "HANDOFF",
+      "narration_text": "Your turn. Here is the prompt: take a softmax over the scores one, two, three. Compute p two over p zero at T equals zero point five, one, and two, and check each value against e to the two over T. Now change only the middle score, to two point five, and recompute: tell me which ratios moved, which stayed fixed, and why the fixed one had to stay fixed. Run it, and watch which one holds still — that is the identity doing the work.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 27,
+      "shot": {
+        "type": "UI",
+        "source": "remotion",
+        "motion": "type",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "composer returns, greeting replaced by 'Your turn.'"
+          },
+          {
+            "at": 0.2,
+            "event": "the suggested prompt types itself in full, read aloud as it lands"
+          },
+          {
+            "at": 0.7,
+            "event": "running indicator: 'paste this into Claude…'"
+          },
+          {
+            "at": 0.88,
+            "event": "prompt holds fully visible so the viewer can pause and copy it"
+          },
+          {
+            "at": 0.2,
+            "event": "the narration reads the on-screen prompt aloud word for word, including '2.5' and 'why the fixed one had to stay fixed', then one line on what to watch for"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "YOUR TURN · TEMPERATURE",
+            "segment": "Temperature Is Concentration, Not Truth.",
+            "command": "Take a softmax over the scores [1, 2, 3]. Compute p2/p0 at T = 0.5, 1, and 2, and check each value against exp(2/T). Now change ONLY the middle score, to 2.5, and recompute: tell me which ratios moved, which stayed fixed, and why the fixed one had to stay fixed.",
+            "runningText": "paste this into Claude…",
+            "output": [],
+            "folderLabel": "INFO 7375",
+            "modelLabel": "",
+            "effortLabel": ""
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": "2026-09-26T05:27:40.263770+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 24.6,
+      "audio_file": "mp3/beat-B07.mp3",
+      "render_duration_s": 24.625,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-09-26T01:35:32"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "act": "OUTRO",
+      "narration_text": "Temperature is concentration, not truth.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "estimated_duration_s": 6,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "motion": "reveal",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "title restates poster-style in serif on the cream page, terminal period in terracotta"
+          },
+          {
+            "at": 0.45,
+            "event": "credit line settles beneath: Hemanth Rayudu"
+          },
+          {
+            "at": 0.7,
+            "event": "subcredit: INFO 7375 · Week 1"
+          }
+        ],
+        "manim": {
+          "scene_class": "B08_TitleCredit",
+          "file": "scenes.py"
+        },
+        "rendered": {
+          "out": "manim/B08.mp4",
+          "at": ""
+        }
+      },
+      "actual_duration_s": 2.47,
+      "audio_file": "mp3/beat-B08.mp3",
+      "render_duration_s": 2.5,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B08.mp4",
+        "filled_by": "manim:B08_TitleCredit",
+        "at": "2026-09-26T01:35:32"
+      }
+    }
+  ]
+}

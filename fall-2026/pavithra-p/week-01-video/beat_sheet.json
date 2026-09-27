@@ -1,0 +1,254 @@
+{
+  "metadata": {
+    "title": "Thousands of Years, Divided",
+    "slug": "thousands-of-years-divided",
+    "topic": "INFO 7375 · CHAPTER 1 · PART 1",
+    "concept": "A training-scale slogan restated as a division with a hidden assumption: 'it would take a human thousands of years to read GPT-3's training text'.",
+    "chapter_section": "chapters/01-randomness-and-first-prompts.md — 'Scale, in units you can check'",
+    "register": "Plain",
+    "engine": "kokoro",
+    "voice_kokoro": "af_bella",
+    "style": "plain-manim, inspired by Brutalist ai-explainer (one idea per beat, numbers move on screen); no Claude UI bookends",
+    "note": "Every number comes from evidence.json, which evidence.py produces by importing the course's research/llm_scale.py unchanged. The 300B-token figure is REPORTED (Brown et al. 2020), not measured by us. The 8-hours-a-day figures are a labelled EXTENSION: computed with llm_scale.reading_years() but not printed by the original script. No Claude screen or transcript is shown.",
+    "review": {
+      "status": "APPROVED — narration approved in chat after two wording corrections (B00: 'estimate produced by division'; B06: 'translates a reported training-token count into hypothetical human reading time').",
+      "reviewed_by": "Pavithra P.",
+      "reviewed_at": "2026-09-23"
+    },
+    "build": {
+      "at": "2026-09-27T14:10:22",
+      "cut": "master",
+      "filled": 8,
+      "of": 8,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "HOOK",
+      "role_note": "State the slogan, then reveal that it is a division.",
+      "narration_text": "You've probably heard some version of this: it would take a human thousands of years to read everything GPT-3 was trained on. It sounds like a directly measured fact. It isn't. It is an estimate produced by division, and that division has guesses hidden inside it. Let's open it up.",
+      "visual_intent": "The slogan types on as a large quote. It splits apart and a division sign appears in the gap. Title: 'Thousands of Years, Divided'.",
+      "on_screen_labels": [
+        "the slogan (paraphrased, as quoted in Chapter 1)"
+      ],
+      "constructed": false,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "file": "scenes.py",
+          "scene_class": "B00_Hook"
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 18.03,
+      "render_duration_s": 18.041666666666668,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B00.mp4",
+        "filled_by": "manim:B00_Hook",
+        "at": "2026-09-27T14:10:22"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "REPORTED_START",
+      "role_note": "The starting number is reported, not measured by us.",
+      "narration_text": "The reported starting number comes from the GPT-3 paper, by Brown and colleagues in twenty twenty: approximately three hundred billion training tokens. A token is a chunk of text, often just a piece of a word.",
+      "visual_intent": "'300,000,000,000 tokens' counts up. Label beneath: 'REPORTED: Brown et al. 2020, arXiv:2005.14165'. A small inset splits one word into tokens, labelled 'constructed illustration'.",
+      "on_screen_labels": [
+        "REPORTED — Brown et al. 2020, arXiv:2005.14165",
+        "token split = constructed illustration"
+      ],
+      "constructed": "token-split inset only",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "file": "scenes.py",
+          "scene_class": "B01_Reported"
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 13.89,
+      "render_duration_s": 13.916666666666666,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B01.mp4",
+        "filled_by": "manim:B01_Reported",
+        "at": "2026-09-27T14:10:22"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "TOKENS_TO_WORDS",
+      "role_note": "First assumption enters: 0.75 words per token.",
+      "narration_text": "People read words, not tokens. So, using the chapter's approximation of zero point seven five words per token, three hundred billion tokens becomes two hundred and twenty-five billion words.",
+      "visual_intent": "300,000,000,000 × 0.75 = 225,000,000,000 words builds term by term. The 0.75 is underlined in the accent colour with the tag 'approximation'.",
+      "on_screen_labels": [
+        "0.75 = chapter's approximation"
+      ],
+      "constructed": false,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "file": "scenes.py",
+          "scene_class": "B02_Words"
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 12.99,
+      "render_duration_s": 13.0,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B02.mp4",
+        "filled_by": "manim:B02_Words",
+        "at": "2026-09-27T14:10:22"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "THE_DIVISION",
+      "role_note": "Do the division once, slowly.",
+      "narration_text": "Now divide by a reading speed. At two hundred and fifty words a minute, two hundred and twenty-five billion words takes nine hundred million minutes. Turn that into years, and you get about one thousand, seven hundred and eleven years.",
+      "visual_intent": "225,000,000,000 ÷ 250 = 900,000,000 minutes, then ÷ minutes per year = 1,711.2 years. Each step appears in turn.",
+      "on_screen_labels": [
+        "script output: 1,711.2 years at 250 words/min"
+      ],
+      "constructed": false,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "file": "scenes.py",
+          "scene_class": "B03_Divide"
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 14.38,
+      "render_duration_s": 14.416666666666666,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B03.mp4",
+        "filled_by": "manim:B03_Divide",
+        "at": "2026-09-27T14:10:22"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "HIDDEN_GUESS_1",
+      "role_note": "Main mechanism beat: slide the reading speed and the answer moves.",
+      "narration_text": "But who chose two hundred and fifty? The slogan never says. Change only the reading speed, and watch the answer move. Three hundred words a minute: about one thousand, four hundred and twenty-six years. Two hundred: about two thousand, one hundred and thirty-nine. One hundred and fifty: about two thousand, eight hundred and fifty-two. The slowest reader's answer is twice the fastest, all from one number nobody stated.",
+      "visual_intent": "A reading-speed dial slides 300 → 250 → 200 → 150 words/min. A live years counter follows it: 1,426.0 / 1,711.2 / 2,138.9 / 2,851.9. A bar per speed grows beside it. At the end, the 150 bar is shown as twice the 300 bar.",
+      "on_screen_labels": [
+        "script output — research/llm_scale.py"
+      ],
+      "constructed": false,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "file": "scenes.py",
+          "scene_class": "B04_Speed"
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 23.53,
+      "render_duration_s": 23.541666666666668,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B04.mp4",
+        "filled_by": "manim:B04_Speed",
+        "at": "2026-09-27T14:10:22"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "HIDDEN_GUESSES_2_3",
+      "role_note": "Two more assumptions. The 8-hour figures are an extension, labelled as such.",
+      "narration_text": "There are two more guesses in the math. First, zero point seven five words per token is a rule of thumb, not a measurement. Second, the calculation assumes you read twenty-four hours a day, with no sleep and no breaks. Read eight hours a day instead, and every answer triples. One thousand, seven hundred and eleven years becomes about five thousand, one hundred and thirty-four. That figure is an extension, calculated with the course script's own function. The original script does not print it.",
+      "visual_intent": "The 0.75 from B02 lights up again: 'guess #2: rule of thumb'. A 24-hour clock shrinks to 8 hours: 'guess #3: nonstop reading'. The bars from B04 stretch to three times their height: 4,277.9 / 5,133.5 / 6,416.8 / 8,555.8. A persistent banner: 'CALCULATED EXTENSION — course formula, not original script output'.",
+      "on_screen_labels": [
+        "CALCULATED EXTENSION — using the course script's reading_years(); not printed by the original script"
+      ],
+      "constructed": "extension (calculated, labelled)",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "file": "scenes.py",
+          "scene_class": "B05_MoreGuesses"
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 32.08,
+      "render_duration_s": 32.083333333333336,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B05.mp4",
+        "filled_by": "manim:B05_MoreGuesses",
+        "at": "2026-09-27T14:10:22"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "BOUNDARY",
+      "role_note": "Rubric: name what this does NOT establish.",
+      "narration_text": "Here is what this calculation does not establish. Every version still says far more than one lifetime, so the slogan's basic point survives. But it does not prove the model understood anything, or that its answers are accurate. And it does not show that all three hundred billion tokens were unique text. It only translates a reported training-token count into hypothetical human reading time, under the assumptions we just named.",
+      "visual_intent": "Card: 'WHAT THIS DOES NOT ESTABLISH'. Lines appear one at a time: 'that the model understood anything', 'that its answers are accurate', 'that all 300B tokens were unique text'. Underneath, in a quieter colour: 'still true: far more than one lifetime'.",
+      "on_screen_labels": [
+        "WHAT THIS DOES NOT ESTABLISH"
+      ],
+      "constructed": false,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "file": "scenes.py",
+          "scene_class": "B06_Boundary"
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 25.11,
+      "render_duration_s": 25.125,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B06.mp4",
+        "filled_by": "manim:B06_Boundary",
+        "at": "2026-09-27T14:10:22"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "CLOSE",
+      "role_note": "The takeaway as two questions.",
+      "narration_text": "So the next time an impressive number shows up, ask two questions. What is being divided? And what did someone have to assume to divide it?",
+      "visual_intent": "The slogan returns, now with its three hidden guesses tagged underneath: reading speed, words per token, hours per day. Footer: 'Pavithra P. · INFO 7375 · Week 01'.",
+      "on_screen_labels": [
+        "Pavithra P. · INFO 7375 · Week 01"
+      ],
+      "constructed": false,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "file": "scenes.py",
+          "scene_class": "B07_Close"
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 8.19,
+      "render_duration_s": 8.208333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B07.mp4",
+        "filled_by": "manim:B07_Close",
+        "at": "2026-09-27T14:10:22"
+      }
+    }
+  ]
+}

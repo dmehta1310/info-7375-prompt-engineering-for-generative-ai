@@ -1,0 +1,12 @@
+# Generated media and render caches: submit the MP4 via Canvas, not Git
+# (mirrors the course .gitignore rules for youtube/).
+*.mp4
+*.mp3
+*.wav
+*.mov
+mp3/
+media/
+clips/
+exports/
+_build/
+_qc/frames/

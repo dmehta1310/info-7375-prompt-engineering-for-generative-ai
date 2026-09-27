@@ -1,0 +1,61 @@
+========================================================================
+BEAT 1 — what the lesson actually prints
+========================================================================
+probabilities: [0.09003057317038046, 0.24472847105479764, 0.6652409557748218]
+counts (seed=7): {1: 268, 2: 630, 0: 102}
+
+token 2: p = 0.6652409557748218
+  expected = p * 1000 = 665.2409557748218
+  observed = 630
+  shortfall = -35.24
+
+========================================================================
+BEAT 2 — how big is a normal miss? (binomial spread)
+========================================================================
+standard deviation = sqrt(n*p*(1-p)) = sqrt(1000*0.665241*0.334759)
+                   = 14.92298316472358
+z-score for 630 = (630 - 665.24) / 14.923 = -2.3615
+so the lesson's own default seed lands 2.36 SD BELOW expectation
+
+typical range (expected +/- 1 SD): 650.3 to 680.2
+2 SD range: 635.4 to 695.1
+630 falls outside the 2 SD range: True
+
+========================================================================
+BEAT 3 — exact binomial tail: how rare is <= 630?
+========================================================================
+P(count <= 630) = 0.01036399
+                        = about 1 in 96.5 runs
+P(count == 630) = 0.00168093
+
+========================================================================
+BEAT 4 — don't take the formula's word for it. Run 10,000 seeds.
+========================================================================
+seeds 0..9999, 1000 draws each
+  mean count for token 2 = 665.234   (formula said 665.24)
+  observed SD                  = 14.7069   (formula said 14.9230)
+  min = 608   max = 721
+
+  seeds landing at or below 630: 89 of 10000 = 0.89%
+  exact binomial predicted:            1.04%
+
+  percentiles of the 10,000 counts:
+    p1   = 631
+    p5   = 641
+    p25  = 655
+    p50  = 665
+    p75  = 675
+    p95  = 689
+    p99  = 699
+
+  where seed 7 (630) ranks: 0.89th percentile
+
+========================================================================
+BEAT 5 — the boundary: one run cannot tell you which story is true
+========================================================================
+A sampler biased to p = 0.63 would ALSO produce 630.
+  fair sampler   (p=0.6652) producing exactly 630: 0.001681
+  biased sampler (p=0.6300) producing exactly 630: 0.026123
+
+Both stories produce the number we saw. One run of 1000 does not
+separate them. That is the thing this video does NOT establish.

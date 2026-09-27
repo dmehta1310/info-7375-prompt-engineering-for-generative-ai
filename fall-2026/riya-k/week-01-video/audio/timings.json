@@ -1,0 +1,54 @@
+{
+  "voice": "af_bella",
+  "beats": {
+    "B00": {
+      "file": "audio/B00.wav",
+      "duration_s": 25.408,
+      "estimated_s": 21,
+      "words": 59
+    },
+    "B01": {
+      "file": "audio/B01.wav",
+      "duration_s": 16.021,
+      "estimated_s": 17,
+      "words": 32
+    },
+    "B02": {
+      "file": "audio/B02.wav",
+      "duration_s": 22.421,
+      "estimated_s": 22,
+      "words": 59
+    },
+    "B03": {
+      "file": "audio/B03.wav",
+      "duration_s": 25.899,
+      "estimated_s": 30,
+      "words": 60
+    },
+    "B04": {
+      "file": "audio/B04.wav",
+      "duration_s": 32.399,
+      "estimated_s": 33,
+      "words": 72
+    },
+    "B05": {
+      "file": "audio/B05.wav",
+      "duration_s": 24.043,
+      "estimated_s": 28,
+      "words": 62
+    },
+    "B06": {
+      "file": "audio/B06.wav",
+      "duration_s": 36.986,
+      "estimated_s": 32,
+      "words": 89
+    },
+    "B07": {
+      "file": "audio/B07.wav",
+      "duration_s": 30.394,
+      "estimated_s": 26,
+      "words": 79
+    }
+  },
+  "total_s": 213.571
+}

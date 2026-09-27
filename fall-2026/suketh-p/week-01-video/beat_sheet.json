@@ -1,0 +1,789 @@
+{
+  "metadata": {
+    "title": "Shifted, Not Changed",
+    "slug": "week-01-shifted-not-changed",
+    "topic": "INFO 7375 · CHAPTER 1",
+    "purpose": "Explain ONE concept from Chapter 1 — why softmax subtracts the largest score before exponentiating — completely, with reproducible numbers, and name what the explanation does not establish.",
+    "concept": "Chapter 1, Part 2: 'The subtraction that changes nothing important' (max-subtraction in the softmax normalization).",
+    "author": "Suketh Produtoor",
+    "course": "INFO 7375 — Prompt Engineering for Generative AI",
+    "register": "Teardown",
+    "audience": "A classmate who has read Chapter 1 Part 1 and can follow arithmetic, but has not yet run the code.",
+    "brand": "claude",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "engine": "kokoro",
+    "voice_kokoro": "am_onyx",
+    "clock": "narration",
+    "greeting": "Namaste, Suketh",
+    "greeting_note": "hello lexicon: Hindi, one word. Wagwan is Bear's alone and is not used. This is a student reel, so the persona slot carries the author's name, not a channel persona.",
+    "attribution_note": "NOT a @NikBearBrown / claude-liam episode. OUTRO-LOCK.md scopes that card, handle and mascot to `claude-liam-*` reels only, so this reel uses its own ShiftOutro card and its own corner bug. The IN-FOR-BEAR line is deliberately absent: a synthetic voice must not present itself as the instructor or as the student. Narration is disclosed as synthetic on screen (B10) and in SOURCES.md.",
+    "numbers_note": "Every figure on screen comes from evidence/run-output.txt (and, for the derivation, evidence/boundary-output.txt) — recorded runs of the evidence scripts against the course's own lessons/01-randomness-and-first-prompts/code/main.py, imported unmodified. Figures reach the screen as props on this sheet, which override the components' Zod schema defaults; a wrong figure is therefore a beat-sheet fix, never a component fix. GATE T §8.6 re-checks that wiring every run (TYPECHECK.md).",
+    "manim_note": "No Manim / equation beats. Manim is blocked in this environment (see FRICTIONAL.md, 2026-09-15) and the course prerequisite directs a first video to use existing chart/diagram components instead. All math renders as Remotion scenes.",
+    "tags": [
+      "INFO 7375",
+      "prompt engineering",
+      "softmax",
+      "max subtraction",
+      "numerical stability",
+      "floating point",
+      "Chapter 1"
+    ],
+    "build": {
+      "at": "2026-09-25T11:13:08",
+      "cut": "master",
+      "filled": 11,
+      "of": 11,
+      "slates": [],
+      "skin_warnings": [
+        "B00: palette=claude but the cold open is 'ShiftComposer' — COLD OPEN LAW wants ClaudeComposerAsk",
+        "B10: palette=claude but the outro is 'ShiftOutro' — OUTRO LAW wants ClaudeTitleOutro"
+      ]
+    },
+    "accessibility_note": "GATE T (evidence/gate_t_typecheck.py → TYPECHECK.md) audits WCAG contrast, the 24px type floor, the word budget and figure-wiring — the toolkit declares this gate mandatory but does not ship the script. ACC on cream is 2.74:1 and brand-locked (CLAUDE-BRAND.md forbids retinting a fidelity palette), so the accent is never the sole carrier of meaning: every terracotta element also differs by weight, size or a rule, and §8.3b checks that."
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "ASK",
+      "lane": "BOOKEND",
+      "narration_text": "Chapter One hands you three scores — one, two, three — and asks for probabilities. But the reference code does something odd before it does any of that. It finds the largest score, and subtracts it from all of them. Every number in the middle changes. The answer does not. This is Suketh Produtoor's Week One explainer for INFO seven three seven five. The narration is synthetic — Kokoro, running locally.",
+      "estimated_duration_s": 24,
+      "audio_file": "mp3/beat-B00.mp3",
+      "engine": "kokoro",
+      "voice": "am_onyx",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "type-on",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Claude composer (reconstructed), cream page, greeting 'Namaste, Suketh'; disclosure pill top-right: RECONSTRUCTED INTERFACE · NOT A CLAUDE TRANSCRIPT"
+          },
+          {
+            "at": "0.15",
+            "event": "the question this film answers types into the composer"
+          },
+          {
+            "at": "0.62",
+            "event": "indicator: 'answered by this video — not by a transcript'. NO answer lines: the first cut showed three here, written by me and styled as Claude output, which the brief forbids"
+          }
+        ],
+        "remotion": {
+          "pattern": "ShiftComposer",
+          "props": {
+            "greeting": "Namaste, Suketh",
+            "topic": "INFO 7375 · CHAPTER 1",
+            "segment": "Shifted, Not Changed",
+            "command": "Chapter 1's softmax subtracts the largest score before exponentiating. Show me exactly which numbers that changes, prove which number it cannot change, and then find me an input where the thing everyone says this fixes is still broken.",
+            "runningText": "answered by this video — not by a transcript",
+            "folderLabel": "INFO 7375 · Week 1",
+            "output": [],
+            "modelLabel": "Claude",
+            "disclosure": "RECONSTRUCTED INTERFACE · NOT A CLAUDE TRANSCRIPT"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": "2026-09-24T21:25:04.266679+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 20.18,
+      "render_duration_s": 20.208333333333332,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "remotion:ShiftComposer",
+        "at": "2026-09-25T11:13:08"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "BLUF",
+      "lane": "BOOKEND",
+      "narration_text": "Here is the whole idea in one breath. Subtracting the max makes softmax overflow-safe. Every number in the middle changes. The answer does not. That wording matters, because the word people usually reach for is stable — and stable claims more than this code can actually pay for. Watch where the difference shows up.",
+      "estimated_duration_s": 18,
+      "audio_file": "mp3/beat-B01.mp3",
+      "lead_silence_s": 0.8,
+      "engine": "kokoro",
+      "voice": "am_onyx",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "type-on",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "cream page, empty; caret blinking"
+          },
+          {
+            "at": "0.08",
+            "event": "line 1 types: 'Subtracting the max makes softmax stable.'"
+          },
+          {
+            "at": "0.22",
+            "event": "'stable' turns terracotta — the word is about to be deleted (ACCENT LAW)"
+          },
+          {
+            "at": "0.28",
+            "event": "it deletes and retypes as 'overflow-safe' — the correction IS the reel's claim"
+          },
+          {
+            "at": "0.45",
+            "event": "remaining lines type: 'Every number in the middle changes. / The distribution does not.'"
+          },
+          {
+            "at": "0.6",
+            "event": "typing completes and the corrected overview holds on screen through the cut"
+          }
+        ],
+        "remotion": {
+          "pattern": "BrutalistHesitantWriter",
+          "props": {
+            "text": "Subtracting the max makes\nsoftmax stable.\nEvery number in the middle\nchanges. The answer does not.",
+            "triggerWords": "stable",
+            "replacementWords": "overflow-safe",
+            "face": "serif",
+            "fontSize": 136,
+            "align": "left",
+            "seed": "shifted-not-changed-b01",
+            "charMs": 8,
+            "mistakeRate": 0,
+            "hesitateBetween": 0,
+            "ink": "#3D3929",
+            "accent": "#D97757",
+            "bg": "#F2F0E9",
+            "hesitateWithin": 0,
+            "jitter": 12
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": "2026-09-15T15:38:46.611532+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 16.36,
+      "render_duration_s": 16.375,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "remotion:BrutalistHesitantWriter",
+        "at": "2026-09-25T11:13:08"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "THE BREAK",
+      "narration_text": "Start with why the subtraction is there. Two scores of one thousand. Exponentiate them the way the formula is written, and Python does not hand back an enormous number. It refuses — overflow error, math range error. Double precision stops near ten to the three hundred and eighth, and the exponential crosses that at about seven hundred and ten. Now shift first: the same input returns one half, one half.",
+      "estimated_duration_s": 23,
+      "audio_file": "mp3/beat-B02.mp3",
+      "new_visual_element": "exponent axis with the float64 ceiling and a score sitting past the end of it",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "drawon",
+        "show": [
+          {
+            "at": "0.05",
+            "event": "the input lands large in mono: probabilities([1000, 1000])"
+          },
+          {
+            "at": "0.18",
+            "event": "the exponent axis draws left to right"
+          },
+          {
+            "at": "0.32",
+            "event": "the FLOAT64 CEILING tick rises at 709.78 → 1.797693e+308"
+          },
+          {
+            "at": "0.46",
+            "event": "a terracotta bar runs toward score = 1000 and stops past the axis end"
+          },
+          {
+            "at": "0.62",
+            "event": "LEFT card: the real error, 'OverflowError: math range error'"
+          },
+          {
+            "at": "0.78",
+            "event": "RIGHT card lands beside it: the SAME input, shifted, returns [0.5, 0.5] — the break and its fix held side by side"
+          }
+        ],
+        "remotion": {
+          "pattern": "ShiftOverflow",
+          "props": {
+            "spark": "The formula, taken literally.",
+            "logits": [
+              1000,
+              1000
+            ],
+            "ceilingExponent": 709.7827,
+            "floatMax": "1.797693e+308",
+            "errorText": "OverflowError: math range error",
+            "expression": "math.exp(1000)",
+            "resolved": "[0.5, 0.5]",
+            "resolvedNote": "Same input. Same formula, shifted."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": "2026-09-24T14:21:36.019620+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 20.67,
+      "render_duration_s": 20.708333333333332,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "remotion:ShiftOverflow",
+        "at": "2026-09-25T11:13:08"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "THE MOVE",
+      "narration_text": "So shift first. Take one, two, three. Find the peak — that is three. Subtract it from everything: minus two, minus one, zero. Now exponentiate. Zero point one three five, zero point three six eight, and exactly one — because e to the zero is one. Add them: one point five oh three two. Divide through, and there is the distribution — roughly nine, twenty-four, and sixty-seven percent.",
+      "estimated_duration_s": 26,
+      "audio_file": "mp3/beat-B03.mp3",
+      "new_visual_element": "four-stage transformation table — score, minus peak, weight, probability — revealing column by column",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "stagger",
+        "show": [
+          {
+            "at": "0.05",
+            "event": "row labels appear: outcome 0, 1, 2"
+          },
+          {
+            "at": "0.12",
+            "event": "column SCORE lands: 1, 2, 3"
+          },
+          {
+            "at": "0.3",
+            "event": "column MINUS PEAK lands: -2, -1, 0 — outcome 2's zero in terracotta"
+          },
+          {
+            "at": "0.47",
+            "event": "column WEIGHT lands: 0.1353…, 0.3679…, and 1.0 in terracotta"
+          },
+          {
+            "at": "0.64",
+            "event": "TOTAL WEIGHT 1.5032147244 rules off under the weight column"
+          },
+          {
+            "at": "0.7",
+            "event": "column PROBABILITY lands: 0.0900…, 0.2447…, 0.6652…"
+          },
+          {
+            "at": "0.85",
+            "event": "the note settles: e⁰ = 1 exactly, so the denominator can never fall below 1"
+          }
+        ],
+        "remotion": {
+          "pattern": "ShiftPipeline",
+          "props": {
+            "spark": "Shift, then exponentiate.",
+            "stages": [
+              "score",
+              "minus peak",
+              "weight",
+              "probability"
+            ],
+            "rows": [
+              {
+                "label": "outcome 0",
+                "cells": [
+                  "1",
+                  "-2",
+                  "0.1353352832",
+                  "0.0900305732"
+                ],
+                "peak": false
+              },
+              {
+                "label": "outcome 1",
+                "cells": [
+                  "2",
+                  "-1",
+                  "0.3678794412",
+                  "0.2447284711"
+                ],
+                "peak": false
+              },
+              {
+                "label": "outcome 2",
+                "cells": [
+                  "3",
+                  "0",
+                  "1.0",
+                  "0.6652409558"
+                ],
+                "peak": true
+              }
+            ],
+            "total": "1.5032147244",
+            "note": "peak = 3  ·  e⁰ = 1 exactly  ·  so the denominator can never fall below 1"
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": "2026-09-24T14:04:16.444652+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 19.61,
+      "render_duration_s": 19.625,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "remotion:ShiftPipeline",
+        "at": "2026-09-25T11:13:08"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "THE PROOF",
+      "narration_text": "Why is that allowed? Write the shifted version out. Every numerator picks up a factor of e to the minus m over T. Every term in the denominator picks up that same factor. It is a common factor, top and bottom — so it cancels, and what is left is the formula we started with. The shift never reaches the ratio. That is not a numerical trick. That is algebra.",
+      "estimated_duration_s": 24,
+      "audio_file": "mp3/beat-B04.mp3",
+      "new_visual_element": "the shifted fraction factored so the shared exp(-m/T) is visible on both lines, then struck through",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "illustrate",
+        "show": [
+          {
+            "at": "0.05",
+            "event": "the shifted fraction writes in, numerator over denominator"
+          },
+          {
+            "at": "0.3",
+            "event": "it re-forms as a product — exp(-m/T) now visible in terracotta on BOTH lines"
+          },
+          {
+            "at": "0.55",
+            "event": "both copies of the factor strike through on the spoken word 'cancels'"
+          },
+          {
+            "at": "0.72",
+            "event": "the unshifted formula settles below under 'what is left'"
+          },
+          {
+            "at": "0.88",
+            "event": "verdict line: 'The shift never reaches the ratio.'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ShiftCancellation",
+          "props": {
+            "spark": "A common factor, top and bottom.",
+            "shiftedNum": "exp( (zᵢ − m) / T )",
+            "shiftedDen": "Σⱼ exp( (zⱼ − m) / T )",
+            "factoredNum": "exp( zᵢ / T )",
+            "factoredDen": "Σⱼ exp( zⱼ / T )",
+            "factor": "exp( −m / T )",
+            "verdict": "The shift never reaches the ratio"
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": "2026-09-24T14:30:00.608396+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 18.69,
+      "render_duration_s": 18.708333333333332,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "remotion:ShiftCancellation",
+        "at": "2026-09-25T11:13:08"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "ASK",
+      "narration_text": "The algebra says the two paths agree. That is a claim worth checking rather than trusting, so the evidence script runs both of them and prints the difference, with nothing rounded.",
+      "estimated_duration_s": 12,
+      "audio_file": "mp3/beat-B05.mp3",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "type-on",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "composer (reconstructed) with the disclosure pill — the question the evidence script answers"
+          },
+          {
+            "at": "0.12",
+            "event": "the verification question is already typed — an inner beat (SPARK-LINE LAW: typing belongs to B00, B01 and the handoff only)"
+          },
+          {
+            "at": "0.7",
+            "event": "indicator: 'running both paths…' — the RESULT is B06, the recorded output of verify_claims.py, not a Claude response"
+          }
+        ],
+        "remotion": {
+          "pattern": "ShiftComposer",
+          "props": {
+            "greeting": "The check,",
+            "topic": "INFO 7375 · CHAPTER 1",
+            "segment": "Shifted, Not Changed",
+            "command": "Import Chapter 1's probabilities() unmodified. Run it on [1, 2, 3], and separately compute the same softmax by direct exponentiation with no max-subtraction. Print both vectors at full precision and the maximum absolute difference. Round nothing.",
+            "runningText": "running both paths…",
+            "folderLabel": "INFO 7375 · Week 1",
+            "output": [],
+            "modelLabel": "Claude",
+            "disclosure": "RECONSTRUCTED INTERFACE · NOT A CLAUDE TRANSCRIPT",
+            "preTyped": true
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": "2026-09-24T21:34:01.051752+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 9.56,
+      "render_duration_s": 9.583333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "remotion:ShiftComposer",
+        "at": "2026-09-25T11:13:08"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "THE RECEIPT",
+      "narration_text": "And here is the honest result. The two paths agree to within one point one times ten to the minus sixteen. Not zero — adjacent floats, one step apart, in two digits out of fifty-three. Identical in algebra; in floating point, merely indistinguishable. Both match the chapter's published table to ten decimal places. Had I called them equal, I would have been wrong in the last place of two numbers.",
+      "estimated_duration_s": 25,
+      "audio_file": "mp3/beat-B06.mp3",
+      "new_visual_element": "the two output vectors aligned in mono with the only two differing digits marked",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "stagger",
+        "show": [
+          {
+            "at": "0.02",
+            "event": "recorded-run card opens: 'verify_claims.py'"
+          },
+          {
+            "at": "0.08",
+            "event": "the shifted-path vector lands, full precision"
+          },
+          {
+            "at": "0.15",
+            "event": "the direct-path vector lands directly beneath it, digits aligned"
+          },
+          {
+            "at": "0.25",
+            "event": "on 'Not zero': the two differing digits turn terracotta and bold"
+          },
+          {
+            "at": "0.29",
+            "event": "on 'adjacent': every agreeing digit dims and a '1 ULP' marker appears between each differing pair — held through 'indistinguishable' (requested after watching, 2026-09-25)"
+          },
+          {
+            "at": "0.60",
+            "event": "the isolation releases as the headline figure scales up: 1.1102230246251565e-16"
+          },
+          {
+            "at": "0.82",
+            "event": "the narrowed claim lands under it"
+          }
+        ],
+        "remotion": {
+          "pattern": "ShiftReceipt",
+          "props": {
+            "spark": "Agree — but not bit for bit.",
+            "rows": [
+              {
+                "label": "shifted path — Chapter 1's probabilities([1, 2, 3])",
+                "value": "[0.09003057317038046, 0.24472847105479764, 0.6652409557748218]",
+                "markIdx": [
+                  19,
+                  60
+                ]
+              },
+              {
+                "label": "direct path — exponentiate the raw scores",
+                "value": "[0.09003057317038045, 0.24472847105479764, 0.6652409557748219]",
+                "markIdx": [
+                  19,
+                  60
+                ]
+              }
+            ],
+            "diffLabel": "max absolute difference",
+            "diffValue": "1.1102230246251565e-16",
+            "diffGloss": "exactly 2**-53 — adjacent floats, one step apart. Two digits out of fifty-three.",
+            "verdict": "Identical in algebra. Indistinguishable in floating point. Those are not the same sentence.",
+            "isolateLabel": "1 ULP"
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": "2026-09-25T18:10:16.332576+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 20.63,
+      "render_duration_s": 20.666666666666668,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "remotion:ShiftReceipt",
+        "at": "2026-09-25T11:13:08"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "THE BOUNDARY",
+      "narration_text": "Now the part the slogan hides. The shift protects the biggest term. Nothing protects the smallest. Scores of zero and minus eight hundred: the function returns one point zero, and zero point zero. Exactly zero, for an outcome whose real share is ten to the minus three hundred and forty-eighth. And that cliff is not arbitrary — it sits at minus one thousand seventy-five times the natural log of two.",
+      "estimated_duration_s": 25,
+      "audio_file": "mp3/beat-B07.mp3",
+      "new_visual_element": "descending rail of second scores against what the function returns, with the first hard zero marked as a cliff",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "drawon",
+        "show": [
+          {
+            "at": "0.04",
+            "event": "three column heads: second score / what the function returns / its true share"
+          },
+          {
+            "at": "0.16",
+            "event": "[0, -700] → 9.8596…e-305, still representable"
+          },
+          {
+            "at": "0.3",
+            "event": "[0, -745] → 5e-324, the last denormal standing"
+          },
+          {
+            "at": "0.44",
+            "event": "[0, -746] → 0.0 — the value turns terracotta and scales up"
+          },
+          {
+            "at": "0.62",
+            "event": "a terracotta cliff line draws across the table at that row"
+          },
+          {
+            "at": "0.72",
+            "event": "[0, -800] → 0.0, true share ~1e-348"
+          },
+          {
+            "at": "0.84",
+            "event": "headline: 'Overflow-safe. Not numerically stable.'"
+          },
+          {
+            "at": "0.92",
+            "event": "the closed form lands under the headline: the cliff is −1075·ln2, so −746 is simply the first integer past it"
+          }
+        ],
+        "remotion": {
+          "pattern": "ShiftBoundary",
+          "props": {
+            "spark": "The small end was never protected.",
+            "steps": [
+              {
+                "logits": "[0, -700]",
+                "returned": "9.85967654375977e-305",
+                "trueValue": "~1e-304",
+                "zero": false
+              },
+              {
+                "logits": "[0, -745]",
+                "returned": "5e-324",
+                "trueValue": "~1e-324",
+                "zero": false
+              },
+              {
+                "logits": "[0, -746]",
+                "returned": "0.0",
+                "trueValue": "~1e-324",
+                "zero": true
+              },
+              {
+                "logits": "[0, -800]",
+                "returned": "0.0",
+                "trueValue": "~1e-348",
+                "zero": true
+              }
+            ],
+            "headline": "Overflow-safe. Not numerically stable.",
+            "note": "Chapter 1: “Keep the tested claim narrower than the slogan ‘numerically stable.’”",
+            "derivation": "cliff = −1075 · ln 2 = −745.133219102   →   −746 is the first integer past it"
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": "2026-09-24T14:06:50.855885+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 20.57,
+      "render_duration_s": 20.583333333333332,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "remotion:ShiftBoundary",
+        "at": "2026-09-25T11:13:08"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "act": "VERDICT",
+      "lane": "BOOKEND",
+      "narration_text": "So let us be precise about what was earned. What the subtraction guarantees: the largest weight becomes exactly one, so the denominator is never below one, and the top end cannot overflow. What it does not guarantee: that small probabilities survive at all. This explanation does not establish that the function is numerically stable. It establishes that it is overflow-safe. Those are two different claims, and only one of them was tested.",
+      "estimated_duration_s": 26,
+      "audio_file": "mp3/beat-B08.mp3",
+      "engine": "kokoro",
+      "voice": "am_onyx",
+      "lead_silence_s": 0.5,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "stagger",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Claude artifact page opens — the verdict is the subject, so the UI earns this beat"
+          },
+          {
+            "at": "0.15",
+            "event": "the four verdict lines stagger in as the voice reaches each"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Shifted, Not Changed — one page",
+            "artifactHeading": "What the subtraction earns",
+            "artifactLines": [
+              "GUARANTEED — the peak shifts to 0, so its weight is exactly 1, the denominator is always ≥ 1, and the top end cannot overflow.",
+              "UNCHANGED — the normalized distribution: exp(−m/T) is a common factor top and bottom and cancels exactly.",
+              "MEASURED — the shifted and direct paths differ by 1.1102230246251565e-16, not by 0. Identical in algebra, not bit-identical.",
+              "NOT ESTABLISHED — numerical stability. probabilities([0, −800]) returns a hard 0.0 for an outcome whose true share is ~1e-348."
+            ]
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": "2026-09-15T14:59:39.364372+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 21.4,
+      "render_duration_s": 21.416666666666668,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B08.mp4",
+        "filled_by": "remotion:ClaudeVerdictArtifact",
+        "at": "2026-09-25T11:13:08"
+      }
+    },
+    {
+      "beat_id": "B09",
+      "act": "HANDOFF",
+      "lane": "BOOKEND",
+      "narration_text": "Your turn. Paste this into Claude. It asks for an input where the max-subtraction stops helping, for which end of the float range breaks and why, and then for the narrowest claim the fix actually supports. Run it — but write your own prediction of where the floor sits before you read the answer. Then watch whether Claude names underflow, or whether it just repeats the word stable back at you.",
+      "estimated_duration_s": 25,
+      "audio_file": "mp3/beat-B09.mp3",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "type-on",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "composer (reconstructed), greeting fixed 'Your turn.'; pill: SUGGESTED PROMPT · NOT YET RUN — YOURS TO TRY"
+          },
+          {
+            "at": "0.12",
+            "event": "the handoff prompt types in, read aloud verbatim as it lands"
+          },
+          {
+            "at": "0.78",
+            "event": "indicator: 'paste this into Claude…' — an invitation, not a transcript"
+          }
+        ],
+        "remotion": {
+          "pattern": "ShiftComposer",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "YOUR TURN · CHAPTER 1",
+            "segment": "Shifted, Not Changed",
+            "command": "Chapter 1's softmax subtracts the largest score before exponentiating, and this is widely called 'numerically stable'. Find me an input where the subtraction does NOT save the result. Tell me which end of the float64 range breaks and why the subtraction cannot reach it. Then state the narrowest claim the subtraction actually supports — and say what evidence would be needed to support the wider one.",
+            "runningText": "paste this into Claude…",
+            "folderLabel": "INFO 7375 · Week 1",
+            "output": [],
+            "modelLabel": "Claude",
+            "disclosure": "SUGGESTED PROMPT · NOT YET RUN — YOURS TO TRY"
+          },
+          "rendered": {
+            "out": "media/B09.mp4",
+            "at": "2026-09-24T21:26:59.790040+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 18.92,
+      "render_duration_s": 18.958333333333332,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B09.mp4",
+        "filled_by": "remotion:ShiftComposer",
+        "at": "2026-09-25T11:13:08"
+      }
+    },
+    {
+      "beat_id": "B10",
+      "act": "OUTRO",
+      "lane": "BOOKEND",
+      "narration_text": "Shifted, not changed. One subtraction rewrites every number in the middle and leaves the answer exactly where it was. Overflow-safe — and no further than that.",
+      "estimated_duration_s": 12,
+      "audio_file": "mp3/beat-B10.mp3",
+      "engine": "kokoro",
+      "voice": "am_onyx",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "fade",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "title restates poster-style in the serif with the terracotta period"
+          },
+          {
+            "at": "0.3",
+            "event": "hairline rule draws; author and course settle beneath it"
+          },
+          {
+            "at": "0.65",
+            "event": "synthetic-narration disclosure fades up along the bottom safe edge"
+          }
+        ],
+        "remotion": {
+          "pattern": "ShiftOutro",
+          "props": {
+            "title": "Shifted,\nNot Changed",
+            "author": "Suketh Produtoor",
+            "course": "INFO 7375 · Prompt Engineering for Generative AI · Week 1",
+            "disclosure": "Narration: Kokoro am_onyx (synthetic, generated locally). Built with brutalist.art. Not affiliated with or endorsed by the @NikBearBrown channel."
+          },
+          "rendered": {
+            "out": "media/B10.mp4",
+            "at": "2026-09-20T17:53:07.523545+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 9.13,
+      "render_duration_s": 9.166666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B10.mp4",
+        "filled_by": "remotion:ShiftOutro",
+        "at": "2026-09-25T11:13:08"
+      }
+    }
+  ]
+}

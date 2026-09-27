@@ -1,0 +1,6 @@
+build/*.wav
+build/*.mp4
+build/*.png
+build/*.txt
+__pycache__/
+*.pyc

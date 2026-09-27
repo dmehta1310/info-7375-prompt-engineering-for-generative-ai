@@ -1,0 +1,647 @@
+{
+  "metadata": {
+    "title": "Why 630, Not 665?",
+    "slug": "week-01-video-atharva-c",
+    "author": "Atharva C",
+    "course": "INFO 7375 Prompt Engineering for Generative AI",
+    "lesson": "Week 1 — Randomness and first prompts",
+    "topic": "INFO 7375 · WEEK 1",
+    "builder": "ai-explainer (free beginner path)",
+    "brand": "claude",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "register": "Plain",
+    "audience": "INFO 7375 students",
+    "engine": "kokoro",
+    "voice_kokoro": "af_bella",
+    "greeting": "Hi, Atharva",
+    "greeting_note": "Claude-app convention: the app greets its user. The narrator is a synthetic Kokoro voice. From 2026-09-26, at Atharva's direction, B00 narration speaks in Atharva's first person ('This is Atharva C'), with the disclosure on screen instead of spoken. It never claims to be Bear or an official voice.",
+    "branding_note": "Deliberate deviation from ai-explainer defaults, approved by Atharva C 2026-09-25: no claude-liam / 'in for Bear' persona, no @NikBearBrown chip, logo bug, or locked ClaudeTitleOutro (hardcoded @NikBearBrown). Footer chip 'INFO 7375 · Week 1'; FormACard outro. See BUILD-LOG.md.",
+    "evidence": "learning-artifacts/week-01-atharva-c/main.py (byte-identical to the course reference lessons/01-randomness-and-first-prompts/code/main.py, sha256 a2847aba…326d) and notes.md",
+    "approvals": {},
+    "build": {
+      "at": "2026-09-27T14:47:25",
+      "cut": "master",
+      "filled": 11,
+      "of": 11,
+      "slates": [],
+      "skin_warnings": [
+        "BOUT: palette=claude but the outro is 'ClaudeVerdictArtifact' — OUTRO LAW wants ClaudeTitleOutro"
+      ]
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "ASK",
+      "narration_text": "This is Atharva. This is my week-one assignment for INFO 7375. The question: an outcome has probability 0.665. Sample a thousand times. Why doesn't it show up 665 times?",
+      "disclosure_note": "No spoken disclosure in B00 (Atharva C's decision, 2026-09-26). Synthetic-narration disclosure is on screen for the whole beat via the topic label, plus the BOUT credits, BOUT narration and SOURCES.md.",
+      "estimated_duration_s": 17,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "type-on",
+        "class": "SHOW",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Top-left label 'Synthetic narration — Kokoro af_bella' visible from frame 0 for the whole beat; greeting 'Hi, Atharva' above the reconstructed Claude composer"
+          },
+          {
+            "at": 0.3,
+            "event": "The question types into the composer"
+          },
+          {
+            "at": 0.75,
+            "event": "Result lines: the recorded probabilities and counts from main.py"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Hi, Atharva",
+            "topic": "INFO 7375 · Week 1 · Synthetic narration — Kokoro af_bella",
+            "segment": "Why 630, Not 665?",
+            "command": "If an outcome has probability 0.665 and I sample it 1000 times, why doesn't it show up 665 times?",
+            "runningText": "running main.py…",
+            "folderLabel": "INFO 7375 · Week 1",
+            "output": [
+              "probabilities: 0.090 · 0.245 · 0.665",
+              "counts: {0: 102, 1: 268, 2: 630}",
+              "recorded main.py output · reconstructed Claude UI"
+            ]
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": "2026-09-27T18:43:05.747857+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 16.41,
+      "audio_file": "mp3/beat-B00.mp3",
+      "render_duration_s": 16.416666666666668,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-09-27T14:47:25"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "OVERVIEW",
+      "lead_silence_s": 0.8,
+      "narration_text": "Think of it like a weighted die. Outcome two comes up sixty-six point five percent of the time. Roll it a thousand times, and you'd expect it to land near six hundred sixty-five. But 'expect' doesn't mean 'guaranteed'.",
+      "estimated_duration_s": 10,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "staggered-lines",
+        "class": "SHOW",
+        "deviation_note": "2026-09-26, Atharva's decision: after the hesitant-writer versions (with and without the typed correction) failed GATE V mid-beat fill (52 %), B01 reuses B07's passing card component (ClaudeVerdictArtifact) with B01's text. EXECUTIVE-SUMMARY LAW's hesitant-writer rendering is not applied; no typed correction.",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Artifact card, three staggered lines: 'Outcome 2 comes up 66.5% of the time.' / '1,000 rolls → expect near 665.' / 'Expected doesn't mean guaranteed.'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Why 630, Not 665?",
+            "artifactHeading": "The Idea",
+            "brandLabel": "INFO 7375 · Week 1",
+            "artifactLines": [
+              "Outcome 2 comes up 66.5% of the time.",
+              "1,000 rolls → expect near 665.",
+              "Expected doesn't mean guaranteed."
+            ]
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": "2026-09-26T19:05:16.076201+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 13.78,
+      "audio_file": "mp3/beat-B01.mp3",
+      "render_duration_s": 13.791666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "remotion:ClaudeVerdictArtifact",
+        "at": "2026-09-27T14:47:25"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "FRAMEWORK",
+      "narration_text": "Here's the actual code. It sets the odds, rolls a thousand times, and counts what happens. Nothing in the code forces the final count to match the odds exactly — each roll is independent.",
+      "estimated_duration_s": 20,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "code-reveal",
+        "class": "SHOW",
+        "artifact": "main.py lines 9–24, verbatim (course reference, unmodified)",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Code card titled 'main.py — course reference (unmodified)'"
+          },
+          {
+            "at": 0.1,
+            "event": "probabilities(): subtract max, exp, normalize"
+          },
+          {
+            "at": 0.4,
+            "event": "sample(): random.Random(seed), rng.choices(..., k=count), Counter"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "main.py · course reference, unmodified · lines 9–24",
+            "language": "source code",
+            "largeText": false,
+            "sparkLine": "Draws are independent.",
+            "code": "def probabilities(logits, temperature=1.0):\n    if not logits or not math.isfinite(temperature) or temperature <= 0:\n        raise ValueError(\"Need logits and a positive finite temperature\")\n    if not all(math.isfinite(x) for x in logits):\n        raise ValueError(\"Logits must be finite\")\n    peak = max(logits)\n    weights = [math.exp((x - peak) / temperature) for x in logits]\n    total = sum(weights)\n    return [weight / total for weight in weights]\n\ndef sample(logits, count=1000, seed=7, temperature=1.0):\n    if type(count) is not int or count < 0:\n        raise ValueError(\"Count must be nonnegative\")\n    rng = random.Random(seed)\n    return dict(Counter(rng.choices(range(len(logits)),\n                                   probabilities(logits, temperature), k=count)))"
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": "2026-09-26T17:40:02.383783+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 12.35,
+      "audio_file": "mp3/beat-B02.mp3",
+      "render_duration_s": 12.375,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "remotion:ClaudeCodeBeat",
+        "at": "2026-09-27T14:47:25"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "WORKED_EXAMPLE",
+      "narration_text": "Three outcomes: zero, one, and two. Their odds are nine percent, twenty-four and a half percent, and sixty-six and a half percent. Multiply each by a thousand rolls, and that's what you'd expect on average: about ninety, about two hundred forty-five, about six hundred sixty-five.",
+      "estimated_duration_s": 17,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "bars-grow",
+        "class": "SHOW",
+        "artifact": "ExecutedData bars from recorded main.py stdout",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "Outcome 0 bar grows to 9.0%"
+          },
+          {
+            "at": 0.2,
+            "event": "Outcome 1 bar grows to 24.5%"
+          },
+          {
+            "at": 0.35,
+            "event": "Outcome 2 bar grows to 66.5%"
+          },
+          {
+            "at": 0.5,
+            "event": "Note: expected counts over 1,000 draws"
+          }
+        ],
+        "remotion": {
+          "pattern": "ExecutedData",
+          "props": {
+            "title": "Probabilities → expected counts ≈ 90 · 245 · 665",
+            "mode": "probability",
+            "rows": [
+              {
+                "label": "Outcome 0",
+                "value": 0.09003057317038046,
+                "at": 3.3
+              },
+              {
+                "label": "Outcome 1",
+                "value": 0.24472847105479764,
+                "at": 4.2
+              },
+              {
+                "label": "Outcome 2",
+                "value": 0.6652409557748218,
+                "at": 6.4
+              }
+            ],
+            "note": "recorded output · source: lessons/01-randomness-and-first-prompts/code/main.py -> probabilities [0.09003057317038046, 0.24472847105479764, 0.6652409557748218]"
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": "2026-09-26T17:40:52.005923+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 17.88,
+      "audio_file": "mp3/beat-B03.mp3",
+      "render_duration_s": 17.916666666666668,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "remotion:ExecutedData",
+        "at": "2026-09-27T14:47:25"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "EVIDENCE",
+      "narration_text": "Here's what this run actually got: one hundred two, two hundred sixty-eight, and six hundred thirty. Outcome two came up thirty-five fewer times than expected. Think about flipping a coin ten times — you expect five heads, but getting six or four wouldn't surprise anyone. This is the same idea at a bigger scale — though, as we'll see next, this gap is bigger than a four or a six.",
+      "estimated_duration_s": 16,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "bars-grow",
+        "class": "SHOW",
+        "artifact": "TtEffectBars: exact expected vs observed counts for outcomes 2 and 1 (bar length ∝ count, zero baseline); outcome-2 observed bar in terracotta; outcome 0 in the note",
+        "show": [
+          {
+            "at": 0.16,
+            "event": "Bar: Outcome 2 · expected 665.24"
+          },
+          {
+            "at": 0.36,
+            "event": "Bar (terracotta): » Outcome 2 · observed 630"
+          },
+          {
+            "at": 0.56,
+            "event": "Bar: Outcome 1 · expected 244.73"
+          },
+          {
+            "at": 0.76,
+            "event": "Bar: Outcome 1 · observed 268"
+          },
+          {
+            "at": 0.84,
+            "event": "Note: outcome 0 expected 90.03, observed 102 · recorded output · source line"
+          }
+        ],
+        "remotion": {
+          "pattern": "TtEffectBars",
+          "props": {
+            "title": "Expected vs. observed count",
+            "scaleNote": "",
+            "data": [
+              {
+                "label": "Outcome 2 · expected",
+                "value": 665.2409557748218,
+                "display": "665.24",
+                "accent": false
+              },
+              {
+                "label": "» Outcome 2 · observed",
+                "value": 630,
+                "display": "630",
+                "accent": true
+              },
+              {
+                "label": "Outcome 1 · expected",
+                "value": 244.72847105479764,
+                "display": "244.73",
+                "accent": false
+              },
+              {
+                "label": "Outcome 1 · observed",
+                "value": 268,
+                "display": "268",
+                "accent": false
+              }
+            ],
+            "caveat": "",
+            "note": "Outcome 0: expected 90.03, observed 102 · recorded output · source: lessons/01-randomness-and-first-prompts/code/main.py -> counts {\"1\": 268, \"2\": 630, \"0\": 102}",
+            "spark": ""
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": "2026-09-26T17:58:43.457391+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 23.21,
+      "audio_file": "mp3/beat-B04.mp3",
+      "render_duration_s": 23.25,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "remotion:TtEffectBars",
+        "at": "2026-09-27T14:47:25"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "FALSIFIABILITY",
+      "narration_text": "Is thirty-five a lot? At this scale, this count normally wanders by about fifteen in either direction, just from chance. Coming up thirty-five short is on the unusual side — it would happen by chance roughly once in every hundred tries. Unusual, but not impossible.",
+      "estimated_duration_s": 17,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "table-rows",
+        "class": "SHOW",
+        "artifact": "ExecutedData table of values computed in Python from the recorded counts (FACTCHECK.md C6–C8)",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "Row: typical spread 14.92"
+          },
+          {
+            "at": 0.3,
+            "event": "Row: gap 35.24"
+          },
+          {
+            "at": 0.45,
+            "event": "Row: gap ÷ spread 2.36"
+          },
+          {
+            "at": 0.65,
+            "event": "Row: chance of ≤ 630 if fair, 1.04%"
+          }
+        ],
+        "remotion": {
+          "pattern": "ExecutedData",
+          "props": {
+            "title": "Is a 35-count gap a lot?",
+            "mode": "table",
+            "columnLabels": [
+              "Measure",
+              "Value"
+            ],
+            "rows": [
+              {
+                "label": "Typical wander",
+                "value": 14.92,
+                "at": 4.4
+              },
+              {
+                "label": "Gap",
+                "value": 35.24,
+                "at": 8.5
+              },
+              {
+                "label": "Gap ÷ wander",
+                "value": 2.36,
+                "at": 10.3
+              },
+              {
+                "label": "% of fair runs ≤ 630",
+                "value": 1.04,
+                "at": 13.4
+              }
+            ],
+            "note": "computed from output · source: lessons/01-randomness-and-first-prompts/code/main.py -> counts {\"1\": 268, \"2\": 630, \"0\": 102} · n = 1,000, p = 0.665"
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": "2026-09-26T17:42:24.211036+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 17.11,
+      "audio_file": "mp3/beat-B05.mp3",
+      "render_duration_s": 17.125,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "remotion:ExecutedData",
+        "at": "2026-09-27T14:47:25"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "LIMITATION",
+      "narration_text": "Here's the limit. This code always uses the same starting point, called a seed, so it prints six thirty every single time you rerun it. Getting the same result twice doesn't prove it's fair — it just proves it's repeatable.",
+      "estimated_duration_s": 17,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "code-reveal",
+        "class": "SHOW",
+        "artifact": "main.py lines 19–22 and 26–28 verbatim; two reruns produced byte-identical stdout (FACTCHECK.md C9)",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Code card: sample(..., seed=7) and random.Random(seed)"
+          },
+          {
+            "at": 0.3,
+            "event": "demo() calls sample([1, 2, 3]) — always seed 7"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "main.py · course reference · lines 19–22 and 26–28",
+            "language": "source code",
+            "largeText": true,
+            "sparkLine": "Repeatable isn't fair.",
+            "code": "def sample(logits, count=1000, seed=7, temperature=1.0):\n    if type(count) is not int or count < 0:\n        raise ValueError(\"Count must be nonnegative\")\n    rng = random.Random(seed)\n\ndef demo():\n    return {\"probabilities\": probabilities([1, 2, 3]),\n            \"counts\": sample([1, 2, 3])}"
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": "2026-09-26T17:42:59.071509+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 13.78,
+      "audio_file": "mp3/beat-B06.mp3",
+      "render_duration_s": 13.791666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "remotion:ClaudeCodeBeat",
+        "at": "2026-09-27T14:47:25"
+      }
+    },
+    {
+      "beat_id": "B06B",
+      "act": "LIMITATION",
+      "narration_text": "One run is one data point. It can't tell bad luck apart from a biased die. Telling those apart takes many rolls with different starting points — and this assignment only ran one.",
+      "estimated_duration_s": 9,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "class": "SHOW",
+        "artifact": "Boundary card: what the single seeded run does not establish (FACTCHECK.md C10)",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Heading 'What This Does Not Show'"
+          },
+          {
+            "at": 0.2,
+            "event": "Three plain lines: one data point · can't separate bad luck from bias · needs many seeds"
+          },
+          {
+            "at": 0.5,
+            "event": "Terracotta 'Limitation' pill"
+          }
+        ],
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "eyebrow": "INFO 7375 · Week 1",
+            "heading": "What This Does Not Show",
+            "body": "One run is one data point. It can't tell bad luck apart from a biased die. Telling those apart takes many rolls with different starting points — and this assignment only ran one.",
+            "verdictLabel": "Limitation",
+            "verdictPositive": true,
+            "sparkLine": "One run isn't proof."
+          },
+          "rendered": {
+            "out": "media/B06B.mp4",
+            "at": "2026-09-26T18:40:41.504073+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 11.54,
+      "audio_file": "mp3/beat-B06B.mp3",
+      "render_duration_s": 11.541666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06B.mp4",
+        "filled_by": "remotion:SkillTeardownMechanism",
+        "at": "2026-09-27T14:47:25"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "VERDICT",
+      "narration_text": "The takeaway: expected and observed counts can differ just by chance, even when the odds are completely correct. This particular gap is on the larger side, but it isn't proof that anything is broken.",
+      "estimated_duration_s": 14,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "class": "SHOW",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Verdict artifact page, three lines"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Week 1 — What 630 Shows",
+            "artifactHeading": "Verdict",
+            "brandLabel": "Atharva C · INFO 7375",
+            "artifactLines": [
+              "Expected 665.24; observed 630.",
+              "Gap ≈ 2.4 × typical wander: unusual, possible by chance.",
+              "Next: many seeds, then compare."
+            ]
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": "2026-09-27T18:44:47.413773+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 12.74,
+      "audio_file": "mp3/beat-B07.mp3",
+      "render_duration_s": 12.75,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "remotion:ClaudeVerdictArtifact",
+        "at": "2026-09-27T14:47:25"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "act": "HANDOFF",
+      "narration_text": "Your turn. Paste this: Run sample from my main dot py with seeds zero to one ninety-nine. First, ask me to predict how often outcome two lands within thirty of six sixty-five. One check: every run needs its own seed, or you'll get six thirty every time.",
+      "estimated_duration_s": 30,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "type-on",
+        "class": "SHOW",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "'Your turn.' greeting; suggested prompt types into the composer"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "INFO 7375 · WEEK 1",
+            "segment": "Why 630, Not 665?",
+            "command": "Run sample() from my main.py with seeds 0 to 199. First, ask me to predict how often outcome 2 lands within 30 of 665.",
+            "runningText": "paste this into Claude…",
+            "folderLabel": "INFO 7375 · Week 1",
+            "output": [
+              "check: each run passes its own seed (default is seed=7)"
+            ]
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": "2026-09-26T18:10:17.670384+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 17.77,
+      "audio_file": "mp3/beat-B08.mp3",
+      "render_duration_s": 17.791666666666668,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B08.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-09-27T14:47:25"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "act": "OUTRO",
+      "narration_text": "Why 630, not 665. Narrated by a synthetic voice.",
+      "estimated_duration_s": 5,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "class": "SHOW",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Title restate, author credit, disclosure colophon"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Why 630, Not 665?",
+            "artifactHeading": "Credits",
+            "brandLabel": "INFO 7375 · Week 1",
+            "artifactLines": [
+              "Atharva C · INFO 7375, Week 1",
+              "Narration: synthetic Kokoro voice (af_bella), not the author or the instructor.",
+              "Code: course reference main.py, unmodified.",
+              "Claude screens are reconstructed UI. No endorsement implied."
+            ]
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": "2026-09-27T18:46:27.916590+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 5.67,
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "render_duration_s": 5.708333333333333,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "remotion:ClaudeVerdictArtifact",
+        "at": "2026-09-27T14:47:25"
+      }
+    }
+  ]
+}

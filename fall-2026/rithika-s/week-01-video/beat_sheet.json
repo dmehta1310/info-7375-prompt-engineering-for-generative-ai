@@ -1,0 +1,867 @@
+{
+  "metadata": {
+    "title": "The Token That Followed",
+    "slug": "ch1-token-that-followed",
+    "topic": "INFO 7375 · CHAPTER 1",
+    "purpose": "Teach a viewer who has never heard of next-token prediction what the pretraining objective actually targets — the token that followed in the text, not the true one — by pacing the real softmax arithmetic one step at a time, then naming what the explanation does not establish.",
+    "concept": "What pretraining actually targets (the token that followed, not the truth)",
+    "course": "INFO 7375 — Prompt Engineering for Generative AI",
+    "author": "Rithika Sankar Rajeswari",
+    "chapter": "Chapter 1",
+    "register": "Teardown",
+    "audience": "Absolute beginners — someone who has never heard of next-token prediction, logits, or softmax. No prior term is assumed; each is introduced the moment it is first needed and not before.",
+    "brand": "claude-sasha",
+    "persona": "Sasha",
+    "engine": "kokoro",
+    "voice_kokoro": "af_bella",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#F2F0E9",
+    "clock": "narration",
+    "folder_chip": "INFO 7375 · CH 1",
+    "runtime_floor_s": 240,
+    "runtime_floor_reason": "Live-class instruction from the professor overriding the written 2–4 minute syllabus target; see FRICTIONAL.md.",
+    "structure": "6 acts: 1 Hook · 2 Mechanism (slow, 5-step softmax ladder) · 3 Contrast (true corpus) · 4 Loss consequence · 5 Named boundary · 6 Takeaway. No seventh act.",
+    "honesty": "CONSTRUCTED EXAMPLE. The two corpus lines, the four-token vocabulary and the four logits are invented teaching values, not measurements from a trained model. The arithmetic derived from them is exact, is computed by verify_softmax.py, and is injected into these props by build_beat_sheet.py so no on-screen number is hand-typed. Every beat that displays a figure carries the on-screen CONSTRUCTED EXAMPLE banner.",
+    "color_semantics": "Claude fidelity palette. Terracotta #D97757 is the ONE accent and marks the target token or the step under discussion. The deeper warn step #A44A32 appears only on the honesty banner.",
+    "chassis": "Ch1Chrome (Ch1Stage) — ground, spark line, honesty banner, course bug.",
+    "no_claude_ui": "This cut contains no Claude-interface beats. The requested 6-act structure has no ask/handoff slot, and the standing constraint that any Claude response shown must be a real, dated one means a composed-looking UI reply would be the wrong thing to render. See FRICTIONAL.md.",
+    "tags": [
+      "pretraining",
+      "next-token prediction",
+      "softmax",
+      "cross-entropy",
+      "language models",
+      "INFO 7375",
+      "Northeastern"
+    ],
+    "runtime_measured_s": 253.86,
+    "runtime_ffprobe_s": 254.041667,
+    "runtime_ffprobe_note": "Measured with ffprobe -show_entries format=duration on the delivered master, per the brief. Narration clock 253.86s; compile.py ceilings each beat to the 24fps grid."
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "HOOK",
+      "estimated_duration_s": 15,
+      "new_visual_element": "The false claim, as plain English",
+      "narration_text": "Here is a sentence. It is wrong — the moon is not made of cheese. But suppose a language model reads it during training. What does it learn to predict comes after the word green?",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "reveal-and-hold",
+        "visual_intent": "Ch1PretrainHook — opens on the claim itself and asks the question before any mechanism, then holds on real trailing silence so the viewer answers it themselves.",
+        "show": [
+          {
+            "at": "0.02",
+            "event": "The sentence lands in large serif — no math anywhere on screen"
+          },
+          {
+            "at": "0.30",
+            "event": "'green' takes the terracotta accent"
+          },
+          {
+            "at": "0.34",
+            "event": "The question types in beside a terracotta rule"
+          },
+          {
+            "at": "0.56",
+            "event": "'… of green' plus a pulsing dashed '?' — the slot, unanswered"
+          },
+          {
+            "at": "0.70",
+            "event": "'YOUR GUESS FIRST' appears; the beat holds on appended silence"
+          }
+        ],
+        "remotion": {
+          "pattern": "Ch1PretrainHook",
+          "props": {
+            "line": "The moon is made of green cheese.",
+            "focusWord": "green",
+            "question": "If a model reads this sentence, what does it learn to predict comes after “green”?",
+            "pausePrompt": "Your guess first.",
+            "sparkLine": "One sentence.",
+            "durationS": 14.45
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": "2026-09-23T17:34:52.253861+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 14.45,
+      "render_duration_s": 14.458333333333334,
+      "guess_pause_s": 3.5,
+      "pause_note": "3.5s of silence appended to the narration mp3 (ffmpeg apad) so the viewer's guess pause is part of the MEASURED clock, not an illusion in the edit. MUST be applied after the last generate_audio_kokoro.py run — that script regenerates every beat unconditionally and would overwrite it."
+    },
+    {
+      "beat_id": "B01",
+      "act": "MECHANISM",
+      "estimated_duration_s": 21,
+      "new_visual_element": "Text → tokens → the next-token question",
+      "narration_text": "Before any math, the setup. A model in pretraining never sees a fact-checker. It sees text, chopped into pieces called tokens — roughly words. Its whole job is this: given the tokens so far, guess the next one. So take everything up to green, and ask what comes next. That guess is the only thing it is ever scored on.",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "token-reveal",
+        "visual_intent": "Ch1PretrainCorpus — introduces the word 'token' on the sentence the viewer already read, so the vocabulary arrives attached to something concrete.",
+        "show": [
+          {
+            "at": "0.03",
+            "event": "Corpus card fades up with its source label"
+          },
+          {
+            "at": "0.16",
+            "event": "The seven tokens land one at a time, left to right"
+          },
+          {
+            "at": "0.50",
+            "event": "Context tokens recede; 'green' fills terracotta"
+          },
+          {
+            "at": "0.62",
+            "event": "'cheese' lifts out and a dashed '?' opens in its place"
+          },
+          {
+            "at": "0.78",
+            "event": "Two panels hold: WHAT PRETRAINING SEES / WHAT IS TRUE — 'never shown to the model'"
+          }
+        ],
+        "remotion": {
+          "pattern": "Ch1PretrainCorpus",
+          "props": {
+            "sourceLabel": "CONSTRUCTED CORPUS · SCIENCE-FICTION NOVEL, CH. 4",
+            "line": "The moon is made of green cheese",
+            "focusIndex": 5,
+            "corpusNote": "The corpus says cheese.",
+            "truthNote": "The real moon is rock.",
+            "sparkLine": "Text in, one token out.",
+            "durationS": 20.57
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": "2026-09-23T17:35:37.477896+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 20.57,
+      "render_duration_s": 20.583333333333332
+    },
+    {
+      "beat_id": "B02",
+      "act": "MECHANISM",
+      "estimated_duration_s": 26,
+      "new_visual_element": "The answer key: one on cheese, zero on rock",
+      "narration_text": "Now, the answer to the question I asked. As far as training is concerned, the correct answer is cheese. Not rock. Because the model is not scored against the world — it is scored against this text, and in this text, the word after green was cheese. Training builds an answer key from the sentence itself: a one on cheese, a zero on everything else. Rock, which is true of the moon, gets a zero.",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "side-by-side-hold",
+        "visual_intent": "Ch1PretrainTarget — answers the hook's question out loud, then shows the one-hot answer key beside the truth-based one that the objective never constructs.",
+        "show": [
+          {
+            "at": "0.04",
+            "event": "Left panel opens in terracotta: THE ANSWER KEY y / 'built from the text'"
+          },
+          {
+            "at": "0.16",
+            "event": "Four slots fill — rock 0, cheese 1, gas 0, light 0"
+          },
+          {
+            "at": "0.48",
+            "event": "Right panel opens greyed: an answer key built from truth"
+          },
+          {
+            "at": "0.52",
+            "event": "Its slots fill the other way, token names struck through"
+          },
+          {
+            "at": "0.74",
+            "event": "A cross draws across the right panel; both hold side by side"
+          }
+        ],
+        "remotion": {
+          "pattern": "Ch1PretrainTarget",
+          "props": {
+            "vocab": [
+              "rock",
+              "cheese",
+              "gas",
+              "light"
+            ],
+            "target": "cheese",
+            "truth": "rock",
+            "leftTitle": "THE ANSWER KEY y",
+            "leftWhy": "built from the text",
+            "rightTitle": "AN ANSWER KEY FROM TRUTH",
+            "rightWhy": "pretraining never builds this",
+            "sparkLine": "One on cheese. Zero on rock.",
+            "durationS": 23.28
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": "2026-09-23T17:36:28.143859+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 23.28,
+      "render_duration_s": 23.291666666666668
+    },
+    {
+      "beat_id": "B03",
+      "act": "MECHANISM",
+      "estimated_duration_s": 20,
+      "new_visual_element": "Step 1 — the raw scores",
+      "narration_text": "So how does a guess become a number? The model gives every candidate word a raw score. Rock gets four. Cheese gets one. Gas gets zero. Light gets minus a half. These are called logits, and they are not probabilities yet — they can be negative, and they do not add up to anything in particular. That is what the next four steps fix.",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "column-reveal",
+        "visual_intent": "Ch1PretrainLadder step 1 of 5 — the same four tokens gaining exactly one column, so no beat asks the viewer to absorb two new things at once.",
+        "show": [
+          {
+            "at": "0.06",
+            "event": "The four candidates land"
+          },
+          {
+            "at": "0.16",
+            "event": "Column 1 animates in and takes the terracotta header"
+          },
+          {
+            "at": "0.40",
+            "event": "The plain-language note for this step lands"
+          }
+        ],
+        "remotion": {
+          "pattern": "Ch1PretrainLadder",
+          "props": {
+            "vocab": [
+              "rock",
+              "cheese",
+              "gas",
+              "light"
+            ],
+            "logits": [
+              4.0,
+              1.0,
+              0.0,
+              -0.5
+            ],
+            "maxValue": 4.0,
+            "shifted": [
+              0.0,
+              -3.0,
+              -4.0,
+              -4.5
+            ],
+            "exps": [
+              1.0,
+              0.0498,
+              0.0183,
+              0.0111
+            ],
+            "expSum": 1.0792,
+            "probs": [
+              0.9266,
+              0.0461,
+              0.017,
+              0.0103
+            ],
+            "pct": [
+              92.7,
+              4.6,
+              1.7,
+              1.0
+            ],
+            "target": "cheese",
+            "step": 1,
+            "sparkLine": "Scores, not odds yet.",
+            "stepNote": "Four raw scores. Not probabilities — they can be negative and they add up to nothing in particular.",
+            "durationS": 20.04
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": "2026-09-23T17:37:10.593693+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 20.04,
+      "render_duration_s": 20.041666666666668
+    },
+    {
+      "beat_id": "B04",
+      "act": "MECHANISM",
+      "estimated_duration_s": 21,
+      "new_visual_element": "Step 2 — subtract the largest score",
+      "narration_text": "Step two looks strange, so let me say why it is here. We find the largest score — four — and subtract it from all of them. Rock becomes zero. Cheese becomes minus three. The ranking has not changed, and it turns out the final answer does not change either. It is done because the next step uses exponentials, which blow up on large numbers. This keeps them small.",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "column-reveal",
+        "visual_intent": "Ch1PretrainLadder step 2 of 5 — the same four tokens gaining exactly one column, so no beat asks the viewer to absorb two new things at once.",
+        "show": [
+          {
+            "at": "0.06",
+            "event": "The four candidates hold; columns 1–1 are already on screen"
+          },
+          {
+            "at": "0.16",
+            "event": "Column 2 animates in and takes the terracotta header"
+          },
+          {
+            "at": "0.40",
+            "event": "The plain-language note for this step lands"
+          }
+        ],
+        "remotion": {
+          "pattern": "Ch1PretrainLadder",
+          "props": {
+            "vocab": [
+              "rock",
+              "cheese",
+              "gas",
+              "light"
+            ],
+            "logits": [
+              4.0,
+              1.0,
+              0.0,
+              -0.5
+            ],
+            "maxValue": 4.0,
+            "shifted": [
+              0.0,
+              -3.0,
+              -4.0,
+              -4.5
+            ],
+            "exps": [
+              1.0,
+              0.0498,
+              0.0183,
+              0.0111
+            ],
+            "expSum": 1.0792,
+            "probs": [
+              0.9266,
+              0.0461,
+              0.017,
+              0.0103
+            ],
+            "pct": [
+              92.7,
+              4.6,
+              1.7,
+              1.0
+            ],
+            "target": "cheese",
+            "step": 2,
+            "sparkLine": "Shift, don't change.",
+            "stepNote": "Subtracting the max is what real implementations do: exp of a large number overflows. The final probabilities are identical.",
+            "durationS": 22.22
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": "2026-09-23T17:37:57.341102+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 22.22,
+      "render_duration_s": 22.25
+    },
+    {
+      "beat_id": "B05",
+      "act": "MECHANISM",
+      "estimated_duration_s": 20,
+      "new_visual_element": "Step 3 — exponentiate",
+      "narration_text": "Step three: exponentiate. Raise e to the power of each shifted score. Rock, being zero, becomes exactly one. Cheese becomes about zero point zero five. Notice what that did — it made every number positive, and it stretched the gaps. A three point lead in score became a twenty to one lead here. Add them up: one point zero seven nine two.",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "column-reveal",
+        "visual_intent": "Ch1PretrainLadder step 3 of 5 — the same four tokens gaining exactly one column, so no beat asks the viewer to absorb two new things at once.",
+        "show": [
+          {
+            "at": "0.06",
+            "event": "The four candidates hold; columns 1–2 are already on screen"
+          },
+          {
+            "at": "0.16",
+            "event": "Column 3 animates in and takes the terracotta header"
+          },
+          {
+            "at": "0.40",
+            "event": "The plain-language note for this step lands"
+          },
+          {
+            "at": "0.52",
+            "event": "Σ exp = 1.0792 closes under a rule"
+          }
+        ],
+        "remotion": {
+          "pattern": "Ch1PretrainLadder",
+          "props": {
+            "vocab": [
+              "rock",
+              "cheese",
+              "gas",
+              "light"
+            ],
+            "logits": [
+              4.0,
+              1.0,
+              0.0,
+              -0.5
+            ],
+            "maxValue": 4.0,
+            "shifted": [
+              0.0,
+              -3.0,
+              -4.0,
+              -4.5
+            ],
+            "exps": [
+              1.0,
+              0.0498,
+              0.0183,
+              0.0111
+            ],
+            "expSum": 1.0792,
+            "probs": [
+              0.9266,
+              0.0461,
+              0.017,
+              0.0103
+            ],
+            "pct": [
+              92.7,
+              4.6,
+              1.7,
+              1.0
+            ],
+            "target": "cheese",
+            "step": 3,
+            "sparkLine": "Positive, and stretched.",
+            "stepNote": "Exponentiating makes every value positive and widens the gaps — a 3-point lead becomes roughly 20 to 1.",
+            "durationS": 21.77
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": "2026-09-23T17:38:43.453527+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 21.77,
+      "render_duration_s": 21.791666666666668
+    },
+    {
+      "beat_id": "B06",
+      "act": "MECHANISM",
+      "estimated_duration_s": 21,
+      "new_visual_element": "Step 4 — divide by the sum",
+      "narration_text": "Step four: divide each one by that total. This is the move that turns scores into probabilities. Because every row is divided by the same number, and that number is the sum of all the rows, the results are guaranteed to land between zero and one and to add up to exactly one. Nothing is left over, and nothing is invented.",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "column-reveal",
+        "visual_intent": "Ch1PretrainLadder step 4 of 5 — the same four tokens gaining exactly one column, so no beat asks the viewer to absorb two new things at once.",
+        "show": [
+          {
+            "at": "0.06",
+            "event": "The four candidates hold; columns 1–3 are already on screen"
+          },
+          {
+            "at": "0.16",
+            "event": "Column 4 animates in and takes the terracotta header"
+          },
+          {
+            "at": "0.40",
+            "event": "The plain-language note for this step lands"
+          }
+        ],
+        "remotion": {
+          "pattern": "Ch1PretrainLadder",
+          "props": {
+            "vocab": [
+              "rock",
+              "cheese",
+              "gas",
+              "light"
+            ],
+            "logits": [
+              4.0,
+              1.0,
+              0.0,
+              -0.5
+            ],
+            "maxValue": 4.0,
+            "shifted": [
+              0.0,
+              -3.0,
+              -4.0,
+              -4.5
+            ],
+            "exps": [
+              1.0,
+              0.0498,
+              0.0183,
+              0.0111
+            ],
+            "expSum": 1.0792,
+            "probs": [
+              0.9266,
+              0.0461,
+              0.017,
+              0.0103
+            ],
+            "pct": [
+              92.7,
+              4.6,
+              1.7,
+              1.0
+            ],
+            "target": "cheese",
+            "step": 4,
+            "sparkLine": "One shared denominator.",
+            "stepNote": "Every row divided by the same total. That is why the results must land between 0 and 1 and sum to exactly 1.",
+            "durationS": 20.62
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": "2026-09-23T17:49:21.688052+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 20.62,
+      "render_duration_s": 20.625
+    },
+    {
+      "beat_id": "B07",
+      "act": "MECHANISM",
+      "estimated_duration_s": 23,
+      "new_visual_element": "Step 5 — the probabilities, summing to exactly 1",
+      "narration_text": "And here is the result. Rock: ninety-two point seven percent. Cheese: four point six. Gas: one point seven. Light: one point zero. Add them: exactly one hundred percent. Look at the bar — that is the model's entire belief about what comes next, and almost all of it sits on rock. Which is correct about the moon. And, for training, wrong.",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "column-reveal",
+        "visual_intent": "Ch1PretrainLadder step 5 of 5 — the same four tokens gaining exactly one column, so no beat asks the viewer to absorb two new things at once.",
+        "show": [
+          {
+            "at": "0.06",
+            "event": "The four candidates hold; columns 1–4 are already on screen"
+          },
+          {
+            "at": "0.16",
+            "event": "Column 5 animates in and takes the terracotta header"
+          },
+          {
+            "at": "0.40",
+            "event": "The plain-language note for this step lands"
+          },
+          {
+            "at": "0.62",
+            "event": "The unit bar fills left to right and stops exactly full; Σ p = 1.0000"
+          }
+        ],
+        "remotion": {
+          "pattern": "Ch1PretrainLadder",
+          "props": {
+            "vocab": [
+              "rock",
+              "cheese",
+              "gas",
+              "light"
+            ],
+            "logits": [
+              4.0,
+              1.0,
+              0.0,
+              -0.5
+            ],
+            "maxValue": 4.0,
+            "shifted": [
+              0.0,
+              -3.0,
+              -4.0,
+              -4.5
+            ],
+            "exps": [
+              1.0,
+              0.0498,
+              0.0183,
+              0.0111
+            ],
+            "expSum": 1.0792,
+            "probs": [
+              0.9266,
+              0.0461,
+              0.017,
+              0.0103
+            ],
+            "pct": [
+              92.7,
+              4.6,
+              1.7,
+              1.0
+            ],
+            "target": "cheese",
+            "step": 5,
+            "sparkLine": "Correct, and penalised.",
+            "stepNote": "Almost all the belief sits on rock — the true answer. Training is about to call that a mistake.",
+            "durationS": 21.77
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": "2026-09-23T17:50:09.259476+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 21.77,
+      "render_duration_s": 21.791666666666668
+    },
+    {
+      "beat_id": "B08",
+      "act": "CONTRAST",
+      "estimated_duration_s": 30,
+      "new_visual_element": "Same model, two corpora, two answer keys",
+      "narration_text": "This is the part that proves it. On the left, the corpus we have: green cheese. The last token is cheese, so the answer key puts its one on cheese. On the right, imagine the corpus said the true thing instead: grey rock. Same model, same four scores — nothing about the network changed. But the answer key moved. Its one is on rock now. The target follows the sentence, not the fact. If it followed the fact, these two columns would be identical.",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "side-by-side-hold",
+        "visual_intent": "Ch1PretrainContrast — the falsifiability move. Holding the model fixed and swapping only the corpus shows the target is a function of the text; if it tracked truth the two columns would coincide.",
+        "show": [
+          {
+            "at": "0.03",
+            "event": "Left column: the corpus we have; its final token underlined"
+          },
+          {
+            "at": "0.14",
+            "event": "Its answer key fills — the one lands on cheese"
+          },
+          {
+            "at": "0.40",
+            "event": "Right column opens: the same sentence, made true"
+          },
+          {
+            "at": "0.46",
+            "event": "Its answer key fills the other way — the one lands on rock"
+          },
+          {
+            "at": "0.78",
+            "event": "Closing rule: identical weights, identical scores, only the sentence changed"
+          }
+        ],
+        "remotion": {
+          "pattern": "Ch1PretrainContrast",
+          "props": {
+            "vocab": [
+              "rock",
+              "cheese",
+              "gas",
+              "light"
+            ],
+            "falseLine": "The moon is made of green cheese",
+            "trueLine": "The moon is made of grey rock",
+            "yFalse": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "yTrue": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "falseTarget": "cheese",
+            "trueTarget": "rock",
+            "closing": "Identical weights. Identical scores. Only the sentence changed — and the target moved with it.",
+            "sparkLine": "Change the text, change the target.",
+            "durationS": 25.44
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": "2026-09-23T17:41:09.790249+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B08.mp3",
+      "actual_duration_s": 25.44,
+      "render_duration_s": 25.458333333333332
+    },
+    {
+      "beat_id": "B09",
+      "act": "LOSS",
+      "estimated_duration_s": 21,
+      "new_visual_element": "The penalty reads one slot",
+      "narration_text": "Now the consequence. The loss measures how wrong the model is, and it reads exactly one number: the probability it gave the token that actually came next. Cheese got four point six percent, so the penalty is three point zero eight. Had the text said rock, that identical prediction would have scored zero point zero eight.",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "counter-and-hold",
+        "visual_intent": "Ch1PretrainLoss — shows the penalty landing on 'cheese' because cheese is the next actual token, with the true-corpus counterfactual beside it on a shared scale.",
+        "show": [
+          {
+            "at": "0.02",
+            "event": "The sum collapses to one surviving term: −ln p(cheese)"
+          },
+          {
+            "at": "0.20",
+            "event": "Left panel counts up to 3.0762 — the penalty actually incurred"
+          },
+          {
+            "at": "0.50",
+            "event": "Right panel counts to 0.0762 — same weights, same forward pass"
+          },
+          {
+            "at": "0.76",
+            "event": "Bottom strip: the gap equals the score gap exactly, 3.0"
+          }
+        ],
+        "remotion": {
+          "pattern": "Ch1PretrainLoss",
+          "props": {
+            "target": "cheese",
+            "truth": "rock",
+            "pTarget": 0.0461,
+            "pTruth": 0.9266,
+            "lossTarget": 3.0762,
+            "lossTruth": 0.0762,
+            "logitTarget": 1.0,
+            "logitTruth": 4.0,
+            "sparkLine": "Penalised for being right.",
+            "durationS": 20.33
+          },
+          "rendered": {
+            "out": "media/B09.mp4",
+            "at": "2026-09-23T17:41:54.175234+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B09.mp3",
+      "actual_duration_s": 20.33,
+      "render_duration_s": 20.333333333333332
+    },
+    {
+      "beat_id": "B10",
+      "act": "BOUNDARY",
+      "estimated_duration_s": 32,
+      "new_visual_element": "What this does not establish",
+      "narration_text": "One last thing, and it matters. Everything you just watched is about pretraining only. There is a whole second stage afterwards — post-training, including preference tuning and R.L.H.F. — whose job is to steer the model toward answers people judge correct. That is a different objective with a different target, and none of it appeared here. This also does not establish that models must be wrong: most real text is broadly true, so copying it and being accurate usually agree. And none of these numbers were measured — they are constructed.",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "list-reveal",
+        "visual_intent": "Ch1PretrainBoundary — the falsifiability beat, given real screen time rather than a closing title card. No honesty banner here: this beat displays no constructed figure.",
+        "show": [
+          {
+            "at": "0.03",
+            "event": "Heading 'What this does not establish.' with the terracotta period"
+          },
+          {
+            "at": "0.18",
+            "event": "Limit 01 — post-training / RLHF, a separate later mechanism"
+          },
+          {
+            "at": "0.34",
+            "event": "Limit 02 — mimicry and accuracy agree almost everywhere"
+          },
+          {
+            "at": "0.50",
+            "event": "Limit 03 — nothing measured; the figures are constructed"
+          },
+          {
+            "at": "0.82",
+            "event": "Footer names the runnable proof"
+          }
+        ],
+        "remotion": {
+          "pattern": "Ch1PretrainBoundary",
+          "props": {
+            "heading": "What this does not establish",
+            "items": [
+              "How post-training — preference tuning, RLHF — later steers the model away from raw corpus mimicry and toward factual accuracy. That is a separate, later mechanism with a different target, and none of its machinery appeared here.",
+              "That models must therefore be wrong. Most real text is broadly true, so copying it and being accurate agree almost everywhere; this example is built from the case where they come apart.",
+              "Anything measured. The corpus lines, the four-token vocabulary and the logits are constructed teaching values — chosen to make the arithmetic legible, not observed from a trained model."
+            ],
+            "footer": "Only the arithmetic is load-bearing. It is reproducible: verify_softmax.py",
+            "sparkLine": "Where the claim stops.",
+            "durationS": 34.06
+          },
+          "rendered": {
+            "out": "media/B10.mp4",
+            "at": "2026-09-23T17:43:06.130733+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B10.mp3",
+      "actual_duration_s": 34.06,
+      "render_duration_s": 34.083333333333336
+    },
+    {
+      "beat_id": "B11",
+      "act": "TAKEAWAY",
+      "estimated_duration_s": 12,
+      "new_visual_element": "One sentence, no new claims",
+      "narration_text": "So, in one sentence: pretraining scores the model against the token that came next in the text, not against what is true. That is the whole idea.",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "poster",
+        "visual_intent": "Ch1PretrainTakeaway — restates the core idea in plain language and stops. Introduces nothing: every phrase has already been shown as a mechanism.",
+        "show": [
+          {
+            "at": "0.02",
+            "event": "'THE TAKEAWAY' anchors to the top edge of the safe area"
+          },
+          {
+            "at": "0.06",
+            "event": "The one sentence types up in large serif, terracotta period"
+          },
+          {
+            "at": "0.34",
+            "event": "Terracotta rule draws outward"
+          },
+          {
+            "at": "0.46",
+            "event": "Title restate lands"
+          },
+          {
+            "at": "0.58",
+            "event": "Credit rail anchors to the bottom edge"
+          }
+        ],
+        "remotion": {
+          "pattern": "Ch1PretrainTakeaway",
+          "props": {
+            "eyebrow": "THE TAKEAWAY",
+            "takeaway": "Pretraining scores the model against the token that came next in the text — not against what is true.",
+            "title": "The Token That Followed",
+            "handle": "INFO 7375 · Prompt Engineering for Generative AI",
+            "credit": "Rithika Sankar Rajeswari · narrated by Sasha",
+            "rail": "Kokoro TTS af_bella · Brutalist toolkit · $0.00",
+            "durationS": 9.31
+          },
+          "rendered": {
+            "out": "media/B11.mp4",
+            "at": "2026-09-23T17:43:27.896818+00:00"
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B11.mp3",
+      "actual_duration_s": 9.31,
+      "render_duration_s": 9.333333333333334
+    }
+  ]
+}

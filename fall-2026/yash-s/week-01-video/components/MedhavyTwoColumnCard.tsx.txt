@@ -1,0 +1,120 @@
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame, useVideoConfig, spring, interpolate } from 'remotion';
+import { z } from 'zod';
+import { CLAUDE, CLAUDE_FONT } from '../tokens/claude';
+
+/**
+ * MedhavyTwoColumnCard — split-role illustration for claude-medhavy.
+ * Left column (what Claude does) vs right column (what you do).
+ * SparkLine overlays top center. Items stagger in.
+ * Typical use: the draft-then-judge recipe beat (M1 B03).
+ */
+
+export const medhavyTwoColumnCardSchema = z.object({
+  sparkLine: z.string().default('Draft, then judge.'),
+  leftHeader: z.string().default('what Claude does'),
+  leftItems: z.array(z.string()).default(['draft the plan', 'cite the standard', 'suggest levels']),
+  rightHeader: z.string().default('what you do'),
+  rightItems: z.array(z.string()).default(['judge every line', 'catch the errors', 'decide what ships']),
+});
+export type MedhavyTwoColumnCardProps = z.infer<typeof medhavyTwoColumnCardSchema>;
+
+const STAGE = '#F2F0E9';
+const SERIF = CLAUDE_FONT.serif;
+const SANS = CLAUDE_FONT.ui;
+
+const clamp = (v: number, a: number, b: number) => Math.min(b, Math.max(a, v));
+
+
+export const MedhavyTwoColumnCard: React.FC<MedhavyTwoColumnCardProps> = ({
+  sparkLine, leftHeader, leftItems, rightHeader, rightItems,
+}) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+
+  const sparkIn = interpolate(frame, [0, 12], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const cardIn = spring({ frame: frame - 4, fps, config: { damping: 28, stiffness: 130, mass: 0.9 } });
+  const hdrIn = spring({ frame: frame - 10, fps, config: { damping: 28, stiffness: 130, mass: 0.9 } });
+
+  const rows = Math.max(leftItems.length, rightItems.length);
+
+  return (
+    <AbsoluteFill style={{
+      background: STAGE,
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      boxSizing: 'border-box',
+      padding: '64px 100px',
+    }}>
+      <div style={{
+        display: 'flex', justifyContent: 'center', alignItems: 'center',
+        opacity: sparkIn,
+        marginBottom: 36,
+      }}>
+        <span style={{ fontFamily: SERIF, fontSize: 58, color: CLAUDE.INK }}>{sparkLine}</span>
+      </div>
+
+      <div style={{
+        width: '100%',
+        background: CLAUDE.CARD,
+        borderRadius: 18,
+        border: `3px solid ${CLAUDE.INK}`,
+        overflow: 'hidden',
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        opacity: clamp(cardIn, 0, 1),
+        transform: `translateY(${(1 - clamp(cardIn, 0, 1)) * 16}px)`,
+      }}>
+        <div style={{
+          padding: '36px 48px 32px',
+          borderRight: `3px solid ${CLAUDE.INK}`,
+          fontFamily: SANS,
+          fontSize: 32,
+          fontWeight: 700,
+          letterSpacing: '0.14em',
+          textTransform: 'uppercase',
+          color: CLAUDE.INK,
+          opacity: clamp(hdrIn, 0, 1),
+        }}>
+          {leftHeader}
+        </div>
+        <div style={{
+          padding: '36px 48px 32px',
+          fontFamily: SANS,
+          fontSize: 32,
+          fontWeight: 700,
+          letterSpacing: '0.14em',
+          textTransform: 'uppercase',
+          color: CLAUDE.SPARK,
+          opacity: clamp(hdrIn, 0, 1),
+        }}>
+          {rightHeader}
+        </div>
+
+        {/* One rule across both columns, so it meets the center stroke and the frame */}
+        <div style={{ gridColumn: '1 / -1', height: 3, background: CLAUDE.INK }} />
+
+        {Array.from({ length: rows }, (_, i) => {
+          const itemIn = spring({ frame: frame - 16 - i * 6, fps, config: { damping: 28, stiffness: 130, mass: 0.9 } });
+          const rowStyle = {
+            padding: '30px 48px 34px',
+            opacity: clamp(itemIn, 0, 1),
+          } as const;
+          return (
+            <React.Fragment key={i}>
+              <div style={{ ...rowStyle, borderRight: `3px solid ${CLAUDE.INK}`, display: 'flex', alignItems: 'center', gap: 16 }}>
+                <span style={{ color: CLAUDE.INK_SOFT, fontFamily: SANS, fontSize: 36 }}>·</span>
+                <span style={{ fontFamily: SANS, fontSize: 40, color: CLAUDE.INK, lineHeight: 1.35 }}>{leftItems[i] ?? ''}</span>
+              </div>
+              <div style={{ ...rowStyle, display: 'flex', alignItems: 'center', gap: 16 }}>
+                <span style={{ color: CLAUDE.SPARK, fontFamily: SANS, fontSize: 36, fontWeight: 700 }}>→</span>
+                <span style={{ fontFamily: SANS, fontSize: 40, color: CLAUDE.INK, lineHeight: 1.35 }}>{rightItems[i] ?? ''}</span>
+              </div>
+            </React.Fragment>
+          );
+        })}
+      </div>
+    </AbsoluteFill>
+  );
+};

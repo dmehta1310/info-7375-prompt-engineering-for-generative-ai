@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "slug": "riya-k-expected-is-not-a-promise",
+    "title": "665.24 Is Not a Promise",
+    "topic": "INFO 7375 \u00b7 CHAPTER 1",
+    "purpose": "Explain one Chapter 1 concept: an expected count is not a prediction of any single run, and a single run cannot distinguish an unlucky fair sampler from a biased one.",
+    "audience": "INFO 7375 classmates and the grading TA",
+    "clock": "narration",
+    "engine": "kokoro",
+    "voice": "af_bella",
+    "register": "Practitioner report \u2014 plain, unhurried, no hype",
+    "concept_source": "lessons/01-randomness-and-first-prompts/code/main.py",
+    "evidence_file": "evidence/expected_vs_observed_output.txt",
+    "numbers_note": "Every figure spoken or shown is reproduced by evidence/expected_vs_observed.py. Nothing is illustrative. No constructed distributions appear in this reel.",
+    "target_runtime_s": 209
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "TITLE",
+      "estimated_duration_s": 21,
+      "narration_text": "665.24 is not a promise. I'm Riya Kapadnis, and this is my Week 1 explainer for INFO 7375. One concept from Chapter 1. The chapter ships a sampler, and it predicts that token 2 will appear 665.24 times in a thousand draws. I ran it, and it came up 630 times. So what does an expected count actually claim?",
+      "new_visual_element": "Title card: name, course, and the question the reel answers",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "fade-on"
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B00_Title",
+        "production_viz": {
+          "label": "title + the question",
+          "mechanic": "Title and byline settle, then the setup states itself in three lines \u2014 predicted 665.24, observed 630 \u2014 and closes on the question the rest of the reel answers.",
+          "note": "Figures from BEAT 1 of the evidence run."
+        }
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "ASK",
+      "estimated_duration_s": 17,
+      "narration_text": "Here is the run itself. The three probabilities, and the counts from a thousand draws at seed 7. Token 2: expected 665.24, observed 630. Thirty-five short. So \u2014 is the code broken?",
+      "new_visual_element": "Real main.py output, expected vs observed pulled out",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "type-on"
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B01_TheGap",
+        "production_viz": {
+          "label": "main.py output \u2192 the 35-count gap",
+          "mechanic": "Terminal block showing the verbatim main.py JSON. Then EXPECTED 665.24 and OBSERVED 630 lift out and sit side by side; a bracket between them reads -35.24.",
+          "note": "Text is copied verbatim from evidence/expected_vs_observed_output.txt, BEAT 1."
+        }
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "DEFINE",
+      "estimated_duration_s": 22,
+      "narration_text": "First, what those two numbers are. 665.24 is an expected count. It is the probability times the number of draws, and nothing more. It is not a forecast that any particular run will produce it. It cannot be: you cannot draw 0.24 of a token. 630 is different. It is a thing that actually happened, once, on one run.",
+      "new_visual_element": "Expected count defined as p x n, contrasted with an observed count",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "draw-on"
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B02_TwoKinds",
+        "production_viz": {
+          "label": "0.6652409557748218 x 1000 = 665.2409557748218",
+          "mechanic": "Left card EXPECTED: the multiplication writes itself out to full precision, then the fractional .24 is circled with the note 'you cannot draw a quarter of a token'. Right card OBSERVED: the integer 630 stamps down, labelled 'happened once, seed 7'.",
+          "note": "Full-precision value from BEAT 1 of the evidence run."
+        }
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "MECHANISM",
+      "estimated_duration_s": 30,
+      "narration_text": "To know whether 35 is a big miss, I need the spread. For a thousand independent draws at probability 0.665, the standard deviation is the square root of n times p times one minus p. That is 14.92. So a typical run lands somewhere between 650 and 680. 630 sits 2.36 standard deviations below the expected count \u2014 outside two.",
+      "new_visual_element": "Binomial standard deviation computed on screen, 630 placed against it",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "draw-on"
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B03_HowBigIsANormalMiss",
+        "production_viz": {
+          "label": "sd = sqrt(1000 x 0.665241 x 0.334759) = 14.92298316472358",
+          "mechanic": "The formula fills in term by term and resolves to 14.923. A horizontal axis draws in, centred on 665.24, with a shaded +/-1 SD band (650.3 to 680.2) and a wider +/-2 SD band (635.4 to 695.1). A marker drops at 630, landing outside the 2 SD band. Label: z = -2.36.",
+          "note": "All values from BEAT 2 of the evidence run."
+        }
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "EVIDENCE",
+      "estimated_duration_s": 33,
+      "narration_text": "But that is a formula telling me what the spread should be. I wanted to watch it happen. So I ran the same sampler ten thousand times, changing only the seed, and counted token two on every run. Here is where those ten thousand runs landed. The average is 665.234. The formula predicted 665.24. The measured spread is 14.71 against a predicted 14.92. The sampler is doing exactly what the probability says.",
+      "new_visual_element": "Histogram of 10,000 real runs assembling, converging on the predicted mean",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "build"
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B04_TenThousandSeeds",
+        "production_viz": {
+          "label": "seeds 0-9999, 1000 draws each \u2014 measured, not simulated for the camera",
+          "mechanic": "Histogram builds as bars accumulate left to right; range 608 to 721. A vertical line settles at the empirical mean 665.234 next to a dashed line at the formula's 665.24 \u2014 they land on top of each other. Side panel prints measured SD 14.7069 against predicted 14.9230.",
+          "note": "From BEAT 4 of the evidence run. Deterministic: seeds 0-9999, re-runs identical."
+        }
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "TURN",
+      "estimated_duration_s": 28,
+      "narration_text": "Now look at where 630 falls on that. Of ten thousand seeds, 89 landed at or below it. That is the 0.89th percentile \u2014 below the first percentile, which is 631. The seed this lesson ships with, seed 7, is one of the roughly one percent most extreme low draws you can get. Not wrong. Just unusual, and shipped as the default.",
+      "new_visual_element": "630 located in the left tail of the measured distribution",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "highlight"
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B05_WhereSeedSevenLands",
+        "production_viz": {
+          "label": "89 / 10,000 at or below 630 = 0.89th percentile",
+          "mechanic": "The same histogram from B04 stays on screen. Bars at or below 630 light up and a counter tallies to 89. A p1 gridline draws at 631; the 630 marker sits to its left. Percentile ladder appears at the side: p1=631, p5=641, p25=655, p50=665, p75=675, p95=689, p99=699.",
+          "note": "From BEAT 4 percentile block of the evidence run."
+        }
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "BOUNDARY",
+      "estimated_duration_s": 32,
+      "narration_text": "Here is what this does not establish. A sampler that was genuinely biased \u2014 one whose real probability was 0.63, not 0.665 \u2014 would also produce 630. In fact it would produce it with probability 0.026, about fifteen times more readily than the fair sampler's 0.0017. Both stories explain the number I saw. One run of a thousand does not separate them. I have shown that 630 is consistent with a fair sampler. I have not shown a fair sampler is the only thing that could have produced it.",
+      "new_visual_element": "Two candidate distributions, both passing through the observed value",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "overlay"
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B06_WhatThisDoesNotEstablish",
+        "production_viz": {
+          "label": "P(630 | p=0.6652) = 0.001681   vs   P(630 | p=0.6300) = 0.026123",
+          "mechanic": "Fair-sampler curve centred on 665.24 draws first. A second curve centred on 630 fades in over it. A vertical line at 630 passes through both; the two intersection points are labelled with their probabilities. Closing card: ONE RUN CANNOT TELL THESE APART.",
+          "note": "From BEAT 5 of the evidence run."
+        }
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "CONCLUSION",
+      "estimated_duration_s": 26,
+      "narration_text": "So, 630 was not a bug. An expected count is a rate times a number of draws, not a promise about any one run. Ten thousand runs showed the sampler is fair \u2014 they averaged 665.234 against a predicted 665.24. And they showed that seed 7 sits in the bottom one percent of what that sampler produces. But the line worth keeping is the last one: reproducing a number is not the same as knowing why you got it.",
+      "new_visual_element": "Three-line conclusion and the closing claim",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "build"
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B07_Conclusion",
+        "production_viz": {
+          "label": "not a bug / the sampler is fair / seed 7 is unusual",
+          "mechanic": "Three findings stack in, each with the figure that supports it, then a rule and the closing line.",
+          "note": "All figures from the evidence run; no new claims introduced."
+        }
+      }
+    }
+  ]
+}

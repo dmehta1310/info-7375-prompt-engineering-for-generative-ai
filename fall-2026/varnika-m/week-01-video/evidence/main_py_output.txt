@@ -1,0 +1,17 @@
+# Evidence captured 2026-09-26 17:35 EDT on macOS 26.6
+# Course repo commit: 24f4af341adcced3e7b287b98113b24d40a7b2f1
+# Interpreter: Python 3.12.14
+
+$ python3.12 lessons/01-randomness-and-first-prompts/code/main.py
+{
+  "probabilities": [
+    0.09003057317038046,
+    0.24472847105479764,
+    0.6652409557748218
+  ],
+  "counts": {
+    "1": 268,
+    "2": 630,
+    "0": 102
+  }
+}

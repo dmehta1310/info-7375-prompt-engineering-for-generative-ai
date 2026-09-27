@@ -1,0 +1,45 @@
+{
+  "runtime_seconds": 192.8,
+  "beats": [
+    {
+      "beat_id": "B00",
+      "start": 0.0,
+      "end": 23.998
+    },
+    {
+      "beat_id": "B01",
+      "start": 23.998,
+      "end": 44.156
+    },
+    {
+      "beat_id": "B02",
+      "start": 44.156,
+      "end": 69.186
+    },
+    {
+      "beat_id": "B03",
+      "start": 69.186,
+      "end": 90.256
+    },
+    {
+      "beat_id": "B04",
+      "start": 90.256,
+      "end": 115.814
+    },
+    {
+      "beat_id": "B05",
+      "start": 115.814,
+      "end": 139.26
+    },
+    {
+      "beat_id": "B06",
+      "start": 139.26,
+      "end": 166.81
+    },
+    {
+      "beat_id": "B07",
+      "start": 166.81,
+      "end": 192.8
+    }
+  ]
+}
