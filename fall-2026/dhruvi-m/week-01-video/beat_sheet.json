@@ -1,0 +1,599 @@
+{
+  "_note": "Simplified narration (plain language, no jargon) with bright, colorful visual design. All scores from info-7375 main.py.",
+  "_source": "https://github.com/nikbearbrown/info-7375-prompt-engineering-for-generative-ai",
+  "metadata": {
+    "slug": "temperature-concentration-control",
+    "title": "Temperature Is Not a Creativity Dial",
+    "skill": "ai-explainer",
+    "engine": "kokoro",
+    "voice_kokoro": "am_onyx",
+    "palette": "claude",
+    "typography": {
+      "serif": "EB Garamond",
+      "ui": "system sans",
+      "mono": "SF Mono"
+    },
+    "register": "Plain",
+    "audience": "Students",
+    "persona": "hai",
+    "folderLabel": "@HumanitariansAI",
+    "build": {
+      "at": "2026-09-27T15:42:45",
+      "cut": "review",
+      "filled": 11,
+      "of": 11,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "id": "B00",
+      "type": "ClaudeComposerAsk",
+      "classification": "SHOW",
+      "greeting": "Hi",
+      "persona": "hai",
+      "command": "Why does turning up temperature make a model say weirder things?",
+      "runningText": "thinking…",
+      "shot": {
+        "type": "ask",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Hi",
+            "command": "Why does turning up temperature make a model say weirder things?"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": "2026-09-27T20:16:14.845806+00:00"
+          }
+        },
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Composer window appears"
+          },
+          {
+            "at": 0.3,
+            "event": "Question types"
+          },
+          {
+            "at": 0.8,
+            "event": "Send button highlights"
+          },
+          {
+            "at": 1.2,
+            "event": "Response appears"
+          }
+        ]
+      },
+      "narration_text": "Why does turning up temperature make a model say weirder things? Let's look inside and see what actually happens.",
+      "beat_id": "B00",
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 6.61,
+      "render_duration_s": 6.625,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-09-27T15:42:45"
+      }
+    },
+    {
+      "id": "B01",
+      "type": "BrutalistHesitantWriter",
+      "classification": "SHOW",
+      "shot": {
+        "type": "card",
+        "remotion": {
+          "pattern": "BrutalistHesitantWriter",
+          "props": {
+            "text": "Temperature controls how confident the model sounds.\nNot what it picks,\nbut how sure it is picking it.",
+            "triggerWords": "confidence slider",
+            "replacementWords": "confidence dial",
+            "seed": "42",
+            "charMs": 25
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": "2026-09-27T20:18:15.015547+00:00"
+          }
+        },
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Text appears on screen"
+          },
+          {
+            "at": 0.5,
+            "event": "Writer types"
+          },
+          {
+            "at": 1.2,
+            "event": "Writer changes a word"
+          },
+          {
+            "at": 2.0,
+            "event": "Correction is highlighted"
+          },
+          {
+            "at": 2.5,
+            "event": "Final text holds"
+          }
+        ]
+      },
+      "text": "Temperature controls how confident the model sounds.\nNot what it picks,\nbut how sure it is picking it.",
+      "triggerWords": [
+        "confidence slider"
+      ],
+      "replacementWords": [
+        "confidence dial"
+      ],
+      "seed": 42,
+      "lead_silence_s": 0.8,
+      "narration_text": "Temperature is not a creativity dial. It's a control on how the model distributes probability across its choices. Same ranking. Different probability distribution. Watch how it works.",
+      "beat_id": "B01",
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 10.88,
+      "render_duration_s": 10.916666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "remotion:BrutalistHesitantWriter",
+        "at": "2026-09-27T15:42:45"
+      }
+    },
+    {
+      "id": "B02",
+      "type": "Remotion",
+      "classification": "SHOW",
+      "shot": {
+        "type": "graphic",
+        "remotion": {
+          "pattern": "TempB02LogitsGrid",
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": "2026-09-27T20:19:19.017863+00:00"
+          }
+        },
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Three words appear in bright colors"
+          },
+          {
+            "at": 0.4,
+            "event": "Each word gets a score"
+          },
+          {
+            "at": 1.0,
+            "event": "Scores light up"
+          },
+          {
+            "at": 2.0,
+            "event": "Winner is highlighted"
+          }
+        ]
+      },
+      "scene_name": "TempB02LogitsGrid",
+      "narration_text": "The model has three candidates. Each one gets a logit—a raw score from the neural network. One, two, three. The highest logit wins. That's where we start.",
+      "beat_id": "B02",
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 8.94,
+      "render_duration_s": 8.958333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "remotion:TempB02LogitsGrid",
+        "at": "2026-09-27T15:42:45"
+      }
+    },
+    {
+      "id": "B03",
+      "type": "Remotion",
+      "classification": "SHOW",
+      "shot": {
+        "type": "graphic",
+        "remotion": {
+          "pattern": "TempB03TemperatureSpread",
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": "2026-09-27T20:20:23.230959+00:00"
+          }
+        },
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Two bars appear side by side"
+          },
+          {
+            "at": 0.3,
+            "event": "Slider appears at bottom"
+          },
+          {
+            "at": 0.6,
+            "event": "Slider moves left, bars stretch"
+          },
+          {
+            "at": 1.2,
+            "event": "Slider resets"
+          },
+          {
+            "at": 1.5,
+            "event": "Slider moves right, bars shrink"
+          },
+          {
+            "at": 2.2,
+            "event": "Gap changes show"
+          }
+        ]
+      },
+      "scene_name": "TempB03TemperatureSpread",
+      "narration_text": "Temperature divides the logits. Lower temperature makes the gaps bigger—the top choice dominates. Higher temperature makes gaps smaller—alternatives become competitive. Same winner. Different spread.",
+      "beat_id": "B03",
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 11.39,
+      "render_duration_s": 11.416666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "remotion:TempB03TemperatureSpread",
+        "at": "2026-09-27T15:42:45"
+      }
+    },
+    {
+      "id": "B04",
+      "type": "Remotion",
+      "classification": "SHOW",
+      "shot": {
+        "type": "graphic",
+        "remotion": {
+          "pattern": "TempB04ExponentialAmp",
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": "2026-09-27T20:21:32.960827+00:00"
+          }
+        },
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Curve appears on screen"
+          },
+          {
+            "at": 0.3,
+            "event": "Two input points marked close together"
+          },
+          {
+            "at": 0.7,
+            "event": "Arrows show where they map on curve"
+          },
+          {
+            "at": 1.1,
+            "event": "Output points far apart"
+          },
+          {
+            "at": 1.8,
+            "event": "Gap widens dramatically"
+          }
+        ]
+      },
+      "scene_name": "TempB04ExponentialAmp",
+      "narration_text": "Then exponential: e to the power of each logit. Small input differences become huge exponential differences. That's where temperature gets its power. The exponentiation amplifies the division effect.",
+      "beat_id": "B04",
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 11.93,
+      "render_duration_s": 11.958333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "remotion:TempB04ExponentialAmp",
+        "at": "2026-09-27T15:42:45"
+      }
+    },
+    {
+      "id": "B05",
+      "type": "Remotion",
+      "classification": "SHOW",
+      "shot": {
+        "type": "graphic",
+        "remotion": {
+          "pattern": "TempB05SoftmaxPercent",
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": "2026-09-27T20:23:25.963057+00:00"
+          }
+        },
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Three colorful bar charts appear"
+          },
+          {
+            "at": 0.5,
+            "event": "Labels show temperatures: low, medium, high"
+          },
+          {
+            "at": 1.0,
+            "event": "First chart: top bar dominates"
+          },
+          {
+            "at": 1.5,
+            "event": "Second chart: bars more balanced"
+          },
+          {
+            "at": 2.0,
+            "event": "Third chart: all bars competitive"
+          },
+          {
+            "at": 2.8,
+            "event": "Charts glow brightly"
+          }
+        ]
+      },
+      "scene_name": "TempB05SoftmaxPercent",
+      "narration_text": "Finally: softmax normalization. The exponentials become probabilities that sum to one. At low temperature: 99.3 percent to the winner. At medium: 66.5 percent. At high: 50.6 percent. Same ranking. The probability distribution changed.",
+      "beat_id": "B05",
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 16.06,
+      "render_duration_s": 16.083333333333332,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "remotion:TempB05SoftmaxPercent",
+        "at": "2026-09-27T15:42:45"
+      }
+    },
+    {
+      "id": "B06",
+      "type": "Remotion",
+      "classification": "SHOW",
+      "shot": {
+        "type": "graphic",
+        "remotion": {
+          "pattern": "FormACard",
+          "props": {
+            "lines": [
+              "Same first pick.",
+              "Different confidence."
+            ]
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": "2026-09-27T20:31:01.269960+00:00"
+          }
+        },
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Bright text card appears"
+          },
+          {
+            "at": 0.5,
+            "event": "Key phrase is highlighted"
+          },
+          {
+            "at": 1.2,
+            "event": "Card glows in place"
+          }
+        ]
+      },
+      "scene_name": "FormACard",
+      "narration_text": "Remember: the winner never changes. Temperature only changes confidence. Same first pick. Different level of 'I'm sure about this.'",
+      "beat_id": "B06",
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 7.51,
+      "render_duration_s": 7.541666666666667,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "remotion:FormACard",
+        "at": "2026-09-27T15:42:45"
+      }
+    },
+    {
+      "id": "B07",
+      "type": "Remotion",
+      "classification": "SHOW",
+      "shot": {
+        "type": "graphic",
+        "remotion": {
+          "pattern": "FormACard",
+          "props": {
+            "lines": [
+              "Confidence ≠ correctness.",
+              "Temperature doesn't fix that."
+            ]
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": "2026-09-27T20:35:32.757409+00:00"
+          }
+        },
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Warning card appears"
+          },
+          {
+            "at": 0.6,
+            "event": "Text is emphasized"
+          },
+          {
+            "at": 1.5,
+            "event": "Card holds"
+          }
+        ]
+      },
+      "scene_name": "FormACard",
+      "narration_text": "Big warning: confidence is not correctness. The model can sound super confident about the wrong answer. Temperature doesn't fix that.",
+      "beat_id": "B07",
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 7.81,
+      "render_duration_s": 7.833333333333333,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "remotion:FormACard",
+        "at": "2026-09-27T15:42:45"
+      }
+    },
+    {
+      "id": "B08",
+      "type": "ClaudeVerdictArtifact",
+      "classification": "SHOW",
+      "shot": {
+        "type": "artifact",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactLines": [
+              "Temperature changes how sure the model sounds.",
+              "It stretches or shrinks the gaps between choices.",
+              "But it never changes which choice wins.",
+              "Low temperature: winner dominates. High: all choices look good.",
+              "Confidence and correctness are different things."
+            ]
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": "2026-09-27T20:38:47.836639+00:00"
+          }
+        },
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Summary card appears"
+          },
+          {
+            "at": 0.4,
+            "event": "Points appear one by one"
+          },
+          {
+            "at": 3.0,
+            "event": "All text visible"
+          }
+        ]
+      },
+      "artifactLines": [
+        "Temperature changes how sure the model sounds.",
+        "It stretches or shrinks the gaps between choices.",
+        "But it never changes which choice wins.",
+        "Low temperature: winner dominates. High: all choices look good.",
+        "Confidence and correctness are different things."
+      ],
+      "narration_text": "So: temperature changes the confidence, not the answer. It stretches gaps or shrinks them. Same winner, different confidence level. And remember—sounding sure doesn't mean being right.",
+      "beat_id": "B08",
+      "audio_file": "mp3/beat-B08.mp3",
+      "actual_duration_s": 10.11,
+      "render_duration_s": 10.125,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B08.mp4",
+        "filled_by": "remotion:ClaudeVerdictArtifact",
+        "at": "2026-09-27T15:42:45"
+      }
+    },
+    {
+      "id": "B09",
+      "type": "ClaudeComposerAsk",
+      "classification": "SHOW",
+      "greeting": "Your turn.",
+      "command": "Run the code with temperature 0.2 and 2.0 on the same question. Look at the numbers. Do they match what you just learned?",
+      "runningText": "paste and check…",
+      "shot": {
+        "type": "ask",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "command": "Run the code with temperature 0.2 and 2.0 on the same question. Look at the numbers. Do they match what you just learned?",
+            "folderLabel": "@HumanitariansAI",
+            "topic": "TEMPERATURE · PROBABILITY",
+            "segment": "Your Turn",
+            "runningText": "paste and check…"
+          },
+          "rendered": {
+            "out": "media/B09.mp4",
+            "at": "2026-09-27T20:42:14.833273+00:00"
+          }
+        },
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Composer appears with Your turn greeting"
+          },
+          {
+            "at": 0.4,
+            "event": "Prompt types in"
+          },
+          {
+            "at": 2.5,
+            "event": "Send button highlights"
+          }
+        ]
+      },
+      "narration_text": "Your turn. Run the code at two different temperatures on the same question. Check the numbers. Do they match what you just saw? That's the real test.",
+      "beat_id": "B09",
+      "audio_file": "mp3/beat-B09.mp3",
+      "actual_duration_s": 7.64,
+      "render_duration_s": 7.666666666666667,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B09.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-09-27T15:42:45"
+      }
+    },
+    {
+      "id": "B10",
+      "type": "ClaudeTitleOutro",
+      "classification": "SHOW",
+      "shot": {
+        "type": "card",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Temperature Is Not a Creativity Dial",
+            "slug": "temperature-concentration-control",
+            "folderLabel": "Dhruvi Mehta"
+          },
+          "rendered": {
+            "out": "media/B10.mp4",
+            "at": "2026-09-27T20:09:16.042973+00:00"
+          }
+        },
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Title appears centered"
+          },
+          {
+            "at": 1.0,
+            "event": "Handle appears below"
+          },
+          {
+            "at": 1.5,
+            "event": "Period glows"
+          },
+          {
+            "at": 2.0,
+            "event": "Card holds"
+          }
+        ]
+      },
+      "title": "Temperature Is Not a Creativity Dial",
+      "folderLabel": "@HumanitariansAI",
+      "narration_text": "Temperature is not a creativity dial. It's a confidence dial. Remember that.",
+      "beat_id": "B10",
+      "audio_file": "mp3/beat-B10.mp3",
+      "actual_duration_s": 4.93,
+      "render_duration_s": 4.958333333333333,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B10.mp4",
+        "filled_by": "remotion:ClaudeTitleOutro",
+        "at": "2026-09-27T15:42:45"
+      }
+    }
+  ]
+}
