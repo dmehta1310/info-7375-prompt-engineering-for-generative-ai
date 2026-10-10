@@ -1,0 +1,1301 @@
+[run] GATE L — beat-mix lint
+[beat-lint] clean — beat mix OK (beat_sheet.json)
+[run] GATE SHAPE — finance chart-shape enforcement
+[gate-shape] skip — not a finance reel (beat_sheet.json)
+[run] GATE A — static pre-flight
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+[run] GATE W — WCAG contrast + margins + text-overlap (independent second check)
+[gateW] B01_Problem clean
+[gateW] B02_Gates clean
+[gateW] B03_Alternatives clean
+[gateW] B04_StopEarly clean
+[gateW] B05_Reader clean
+[gateW] B07_BreakTest clean
+[gateW] B08_Skills clean
+[gateW] B09_InOutFirst clean
+[gateW] B10_Misread clean
+[gateW] B11_Shelves clean
+[run] rendering B01_Problem
+Manim Community v0.18.1
+
+
+(process:14541): GLib-CRITICAL **: 18:37:50.043: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14541): GLib-GObject-CRITICAL **: 18:37:50.044: cannot unreference class of invalid (unclassed) type '(null)'
+[10/10/26 18:37:50] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             01_Problem/3429491395_2100                         
+                             922036_3202642487.mp4'                             
+Animation 1: FadeIn(VGroup of 3 submobjects):   0%|          | 0/44 [00:00<?, ?it/s]Animation 1: FadeIn(VGroup of 3 submobjects):   9%|▉         | 4/44 [00:00<00:01, 39.36it/s]Animation 1: FadeIn(VGroup of 3 submobjects):  20%|██        | 9/44 [00:00<00:00, 40.43it/s]Animation 1: FadeIn(VGroup of 3 submobjects):  32%|███▏      | 14/44 [00:00<00:00, 37.76it/s]Animation 1: FadeIn(VGroup of 3 submobjects):  41%|████      | 18/44 [00:00<00:00, 37.80it/s]Animation 1: FadeIn(VGroup of 3 submobjects):  50%|█████     | 22/44 [00:00<00:00, 37.74it/s]Animation 1: FadeIn(VGroup of 3 submobjects):  59%|█████▉    | 26/44 [00:00<00:00, 36.59it/s]Animation 1: FadeIn(VGroup of 3 submobjects):  68%|██████▊   | 30/44 [00:00<00:00, 35.34it/s]Animation 1: FadeIn(VGroup of 3 submobjects):  77%|███████▋  | 34/44 [00:00<00:00, 34.19it/s]Animation 1: FadeIn(VGroup of 3 submobjects):  86%|████████▋ | 38/44 [00:01<00:00, 34.18it/s]Animation 1: FadeIn(VGroup of 3 submobjects):  95%|█████████▌| 42/44 [00:01<00:00, 34.66it/s]                                                                                             [10/10/26 18:37:53] INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             01_Problem/1606801221_1897                         
+                             955041_434034926.mp4'                              
+                    INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             01_Problem/1606801221_2954                         
+                             564843_1177110093.mp4'                             
+Animation 3: FadeIn(Text('Posting')):   0%|          | 0/28 [00:00<?, ?it/s]Animation 3: FadeIn(Text('Posting')):  18%|█▊        | 5/28 [00:00<00:00, 42.81it/s]Animation 3: FadeIn(Text('Posting')):  36%|███▌      | 10/28 [00:00<00:00, 39.32it/s]Animation 3: FadeIn(Text('Posting')):  50%|█████     | 14/28 [00:00<00:00, 34.86it/s]Animation 3: FadeIn(Text('Posting')):  64%|██████▍   | 18/28 [00:00<00:00, 33.55it/s]Animation 3: FadeIn(Text('Posting')):  79%|███████▊  | 22/28 [00:00<00:00, 32.91it/s]Animation 3: FadeIn(Text('Posting')):  93%|█████████▎| 26/28 [00:00<00:00, 34.00it/s]                                                                                     [10/10/26 18:37:55] INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             01_Problem/1606801221_4255                         
+                             134928_3964999163.mp4'                             
+                    INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             01_Problem/1606801221_3870                         
+                             843992_531432642.mp4'                              
+Animation 5: LaggedStart(Group):   0%|          | 0/41 [00:00<?, ?it/s]Animation 5: LaggedStart(Group):  12%|█▏        | 5/41 [00:00<00:00, 42.73it/s]Animation 5: LaggedStart(Group):  24%|██▍       | 10/41 [00:00<00:00, 43.29it/s]Animation 5: LaggedStart(Group):  37%|███▋      | 15/41 [00:00<00:00, 43.98it/s]Animation 5: LaggedStart(Group):  49%|████▉     | 20/41 [00:00<00:00, 39.79it/s]Animation 5: LaggedStart(Group):  61%|██████    | 25/41 [00:00<00:00, 34.41it/s]Animation 5: LaggedStart(Group):  71%|███████   | 29/41 [00:00<00:00, 33.37it/s]Animation 5: LaggedStart(Group):  80%|████████  | 33/41 [00:00<00:00, 33.66it/s]Animation 5: LaggedStart(Group):  90%|█████████ | 37/41 [00:01<00:00, 34.59it/s]Animation 5: LaggedStart(Group): 100%|██████████| 41/41 [00:01<00:00, 32.74it/s]                                                                                [10/10/26 18:37:57] INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             01_Problem/1606801221_3838                         
+                             199901_501696312.mp4'                              
+Animation 6: FadeIn(Text('1 hour')):   0%|          | 0/14 [00:00<?, ?it/s]Animation 6: FadeIn(Text('1 hour')):  36%|███▌      | 5/14 [00:00<00:00, 44.43it/s]Animation 6: FadeIn(Text('1 hour')):  71%|███████▏  | 10/14 [00:00<00:00, 46.32it/s]                                                                                    [10/10/26 18:37:58] INFO     Animation 6 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             01_Problem/1606801221_3835                         
+                             649367_1991627714.mp4'                             
+[10/10/26 18:38:01] INFO     Animation 7 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             01_Problem/1606801221_1674                         
+                             484525_614112100.mp4'                              
+Animation 8: AnimationGroup(Group):   0%|          | 0/38 [00:00<?, ?it/s]Animation 8: AnimationGroup(Group):  11%|█         | 4/38 [00:00<00:01, 30.84it/s]Animation 8: AnimationGroup(Group):  21%|██        | 8/38 [00:00<00:00, 30.49it/s]Animation 8: AnimationGroup(Group):  32%|███▏      | 12/38 [00:00<00:00, 31.02it/s]Animation 8: AnimationGroup(Group):  42%|████▏     | 16/38 [00:00<00:00, 26.18it/s]Animation 8: AnimationGroup(Group):  50%|█████     | 19/38 [00:00<00:00, 23.52it/s]Animation 8: AnimationGroup(Group):  61%|██████    | 23/38 [00:00<00:00, 26.30it/s]Animation 8: AnimationGroup(Group):  71%|███████   | 27/38 [00:00<00:00, 29.25it/s]Animation 8: AnimationGroup(Group):  82%|████████▏ | 31/38 [00:01<00:00, 30.09it/s]Animation 8: AnimationGroup(Group):  92%|█████████▏| 35/38 [00:01<00:00, 30.69it/s]                                                                                   [10/10/26 18:38:04] INFO     Animation 8 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             01_Problem/1606801221_9173                         
+                             55851_1094859891.mp4'                              
+[10/10/26 18:38:08] INFO     Animation 9 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             01_Problem/1606801221_8937                         
+                             49176_918452342.mp4'                               
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+[10/10/26 18:38:09] INFO                                scene_file_writer.py:737
+                             File ready at                                      
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/B01_Problem.mp4'                              
+                                                                                
+                    INFO     Rendered B01_Problem                   scene.py:247
+                             Played 10 animations                               
+You are using manim version v0.18.1, but version v0.22.0 is available.
+You should consider upgrading via pip install -U manim
+
+(process:14578): GLib-CRITICAL **: 18:38:10.452: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14578): GLib-GObject-CRITICAL **: 18:38:10.452: cannot unreference class of invalid (unclassed) type '(null)'
+Animation 1: FadeIn(VGroup of 3 submobjects):   0%|          | 0/28 [00:00<?, ?it/s]                                                                                    Animation 3: FadeIn(Text('Posting')):   0%|          | 0/17 [00:00<?, ?it/s]                                                                            /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 5: LaggedStart(Group):   0%|          | 0/26 [00:00<?, ?it/s]                                                                       Animation 6: FadeIn(Text('1 hour')):   0%|          | 0/9 [00:00<?, ?it/s]                                                                          Animation 8: AnimationGroup(Group):   0%|          | 0/24 [00:00<?, ?it/s]                                                                          [audit] scenes: 10 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/layout_audit.md
+[run] rendering B02_Gates
+Manim Community v0.18.1
+
+
+(process:14582): GLib-CRITICAL **: 18:38:11.509: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14582): GLib-GObject-CRITICAL **: 18:38:11.509: cannot unreference class of invalid (unclassed) type '(null)'
+[10/10/26 18:38:11] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             02_Gates/3429491395_427281                         
+                             8874_2671916342.mp4'                               
+Animation 1: LaggedStart(Group):   0%|          | 0/58 [00:00<?, ?it/s]Animation 1: LaggedStart(Group):   9%|▊         | 5/58 [00:00<00:01, 42.46it/s]Animation 1: LaggedStart(Group):  17%|█▋        | 10/58 [00:00<00:01, 41.67it/s]Animation 1: LaggedStart(Group):  26%|██▌       | 15/58 [00:00<00:01, 41.27it/s]Animation 1: LaggedStart(Group):  34%|███▍      | 20/58 [00:00<00:00, 40.01it/s]Animation 1: LaggedStart(Group):  43%|████▎     | 25/58 [00:00<00:00, 38.27it/s]Animation 1: LaggedStart(Group):  50%|█████     | 29/58 [00:00<00:00, 36.15it/s]Animation 1: LaggedStart(Group):  57%|█████▋    | 33/58 [00:00<00:00, 36.35it/s]Animation 1: LaggedStart(Group):  64%|██████▍   | 37/58 [00:00<00:00, 35.26it/s]Animation 1: LaggedStart(Group):  71%|███████   | 41/58 [00:01<00:00, 35.63it/s]Animation 1: LaggedStart(Group):  78%|███████▊  | 45/58 [00:01<00:00, 35.95it/s]Animation 1: LaggedStart(Group):  84%|████████▍ | 49/58 [00:01<00:00, 35.29it/s]Animation 1: LaggedStart(Group):  91%|█████████▏| 53/58 [00:01<00:00, 35.34it/s]Animation 1: LaggedStart(Group):  98%|█████████▊| 57/58 [00:01<00:00, 34.79it/s]                                                                                [10/10/26 18:38:18] INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             02_Gates/1606801221_148263                         
+                             6053_1008220158.mp4'                               
+                    INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             02_Gates/1606801221_759122                         
+                             111_126118565.mp4'                                 
+Animation 3: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/42 [00:00<?, ?it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  10%|▉         | 4/42 [00:00<00:01, 33.46it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  19%|█▉        | 8/42 [00:00<00:01, 31.15it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  29%|██▊       | 12/42 [00:00<00:01, 22.71it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  36%|███▌      | 15/42 [00:00<00:01, 23.70it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  43%|████▎     | 18/42 [00:00<00:01, 21.86it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  50%|█████     | 21/42 [00:00<00:00, 21.13it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  57%|█████▋    | 24/42 [00:01<00:00, 19.77it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  64%|██████▍   | 27/42 [00:01<00:00, 20.31it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  74%|███████▍  | 31/42 [00:01<00:00, 23.47it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  81%|████████  | 34/42 [00:01<00:00, 24.40it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  88%|████████▊ | 37/42 [00:01<00:00, 24.24it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  95%|█████████▌| 40/42 [00:01<00:00, 19.70it/s]                                                                                                   [10/10/26 18:38:22] INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             02_Gates/1606801221_757964                         
+                             759_4126546517.mp4'                                
+                    INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             02_Gates/1606801221_115875                         
+                             1746_2720558804.mp4'                               
+Animation 5: LaggedStart(Group):   0%|          | 0/50 [00:00<?, ?it/s]Animation 5: LaggedStart(Group):   8%|▊         | 4/50 [00:00<00:01, 37.77it/s]Animation 5: LaggedStart(Group):  16%|█▌        | 8/50 [00:00<00:01, 38.54it/s]Animation 5: LaggedStart(Group):  24%|██▍       | 12/50 [00:00<00:00, 38.74it/s]Animation 5: LaggedStart(Group):  32%|███▏      | 16/50 [00:00<00:00, 37.66it/s]Animation 5: LaggedStart(Group):  40%|████      | 20/50 [00:00<00:00, 36.90it/s]Animation 5: LaggedStart(Group):  48%|████▊     | 24/50 [00:00<00:00, 34.49it/s]Animation 5: LaggedStart(Group):  56%|█████▌    | 28/50 [00:00<00:00, 32.64it/s]Animation 5: LaggedStart(Group):  64%|██████▍   | 32/50 [00:00<00:00, 32.73it/s]Animation 5: LaggedStart(Group):  72%|███████▏  | 36/50 [00:01<00:00, 31.21it/s]Animation 5: LaggedStart(Group):  80%|████████  | 40/50 [00:01<00:00, 30.34it/s]Animation 5: LaggedStart(Group):  88%|████████▊ | 44/50 [00:01<00:00, 31.04it/s]Animation 5: LaggedStart(Group):  96%|█████████▌| 48/50 [00:01<00:00, 29.33it/s]                                                                                [10/10/26 18:38:25] INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             02_Gates/1606801221_422940                         
+                             0888_2840087862.mp4'                               
+[10/10/26 18:38:29] INFO     Animation 6 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             02_Gates/1606801221_402949                         
+                             6505_1131471006.mp4'                               
+Animation 7: _MethodAnimation(VGroup of 3 submobjects):   0%|          | 0/42 [00:00<?, ?it/s]Animation 7: _MethodAnimation(VGroup of 3 submobjects):  10%|▉         | 4/42 [00:00<00:01, 30.92it/s]Animation 7: _MethodAnimation(VGroup of 3 submobjects):  19%|█▉        | 8/42 [00:00<00:01, 26.56it/s]Animation 7: _MethodAnimation(VGroup of 3 submobjects):  26%|██▌       | 11/42 [00:00<00:01, 21.44it/s]Animation 7: _MethodAnimation(VGroup of 3 submobjects):  33%|███▎      | 14/42 [00:00<00:01, 22.91it/s]Animation 7: _MethodAnimation(VGroup of 3 submobjects):  40%|████      | 17/42 [00:00<00:01, 23.29it/s]Animation 7: _MethodAnimation(VGroup of 3 submobjects):  48%|████▊     | 20/42 [00:00<00:00, 23.46it/s]Animation 7: _MethodAnimation(VGroup of 3 submobjects):  55%|█████▍    | 23/42 [00:00<00:00, 23.92it/s]Animation 7: _MethodAnimation(VGroup of 3 submobjects):  62%|██████▏   | 26/42 [00:01<00:00, 24.13it/s]Animation 7: _MethodAnimation(VGroup of 3 submobjects):  69%|██████▉   | 29/42 [00:01<00:00, 24.67it/s]Animation 7: _MethodAnimation(VGroup of 3 submobjects):  76%|███████▌  | 32/42 [00:01<00:00, 25.20it/s]Animation 7: _MethodAnimation(VGroup of 3 submobjects):  83%|████████▎ | 35/42 [00:01<00:00, 25.62it/s]Animation 7: _MethodAnimation(VGroup of 3 submobjects):  90%|█████████ | 38/42 [00:01<00:00, 25.96it/s]Animation 7: _MethodAnimation(VGroup of 3 submobjects):  98%|█████████▊| 41/42 [00:01<00:00, 26.96it/s]                                                                                                       [10/10/26 18:38:32] INFO     Animation 7 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             02_Gates/1606801221_356068                         
+                             7528_2406992464.mp4'                               
+Animation 8: _MethodAnimation(Dot), etc.:   0%|          | 0/17 [00:00<?, ?it/s]Animation 8: _MethodAnimation(Dot), etc.:  24%|██▎       | 4/17 [00:00<00:00, 32.72it/s]Animation 8: _MethodAnimation(Dot), etc.:  47%|████▋     | 8/17 [00:00<00:00, 33.62it/s]Animation 8: _MethodAnimation(Dot), etc.:  71%|███████   | 12/17 [00:00<00:00, 33.99it/s]Animation 8: _MethodAnimation(Dot), etc.:  94%|█████████▍| 16/17 [00:00<00:00, 34.02it/s]                                                                                         [10/10/26 18:38:34] INFO     Animation 8 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             02_Gates/1606801221_388379                         
+                             1523_1131190980.mp4'                               
+[10/10/26 18:38:41] INFO     Animation 9 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             02_Gates/1606801221_358077                         
+                             4648_3005800640.mp4'                               
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+[10/10/26 18:38:42] INFO                                scene_file_writer.py:737
+                             File ready at                                      
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/B02_Gates.mp4'                                
+                                                                                
+                    INFO     Rendered B02_Gates                     scene.py:247
+                             Played 10 animations                               
+You are using manim version v0.18.1, but version v0.22.0 is available.
+You should consider upgrading via pip install -U manim
+
+(process:14614): GLib-CRITICAL **: 18:38:43.572: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14614): GLib-GObject-CRITICAL **: 18:38:43.573: cannot unreference class of invalid (unclassed) type '(null)'
+Animation 1: LaggedStart(Group):   0%|          | 0/36 [00:00<?, ?it/s]                                                                       Animation 3: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/26 [00:00<?, ?it/s]                                                                                          Animation 5: LaggedStart(Group):   0%|          | 0/31 [00:00<?, ?it/s]Animation 5: LaggedStart(Group):  58%|█████▊    | 18/31 [00:00<00:00, 176.56it/s]                                                                                 /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 7: _MethodAnimation(VGroup of 3 submobjects):   0%|          | 0/26 [00:00<?, ?it/s]Animation 7: _MethodAnimation(VGroup of 3 submobjects):  65%|██████▌   | 17/26 [00:00<00:00, 164.59it/s]                                                                                                        Animation 8: _MethodAnimation(Dot), etc.:   0%|          | 0/11 [00:00<?, ?it/s]                                                                                [audit] scenes: 7 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/layout_audit.md
+[run] rendering B03_Alternatives
+Manim Community v0.18.1
+
+
+(process:14618): GLib-CRITICAL **: 18:38:45.122: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14618): GLib-GObject-CRITICAL **: 18:38:45.123: cannot unreference class of invalid (unclassed) type '(null)'
+[10/10/26 18:38:46] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             03_Alternatives/3429491395                         
+                             _3230068186_546592922.mp4'                         
+Animation 1: FadeIn(VGroup of 2 submobjects):   0%|          | 0/54 [00:00<?, ?it/s]Animation 1: FadeIn(VGroup of 2 submobjects):   7%|▋         | 4/54 [00:00<00:01, 34.14it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  15%|█▍        | 8/54 [00:00<00:02, 19.02it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  22%|██▏       | 12/54 [00:00<00:01, 23.40it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  30%|██▉       | 16/54 [00:00<00:01, 27.40it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  37%|███▋      | 20/54 [00:00<00:01, 28.95it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  44%|████▍     | 24/54 [00:00<00:01, 27.57it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  50%|█████     | 27/54 [00:01<00:00, 27.83it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  57%|█████▋    | 31/54 [00:01<00:00, 29.29it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  65%|██████▍   | 35/54 [00:01<00:00, 29.50it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  72%|███████▏  | 39/54 [00:01<00:00, 29.44it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  80%|███████▉  | 43/54 [00:01<00:00, 30.31it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  87%|████████▋ | 47/54 [00:01<00:00, 28.82it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  93%|█████████▎| 50/54 [00:01<00:00, 26.12it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  98%|█████████▊| 53/54 [00:01<00:00, 26.97it/s]                                                                                             [10/10/26 18:38:49] INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             03_Alternatives/1606801221                         
+                             _3114143261_3917529202.mp4                         
+                             '                                                  
+                    INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             03_Alternatives/1606801221                         
+                             _3539647376_3491007029.mp4                         
+                             '                                                  
+Animation 3: FadeIn(Text('MyVisaJobs')):   0%|          | 0/33 [00:00<?, ?it/s]Animation 3: FadeIn(Text('MyVisaJobs')):  15%|█▌        | 5/33 [00:00<00:00, 45.13it/s]Animation 3: FadeIn(Text('MyVisaJobs')):  30%|███       | 10/33 [00:00<00:00, 43.27it/s]Animation 3: FadeIn(Text('MyVisaJobs')):  45%|████▌     | 15/33 [00:00<00:00, 38.84it/s]Animation 3: FadeIn(Text('MyVisaJobs')):  58%|█████▊    | 19/33 [00:00<00:00, 29.64it/s]Animation 3: FadeIn(Text('MyVisaJobs')):  70%|██████▉   | 23/33 [00:00<00:00, 22.99it/s]Animation 3: FadeIn(Text('MyVisaJobs')):  82%|████████▏ | 27/33 [00:00<00:00, 26.49it/s]Animation 3: FadeIn(Text('MyVisaJobs')):  94%|█████████▍| 31/33 [00:01<00:00, 28.46it/s]                                                                                        [10/10/26 18:38:51] INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             03_Alternatives/1606801221                         
+                             _690468947_3397008540.mp4'                         
+[10/10/26 18:38:52] INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             03_Alternatives/1606801221                         
+                             _1732551093_3746002336.mp4                         
+                             '                                                  
+Animation 5: LaggedStart(Group):   0%|          | 0/54 [00:00<?, ?it/s]Animation 5: LaggedStart(Group):   9%|▉         | 5/54 [00:00<00:01, 43.52it/s]Animation 5: LaggedStart(Group):  19%|█▊        | 10/54 [00:00<00:01, 41.51it/s]Animation 5: LaggedStart(Group):  28%|██▊       | 15/54 [00:00<00:00, 39.51it/s]Animation 5: LaggedStart(Group):  35%|███▌      | 19/54 [00:00<00:01, 29.66it/s]Animation 5: LaggedStart(Group):  43%|████▎     | 23/54 [00:00<00:01, 27.39it/s]Animation 5: LaggedStart(Group):  50%|█████     | 27/54 [00:00<00:00, 29.78it/s]Animation 5: LaggedStart(Group):  57%|█████▋    | 31/54 [00:00<00:00, 28.99it/s]Animation 5: LaggedStart(Group):  65%|██████▍   | 35/54 [00:01<00:00, 21.68it/s]Animation 5: LaggedStart(Group):  70%|███████   | 38/54 [00:01<00:00, 21.54it/s]Animation 5: LaggedStart(Group):  76%|███████▌  | 41/54 [00:01<00:00, 22.76it/s]Animation 5: LaggedStart(Group):  81%|████████▏ | 44/54 [00:01<00:00, 23.43it/s]Animation 5: LaggedStart(Group):  87%|████████▋ | 47/54 [00:01<00:00, 23.22it/s]Animation 5: LaggedStart(Group):  93%|█████████▎| 50/54 [00:01<00:00, 23.82it/s]Animation 5: LaggedStart(Group):  98%|█████████▊| 53/54 [00:02<00:00, 24.32it/s]                                                                                [10/10/26 18:38:56] INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             03_Alternatives/1606801221                         
+                             _3358432733_458705546.mp4'                         
+Animation 6: FadeIn(Text('Manual check')):   0%|          | 0/17 [00:00<?, ?it/s]Animation 6: FadeIn(Text('Manual check')):  24%|██▎       | 4/17 [00:00<00:00, 38.77it/s]Animation 6: FadeIn(Text('Manual check')):  53%|█████▎    | 9/17 [00:00<00:00, 40.47it/s]Animation 6: FadeIn(Text('Manual check')):  82%|████████▏ | 14/17 [00:00<00:00, 40.91it/s]                                                                                          [10/10/26 18:38:57] INFO     Animation 6 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             03_Alternatives/1606801221                         
+                             _906674441_1523168133.mp4'                         
+[10/10/26 18:38:59] INFO     Animation 7 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             03_Alternatives/1606801221                         
+                             _3446447138_522843490.mp4'                         
+Animation 8: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/41 [00:00<?, ?it/s]Animation 8: FadeIn(VGroup of 3 submobjects), etc.:  12%|█▏        | 5/41 [00:00<00:00, 44.40it/s]Animation 8: FadeIn(VGroup of 3 submobjects), etc.:  24%|██▍       | 10/41 [00:00<00:00, 46.10it/s]Animation 8: FadeIn(VGroup of 3 submobjects), etc.:  37%|███▋      | 15/41 [00:00<00:00, 47.00it/s]Animation 8: FadeIn(VGroup of 3 submobjects), etc.:  49%|████▉     | 20/41 [00:00<00:00, 46.66it/s]Animation 8: FadeIn(VGroup of 3 submobjects), etc.:  61%|██████    | 25/41 [00:00<00:00, 43.30it/s]Animation 8: FadeIn(VGroup of 3 submobjects), etc.:  73%|███████▎  | 30/41 [00:00<00:00, 33.63it/s]Animation 8: FadeIn(VGroup of 3 submobjects), etc.:  83%|████████▎ | 34/41 [00:00<00:00, 29.96it/s]Animation 8: FadeIn(VGroup of 3 submobjects), etc.:  95%|█████████▌| 39/41 [00:01<00:00, 33.32it/s]                                                                                                   [10/10/26 18:39:02] INFO     Animation 8 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             03_Alternatives/1606801221                         
+                             _4273227977_2840138666.mp4                         
+                             '                                                  
+[10/10/26 18:39:07] INFO     Animation 9 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             03_Alternatives/1606801221                         
+                             _3954991376_1947381956.mp4                         
+                             '                                                  
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:737
+                             File ready at                                      
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/B03_Alternatives.mp4'                         
+                                                                                
+                    INFO     Rendered B03_Alternatives              scene.py:247
+                             Played 10 animations                               
+You are using manim version v0.18.1, but version v0.22.0 is available.
+You should consider upgrading via pip install -U manim
+
+(process:14642): GLib-CRITICAL **: 18:39:09.195: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14642): GLib-GObject-CRITICAL **: 18:39:09.195: cannot unreference class of invalid (unclassed) type '(null)'
+Animation 1: FadeIn(VGroup of 2 submobjects):   0%|          | 0/34 [00:00<?, ?it/s]                                                                                    Animation 3: FadeIn(Text('MyVisaJobs')):   0%|          | 0/21 [00:00<?, ?it/s]                                                                               /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 5: LaggedStart(Group):   0%|          | 0/34 [00:00<?, ?it/s]                                                                       Animation 6: FadeIn(Text('Manual check')):   0%|          | 0/11 [00:00<?, ?it/s]                                                                                 Animation 8: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/26 [00:00<?, ?it/s]                                                                                          [audit] scenes: 10 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/layout_audit.md
+[run] rendering B04_StopEarly
+Manim Community v0.18.1
+
+
+(process:14648): GLib-CRITICAL **: 18:39:10.380: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14648): GLib-GObject-CRITICAL **: 18:39:10.380: cannot unreference class of invalid (unclassed) type '(null)'
+[10/10/26 18:39:10] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             04_StopEarly/3429491395_36                         
+                             92506291_2671916342.mp4'                           
+Animation 1: LaggedStart(Group):   0%|          | 0/39 [00:00<?, ?it/s]Animation 1: LaggedStart(Group):  10%|█         | 4/39 [00:00<00:01, 32.24it/s]Animation 1: LaggedStart(Group):  21%|██        | 8/39 [00:00<00:00, 35.13it/s]Animation 1: LaggedStart(Group):  31%|███       | 12/39 [00:00<00:00, 35.89it/s]Animation 1: LaggedStart(Group):  41%|████      | 16/39 [00:00<00:00, 35.36it/s]Animation 1: LaggedStart(Group):  51%|█████▏    | 20/39 [00:00<00:00, 35.94it/s]Animation 1: LaggedStart(Group):  62%|██████▏   | 24/39 [00:00<00:00, 36.36it/s]Animation 1: LaggedStart(Group):  72%|███████▏  | 28/39 [00:00<00:00, 36.93it/s]Animation 1: LaggedStart(Group):  82%|████████▏ | 32/39 [00:00<00:00, 36.56it/s]Animation 1: LaggedStart(Group):  92%|█████████▏| 36/39 [00:01<00:00, 35.74it/s]                                                                                [10/10/26 18:39:12] INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             04_StopEarly/1606801221_30                         
+                             90702103_1008220158.mp4'                           
+[10/10/26 18:39:13] INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             04_StopEarly/1606801221_18                         
+                             01690312_126118565.mp4'                            
+Animation 3: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/32 [00:00<?, ?it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  12%|█▎        | 4/32 [00:00<00:01, 15.47it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  19%|█▉        | 6/32 [00:00<00:01, 16.81it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  28%|██▊       | 9/32 [00:00<00:01, 20.53it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  38%|███▊      | 12/32 [00:00<00:00, 23.12it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  50%|█████     | 16/32 [00:00<00:00, 26.93it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  62%|██████▎   | 20/32 [00:00<00:00, 29.81it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  75%|███████▌  | 24/32 [00:00<00:00, 31.11it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.:  88%|████████▊ | 28/32 [00:01<00:00, 31.37it/s]Animation 3: FadeIn(VGroup of 3 submobjects), etc.: 100%|██████████| 32/32 [00:01<00:00, 32.78it/s]                                                                                                   [10/10/26 18:39:15] INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             04_StopEarly/1606801221_81                         
+                             745189_4126546517.mp4'                             
+                    INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             04_StopEarly/1606801221_25                         
+                             45145072_2720558804.mp4'                           
+Animation 5: FadeIn(Text('Stop early')), etc.:   0%|          | 0/45 [00:00<?, ?it/s]Animation 5: FadeIn(Text('Stop early')), etc.:   9%|▉         | 4/45 [00:00<00:01, 34.95it/s]Animation 5: FadeIn(Text('Stop early')), etc.:  18%|█▊        | 8/45 [00:00<00:01, 36.16it/s]Animation 5: FadeIn(Text('Stop early')), etc.:  27%|██▋       | 12/45 [00:00<00:01, 32.95it/s]Animation 5: FadeIn(Text('Stop early')), etc.:  36%|███▌      | 16/45 [00:00<00:00, 31.21it/s]Animation 5: FadeIn(Text('Stop early')), etc.:  44%|████▍     | 20/45 [00:00<00:00, 29.11it/s]Animation 5: FadeIn(Text('Stop early')), etc.:  51%|█████     | 23/45 [00:00<00:00, 27.88it/s]Animation 5: FadeIn(Text('Stop early')), etc.:  58%|█████▊    | 26/45 [00:00<00:00, 27.72it/s]Animation 5: FadeIn(Text('Stop early')), etc.:  64%|██████▍   | 29/45 [00:00<00:00, 27.84it/s]Animation 5: FadeIn(Text('Stop early')), etc.:  71%|███████   | 32/45 [00:01<00:00, 28.36it/s]Animation 5: FadeIn(Text('Stop early')), etc.:  78%|███████▊  | 35/45 [00:01<00:00, 19.49it/s]Animation 5: FadeIn(Text('Stop early')), etc.:  84%|████████▍ | 38/45 [00:01<00:00, 20.50it/s]Animation 5: FadeIn(Text('Stop early')), etc.:  91%|█████████ | 41/45 [00:01<00:00, 20.89it/s]Animation 5: FadeIn(Text('Stop early')), etc.:  98%|█████████▊| 44/45 [00:01<00:00, 22.89it/s]                                                                                              [10/10/26 18:39:18] INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             04_StopEarly/1606801221_30                         
+                             70425825_1952616060.mp4'                           
+[10/10/26 18:39:20] INFO     Animation 6 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             04_StopEarly/1606801221_39                         
+                             14136930_2093523930.mp4'                           
+Animation 7: _MethodAnimation(Dot), etc.:   0%|          | 0/29 [00:00<?, ?it/s]Animation 7: _MethodAnimation(Dot), etc.:  10%|█         | 3/29 [00:00<00:01, 20.12it/s]Animation 7: _MethodAnimation(Dot), etc.:  21%|██        | 6/29 [00:00<00:01, 13.04it/s]Animation 7: _MethodAnimation(Dot), etc.:  28%|██▊       | 8/29 [00:00<00:01, 11.78it/s]Animation 7: _MethodAnimation(Dot), etc.:  34%|███▍      | 10/29 [00:00<00:01, 13.44it/s]Animation 7: _MethodAnimation(Dot), etc.:  45%|████▍     | 13/29 [00:00<00:01, 15.90it/s]Animation 7: _MethodAnimation(Dot), etc.:  55%|█████▌    | 16/29 [00:01<00:00, 18.58it/s]Animation 7: _MethodAnimation(Dot), etc.:  66%|██████▌   | 19/29 [00:01<00:00, 21.12it/s]Animation 7: _MethodAnimation(Dot), etc.:  79%|███████▉  | 23/29 [00:01<00:00, 24.23it/s]Animation 7: _MethodAnimation(Dot), etc.:  90%|████████▉ | 26/29 [00:01<00:00, 25.46it/s]Animation 7: _MethodAnimation(Dot), etc.: 100%|██████████| 29/29 [00:01<00:00, 21.04it/s]                                                                                         [10/10/26 18:39:23] INFO     Animation 7 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             04_StopEarly/1606801221_18                         
+                             85375880_1621973906.mp4'                           
+Animation 8: FadeIn(VGroup of 3 submobjects):   0%|          | 0/13 [00:00<?, ?it/s]Animation 8: FadeIn(VGroup of 3 submobjects):  38%|███▊      | 5/13 [00:00<00:00, 44.91it/s]Animation 8: FadeIn(VGroup of 3 submobjects):  77%|███████▋  | 10/13 [00:00<00:00, 46.75it/s]                                                                                             [10/10/26 18:39:24] INFO     Animation 8 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             04_StopEarly/1606801221_33                         
+                             89061318_1407706290.mp4'                           
+[10/10/26 18:39:29] INFO     Animation 9 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             04_StopEarly/1606801221_22                         
+                             65777596_330350215.mp4'                            
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:737
+                             File ready at                                      
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/B04_StopEarly.mp4'                            
+                                                                                
+                    INFO     Rendered B04_StopEarly                 scene.py:247
+                             Played 10 animations                               
+You are using manim version v0.18.1, but version v0.22.0 is available.
+You should consider upgrading via pip install -U manim
+
+(process:14673): GLib-CRITICAL **: 18:39:31.659: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14673): GLib-GObject-CRITICAL **: 18:39:31.663: cannot unreference class of invalid (unclassed) type '(null)'
+Animation 1: LaggedStart(Group):   0%|          | 0/24 [00:00<?, ?it/s]                                                                       Animation 3: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/20 [00:00<?, ?it/s]                                                                                          Animation 5: FadeIn(Text('Stop early')), etc.:   0%|          | 0/28 [00:00<?, ?it/s]Animation 5: FadeIn(Text('Stop early')), etc.:  79%|███████▊  | 22/28 [00:00<00:00, 219.04it/s]                                                                                               /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 7: _MethodAnimation(Dot), etc.:   0%|          | 0/18 [00:00<?, ?it/s]Animation 7: _MethodAnimation(Dot), etc.: 100%|██████████| 18/18 [00:00<00:00, 171.62it/s]                                                                                          Animation 9: FadeIn(VGroup of 3 submobjects):   0%|          | 0/8 [00:00<?, ?it/s]                                                                                   [audit] scenes: 9 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/layout_audit.md
+[run] rendering B05_Reader
+Manim Community v0.18.1
+
+
+(process:14677): GLib-CRITICAL **: 18:39:33.351: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14677): GLib-GObject-CRITICAL **: 18:39:33.351: cannot unreference class of invalid (unclassed) type '(null)'
+[10/10/26 18:39:33] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             05_Reader/3429491395_15520                         
+                             73150_1729298643.mp4'                              
+Animation 1: FadeIn(VGroup of 2 submobjects):   0%|          | 0/34 [00:00<?, ?it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  15%|█▍        | 5/34 [00:00<00:00, 42.00it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  29%|██▉       | 10/34 [00:00<00:00, 42.68it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  44%|████▍     | 15/34 [00:00<00:00, 42.19it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  59%|█████▉    | 20/34 [00:00<00:00, 41.84it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  74%|███████▎  | 25/34 [00:00<00:00, 37.18it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  85%|████████▌ | 29/34 [00:00<00:00, 33.20it/s]Animation 1: FadeIn(VGroup of 2 submobjects):  97%|█████████▋| 33/34 [00:00<00:00, 33.32it/s]                                                                                             [10/10/26 18:39:35] INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             05_Reader/1606801221_22480                         
+                             61924_64073467.mp4'                                
+                    INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             05_Reader/1606801221_18710                         
+                             90641_215612196.mp4'                               
+Animation 3: FadeIn(Text('Hiring manager')):   0%|          | 0/25 [00:00<?, ?it/s]Animation 3: FadeIn(Text('Hiring manager')):  16%|█▌        | 4/25 [00:00<00:00, 38.13it/s]Animation 3: FadeIn(Text('Hiring manager')):  32%|███▏      | 8/25 [00:00<00:00, 35.47it/s]Animation 3: FadeIn(Text('Hiring manager')):  48%|████▊     | 12/25 [00:00<00:00, 35.60it/s]Animation 3: FadeIn(Text('Hiring manager')):  64%|██████▍   | 16/25 [00:00<00:00, 35.07it/s]Animation 3: FadeIn(Text('Hiring manager')):  80%|████████  | 20/25 [00:00<00:00, 34.16it/s]Animation 3: FadeIn(Text('Hiring manager')):  96%|█████████▌| 24/25 [00:00<00:00, 30.21it/s]                                                                                            [10/10/26 18:39:37] INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             05_Reader/1606801221_10041                         
+                             84275_3717374317.mp4'                              
+[10/10/26 18:39:38] INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             05_Reader/1606801221_19635                         
+                             11854_1092155937.mp4'                              
+Animation 5: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/31 [00:00<?, ?it/s]Animation 5: FadeIn(VGroup of 3 submobjects), etc.:  10%|▉         | 3/31 [00:00<00:00, 29.37it/s]Animation 5: FadeIn(VGroup of 3 submobjects), etc.:  19%|█▉        | 6/31 [00:00<00:00, 28.55it/s]Animation 5: FadeIn(VGroup of 3 submobjects), etc.:  29%|██▉       | 9/31 [00:00<00:00, 25.05it/s]Animation 5: FadeIn(VGroup of 3 submobjects), etc.:  39%|███▊      | 12/31 [00:00<00:00, 20.62it/s]Animation 5: FadeIn(VGroup of 3 submobjects), etc.:  48%|████▊     | 15/31 [00:00<00:00, 22.93it/s]Animation 5: FadeIn(VGroup of 3 submobjects), etc.:  61%|██████▏   | 19/31 [00:00<00:00, 27.02it/s]Animation 5: FadeIn(VGroup of 3 submobjects), etc.:  74%|███████▍  | 23/31 [00:00<00:00, 30.44it/s]Animation 5: FadeIn(VGroup of 3 submobjects), etc.:  87%|████████▋ | 27/31 [00:00<00:00, 29.88it/s]Animation 5: FadeIn(VGroup of 3 submobjects), etc.: 100%|██████████| 31/31 [00:01<00:00, 31.07it/s]                                                                                                   [10/10/26 18:39:40] INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             05_Reader/1606801221_20871                         
+                             23928_3986063200.mp4'                              
+                    INFO     Animation 6 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             05_Reader/1606801221_27359                         
+                             96507_1426280319.mp4'                              
+Animation 7: FadeIn(Text('Constructed')):   0%|          | 0/22 [00:00<?, ?it/s]Animation 7: FadeIn(Text('Constructed')):  23%|██▎       | 5/22 [00:00<00:00, 44.27it/s]Animation 7: FadeIn(Text('Constructed')):  45%|████▌     | 10/22 [00:00<00:00, 45.05it/s]Animation 7: FadeIn(Text('Constructed')):  68%|██████▊   | 15/22 [00:00<00:00, 45.04it/s]Animation 7: FadeIn(Text('Constructed')):  91%|█████████ | 20/22 [00:00<00:00, 44.18it/s]                                                                                         [10/10/26 18:39:41] INFO     Animation 7 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             05_Reader/1606801221_10858                         
+                             95316_2325926505.mp4'                              
+[10/10/26 18:39:43] INFO     Animation 8 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             05_Reader/1606801221_10176                         
+                             50031_4079017077.mp4'                              
+Animation 9: FadeIn(VGroup of 3 submobjects):   0%|          | 0/16 [00:00<?, ?it/s]Animation 9: FadeIn(VGroup of 3 submobjects):  31%|███▏      | 5/16 [00:00<00:00, 49.19it/s]Animation 9: FadeIn(VGroup of 3 submobjects):  62%|██████▎   | 10/16 [00:00<00:00, 49.58it/s]Animation 9: FadeIn(VGroup of 3 submobjects):  94%|█████████▍| 15/16 [00:00<00:00, 48.70it/s]                                                                                             [10/10/26 18:39:44] INFO     Animation 9 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             05_Reader/1606801221_16608                         
+                             90173_1189639304.mp4'                              
+Animation 10: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/22 [00:00<?, ?it/s]Animation 10: FadeIn(VGroup of 3 submobjects), etc.:  23%|██▎       | 5/22 [00:00<00:00, 42.36it/s]Animation 10: FadeIn(VGroup of 3 submobjects), etc.:  45%|████▌     | 10/22 [00:00<00:00, 42.25it/s]Animation 10: FadeIn(VGroup of 3 submobjects), etc.:  68%|██████▊   | 15/22 [00:00<00:00, 43.81it/s]Animation 10: FadeIn(VGroup of 3 submobjects), etc.:  91%|█████████ | 20/22 [00:00<00:00, 44.32it/s]                                                                                                    [10/10/26 18:39:45] INFO     Animation 10 : Partial     scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             05_Reader/1606801221_59889                         
+                             9730_4093744273.mp4'                               
+[10/10/26 18:39:50] INFO     Animation 11 : Partial     scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             05_Reader/1606801221_41319                         
+                             09771_2069080812.mp4'                              
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:737
+                             File ready at                                      
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/B05_Reader.mp4'                               
+                                                                                
+                    INFO     Rendered B05_Reader                    scene.py:247
+                             Played 12 animations                               
+You are using manim version v0.18.1, but version v0.22.0 is available.
+You should consider upgrading via pip install -U manim
+
+(process:14704): GLib-CRITICAL **: 18:39:51.652: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14704): GLib-GObject-CRITICAL **: 18:39:51.653: cannot unreference class of invalid (unclassed) type '(null)'
+Animation 1: FadeIn(VGroup of 2 submobjects):   0%|          | 0/22 [00:00<?, ?it/s]                                                                                    Animation 3: FadeIn(Text('Hiring manager')):   0%|          | 0/16 [00:00<?, ?it/s]                                                                                   /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 5: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/20 [00:00<?, ?it/s]                                                                                          Animation 6: FadeIn(Text('Constructed')):   0%|          | 0/14 [00:00<?, ?it/s]                                                                                Animation 8: FadeIn(VGroup of 3 submobjects):   0%|          | 0/10 [00:00<?, ?it/s]                                                                                    Animation 9: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/14 [00:00<?, ?it/s]                                                                                          [audit] scenes: 11 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/layout_audit.md
+[run] rendering B07_BreakTest
+Manim Community v0.18.1
+
+
+(process:14708): GLib-CRITICAL **: 18:39:52.845: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14708): GLib-GObject-CRITICAL **: 18:39:52.845: cannot unreference class of invalid (unclassed) type '(null)'
+[10/10/26 18:39:53] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             07_BreakTest/3429491395_16                         
+                             39765030_3649052097.mp4'                           
+Animation 1: FadeIn(VGroup of 3 submobjects):   0%|          | 0/28 [00:00<?, ?it/s]Animation 1: FadeIn(VGroup of 3 submobjects):  14%|█▍        | 4/28 [00:00<00:00, 33.90it/s]Animation 1: FadeIn(VGroup of 3 submobjects):  29%|██▊       | 8/28 [00:00<00:00, 33.77it/s]Animation 1: FadeIn(VGroup of 3 submobjects):  43%|████▎     | 12/28 [00:00<00:00, 21.35it/s]Animation 1: FadeIn(VGroup of 3 submobjects):  54%|█████▎    | 15/28 [00:00<00:00, 22.31it/s]Animation 1: FadeIn(VGroup of 3 submobjects):  64%|██████▍   | 18/28 [00:00<00:00, 23.08it/s]Animation 1: FadeIn(VGroup of 3 submobjects):  75%|███████▌  | 21/28 [00:00<00:00, 24.52it/s]Animation 1: FadeIn(VGroup of 3 submobjects):  86%|████████▌ | 24/28 [00:00<00:00, 23.93it/s]Animation 1: FadeIn(VGroup of 3 submobjects):  96%|█████████▋| 27/28 [00:01<00:00, 23.61it/s]                                                                                             [10/10/26 18:39:55] INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             07_BreakTest/1606801221_16                         
+                             45912408_3976735797.mp4'                           
+                    INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             07_BreakTest/1606801221_16                         
+                             23723456_1842199253.mp4'                           
+Animation 3: FadeIn(Text('Not in data')):   0%|          | 0/21 [00:00<?, ?it/s]Animation 3: FadeIn(Text('Not in data')):  24%|██▍       | 5/21 [00:00<00:00, 44.43it/s]Animation 3: FadeIn(Text('Not in data')):  48%|████▊     | 10/21 [00:00<00:00, 45.54it/s]Animation 3: FadeIn(Text('Not in data')):  71%|███████▏  | 15/21 [00:00<00:00, 46.13it/s]Animation 3: FadeIn(Text('Not in data')):  95%|█████████▌| 20/21 [00:00<00:00, 40.73it/s]                                                                                         [10/10/26 18:39:56] INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             07_BreakTest/1606801221_21                         
+                             79606515_1199055554.mp4'                           
+Animation 4: FadeIn(Text('No record')):   0%|          | 0/16 [00:00<?, ?it/s]Animation 4: FadeIn(Text('No record')):  31%|███▏      | 5/16 [00:00<00:00, 46.86it/s]Animation 4: FadeIn(Text('No record')):  62%|██████▎   | 10/16 [00:00<00:00, 45.97it/s]Animation 4: FadeIn(Text('No record')):  94%|█████████▍| 15/16 [00:00<00:00, 45.96it/s]                                                                                       [10/10/26 18:39:57] INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             07_BreakTest/1606801221_19                         
+                             06694592_1066503118.mp4'                           
+[10/10/26 18:39:58] INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             07_BreakTest/1606801221_36                         
+                             61538538_1078015743.mp4'                           
+Animation 6: FadeIn(VGroup of 3 submobjects):   0%|          | 0/11 [00:00<?, ?it/s]Animation 6: FadeIn(VGroup of 3 submobjects):  45%|████▌     | 5/11 [00:00<00:00, 46.83it/s]Animation 6: FadeIn(VGroup of 3 submobjects):  91%|█████████ | 10/11 [00:00<00:00, 48.58it/s]                                                                                             [10/10/26 18:39:59] INFO     Animation 6 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             07_BreakTest/1606801221_17                         
+                             15764626_1357996629.mp4'                           
+Animation 7: GrowFromCenter(VGroup of 3 submobjects):   0%|          | 0/9 [00:00<?, ?it/s]Animation 7: GrowFromCenter(VGroup of 3 submobjects):  56%|█████▌    | 5/9 [00:00<00:00, 45.12it/s]                                                                                                                       INFO     Animation 7 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             07_BreakTest/1606801221_79                         
+                             1594103_1401598664.mp4'                            
+[10/10/26 18:40:03] INFO     Animation 8 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             07_BreakTest/1606801221_41                         
+                             30700024_1825721652.mp4'                           
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:737
+                             File ready at                                      
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/B07_BreakTest.mp4'                            
+                                                                                
+                    INFO     Rendered B07_BreakTest                 scene.py:247
+                             Played 9 animations                                
+You are using manim version v0.18.1, but version v0.22.0 is available.
+You should consider upgrading via pip install -U manim
+
+(process:14727): GLib-CRITICAL **: 18:40:04.534: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14727): GLib-GObject-CRITICAL **: 18:40:04.535: cannot unreference class of invalid (unclassed) type '(null)'
+Animation 1: FadeIn(VGroup of 3 submobjects):   0%|          | 0/18 [00:00<?, ?it/s]                                                                                    Animation 3: FadeIn(Text('Not in data')):   0%|          | 0/13 [00:00<?, ?it/s]                                                                                /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 4: FadeIn(Text('No record')):   0%|          | 0/10 [00:00<?, ?it/s]                                                                              Animation 6: FadeIn(VGroup of 3 submobjects):   0%|          | 0/7 [00:00<?, ?it/s]                                                                                   Animation 7: GrowFromCenter(VGroup of 3 submobjects):   0%|          | 0/6 [00:00<?, ?it/s]                                                                                           [audit] scenes: 8 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/layout_audit.md
+[run] rendering B08_Skills
+Manim Community v0.18.1
+
+
+(process:14731): GLib-CRITICAL **: 18:40:05.536: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14731): GLib-GObject-CRITICAL **: 18:40:05.536: cannot unreference class of invalid (unclassed) type '(null)'
+[10/10/26 18:40:06] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             08_Skills/3429491395_52805                         
+                             6883_3806951922.mp4'                               
+Animation 1: LaggedStart(Group):   0%|          | 0/41 [00:00<?, ?it/s]Animation 1: LaggedStart(Group):  12%|█▏        | 5/41 [00:00<00:00, 47.92it/s]Animation 1: LaggedStart(Group):  27%|██▋       | 11/41 [00:00<00:00, 49.98it/s]Animation 1: LaggedStart(Group):  39%|███▉      | 16/41 [00:00<00:00, 49.68it/s]Animation 1: LaggedStart(Group):  51%|█████     | 21/41 [00:00<00:00, 44.05it/s]Animation 1: LaggedStart(Group):  63%|██████▎   | 26/41 [00:00<00:00, 40.53it/s]Animation 1: LaggedStart(Group):  76%|███████▌  | 31/41 [00:00<00:00, 41.28it/s]Animation 1: LaggedStart(Group):  88%|████████▊ | 36/41 [00:00<00:00, 42.64it/s]Animation 1: LaggedStart(Group): 100%|██████████| 41/41 [00:00<00:00, 41.45it/s]                                                                                [10/10/26 18:40:08] INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             08_Skills/1606801221_20500                         
+                             10619_973654147.mp4'                               
+[10/10/26 18:40:09] INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             08_Skills/1606801221_27201                         
+                             80874_1577192248.mp4'                              
+Animation 3: LaggedStart(Group):   0%|          | 0/52 [00:00<?, ?it/s]Animation 3: LaggedStart(Group):   8%|▊         | 4/52 [00:00<00:01, 36.87it/s]Animation 3: LaggedStart(Group):  15%|█▌        | 8/52 [00:00<00:01, 35.06it/s]Animation 3: LaggedStart(Group):  23%|██▎       | 12/52 [00:00<00:01, 35.20it/s]Animation 3: LaggedStart(Group):  31%|███       | 16/52 [00:00<00:01, 35.58it/s]Animation 3: LaggedStart(Group):  38%|███▊      | 20/52 [00:00<00:00, 35.54it/s]Animation 3: LaggedStart(Group):  46%|████▌     | 24/52 [00:00<00:00, 34.95it/s]Animation 3: LaggedStart(Group):  54%|█████▍    | 28/52 [00:00<00:00, 32.75it/s]Animation 3: LaggedStart(Group):  62%|██████▏   | 32/52 [00:00<00:00, 29.35it/s]Animation 3: LaggedStart(Group):  69%|██████▉   | 36/52 [00:01<00:00, 29.57it/s]Animation 3: LaggedStart(Group):  77%|███████▋  | 40/52 [00:01<00:00, 30.32it/s]Animation 3: LaggedStart(Group):  85%|████████▍ | 44/52 [00:01<00:00, 31.51it/s]Animation 3: LaggedStart(Group):  92%|█████████▏| 48/52 [00:01<00:00, 28.50it/s]Animation 3: LaggedStart(Group):  98%|█████████▊| 51/52 [00:01<00:00, 27.31it/s]                                                                                [10/10/26 18:40:12] INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             08_Skills/1606801221_41408                         
+                             45870_3331698003.mp4'                              
+                    INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             08_Skills/1606801221_97941                         
+                             1237_985709928.mp4'                                
+Animation 5: _MethodAnimation(Dot), etc.:   0%|          | 0/33 [00:00<?, ?it/s]Animation 5: _MethodAnimation(Dot), etc.:  12%|█▏        | 4/33 [00:00<00:00, 37.62it/s]Animation 5: _MethodAnimation(Dot), etc.:  24%|██▍       | 8/33 [00:00<00:00, 38.06it/s]Animation 5: _MethodAnimation(Dot), etc.:  36%|███▋      | 12/33 [00:00<00:00, 38.66it/s]Animation 5: _MethodAnimation(Dot), etc.:  48%|████▊     | 16/33 [00:00<00:00, 38.63it/s]Animation 5: _MethodAnimation(Dot), etc.:  61%|██████    | 20/33 [00:00<00:00, 36.64it/s]Animation 5: _MethodAnimation(Dot), etc.:  73%|███████▎  | 24/33 [00:00<00:00, 33.82it/s]Animation 5: _MethodAnimation(Dot), etc.:  85%|████████▍ | 28/33 [00:00<00:00, 30.31it/s]Animation 5: _MethodAnimation(Dot), etc.:  97%|█████████▋| 32/33 [00:00<00:00, 28.87it/s]                                                                                         [10/10/26 18:40:15] INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             08_Skills/1606801221_32449                         
+                             65014_2597115807.mp4'                              
+[10/10/26 18:40:19] INFO     Animation 6 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             08_Skills/1606801221_37791                         
+                             4879_1449170335.mp4'                               
+Animation 7: _MethodAnimation(Dot), etc.:   0%|          | 0/15 [00:00<?, ?it/s]Animation 7: _MethodAnimation(Dot), etc.:  20%|██        | 3/15 [00:00<00:00, 29.94it/s]Animation 7: _MethodAnimation(Dot), etc.:  47%|████▋     | 7/15 [00:00<00:00, 28.82it/s]Animation 7: _MethodAnimation(Dot), etc.:  67%|██████▋   | 10/15 [00:00<00:00, 20.52it/s]Animation 7: _MethodAnimation(Dot), etc.:  87%|████████▋ | 13/15 [00:00<00:00, 21.91it/s]                                                                                         [10/10/26 18:40:20] INFO     Animation 7 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             08_Skills/1606801221_42187                         
+                             60135_3968200583.mp4'                              
+Animation 8: _MethodAnimation(Dot), etc.:   0%|          | 0/15 [00:00<?, ?it/s]Animation 8: _MethodAnimation(Dot), etc.:  27%|██▋       | 4/15 [00:00<00:00, 35.58it/s]Animation 8: _MethodAnimation(Dot), etc.:  53%|█████▎    | 8/15 [00:00<00:00, 37.16it/s]Animation 8: _MethodAnimation(Dot), etc.:  80%|████████  | 12/15 [00:00<00:00, 34.52it/s]                                                                                         [10/10/26 18:40:22] INFO     Animation 8 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             08_Skills/1606801221_92433                         
+                             3825_3414167931.mp4'                               
+Animation 9: _MethodAnimation(Dot), etc.:   0%|          | 0/15 [00:00<?, ?it/s]Animation 9: _MethodAnimation(Dot), etc.:  20%|██        | 3/15 [00:00<00:00, 21.53it/s]Animation 9: _MethodAnimation(Dot), etc.:  40%|████      | 6/15 [00:00<00:00, 25.35it/s]Animation 9: _MethodAnimation(Dot), etc.:  60%|██████    | 9/15 [00:00<00:00, 14.94it/s]Animation 9: _MethodAnimation(Dot), etc.:  73%|███████▎  | 11/15 [00:00<00:00,  8.65it/s]Animation 9: _MethodAnimation(Dot), etc.:  87%|████████▋ | 13/15 [00:01<00:00,  9.56it/s]Animation 9: _MethodAnimation(Dot), etc.: 100%|██████████| 15/15 [00:01<00:00,  9.98it/s]                                                                                         [10/10/26 18:40:24] INFO     Animation 9 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             08_Skills/1606801221_29043                         
+                             22711_3644891272.mp4'                              
+[10/10/26 18:40:29] INFO     Animation 10 : Partial     scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             08_Skills/1606801221_40372                         
+                             98718_1498650766.mp4'                              
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:737
+                             File ready at                                      
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/B08_Skills.mp4'                               
+                                                                                
+                    INFO     Rendered B08_Skills                    scene.py:247
+                             Played 11 animations                               
+You are using manim version v0.18.1, but version v0.22.0 is available.
+You should consider upgrading via pip install -U manim
+
+(process:14757): GLib-CRITICAL **: 18:40:31.101: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14757): GLib-GObject-CRITICAL **: 18:40:31.102: cannot unreference class of invalid (unclassed) type '(null)'
+Animation 1: LaggedStart(Group):   0%|          | 0/26 [00:00<?, ?it/s]                                                                       Animation 3: LaggedStart(Group):   0%|          | 0/32 [00:00<?, ?it/s]Animation 3: LaggedStart(Group):  66%|██████▌   | 21/32 [00:00<00:00, 209.18it/s]                                                                                 /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 5: _MethodAnimation(Dot), etc.:   0%|          | 0/21 [00:00<?, ?it/s]Animation 5: _MethodAnimation(Dot), etc.: 100%|██████████| 21/21 [00:00<00:00, 205.43it/s]                                                                                          Animation 7: _MethodAnimation(Dot), etc.:   0%|          | 0/10 [00:00<?, ?it/s]                                                                                Animation 8: _MethodAnimation(Dot), etc.:   0%|          | 0/10 [00:00<?, ?it/s]                                                                                Animation 9: _MethodAnimation(Dot), etc.:   0%|          | 0/10 [00:00<?, ?it/s]                                                                                [audit] scenes: 11 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/layout_audit.md
+[run] rendering B09_InOutFirst
+Manim Community v0.18.1
+
+
+(process:14761): GLib-CRITICAL **: 18:40:32.469: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14761): GLib-GObject-CRITICAL **: 18:40:32.469: cannot unreference class of invalid (unclassed) type '(null)'
+[10/10/26 18:40:33] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             09_InOutFirst/3429491395_1                         
+                             162383681_4005555370.mp4'                          
+Animation 1: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/45 [00:00<?, ?it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:   4%|▍         | 2/45 [00:00<00:02, 16.77it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:   9%|▉         | 4/45 [00:00<00:03, 10.27it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:  13%|█▎        | 6/45 [00:00<00:04,  8.80it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:  22%|██▏       | 10/45 [00:00<00:02, 15.25it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:  31%|███       | 14/45 [00:00<00:01, 20.86it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:  42%|████▏     | 19/45 [00:00<00:00, 26.89it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:  51%|█████     | 23/45 [00:01<00:00, 30.05it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:  60%|██████    | 27/45 [00:01<00:00, 32.37it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:  69%|██████▉   | 31/45 [00:01<00:00, 32.92it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:  78%|███████▊  | 35/45 [00:01<00:00, 33.72it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:  87%|████████▋ | 39/45 [00:01<00:00, 33.64it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:  96%|█████████▌| 43/45 [00:01<00:00, 34.37it/s]                                                                                                   [10/10/26 18:40:35] INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             09_InOutFirst/1606801221_4                         
+                             45635367_3978387548.mp4'                           
+[10/10/26 18:40:36] INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             09_InOutFirst/1606801221_2                         
+                             357802700_2885025400.mp4'                          
+Animation 3: Create(Line), etc.:   0%|          | 0/37 [00:00<?, ?it/s]Animation 3: Create(Line), etc.:  14%|█▎        | 5/37 [00:00<00:00, 44.59it/s]Animation 3: Create(Line), etc.:  30%|██▉       | 11/37 [00:00<00:00, 48.31it/s]Animation 3: Create(Line), etc.:  46%|████▌     | 17/37 [00:00<00:00, 49.38it/s]Animation 3: Create(Line), etc.:  59%|█████▉    | 22/37 [00:00<00:00, 45.38it/s]Animation 3: Create(Line), etc.:  73%|███████▎  | 27/37 [00:00<00:00, 41.36it/s]Animation 3: Create(Line), etc.:  86%|████████▋ | 32/37 [00:00<00:00, 41.69it/s]Animation 3: Create(Line), etc.: 100%|██████████| 37/37 [00:00<00:00, 43.01it/s]                                                                                [10/10/26 18:40:37] INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             09_InOutFirst/1606801221_9                         
+                             33471298_3850513863.mp4'                           
+                    INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             09_InOutFirst/1606801221_2                         
+                             600631129_1453332630.mp4'                          
+Animation 5: FadeIn(Text('Not advice')):   0%|          | 0/29 [00:00<?, ?it/s]Animation 5: FadeIn(Text('Not advice')):  17%|█▋        | 5/29 [00:00<00:00, 42.93it/s]Animation 5: FadeIn(Text('Not advice')):  34%|███▍      | 10/29 [00:00<00:00, 42.60it/s]Animation 5: FadeIn(Text('Not advice')):  52%|█████▏    | 15/29 [00:00<00:00, 42.90it/s]Animation 5: FadeIn(Text('Not advice')):  69%|██████▉   | 20/29 [00:00<00:00, 41.39it/s]Animation 5: FadeIn(Text('Not advice')):  86%|████████▌ | 25/29 [00:00<00:00, 38.78it/s]Animation 5: FadeIn(Text('Not advice')): 100%|██████████| 29/29 [00:00<00:00, 36.57it/s]                                                                                        [10/10/26 18:40:39] INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             09_InOutFirst/1606801221_3                         
+                             468890795_1480967040.mp4'                          
+Animation 6: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/33 [00:00<?, ?it/s]Animation 6: FadeIn(VGroup of 3 submobjects), etc.:  12%|█▏        | 4/33 [00:00<00:00, 39.66it/s]Animation 6: FadeIn(VGroup of 3 submobjects), etc.:  27%|██▋       | 9/33 [00:00<00:00, 42.13it/s]Animation 6: FadeIn(VGroup of 3 submobjects), etc.:  42%|████▏     | 14/33 [00:00<00:00, 39.71it/s]Animation 6: FadeIn(VGroup of 3 submobjects), etc.:  55%|█████▍    | 18/33 [00:00<00:00, 37.58it/s]Animation 6: FadeIn(VGroup of 3 submobjects), etc.:  67%|██████▋   | 22/33 [00:00<00:00, 34.18it/s]Animation 6: FadeIn(VGroup of 3 submobjects), etc.:  79%|███████▉  | 26/33 [00:00<00:00, 31.07it/s]Animation 6: FadeIn(VGroup of 3 submobjects), etc.:  91%|█████████ | 30/33 [00:01<00:00, 16.77it/s]Animation 6: FadeIn(VGroup of 3 submobjects), etc.: 100%|██████████| 33/33 [00:01<00:00, 14.99it/s]                                                                                                   [10/10/26 18:40:42] INFO     Animation 6 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             09_InOutFirst/1606801221_7                         
+                             84986020_377162068.mp4'                            
+Animation 7: FadeIn(Text('First run')):   0%|          | 0/17 [00:00<?, ?it/s]Animation 7: FadeIn(Text('First run')):  18%|█▊        | 3/17 [00:00<00:00, 27.95it/s]Animation 7: FadeIn(Text('First run')):  35%|███▌      | 6/17 [00:00<00:00, 28.82it/s]Animation 7: FadeIn(Text('First run')):  53%|█████▎    | 9/17 [00:00<00:00, 20.52it/s]Animation 7: FadeIn(Text('First run')):  71%|███████   | 12/17 [00:00<00:00, 20.04it/s]Animation 7: FadeIn(Text('First run')):  94%|█████████▍| 16/17 [00:00<00:00, 23.90it/s]                                                                                       [10/10/26 18:40:44] INFO     Animation 7 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             09_InOutFirst/1606801221_3                         
+                             433244306_3662007582.mp4'                          
+[10/10/26 18:40:46] INFO     Animation 8 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             09_InOutFirst/1606801221_3                         
+                             476108105_2187597461.mp4'                          
+Animation 9: _MethodAnimation(VGroup of 3 submobjects):   0%|          | 0/41 [00:00<?, ?it/s]Animation 9: _MethodAnimation(VGroup of 3 submobjects):  10%|▉         | 4/41 [00:00<00:00, 38.88it/s]Animation 9: _MethodAnimation(VGroup of 3 submobjects):  22%|██▏       | 9/41 [00:00<00:00, 40.16it/s]Animation 9: _MethodAnimation(VGroup of 3 submobjects):  34%|███▍      | 14/41 [00:00<00:00, 41.16it/s]Animation 9: _MethodAnimation(VGroup of 3 submobjects):  46%|████▋     | 19/41 [00:00<00:00, 42.03it/s]Animation 9: _MethodAnimation(VGroup of 3 submobjects):  59%|█████▊    | 24/41 [00:00<00:00, 40.68it/s]Animation 9: _MethodAnimation(VGroup of 3 submobjects):  71%|███████   | 29/41 [00:00<00:00, 40.99it/s]Animation 9: _MethodAnimation(VGroup of 3 submobjects):  83%|████████▎ | 34/41 [00:00<00:00, 41.98it/s]Animation 9: _MethodAnimation(VGroup of 3 submobjects):  95%|█████████▌| 39/41 [00:00<00:00, 39.86it/s]                                                                                                       [10/10/26 18:40:48] INFO     Animation 9 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             09_InOutFirst/1606801221_2                         
+                             30532093_443225365.mp4'                            
+Animation 10: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/13 [00:00<?, ?it/s]Animation 10: FadeIn(VGroup of 3 submobjects), etc.:  38%|███▊      | 5/13 [00:00<00:00, 44.89it/s]Animation 10: FadeIn(VGroup of 3 submobjects), etc.:  77%|███████▋  | 10/13 [00:00<00:00, 45.52it/s]                                                                                                                        INFO     Animation 10 : Partial     scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             09_InOutFirst/1606801221_1                         
+                             099362140_3991614951.mp4'                          
+[10/10/26 18:40:53] INFO     Animation 11 : Partial     scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             09_InOutFirst/1606801221_3                         
+                             099899903_2810633199.mp4'                          
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:737
+                             File ready at                                      
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/B09_InOutFirst.mp4'                           
+                                                                                
+                    INFO     Rendered B09_InOutFirst                scene.py:247
+                             Played 12 animations                               
+You are using manim version v0.18.1, but version v0.22.0 is available.
+You should consider upgrading via pip install -U manim
+
+(process:14786): GLib-CRITICAL **: 18:40:55.109: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14786): GLib-GObject-CRITICAL **: 18:40:55.110: cannot unreference class of invalid (unclassed) type '(null)'
+Animation 1: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/28 [00:00<?, ?it/s]                                                                                          Animation 3: Create(Line), etc.:   0%|          | 0/23 [00:00<?, ?it/s]                                                                       Animation 5: FadeIn(Text('Not advice')):   0%|          | 0/18 [00:00<?, ?it/s]                                                                               /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 6: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/21 [00:00<?, ?it/s]                                                                                          Animation 7: FadeIn(Text('First run')):   0%|          | 0/11 [00:00<?, ?it/s]                                                                              Animation 9: _MethodAnimation(VGroup of 3 submobjects):   0%|          | 0/26 [00:00<?, ?it/s]                                                                                              Animation 10: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/8 [00:00<?, ?it/s]                                                                                          [audit] scenes: 9 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/layout_audit.md
+[run] rendering B10_Misread
+Manim Community v0.18.1
+
+
+(process:14790): GLib-CRITICAL **: 18:40:56.263: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14790): GLib-GObject-CRITICAL **: 18:40:56.263: cannot unreference class of invalid (unclassed) type '(null)'
+[10/10/26 18:40:56] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             10_Misread/3429491395_1245                         
+                             412224_2174637263.mp4'                             
+Animation 1: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/33 [00:00<?, ?it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:  15%|█▌        | 5/33 [00:00<00:00, 43.46it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:  30%|███       | 10/33 [00:00<00:00, 45.39it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:  45%|████▌     | 15/33 [00:00<00:00, 43.23it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:  61%|██████    | 20/33 [00:00<00:00, 40.66it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:  76%|███████▌  | 25/33 [00:00<00:00, 39.01it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.:  88%|████████▊ | 29/33 [00:00<00:00, 38.91it/s]Animation 1: FadeIn(VGroup of 3 submobjects), etc.: 100%|██████████| 33/33 [00:00<00:00, 38.90it/s]                                                                                                   [10/10/26 18:40:58] INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             10_Misread/1606801221_2308                         
+                             270577_1769046448.mp4'                             
+                    INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             10_Misread/1606801221_1046                         
+                             689572_4188052094.mp4'                             
+Animation 3: GrowFromCenter(Arrow):   0%|          | 0/33 [00:00<?, ?it/s]Animation 3: GrowFromCenter(Arrow):  15%|█▌        | 5/33 [00:00<00:00, 46.40it/s]Animation 3: GrowFromCenter(Arrow):  33%|███▎      | 11/33 [00:00<00:00, 49.60it/s]Animation 3: GrowFromCenter(Arrow):  48%|████▊     | 16/33 [00:00<00:00, 49.73it/s]Animation 3: GrowFromCenter(Arrow):  67%|██████▋   | 22/33 [00:00<00:00, 49.81it/s]Animation 3: GrowFromCenter(Arrow):  82%|████████▏ | 27/33 [00:00<00:00, 45.59it/s]Animation 3: GrowFromCenter(Arrow):  97%|█████████▋| 32/33 [00:00<00:00, 43.55it/s]                                                                                   [10/10/26 18:41:00] INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             10_Misread/1606801221_4126                         
+                             314216_1115346115.mp4'                             
+Animation 4: FadeIn(Text('Misread')):   0%|          | 0/24 [00:00<?, ?it/s]Animation 4: FadeIn(Text('Misread')):  21%|██        | 5/24 [00:00<00:00, 47.29it/s]Animation 4: FadeIn(Text('Misread')):  42%|████▏     | 10/24 [00:00<00:00, 47.10it/s]Animation 4: FadeIn(Text('Misread')):  62%|██████▎   | 15/24 [00:00<00:00, 46.98it/s]Animation 4: FadeIn(Text('Misread')):  83%|████████▎ | 20/24 [00:00<00:00, 45.35it/s]                                                                                     [10/10/26 18:41:01] INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             10_Misread/1606801221_2544                         
+                             917961_2396674859.mp4'                             
+Animation 5: Create(Line), etc.:   0%|          | 0/18 [00:00<?, ?it/s]Animation 5: Create(Line), etc.:  28%|██▊       | 5/18 [00:00<00:00, 43.55it/s]Animation 5: Create(Line), etc.:  61%|██████    | 11/18 [00:00<00:00, 49.23it/s]Animation 5: Create(Line), etc.:  94%|█████████▍| 17/18 [00:00<00:00, 50.32it/s]                                                                                [10/10/26 18:41:02] INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             10_Misread/1606801221_1168                         
+                             018885_1121515193.mp4'                             
+Animation 6: FadeIn(Text('Date range')):   0%|          | 0/12 [00:00<?, ?it/s]Animation 6: FadeIn(Text('Date range')):  42%|████▏     | 5/12 [00:00<00:00, 44.24it/s]Animation 6: FadeIn(Text('Date range')):  83%|████████▎ | 10/12 [00:00<00:00, 44.99it/s]                                                                                                            INFO     Animation 6 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             10_Misread/1606801221_3140                         
+                             193332_3072258594.mp4'                             
+[10/10/26 18:41:04] INFO     Animation 7 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             10_Misread/1606801221_4063                         
+                             196657_3989103261.mp4'                             
+Animation 8: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/21 [00:00<?, ?it/s]Animation 8: FadeIn(VGroup of 3 submobjects), etc.:  24%|██▍       | 5/21 [00:00<00:00, 47.14it/s]Animation 8: FadeIn(VGroup of 3 submobjects), etc.:  48%|████▊     | 10/21 [00:00<00:00, 48.22it/s]Animation 8: FadeIn(VGroup of 3 submobjects), etc.:  71%|███████▏  | 15/21 [00:00<00:00, 47.98it/s]Animation 8: FadeIn(VGroup of 3 submobjects), etc.:  95%|█████████▌| 20/21 [00:00<00:00, 47.29it/s]                                                                                                   [10/10/26 18:41:05] INFO     Animation 8 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             10_Misread/1606801221_1848                         
+                             51964_11779968.mp4'                                
+Animation 9: FadeIn(VGroup of 3 submobjects):   0%|          | 0/15 [00:00<?, ?it/s]Animation 9: FadeIn(VGroup of 3 submobjects):  33%|███▎      | 5/15 [00:00<00:00, 48.24it/s]Animation 9: FadeIn(VGroup of 3 submobjects):  73%|███████▎  | 11/15 [00:00<00:00, 49.56it/s]                                                                                                                 INFO     Animation 9 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             10_Misread/1606801221_7938                         
+                             02515_373959490.mp4'                               
+[10/10/26 18:41:09] INFO     Animation 10 : Partial     scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             10_Misread/1606801221_2575                         
+                             162381_2044302430.mp4'                             
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:737
+                             File ready at                                      
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/B10_Misread.mp4'                              
+                                                                                
+                    INFO     Rendered B10_Misread                   scene.py:247
+                             Played 11 animations                               
+You are using manim version v0.18.1, but version v0.22.0 is available.
+You should consider upgrading via pip install -U manim
+
+(process:14815): GLib-CRITICAL **: 18:41:10.786: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14815): GLib-GObject-CRITICAL **: 18:41:10.786: cannot unreference class of invalid (unclassed) type '(null)'
+Animation 1: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/21 [00:00<?, ?it/s]                                                                                          Animation 3: GrowFromCenter(Arrow):   0%|          | 0/21 [00:00<?, ?it/s]                                                                          Animation 5: FadeIn(Text('Misread')):   0%|          | 0/15 [00:00<?, ?it/s]                                                                            /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 6: Create(Line), etc.:   0%|          | 0/12 [00:00<?, ?it/s]                                                                       Animation 7: FadeIn(Text('Date range')):   0%|          | 0/8 [00:00<?, ?it/s]                                                                              Animation 9: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/14 [00:00<?, ?it/s]                                                                                          Animation 10: FadeIn(VGroup of 3 submobjects):   0%|          | 0/10 [00:00<?, ?it/s]                                                                                     [audit] scenes: 9 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/layout_audit.md
+[run] rendering B11_Shelves
+Manim Community v0.18.1
+
+
+(process:14819): GLib-CRITICAL **: 18:41:11.828: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14819): GLib-GObject-CRITICAL **: 18:41:11.828: cannot unreference class of invalid (unclassed) type '(null)'
+[10/10/26 18:41:12] INFO     Animation 0 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             11_Shelves/3429491395_3948                         
+                             191137_2133290841.mp4'                             
+Animation 1: LaggedStart(Group):   0%|          | 0/46 [00:00<?, ?it/s]Animation 1: LaggedStart(Group):   9%|▊         | 4/46 [00:00<00:01, 36.40it/s]Animation 1: LaggedStart(Group):  20%|█▉        | 9/46 [00:00<00:00, 42.16it/s]Animation 1: LaggedStart(Group):  30%|███       | 14/46 [00:00<00:00, 41.09it/s]Animation 1: LaggedStart(Group):  41%|████▏     | 19/46 [00:00<00:00, 37.69it/s]Animation 1: LaggedStart(Group):  50%|█████     | 23/46 [00:00<00:00, 36.58it/s]Animation 1: LaggedStart(Group):  59%|█████▊    | 27/46 [00:00<00:00, 37.12it/s]Animation 1: LaggedStart(Group):  67%|██████▋   | 31/46 [00:00<00:00, 37.93it/s]Animation 1: LaggedStart(Group):  76%|███████▌  | 35/46 [00:00<00:00, 38.32it/s]Animation 1: LaggedStart(Group):  85%|████████▍ | 39/46 [00:01<00:00, 36.98it/s]Animation 1: LaggedStart(Group):  93%|█████████▎| 43/46 [00:01<00:00, 36.07it/s]                                                                                [10/10/26 18:41:14] INFO     Animation 1 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             11_Shelves/1606801221_2298                         
+                             25471_3211536424.mp4'                              
+                    INFO     Animation 2 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             11_Shelves/1606801221_3010                         
+                             635261_1822922350.mp4'                             
+Animation 3: FadeIn(Text('Already have')):   0%|          | 0/32 [00:00<?, ?it/s]Animation 3: FadeIn(Text('Already have')):  16%|█▌        | 5/32 [00:00<00:00, 44.76it/s]Animation 3: FadeIn(Text('Already have')):  31%|███▏      | 10/32 [00:00<00:00, 44.34it/s]Animation 3: FadeIn(Text('Already have')):  47%|████▋     | 15/32 [00:00<00:00, 44.65it/s]Animation 3: FadeIn(Text('Already have')):  62%|██████▎   | 20/32 [00:00<00:00, 44.92it/s]Animation 3: FadeIn(Text('Already have')):  78%|███████▊  | 25/32 [00:00<00:00, 44.87it/s]Animation 3: FadeIn(Text('Already have')):  94%|█████████▍| 30/32 [00:00<00:00, 42.78it/s]                                                                                          [10/10/26 18:41:16] INFO     Animation 3 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             11_Shelves/1606801221_1536                         
+                             760269_2374426419.mp4'                             
+                    INFO     Animation 4 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             11_Shelves/1606801221_9080                         
+                             37059_2984327400.mp4'                              
+Animation 5: FadeIn(Text('Learning')):   0%|          | 0/32 [00:00<?, ?it/s]Animation 5: FadeIn(Text('Learning')):  16%|█▌        | 5/32 [00:00<00:00, 45.12it/s]Animation 5: FadeIn(Text('Learning')):  31%|███▏      | 10/32 [00:00<00:00, 44.62it/s]Animation 5: FadeIn(Text('Learning')):  47%|████▋     | 15/32 [00:00<00:00, 41.70it/s]Animation 5: FadeIn(Text('Learning')):  62%|██████▎   | 20/32 [00:00<00:00, 40.39it/s]Animation 5: FadeIn(Text('Learning')):  78%|███████▊  | 25/32 [00:00<00:00, 41.76it/s]Animation 5: FadeIn(Text('Learning')):  94%|█████████▍| 30/32 [00:00<00:00, 37.76it/s]                                                                                      [10/10/26 18:41:18] INFO     Animation 5 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             11_Shelves/1606801221_2487                         
+                             453652_3448075614.mp4'                             
+[10/10/26 18:41:21] INFO     Animation 6 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             11_Shelves/1606801221_5705                         
+                             62244_775132050.mp4'                               
+Animation 7: FadeIn(VGroup of 3 submobjects):   0%|          | 0/22 [00:00<?, ?it/s]Animation 7: FadeIn(VGroup of 3 submobjects):  23%|██▎       | 5/22 [00:00<00:00, 44.09it/s]Animation 7: FadeIn(VGroup of 3 submobjects):  45%|████▌     | 10/22 [00:00<00:00, 44.93it/s]Animation 7: FadeIn(VGroup of 3 submobjects):  68%|██████▊   | 15/22 [00:00<00:00, 43.85it/s]Animation 7: FadeIn(VGroup of 3 submobjects):  91%|█████████ | 20/22 [00:00<00:00, 43.11it/s]                                                                                             [10/10/26 18:41:23] INFO     Animation 7 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             11_Shelves/1606801221_1201                         
+                             851702_739673528.mp4'                              
+Animation 8: FadeIn(VGroup of 3 submobjects):   0%|          | 0/18 [00:00<?, ?it/s]Animation 8: FadeIn(VGroup of 3 submobjects):  28%|██▊       | 5/18 [00:00<00:00, 47.49it/s]Animation 8: FadeIn(VGroup of 3 submobjects):  56%|█████▌    | 10/18 [00:00<00:00, 48.49it/s]Animation 8: FadeIn(VGroup of 3 submobjects):  83%|████████▎ | 15/18 [00:00<00:00, 49.12it/s]                                                                                             [10/10/26 18:41:24] INFO     Animation 8 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             11_Shelves/1606801221_2863                         
+                             091490_3712509983.mp4'                             
+[10/10/26 18:41:28] INFO     Animation 9 : Partial      scene_file_writer.py:527
+                             movie file written in                              
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/partial_movie_files/B                         
+                             11_Shelves/1606801221_3727                         
+                             667224_2697209323.mp4'                             
+                    INFO     Combining to Movie file.   scene_file_writer.py:617
+                    INFO                                scene_file_writer.py:737
+                             File ready at                                      
+                             '/Users/dhruvi/Documents/f                         
+                             inal-project-film/dhruvi/y                         
+                             outube/ghost-job-radar-pit                         
+                             ch/media/videos/scenes/216                         
+                             0p24/B11_Shelves.mp4'                              
+                                                                                
+                    INFO     Rendered B11_Shelves                   scene.py:247
+                             Played 10 animations                               
+You are using manim version v0.18.1, but version v0.22.0 is available.
+You should consider upgrading via pip install -U manim
+
+(process:14841): GLib-CRITICAL **: 18:41:30.017: g_datalist_id_set_data_full: assertion 'key_id > 0' failed
+
+(process:14841): GLib-GObject-CRITICAL **: 18:41:30.017: cannot unreference class of invalid (unclassed) type '(null)'
+Animation 1: LaggedStart(Group):   0%|          | 0/29 [00:00<?, ?it/s]                                                                       Animation 3: FadeIn(Text('Already have')):   0%|          | 0/20 [00:00<?, ?it/s]                                                                                 /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 5: FadeIn(Text('Learning')):   0%|          | 0/20 [00:00<?, ?it/s]                                                                             Animation 7: FadeIn(VGroup of 3 submobjects):   0%|          | 0/14 [00:00<?, ?it/s]                                                                                    Animation 8: FadeIn(VGroup of 3 submobjects):   0%|          | 0/12 [00:00<?, ?it/s]                                                                                    [audit] scenes: 10 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/layout_audit.md
+[remotion] BIDEA: ok: BrutalistHesitantWriter -> media/BIDEA.mp4
+[remotion] BDEFS: ok: ClaudeDefinitions -> media/BDEFS.mp4
+[remotion] B06: ok: ShowTellCard -> media/B06.mp4
+[remotion] B12: ok: ShowTellCard -> media/B12.mp4
+[remotion] BHTF: ok: ClaudeComposerAsk -> media/BHTF.mp4
+[remotion] BOUT: ok: ClaudeTitleOutro -> media/BOUT.mp4
+[remotion] stamped provenance in beat_sheet.json + updated consumers.json
+[remotion] done — run `bash scripts/run.sh <REEL>` to compile the cut
+[art] compiled BIDEA  VIDEO    10.1s  ← BIDEA.mp4
+[art] compiled BDEFS  VIDEO    18.5s  ← BDEFS.mp4
+[art] compiled B01  MANIM    14.1s  ← B01.mp4
+[art] compiled B02  MANIM    17.1s  ← B02.mp4
+[art] compiled B03  MANIM    17.1s  ← B03.mp4
+[art] compiled B04  MANIM    13.3s  ← B04.mp4
+[art] compiled B05  MANIM    12.8s  ← B05.mp4
+[art] compiled B06  VIDEO    14.7s  ← B06.mp4
+[art] compiled B07  MANIM     7.1s  ← B07.mp4
+[art] compiled B08  MANIM    15.2s  ← B08.mp4
+[art] compiled B09  MANIM    16.8s  ← B09.mp4
+[art] compiled B10  MANIM    12.4s  ← B10.mp4
+[art] compiled B11  MANIM    14.8s  ← B11.mp4
+[art] compiled B12  VIDEO    18.0s  ← B12.mp4
+[art] compiled BHTF  VIDEO    10.0s  ← BHTF.mp4
+[art] compiled BOUT  VIDEO     3.6s  ← BOUT.mp4
+[art] motion histogram: graphic:10  remotion:6
+[art] SKIN LINT: BIDEA: palette=claude but the cold open is 'BrutalistHesitantWriter' — COLD OPEN LAW wants ClaudeComposerAsk
+[art] build stamp → beat_sheet.json (16/16 filled)
+[art] QC contact sheet → /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/qc-sheet.png
+[art] wrote /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/ghost-job-radar-pitch-slate.mp4  (215.8s, audio: per-beat timeline (source audio preserved), drawtext: no — PIL overlays)
+[art] slots: 16/16 filled — BIDEA:VIDEO BDEFS:VIDEO B01:MANIM B02:MANIM B03:MANIM B04:MANIM B05:MANIM B06:VIDEO B07:MANIM B08:MANIM B09:MANIM B10:MANIM B11:MANIM B12:VIDEO BHTF:VIDEO BOUT:VIDEO
+[run] GATE V — frame-level visual QC on the compiled reel
+[gate-v] frames=32 BLOCKER=0 MAJOR=0 → /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/REPORT.md
+[run] done → /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch  (QC gates: on)
+[run] REVIEW built; no final exported. Use ./art final <reel> for a verified master.
+[run] any remaining slates are YOUR slots — see /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/SHOTLIST.md

@@ -1,0 +1,171 @@
+{
+  "BIDEA": {
+    "script": "Hi, I'm Dhruvi Mehta, and this is my final project pitch: Ghost-Job Trust Radar. If something already ran, I'll show it. Everything else is a plan.",
+    "heard": "Hi, I'm Dhruvi Mehta, and this is my final project pitch, Ghost Job Trust Radar. If something already ran, I'll show it. Everything else is a plan.",
+    "diffs": []
+  },
+  "BDEFS": {
+    "script": "Four terms. CPT: work authorization tied to a degree program. A ghost job: a posting that's already filled, or never really open. Liveness: whether it still accepts applications. A sponsorship record: a public filing showing a company sponsored a visa before.",
+    "heard": "four terms, CPT, work authorization tied to a degree program, a ghost job, a posting that's already filled or never really open, liveness, whether it still accepts applications, a sponsorship record, a public filing showing a company sponsored a visa before.",
+    "diffs": []
+  },
+  "B01": {
+    "script": "An international student on CPT finds a data analyst posting and spends an hour researching the company. Then she learns it was already filled, or the start date doesn't fit her CPT window. That hour is gone.",
+    "heard": "An international student on CPT finds a data analyst posting and spends an hour researching the company. Then she learns it was already filled, or the start date doesn't fit her CPT window. That hour is gone.",
+    "diffs": []
+  },
+  "B02": {
+    "script": "Ghost-Job Trust Radar will be a command-line tool that checks the posting first. Is it live? Does the timeline fit CPT? Is there a sponsorship record? The finished artifact will be a GitHub repository with one command, tests, and an evaluation log.",
+    "heard": "Ghost Job Trust Radar will be a command line tool that checks the posting first. Is it live? Does the timeline fit CPT? Is there a sponsorship record? The finished artifact will be a GitHub repository with one command, tests, and an evaluation log.",
+    "diffs": []
+  },
+  "B03": {
+    "script": "I looked at two alternatives. MyVisaJobs shows who sponsored before, but nothing I saw checks whether a posting is live or fits a CPT window. The manual checklist from career guides works, but it's four or five steps across tabs, with no record kept.",
+    "heard": "I looked at two alternatives. My Visa Jobs shows who sponsored before, but nothing I saw checks whether a posting is live or fits a CPT window. The manual checklist from Career Guides works, but it's four or five steps across tabs, with no record kept.",
+    "diffs": [
+      [
+        "replace",
+        "myvisajobs",
+        "my visa jobs"
+      ]
+    ]
+  },
+  "B04": {
+    "script": "Mine will check liveness first and stop if the posting is dead, before research starts. Every value will carry its source. If the data has nothing, it will say 'no record in this dataset,' never 'doesn't sponsor.'",
+    "heard": "Mine will check liveness first and stop if the posting is dead, before research starts. Every value will carry its source. If the data has nothing, it will say no record in this dataset, never doesn't sponsor.",
+    "diffs": [
+      [
+        "replace",
+        "'no",
+        "no"
+      ],
+      [
+        "delete",
+        "'",
+        ""
+      ],
+      [
+        "replace",
+        "'doesn't",
+        "doesn't"
+      ],
+      [
+        "delete",
+        "'",
+        ""
+      ]
+    ]
+  },
+  "B05": {
+    "script": "My reader is a hiring manager for a data analyst role. In sixty seconds, they'll open the README, run one command on a sample posting, and see every line's source. This picture is a mock-up.",
+    "heard": "My reader is a hiring manager for a data analyst role. In 60 seconds, they'll open the README, run one command on a sample posting, and see every line's source. This picture is a mock-up.",
+    "diffs": [
+      [
+        "replace",
+        "sixty",
+        "60"
+      ]
+    ]
+  },
+  "B06": {
+    "script": "Here's what exists. Last assignment, I built a CPT timeline gate and a sponsorship-data builder. This is the real test run: sixteen offline tests pass. I also checked one run by hand against the raw data.",
+    "heard": "Here's what exists. Last assignment, I built a CPT timeline gate and a sponsorship data builder. This is the real test run, 16 offline tests pass. I also checked one run by hand against the raw data.",
+    "diffs": [
+      [
+        "replace",
+        "sixteen",
+        "16"
+      ]
+    ]
+  },
+  "B07": {
+    "script": "Then I tried to break it, with a company that isn't in the dataset. It reported 'no record' instead of inventing an answer.",
+    "heard": "Then I tried to break it, with a company that isn't in the data set. It reported no record instead of inventing an answer.",
+    "diffs": [
+      [
+        "replace",
+        "dataset",
+        "data set"
+      ],
+      [
+        "replace",
+        "'no record'",
+        "no record"
+      ]
+    ]
+  },
+  "B08": {
+    "script": "It will show four course skills: verification, source grounding, evaluation, and prompt contracts. A reviewer could fairly conclude I build checks that fail safely, but not that it's accurate on real postings. That isn't tested yet.",
+    "heard": "It will show four core skills. Verification, source grounding, evaluation, and prompt contracts. A reviewer could fairly conclude I build checks that fail safely, but not that it's accurate on real postings. That isn't tested yet.",
+    "diffs": [
+      [
+        "replace",
+        "course",
+        "core"
+      ]
+    ]
+  },
+  "B09": {
+    "script": "What's out: it won't tell anyone whether to apply, and it won't give legal or immigration advice. First, I'll make one command run every check on a synthetic posting. You'll know it ran because it writes a report, a test checks it, and a dated run log goes in the repo.",
+    "heard": "What's out? It won't tell anyone whether to apply, and it won't give legal or immigration advice. First, I'll make one command run every check on a synthetic posting. You'll know it ran because it writes a report, a test checks it, and a dated run log goes in the repo.",
+    "diffs": []
+  },
+  "B10": {
+    "script": "The biggest risk: the sponsorship data is an incomplete historical sample, so someone could read 'no record' as 'doesn't sponsor.' So every lookup will print the dataset's date range next to the answer.",
+    "heard": "the biggest risk. The sponsorship data is an incomplete historical sample, so someone could read no record as doesn't sponsor. So every lookup will print the data set's date range next to the answer.",
+    "diffs": [
+      [
+        "replace",
+        "'no record'",
+        "no record"
+      ],
+      [
+        "replace",
+        "'doesn't",
+        "doesn't"
+      ],
+      [
+        "delete",
+        "'",
+        ""
+      ],
+      [
+        "replace",
+        "dataset's",
+        "data set's"
+      ]
+    ]
+  },
+  "B11": {
+    "script": "Why this project? It's a real problem for international students like me, and it's a mix: Python and data cleaning I already have, with last assignment's scripts as evidence. Prompt contracts and evaluation logs are new to me.",
+    "heard": "Why this project? It's a real problem for international students like me, and it's a mix. Python and data cleaning I already have, with last assignments, scripts as evidence. Prompt contracts and evaluation logs are new to me.",
+    "diffs": [
+      [
+        "replace",
+        "assignment's",
+        "assignments"
+      ]
+    ]
+  },
+  "B12": {
+    "script": "So, where things stand. Today: a recipe, two scripts, sixteen passing tests, and a break test, in an open pull request not yet reviewed. The single command, live check, and evaluation log come later. This film does not establish that the tool works on real postings.",
+    "heard": "so where things stand. Today, a recipe, two scripts, 16 passing tests, and a break test in an open pull request not yet reviewed. The single command, live check, and evaluation log come later. This film does not establish that the tool works on real postings.",
+    "diffs": [
+      [
+        "replace",
+        "sixteen",
+        "16"
+      ]
+    ]
+  },
+  "BHTF": {
+    "script": "Your turn. Before researching your next posting: is it still accepting applications, and does the start date fit your work window? Note where each answer came from.",
+    "heard": "Your turn. Before researching your next posting, is it still accepting applications and does the start date fit your work window? Note where each answer came from.",
+    "diffs": []
+  },
+  "BOUT": {
+    "script": "Ghost-Job Trust Radar. Dhruvi Mehta.",
+    "heard": "Ghost Job Trust Radar, Dhruvi Mehta.",
+    "diffs": []
+  }
+}

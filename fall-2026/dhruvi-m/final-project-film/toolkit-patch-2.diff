@@ -1,0 +1,22 @@
+diff --git a/runtime/remotion/src/scenes/ShowTellCard.tsx b/runtime/remotion/src/scenes/ShowTellCard.tsx
+index e58bb44..c24b848 100644
+--- a/runtime/remotion/src/scenes/ShowTellCard.tsx
++++ b/runtime/remotion/src/scenes/ShowTellCard.tsx
+@@ -62,6 +62,8 @@ export const showTellCardSchema = z.object({
+   /** Which row/tab/node is the focus (0-based). */
+   focus: z.number().int().default(0),
+   dark: z.boolean().default(false),
++  /** CSS font-family for the value column of the `focus` card. Empty = the kit mono. */
++  valueFont: z.string().default(''),
+   onTwos: z.boolean().default(true),
+   durationSeconds: z.number().min(2).default(8),
+ });
+@@ -418,7 +420,7 @@ const Focus: React.FC<K> = ({p, P}) => {
+       const near = Math.max(0, 1 - Math.abs(pos - i));
+       return <div key={i} style={{opacity: seg(p, 0.02 + i * 0.03, 0.1 + i * 0.03)}}>
+         <Txt x={120} y={y0 + i * rh + 34} size={52} color={near > 0.5 ? C.INK : C.SOFT} font={SANS} weight={near > 0.5 ? 600 : 400}>{r.label}</Txt>
+-        <Txt x={760} y={y0 + i * rh + 34} w={520} align="right" size={52} font={MONO} color={near > 0.5 ? C.INK : C.SOFT}>{r.value}</Txt>
++        <Txt x={760} y={y0 + i * rh + 34} w={520} align="right" size={52} font={P.valueFont || MONO} color={near > 0.5 ? C.INK : C.SOFT}>{r.value}</Txt>
+         <div style={{position: 'absolute', left: 90, top: y0 + i * rh + rh - 4, width: 1220, height: 3, background: C.RULE}} />
+       </div>;
+     })}

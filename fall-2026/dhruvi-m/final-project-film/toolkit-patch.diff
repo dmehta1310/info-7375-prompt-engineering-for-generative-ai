@@ -1,0 +1,59 @@
+diff --git a/runtime/remotion/src/scenes/ClaudeTitleOutro.tsx b/runtime/remotion/src/scenes/ClaudeTitleOutro.tsx
+index d32d5aa..bb79b8e 100644
+--- a/runtime/remotion/src/scenes/ClaudeTitleOutro.tsx
++++ b/runtime/remotion/src/scenes/ClaudeTitleOutro.tsx
+@@ -8,7 +8,8 @@ import { ANIMATIONS, AnimationName, computeAnimation, MascotSVG } from './Claude
+  * ClaudeTitleOutro — title-restate outro card for claude-liam / @NikBearBrown reels ONLY.
+  *
+  * LOCKED per OUTRO-LOCK.md (same lock family as VOICE-LOCK.md):
+- *   handle  → '@NikBearBrown', HARDCODED — no prop, no lookup, no override.
++ *   handle  → optional prop, defaults to '@NikBearBrown' (OUTRO-LOCK.md default).
++ *             A reel may override it (e.g. a non-instructor assignment reel).
+  *   subline → NOT RENDERED — this component never shows a subline.
+  *   title   → exact video title, required (sentinel default catches missing values in preview).
+  *   slug    → reel folder name; seeds mascot and polarity deterministically. Audio is Liam reading the title + "At Nik Bear Brown" (no jingle, OUTRO-LOCK.md §Voice).
+@@ -16,8 +17,6 @@ import { ANIMATIONS, AnimationName, computeAnimation, MascotSVG } from './Claude
+  * Other channels (HAI, Medhavy, Musinique) use their own outro components — never this one.
+  */
+ 
+-const HANDLE = '@NikBearBrown';
+-
+ // Deterministic integer seed from the reel slug (falls back to title for legacy beat sheets).
+ function seedHash(s: string): number {
+   return Array.from(s || 'default').reduce((acc, c) => acc + c.charCodeAt(0), 0);
+@@ -27,6 +26,8 @@ export const claudeTitleOutroSchema = z.object({
+   // title is required — sentinel default makes a missing title obvious in preview/dev.
+   // Production beat sheets MUST set this to the video's title verbatim.
+   title: z.string().default('⚠ SET IN BEAT SHEET'),
++  // handle defaults to the locked @NikBearBrown value; override only for non-instructor reels.
++  handle: z.string().default('@NikBearBrown'),
+   // slug is the reel folder name — seeds mascot and polarity (OUTRO-LOCK.md §Randomness).
+   // New beat sheets MUST set this. Omitting it falls back to the title hash (legacy compat only).
+   slug: z.string().default(''),
+@@ -40,7 +41,7 @@ const SERIF = CLAUDE_FONT.serif;
+ 
+ const clamp = (v: number, a: number, b: number) => Math.min(b, Math.max(a, v));
+ 
+-export const ClaudeTitleOutro: React.FC<ClaudeTitleOutroProps> = ({ title, slug, mascotAnimation, lectureLayout }) => {
++export const ClaudeTitleOutro: React.FC<ClaudeTitleOutroProps> = ({ title, handle, slug, mascotAnimation, lectureLayout }) => {
+   const frame = useCurrentFrame();
+   const { fps } = useVideoConfig();
+   const o = clamp(interpolate(frame, [0, 14], [0, 1]), 0, 1);
+@@ -94,7 +95,7 @@ export const ClaudeTitleOutro: React.FC<ClaudeTitleOutroProps> = ({ title, slug,
+         <span style={{ color: fgSend }}>{titlePunct}</span>
+       </div>
+ 
+-      {/* Handle — HARDCODED to @NikBearBrown per OUTRO-LOCK.md */}
++      {/* Handle — defaults to @NikBearBrown per OUTRO-LOCK.md; overridable via prop */}
+       <div style={{
+         fontFamily: SERIF,
+         fontSize: 52,
+@@ -102,7 +103,7 @@ export const ClaudeTitleOutro: React.FC<ClaudeTitleOutroProps> = ({ title, slug,
+         marginTop: 28,
+         opacity: 0.9,
+       }}>
+-        {HANDLE}
++        {handle}
+       </div>
+ 
+       {/* Mascot — slug-seeded, small, under the handle */}

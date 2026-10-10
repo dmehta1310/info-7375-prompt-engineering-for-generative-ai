@@ -1,0 +1,133 @@
+{
+  "status": "Rendered for visual inspection; not a visual PASS",
+  "scale": 0.5,
+  "concurrency": 1,
+  "rows": [
+    {
+      "beat": "BIDEA",
+      "pattern": "BrutalistHesitantWriter",
+      "fraction": 0.25,
+      "frame": 151,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/BIDEA-25.png"
+    },
+    {
+      "beat": "BIDEA",
+      "pattern": "BrutalistHesitantWriter",
+      "fraction": 0.5,
+      "frame": 303,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/BIDEA-50.png"
+    },
+    {
+      "beat": "BIDEA",
+      "pattern": "BrutalistHesitantWriter",
+      "fraction": 0.95,
+      "frame": 575,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/BIDEA-95.png"
+    },
+    {
+      "beat": "BDEFS",
+      "pattern": "ClaudeDefinitions",
+      "fraction": 0.25,
+      "frame": 138,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/BDEFS-25.png"
+    },
+    {
+      "beat": "BDEFS",
+      "pattern": "ClaudeDefinitions",
+      "fraction": 0.5,
+      "frame": 277,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/BDEFS-50.png"
+    },
+    {
+      "beat": "BDEFS",
+      "pattern": "ClaudeDefinitions",
+      "fraction": 0.95,
+      "frame": 527,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/BDEFS-95.png"
+    },
+    {
+      "beat": "B06",
+      "pattern": "ShowTellCard",
+      "fraction": 0.25,
+      "frame": 110,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/B06-25.png"
+    },
+    {
+      "beat": "B06",
+      "pattern": "ShowTellCard",
+      "fraction": 0.5,
+      "frame": 220,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/B06-50.png"
+    },
+    {
+      "beat": "B06",
+      "pattern": "ShowTellCard",
+      "fraction": 0.95,
+      "frame": 418,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/B06-95.png"
+    },
+    {
+      "beat": "B12",
+      "pattern": "ShowTellCard",
+      "fraction": 0.25,
+      "frame": 135,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/B12-25.png"
+    },
+    {
+      "beat": "B12",
+      "pattern": "ShowTellCard",
+      "fraction": 0.5,
+      "frame": 270,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/B12-50.png"
+    },
+    {
+      "beat": "B12",
+      "pattern": "ShowTellCard",
+      "fraction": 0.95,
+      "frame": 513,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/B12-95.png"
+    },
+    {
+      "beat": "BHTF",
+      "pattern": "ClaudeComposerAsk",
+      "fraction": 0.25,
+      "frame": 225,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/BHTF-25.png"
+    },
+    {
+      "beat": "BHTF",
+      "pattern": "ClaudeComposerAsk",
+      "fraction": 0.5,
+      "frame": 450,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/BHTF-50.png"
+    },
+    {
+      "beat": "BHTF",
+      "pattern": "ClaudeComposerAsk",
+      "fraction": 0.95,
+      "frame": 855,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/BHTF-95.png"
+    },
+    {
+      "beat": "BOUT",
+      "pattern": "ClaudeTitleOutro",
+      "fraction": 0.25,
+      "frame": 45,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/BOUT-25.png"
+    },
+    {
+      "beat": "BOUT",
+      "pattern": "ClaudeTitleOutro",
+      "fraction": 0.5,
+      "frame": 90,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/BOUT-50.png"
+    },
+    {
+      "beat": "BOUT",
+      "pattern": "ClaudeTitleOutro",
+      "fraction": 0.95,
+      "frame": 171,
+      "output": "/Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/preflight/BOUT-95.png"
+    }
+  ]
+}

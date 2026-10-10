@@ -1,0 +1,33 @@
+=== python3 scripts/contrib/2026fa/dmehta1310-ghost-job-radar/build_roles_json.py --company "Zzyzx Quantum Analytics Corp" --title "Data Analyst" --role-id break-test-not-in-sample --liveness-result live --timeline-result pass --out course/2026fa/submissions/dmehta1310/runs/roles-break-test.json ===
+
+WARNING: 'Zzyzx Quantum Analytics Corp' has no record in the sample CSV. Sponsorship is reported as NoRecordInSample, not as a denial.
+{
+  "role_id": "break-test-not-in-sample",
+  "company": "Zzyzx Quantum Analytics Corp",
+  "title": "Data Analyst",
+  "sponsorship": {
+    "p": 0.0,
+    "tier": "NoRecordInSample",
+    "source": "record"
+  },
+  "fit": {
+    "p": 0.7,
+    "source": "model-judgment"
+  },
+  "liveness": {
+    "factor": 1.0,
+    "source": "record"
+  },
+  "timeline": {
+    "factor": 1.0,
+    "source": "record"
+  },
+  "funding_context": {
+    "total_funding": null,
+    "latest_funding_stage": null,
+    "latest_funding_date": null,
+    "note": "No record in sample data for this company.",
+    "source": "record"
+  },
+  "company_found_in_sample": false
+}

@@ -1,0 +1,37 @@
+diff --git a/runtime/remotion/src/scenes/ClaudeComposerAsk.tsx b/runtime/remotion/src/scenes/ClaudeComposerAsk.tsx
+index 76cfa39..0bf27e1 100644
+--- a/runtime/remotion/src/scenes/ClaudeComposerAsk.tsx
++++ b/runtime/remotion/src/scenes/ClaudeComposerAsk.tsx
+@@ -44,13 +44,15 @@ export const claudeComposerAskSchema = z.object({
+   placeholder: z.string().default('Type / for skills'),
+   animateTyping: z.boolean().optional(),
+   largeText: z.boolean().optional(),
++  /** Optional corner tag (kraft pennant + word), e.g. "Constructed". Empty = none. */
++  tag: z.string().default(''),
+ });
+ export type ClaudeComposerAskProps = z.infer<typeof claudeComposerAskSchema>;
+ 
+ 
+ export const ClaudeComposerAsk: React.FC<ClaudeComposerAskProps> = ({
+   command, topic, segment, greeting, runningText, output, folderLabel,
+-  modelLabel, effortLabel, placeholder, animateTyping = true, largeText = false,
++  modelLabel, effortLabel, placeholder, animateTyping = true, largeText = false, tag = '',
+ }) => {
+   const frame = useCurrentFrame();
+   const {fps, width, height} = useVideoConfig();
+@@ -286,6 +288,15 @@ export const ClaudeComposerAsk: React.FC<ClaudeComposerAskProps> = ({
+         })}
+       </div>
+ 
++      {tag !== '' && (
++        <div style={{position: 'absolute', right: PAD_X, top: height * 0.085, display: 'flex', alignItems: 'center',
++          gap: height * 0.014, opacity: topicIn}}>
++          <div style={{width: 0, height: 0, borderStyle: 'solid', borderWidth: `0 0 ${height * 0.032}px ${height * 0.032}px`,
++            borderColor: 'transparent transparent #DCC9AA transparent'}} />
++          <span style={{fontFamily: CLAUDE_FONT.serif, fontSize: height * 0.036, color: CLAUDE.INK}}>{tag}</span>
++        </div>
++      )}
++
+       {/* Bottom terracotta rule — the brand's one-accent signature */}
+       <div style={{
+         position: 'absolute',

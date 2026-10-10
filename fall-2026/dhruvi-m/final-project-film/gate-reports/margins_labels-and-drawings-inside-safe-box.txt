@@ -1,0 +1,12 @@
+
+
+B01_Problem        labels x[-2.94, 5.32] y[-1.53,-0.98] margin to safe box +0.88 | drawing x[-5.80, 5.80] y[-1.19, 2.28] margin +0.40 | min font 34 | labels: ['Posting', '1hour']
+B02_Gates          labels x[-1.73, 4.07] y[-2.12,-0.07] margin to safe box +1.18 | drawing x[-4.60, 3.20] y[-1.80, 2.90] margin +0.40 | min font 34 | labels: ['Live?', 'CPTfit?', 'Sponsorrecord?']
+B03_Alternatives   labels x[-5.87, 5.10] y[-1.85,-1.39] margin to safe box +0.33 | drawing x[-5.80, 5.80] y[-1.63, 2.74] margin +0.40 | min font 34 | labels: ['MyVisaJobs', 'Manualcheck']
+B04_StopEarly      labels x[-1.73, 5.28] y[-2.20, 1.87] margin to safe box +0.92 | drawing x[-4.60, 3.20] y[-1.80, 2.90] margin +0.40 | min font 34 | labels: ['Stopearly', 'Norecord']
+B05_Reader         labels x[-3.55, 5.77] y[-2.99, 3.12] margin to safe box +0.18 | drawing x[-5.80, 4.60] y[-1.50, 3.15] margin +0.15 | min font 34 | labels: ['Hiringmanager', 'Constructed']
+B07_BreakTest      labels x[-0.34, 5.83] y[-2.18, 0.77] margin to safe box +0.37 | drawing x[-5.80, 3.60] y[-1.41, 2.52] margin +0.40 | min font 34 | labels: ['Notindata', 'Norecord']
+B08_Skills         labels x[-5.09, 2.27] y[-1.61,-1.14] margin to safe box +1.11 | drawing x[-5.80, 5.80] y[-0.82, 1.92] margin +0.40 | min font 34 | labels: ['Verify', 'Source', 'Evaluate']
+B09_InOutFirst     labels x[-5.23, 5.72] y[-0.54,-0.12] margin to safe box +0.48 | drawing x[-4.80, 5.60] y[-1.52, 2.46] margin +0.60 | min font 34 | labels: ['Notadvice', 'Firstrun']
+B10_Misread        labels x[-3.45, 5.84] y[-1.83,-0.75] margin to safe box +0.36 | drawing x[-5.80, 5.80] y[-1.09, 2.19] margin +0.40 | min font 34 | labels: ['Misread', 'Daterange']
+B11_Shelves        labels x[-4.13, 5.11] y[-1.76,-1.21] margin to safe box +1.09 | drawing x[-5.80, 5.80] y[-1.46, 2.56] margin +0.40 | min font 34 | labels: ['Alreadyhave', 'Learning']

@@ -1,0 +1,90 @@
+=== B01_Problem layout --curve-strict (scratch, only scenes.py)
+
+
+
+
+Animation 1: FadeIn(VGroup of 3 submobjects):   0%|          | 0/24 [00:00<?, ?it/s]                                                                                    Animation 3: FadeIn(Text('Posting')):   0%|          | 0/15 [00:00<?, ?it/s]                                                                            /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 5: LaggedStart(Group):   0%|          | 0/22 [00:00<?, ?it/s]                                                                       Animation 6: FadeIn(Text('1 hour')):   0%|          | 0/8 [00:00<?, ?it/s]                                                                          Animation 8: AnimationGroup(Group):   0%|          | 0/20 [00:00<?, ?it/s]                                                                          [audit] scenes: 10 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/3a/gateA/layout_audit.md
+=== B02_Gates layout --curve-strict (scratch, only scenes.py)
+
+
+
+
+Animation 1: LaggedStart(Group):   0%|          | 0/26 [00:00<?, ?it/s]                                                                       Animation 3: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/19 [00:00<?, ?it/s]                                                                                          Animation 5: LaggedStart(Group):   0%|          | 0/22 [00:00<?, ?it/s]Animation 5: LaggedStart(Group):  82%|████████▏ | 18/22 [00:00<00:00, 175.25it/s]                                                                                 /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 7: _MethodAnimation(VGroup of 3 submobjects):   0%|          | 0/18 [00:00<?, ?it/s]Animation 7: _MethodAnimation(VGroup of 3 submobjects):  89%|████████▉ | 16/18 [00:00<00:00, 156.73it/s]                                                                                                        Animation 9: _MethodAnimation(Dot), etc.:   0%|          | 0/8 [00:00<?, ?it/s]                                                                               [audit] scenes: 9 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/3a/gateA/layout_audit.md
+=== B03_Alternatives layout --curve-strict (scratch, only scenes.py)
+
+
+
+
+Animation 1: FadeIn(VGroup of 2 submobjects):   0%|          | 0/24 [00:00<?, ?it/s]                                                                                    Animation 3: FadeIn(Text('MyVisaJobs')):   0%|          | 0/15 [00:00<?, ?it/s]                                                                               /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 5: LaggedStart(Group):   0%|          | 0/24 [00:00<?, ?it/s]                                                                       Animation 6: FadeIn(Text('Manual check')):   0%|          | 0/8 [00:00<?, ?it/s]                                                                                Animation 8: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/19 [00:00<?, ?it/s]                                                                                          [audit] scenes: 10 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/3a/gateA/layout_audit.md
+=== B04_StopEarly layout --curve-strict (scratch, only scenes.py)
+
+
+
+
+Animation 1: LaggedStart(Group):   0%|          | 0/22 [00:00<?, ?it/s]                                                                       Animation 3: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/19 [00:00<?, ?it/s]                                                                                          Animation 5: FadeIn(Text('Stop early')), etc.:   0%|          | 0/26 [00:00<?, ?it/s]Animation 5: FadeIn(Text('Stop early')), etc.:  92%|█████████▏| 24/26 [00:00<00:00, 232.76it/s]                                                                                               /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 7: _MethodAnimation(Dot), etc.:   0%|          | 0/17 [00:00<?, ?it/s]                                                                                Animation 8: FadeIn(VGroup of 3 submobjects):   0%|          | 0/8 [00:00<?, ?it/s]                                                                                   [audit] scenes: 7 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/3a/gateA/layout_audit.md
+=== B05_Reader layout --curve-strict (scratch, only scenes.py)
+
+
+
+
+Animation 1: FadeIn(VGroup of 2 submobjects):   0%|          | 0/20 [00:00<?, ?it/s]                                                                                    Animation 3: FadeIn(Text('Hiring manager')):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                   /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 5: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/18 [00:00<?, ?it/s]                                                                                          Animation 7: FadeIn(Text('Constructed')):   0%|          | 0/13 [00:00<?, ?it/s]                                                                                Animation 9: FadeIn(VGroup of 3 submobjects):   0%|          | 0/10 [00:00<?, ?it/s]                                                                                    Animation 10: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/13 [00:00<?, ?it/s]                                                                                           [audit] scenes: 13 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/3a/gateA/layout_audit.md
+=== B07_BreakTest layout --curve-strict (scratch, only scenes.py)
+
+
+
+
+Animation 1: FadeIn(VGroup of 3 submobjects):   0%|          | 0/29 [00:00<?, ?it/s]                                                                                    Animation 3: FadeIn(Text('Not in data')):   0%|          | 0/22 [00:00<?, ?it/s]                                                                                /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 4: FadeIn(Text('No record')):   0%|          | 0/17 [00:00<?, ?it/s]                                                                              Animation 6: FadeIn(VGroup of 3 submobjects):   0%|          | 0/11 [00:00<?, ?it/s]                                                                                    Animation 7: GrowFromCenter(VGroup of 3 submobjects):   0%|          | 0/9 [00:00<?, ?it/s]                                                                                           [audit] scenes: 8 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/3a/gateA/layout_audit.md
+=== B08_Skills layout --curve-strict (scratch, only scenes.py)
+
+
+
+
+Animation 1: LaggedStart(Group):   0%|          | 0/20 [00:00<?, ?it/s]                                                                       Animation 3: LaggedStart(Group):   0%|          | 0/26 [00:00<?, ?it/s]Animation 3: LaggedStart(Group):  81%|████████  | 21/26 [00:00<00:00, 207.51it/s]                                                                                 /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 5: _MethodAnimation(Dot), etc.:   0%|          | 0/17 [00:00<?, ?it/s]                                                                                Animation 7: _MethodAnimation(Dot), etc.:   0%|          | 0/8 [00:00<?, ?it/s]                                                                               Animation 8: _MethodAnimation(Dot), etc.:   0%|          | 0/8 [00:00<?, ?it/s]                                                                               Animation 9: _MethodAnimation(Dot), etc.:   0%|          | 0/8 [00:00<?, ?it/s]                                                                               [audit] scenes: 11 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/3a/gateA/layout_audit.md
+=== B09_InOutFirst layout --curve-strict (scratch, only scenes.py)
+
+
+
+
+Animation 1: FadeIn(Text('apply?')):   0%|          | 0/20 [00:00<?, ?it/s]                                                                           /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 3: Create(Line), etc.:   0%|          | 0/17 [00:00<?, ?it/s]                                                                       Animation 5: FadeIn(Text('Not advice')):   0%|          | 0/13 [00:00<?, ?it/s]                                                                               Animation 7: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/15 [00:00<?, ?it/s]                                                                                          Animation 8: FadeIn(Text('First run')):   0%|          | 0/8 [00:00<?, ?it/s]                                                                             Animation 10: _MethodAnimation(VGroup of 3 submobjects):   0%|          | 0/19 [00:00<?, ?it/s]                                                                                               Animation 11: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/6 [00:00<?, ?it/s]                                                                                          [audit] scenes: 17 snapshots → 1 error(s), 0 warning(s)
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/3a/gateA/layout_audit.md
+=== B10_Misread layout --curve-strict (scratch, only scenes.py)
+
+
+
+
+Animation 1: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/20 [00:00<?, ?it/s]                                                                                          Animation 3: GrowFromCenter(Arrow):   0%|          | 0/20 [00:00<?, ?it/s]                                                                          Animation 5: FadeIn(Text('Misread')):   0%|          | 0/15 [00:00<?, ?it/s]                                                                            /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 6: Create(Line), etc.:   0%|          | 0/11 [00:00<?, ?it/s]                                                                       Animation 7: FadeIn(Text('Date range')):   0%|          | 0/8 [00:00<?, ?it/s]                                                                              Animation 9: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/13 [00:00<?, ?it/s]                                                                                          Animation 10: FadeIn(VGroup of 3 submobjects):   0%|          | 0/9 [00:00<?, ?it/s]                                                                                    [audit] scenes: 9 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/3a/gateA/layout_audit.md
+=== B11_Shelves layout --curve-strict (scratch, only scenes.py)
+
+
+
+
+Animation 1: LaggedStart(Group):   0%|          | 0/24 [00:00<?, ?it/s]                                                                       Animation 3: FadeIn(Text('Already have')):   0%|          | 0/17 [00:00<?, ?it/s]                                                                                 /Users/dhruvi/Documents/final-project-film/brutalist.art/runtime/qc/manim_layout_audit.py:149: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Animation 5: FadeIn(Text('Learning')):   0%|          | 0/17 [00:00<?, ?it/s]                                                                             Animation 7: FadeIn(VGroup of 3 submobjects):   0%|          | 0/11 [00:00<?, ?it/s]                                                                                    Animation 8: FadeIn(VGroup of 3 submobjects):   0%|          | 0/9 [00:00<?, ?it/s]                                                                                   [audit] scenes: 10 snapshots → CLEAN
+[audit] report: /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/3a/gateA/layout_audit.md

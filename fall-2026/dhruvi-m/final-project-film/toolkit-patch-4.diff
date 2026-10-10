@@ -1,0 +1,31 @@
+diff --git a/runtime/remotion/src/scenes/ClaudeDefinitions.tsx b/runtime/remotion/src/scenes/ClaudeDefinitions.tsx
+index ad12c99..6509a7c 100644
+--- a/runtime/remotion/src/scenes/ClaudeDefinitions.tsx
++++ b/runtime/remotion/src/scenes/ClaudeDefinitions.tsx
+@@ -46,6 +46,8 @@ export const claudeDefinitionsSchema = z.object({
+   dark: z.boolean().default(false),
+   /** Footer chip; hardcoded default is the one channel. */
+   folderLabel: z.string().default('@NikBearBrown'),
++  /** Meaning-column font size in design px (default 48). EB Garamond at 48 measures a 40px x-height at 4K, 1px under GATE T's floor. */
++  meaningSize: z.number().int().default(48),
+ });
+ export type ClaudeDefinitionsProps = z.infer<typeof claudeDefinitionsSchema>;
+ 
+@@ -57,7 +59,7 @@ const SPRING = {damping: 26, stiffness: 130, mass: 0.9};
+ // ── Component ─────────────────────────────────────────────────────────────────
+ 
+ export const ClaudeDefinitions: React.FC<ClaudeDefinitionsProps> = ({
+-  title, terms, durationSeconds, startCue, rowGap, dark, folderLabel,
++  title, terms, durationSeconds, startCue, rowGap, dark, folderLabel, meaningSize,
+ }) => {
+   const frame = useCurrentFrame();
+   const {fps} = useVideoConfig();
+@@ -79,7 +81,7 @@ export const ClaudeDefinitions: React.FC<ClaudeDefinitionsProps> = ({
+   const bottom = SAFE.y + SAFE.h - 70;
+   const rowH = Math.floor((bottom - top) / n);
+   const termSize = n <= 3 ? 54 : 50;
+-  const meanSize = 48;   // ≥ 48: a lowercase run's x-height must clear GATE T's 41px floor at 4K
++  const meanSize = meaningSize;   // ≥ 48: a lowercase run's x-height must clear GATE T's 41px floor at 4K
+ 
+   // Which row landed most recently → carries the terracotta.
+   let active = -1;

@@ -1,0 +1,40 @@
+== B01_Problem
+static_scene_check (scratch):      [static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+manim_layout_audit --curve-strict (scratch): [audit] scenes: 10 snapshots → CLEAN
+== B02_Gates
+static_scene_check (scratch):      [static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+manim_layout_audit --curve-strict (scratch): [audit] scenes: 9 snapshots → CLEAN
+== B03_Alternatives
+static_scene_check (scratch):      [static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+manim_layout_audit --curve-strict (scratch): [audit] scenes: 10 snapshots → CLEAN
+== B04_StopEarly
+static_scene_check (scratch):      [static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+manim_layout_audit --curve-strict (scratch): [audit] scenes: 7 snapshots → CLEAN
+== B05_Reader
+static_scene_check (scratch):      [static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+manim_layout_audit --curve-strict (scratch): [audit] scenes: 13 snapshots → CLEAN
+== B07_BreakTest
+static_scene_check (scratch):      [static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+manim_layout_audit --curve-strict (scratch): [audit] scenes: 8 snapshots → CLEAN
+== B08_Skills
+static_scene_check (scratch):      [static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+manim_layout_audit --curve-strict (scratch): [audit] scenes: 11 snapshots → CLEAN
+== B09_InOutFirst
+static_scene_check (scratch):      [static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+manim_layout_audit --curve-strict (scratch): [audit] scenes: 11 snapshots → CLEAN
+== B10_Misread
+static_scene_check (scratch):      [static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+manim_layout_audit --curve-strict (scratch): [audit] scenes: 9 snapshots → CLEAN
+== B11_Shelves
+static_scene_check (scratch):      [static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+manim_layout_audit --curve-strict (scratch): [audit] scenes: 10 snapshots → CLEAN
+B01_Problem  manim_layout_audit --curve-strict (reel folder, with beat_sheet): [audit] scenes: 10 snapshots → CLEAN
+B02_Gates  manim_layout_audit --curve-strict (reel folder, with beat_sheet): [audit] scenes: 7 snapshots → CLEAN
+B03_Alternatives  manim_layout_audit --curve-strict (reel folder, with beat_sheet): [audit] scenes: 10 snapshots → CLEAN
+B04_StopEarly  manim_layout_audit --curve-strict (reel folder, with beat_sheet): [audit] scenes: 9 snapshots → CLEAN
+B05_Reader  manim_layout_audit --curve-strict (reel folder, with beat_sheet): [audit] scenes: 11 snapshots → CLEAN
+B07_BreakTest  manim_layout_audit --curve-strict (reel folder, with beat_sheet): [audit] scenes: 8 snapshots → CLEAN
+B08_Skills  manim_layout_audit --curve-strict (reel folder, with beat_sheet): [audit] scenes: 11 snapshots → CLEAN
+B09_InOutFirst  manim_layout_audit --curve-strict (reel folder, with beat_sheet): [audit] scenes: 9 snapshots → CLEAN
+B10_Misread  manim_layout_audit --curve-strict (reel folder, with beat_sheet): [audit] scenes: 9 snapshots → CLEAN
+B11_Shelves  manim_layout_audit --curve-strict (reel folder, with beat_sheet): [audit] scenes: 10 snapshots → CLEAN

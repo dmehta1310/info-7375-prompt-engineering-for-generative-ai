@@ -1,0 +1,879 @@
+{
+  "metadata": {
+    "slug": "ghost-job-radar-pitch",
+    "title": "Ghost-Job Trust Radar",
+    "topic": "JOB SEARCH · CPT",
+    "skill": "show-tell",
+    "style_preset": "show-tell",
+    "channel": "dhruvi-mehta",
+    "channel_title": "Dhruvi Mehta",
+    "voice": "af_bella",
+    "voice_kokoro": "af_bella",
+    "engine": "kokoro",
+    "clock": "narration",
+    "palette": "claude",
+    "register": "Plain",
+    "fps": 24,
+    "aspect_ratio": "16:9",
+    "width": 3840,
+    "height": 2160,
+    "caption_policy": "none",
+    "greeting_language": "English (narrator introduces herself)",
+    "bookend_exempt": [
+      "cold-open",
+      "bvdt"
+    ],
+    "bookend_exempt_reason": "show-tell style: opens on the hesitant writer + terms card, no verdict card; Your Turn is the composer showing a prompt only; spoken outro stays.",
+    "audience": "a hiring manager for a data analyst role",
+    "source_doc": "plan/PROJECT-BRIEF.md; pantry/evidence/tests-2026-10-10.txt; pantry/evidence/break-test-2026-10-10.txt",
+    "playlist": "INFO7375 Final Project Pitch",
+    "chapter_number": 0,
+    "tags": [
+      "Ghost-Job Trust Radar",
+      "CPT",
+      "international students",
+      "job search",
+      "data analyst",
+      "Dhruvi Mehta"
+    ],
+    "build": {
+      "at": "2026-10-10T19:38:03",
+      "cut": "master",
+      "filled": 16,
+      "of": 16,
+      "slates": [],
+      "skin_warnings": [
+        "BIDEA: palette=claude but the cold open is 'BrutalistHesitantWriter' — COLD OPEN LAW wants ClaudeComposerAsk"
+      ]
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "BIDEA",
+      "act": "the question",
+      "lane": "bookend",
+      "proof_gate": "SHOW",
+      "narration_text": "Hi, I'm Dhruvi Mehta, and this is my final project pitch: Ghost-Job Trust Radar. If something already ran, I'll show it. Everything else is a plan.",
+      "estimated_duration_s": 10.4,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "types 'Is this job worth applying to?'"
+          },
+          {
+            "at": 0.6,
+            "event": "backspaces 'worth applying to' and retypes 'live and CPT-feasible'"
+          }
+        ],
+        "remotion": {
+          "pattern": "BrutalistHesitantWriter",
+          "props": {
+            "text": "Is this job worth applying to?",
+            "triggerWords": "worth applying to",
+            "replacementWords": "live and CPT-feasible",
+            "fontSize": 70,
+            "charMs": 22,
+            "hesitateBetween": 6,
+            "hesitateWithin": 1,
+            "mistakeRate": 2,
+            "jitter": 20,
+            "seed": "ghost-job-radar-pitch",
+            "banner": ""
+          }
+        }
+      },
+      "lead_silence_s": 0.8,
+      "motion_claim": "CONSTRUCTED. The writer types the naive question and corrects it to 'live and CPT-feasible'.",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Hesitant-writer bookend: the correction is the motion."
+      },
+      "audio_file": "mp3/beat-BIDEA.mp3",
+      "actual_duration_s": 10.05,
+      "render_duration_s": 10.083333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BIDEA.mp4",
+        "filled_by": "media",
+        "at": "2026-10-10T19:38:03"
+      }
+    },
+    {
+      "beat_id": "BDEFS",
+      "act": "terms",
+      "lane": "bookend",
+      "proof_gate": "CARD",
+      "narration_text": "Four terms. CPT: work authorization tied to a degree program. A ghost job: a posting that's already filled, or never really open. Liveness: whether it still accepts applications. A sponsorship record: a public filing showing a company sponsored a visa before.",
+      "estimated_duration_s": 16.4,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "'CPT' lands"
+          },
+          {
+            "at": 0.35,
+            "event": "'Ghost job' lands"
+          },
+          {
+            "at": 0.6,
+            "event": "'Liveness' lands"
+          },
+          {
+            "at": 0.8,
+            "event": "'Sponsor record' lands"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeDefinitions",
+          "props": {
+            "title": "Terms In This Film",
+            "terms": [
+              {
+                "term": "CPT",
+                "meaning": "work authorization tied to a degree program"
+              },
+              {
+                "term": "Ghost job",
+                "meaning": "a posting that's already filled, or never really open"
+              },
+              {
+                "term": "Liveness",
+                "meaning": "whether it still accepts applications"
+              },
+              {
+                "term": "Sponsor record",
+                "meaning": "a public filing showing a company sponsored a visa before"
+              }
+            ],
+            "folderLabel": "",
+            "meaningSize": 54,
+            "durationSeconds": 18.5
+          },
+          "rendered": {
+            "out": "media/BDEFS.mp4",
+            "at": "2026-10-10T23:26:06.584575+00:00"
+          }
+        }
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "TERMS card: four prerequisites, one line each."
+      },
+      "audio_file": "mp3/beat-BDEFS.mp3",
+      "actual_duration_s": 18.5,
+      "render_duration_s": 18.5,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BDEFS.mp4",
+        "filled_by": "remotion:ClaudeDefinitions",
+        "at": "2026-10-10T19:38:03"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "An international student on CPT finds a data analyst posting and spends an hour researching the company. Then she learns it was already filled, or the start date doesn't fit her CPT window. That hour is gone.",
+      "estimated_duration_s": 14.8,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "CONSTRUCTED. A posting box on a desk; browser tabs stack up beside it; then the posting box greys out. Labels: 'Posting', '1 hour'.",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "posting box on desk, label 'Posting'"
+          },
+          {
+            "at": 0.4,
+            "event": "tabs stack up, label '1 hour'"
+          },
+          {
+            "at": 0.75,
+            "event": "posting box greys out"
+          }
+        ],
+        "manim": {
+          "class": "B01_Problem"
+        },
+        "motion_claim": "CONSTRUCTED. A posting box on a desk; browser tabs stack up beside it; then the posting box greys out. Labels: 'Posting', '1 hour'."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "show-tell style: one drawn object or scene on a cream stage per beat, minimal labels, with the voice carrying the explanation. The negative space is the style, so only underfill and clustered are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 14.1,
+      "render_duration_s": 14.125,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B01.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-10T19:38:03"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "Ghost-Job Trust Radar will be a command-line tool that checks the posting first. Is it live? Does the timeline fit CPT? Is there a sponsorship record? The finished artifact will be a GitHub repository with one command, tests, and an evaluation log.",
+      "estimated_duration_s": 16.8,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "CONSTRUCTED. A conveyor carries the posting box through three gates into a report. Labels: 'Live?', 'CPT fit?', 'Sponsor record?'.",
+        "show": [
+          {
+            "at": 0.2,
+            "event": "conveyor and three gates, labels"
+          },
+          {
+            "at": 0.5,
+            "event": "box rides through each gate"
+          },
+          {
+            "at": 0.85,
+            "event": "report lands"
+          }
+        ],
+        "manim": {
+          "class": "B02_Gates"
+        },
+        "motion_claim": "CONSTRUCTED. A conveyor carries the posting box through three gates into a report. Labels: 'Live?', 'CPT fit?', 'Sponsor record?'."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "show-tell style: one drawn object or scene on a cream stage per beat, minimal labels, with the voice carrying the explanation. The negative space is the style, so only underfill and clustered are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 17.09,
+      "render_duration_s": 17.125,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B02.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-10T19:38:03"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "I looked at two alternatives. MyVisaJobs shows who sponsored before, but nothing I saw checks whether a posting is live or fits a CPT window. The manual checklist from career guides works, but it's four or five steps across tabs, with no record kept.",
+      "estimated_duration_s": 17.6,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "CONSTRUCTED. Two stations: a database cabinet and a desk of scattered tabs. Labels: 'MyVisaJobs', 'Manual check'.",
+        "show": [
+          {
+            "at": 0.15,
+            "event": "cabinet, label 'MyVisaJobs'"
+          },
+          {
+            "at": 0.55,
+            "event": "scattered tabs, label 'Manual check'"
+          }
+        ],
+        "manim": {
+          "class": "B03_Alternatives"
+        },
+        "motion_claim": "CONSTRUCTED. Two stations: a database cabinet and a desk of scattered tabs. Labels: 'MyVisaJobs', 'Manual check'."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "show-tell style: one drawn object or scene on a cream stage per beat, minimal labels, with the voice carrying the explanation. The negative space is the style, so only underfill and clustered are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 17.05,
+      "render_duration_s": 17.083333333333332,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B03.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-10T19:38:03"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "Mine will check liveness first and stop if the posting is dead, before research starts. Every value will carry its source. If the data has nothing, it will say 'no record in this dataset,' never 'doesn't sponsor.'",
+      "estimated_duration_s": 14.8,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "CONSTRUCTED. The conveyor again; the first gate turns red and the later gates go dim. Then a report box with a tag. Labels: 'Stop early', 'No record'.",
+        "show": [
+          {
+            "at": 0.2,
+            "event": "first gate turns red, label 'Stop early'"
+          },
+          {
+            "at": 0.4,
+            "event": "later gates dim"
+          },
+          {
+            "at": 0.75,
+            "event": "report box with tag, label 'No record'"
+          }
+        ],
+        "manim": {
+          "class": "B04_StopEarly"
+        },
+        "motion_claim": "CONSTRUCTED. The conveyor again; the first gate turns red and the later gates go dim. Then a report box with a tag. Labels: 'Stop early', 'No record'."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "show-tell style: one drawn object or scene on a cream stage per beat, minimal labels, with the voice carrying the explanation. The negative space is the style, so only underfill and clustered are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 13.31,
+      "render_duration_s": 13.333333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B04.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-10T19:38:03"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "My reader is a hiring manager for a data analyst role. In sixty seconds, they'll open the README, run one command on a sample posting, and see every line's source. This picture is a mock-up.",
+      "estimated_duration_s": 14.0,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "CONSTRUCTED. A person at a laptop; a README sheet, one command, a report with a source tag on each line. A 'Constructed' tag sits in the corner. Labels: 'Hiring manager', 'Constructed'.",
+        "show": [
+          {
+            "at": 0.15,
+            "event": "person at laptop, label 'Hiring manager'"
+          },
+          {
+            "at": 0.45,
+            "event": "README, command, report with source tags"
+          },
+          {
+            "at": 0.7,
+            "event": "'Constructed' tag"
+          }
+        ],
+        "manim": {
+          "class": "B05_Reader"
+        },
+        "motion_claim": "CONSTRUCTED. A person at a laptop; a README sheet, one command, a report with a source tag on each line. A 'Constructed' tag sits in the corner. Labels: 'Hiring manager', 'Constructed'."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "show-tell style: one drawn object or scene on a cream stage per beat, minimal labels, with the voice carrying the explanation. The negative space is the style, so only underfill and clustered are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 12.82,
+      "render_duration_s": 12.833333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B05.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-10T19:38:03"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "show-tell",
+      "lane": "card",
+      "proof_gate": "CARD",
+      "narration_text": "Here's what exists. Last assignment, I built a CPT timeline gate and a sponsorship-data builder. This is the real test run: sixteen offline tests pass. I also checked one run by hand against the raw data.",
+      "estimated_duration_s": 14.4,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "first real line"
+          },
+          {
+            "at": 0.35,
+            "event": "second real line"
+          },
+          {
+            "at": 0.6,
+            "event": "total 16"
+          }
+        ],
+        "remotion": {
+          "pattern": "ShowTellCard",
+          "props": {
+            "kind": "focus",
+            "heading": "Real output · 2026-10-10",
+            "items": [
+              {
+                "label": "Ran 6 tests in 0.003s",
+                "value": "OK",
+                "sub": ""
+              },
+              {
+                "label": "Ran 10 tests in 0.002s",
+                "value": "OK",
+                "sub": ""
+              },
+              {
+                "label": "total (6 + 10)",
+                "value": "16",
+                "sub": ""
+              }
+            ],
+            "focus": 2,
+            "valueFont": "Helvetica Neue, Arial, sans-serif",
+            "durationSeconds": 14.68
+          }
+        }
+      },
+      "motion_claim": "REAL. The lens moves down the two real test lines from the 2026-10-10 run to the total, 16.",
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 14.68,
+      "render_duration_s": 14.708333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-10-10T19:38:03"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "Then I tried to break it, with a company that isn't in the dataset. It reported 'no record' instead of inventing an answer.",
+      "estimated_duration_s": 9.2,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "REAL result, CONSTRUCTED drawing. A posting box for a company that isn't in the cabinet; the report shows a 'no record' tag instead of a made-up value. Labels: 'Not in data', 'No record'.",
+        "show": [
+          {
+            "at": 0.2,
+            "event": "posting box beside the cabinet, label 'Not in data'"
+          },
+          {
+            "at": 0.6,
+            "event": "report with tag, label 'No record'"
+          }
+        ],
+        "manim": {
+          "class": "B07_BreakTest"
+        },
+        "motion_claim": "REAL result, CONSTRUCTED drawing. A posting box for a company that isn't in the cabinet; the report shows a 'no record' tag instead of a made-up value. Labels: 'Not in data', 'No record'."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "show-tell style: one drawn object or scene on a cream stage per beat, minimal labels, with the voice carrying the explanation. The negative space is the style, so only underfill and clustered are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 7.1,
+      "render_duration_s": 7.125,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B07.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-10T19:38:03"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "It will show four course skills: verification, source grounding, evaluation, and prompt contracts. A reviewer could fairly conclude I build checks that fail safely, but not that it's accurate on real postings. That isn't tested yet.",
+      "estimated_duration_s": 14.4,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "CONSTRUCTED. Four blocks light up one by one. Labels: 'Verify', 'Source', 'Evaluate'.",
+        "show": [
+          {
+            "at": 0.15,
+            "event": "block 1 lights, label 'Verify'"
+          },
+          {
+            "at": 0.4,
+            "event": "block 2 lights, label 'Source'"
+          },
+          {
+            "at": 0.65,
+            "event": "block 3 lights, label 'Evaluate'"
+          },
+          {
+            "at": 0.85,
+            "event": "block 4 lights"
+          }
+        ],
+        "manim": {
+          "class": "B08_Skills"
+        },
+        "motion_claim": "CONSTRUCTED. Four blocks light up one by one. Labels: 'Verify', 'Source', 'Evaluate'."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "show-tell style: one drawn object or scene on a cream stage per beat, minimal labels, with the voice carrying the explanation. The negative space is the style, so only underfill and clustered are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "audio_file": "mp3/beat-B08.mp3",
+      "actual_duration_s": 15.23,
+      "render_duration_s": 15.25,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B08.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-10T19:38:03"
+      }
+    },
+    {
+      "beat_id": "B09",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "What's out: it won't tell anyone whether to apply, and it won't give legal or immigration advice. First, I'll make one command run every check on a synthetic posting. You'll know it ran because it writes a report, a test checks it, and a dated run log goes in the repo.",
+      "estimated_duration_s": 20.4,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "CONSTRUCTED. A crossed-out 'apply?' sign, then one command running a single synthetic posting into a report and a log. Labels: 'Not advice', 'First run'.",
+        "show": [
+          {
+            "at": 0.15,
+            "event": "'apply?' sign crossed out, label 'Not advice'"
+          },
+          {
+            "at": 0.5,
+            "event": "command runs one posting"
+          },
+          {
+            "at": 0.8,
+            "event": "report and log appear, label 'First run'"
+          }
+        ],
+        "manim": {
+          "class": "B09_InOutFirst"
+        },
+        "motion_claim": "CONSTRUCTED. A crossed-out 'apply?' sign, then one command running a single synthetic posting into a report and a log. Labels: 'Not advice', 'First run'."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "show-tell style: one drawn object or scene on a cream stage per beat, minimal labels, with the voice carrying the explanation. The negative space is the style, so only underfill and clustered are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "audio_file": "mp3/beat-B09.mp3",
+      "actual_duration_s": 16.81,
+      "render_duration_s": 16.833333333333332,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B09.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-10T19:38:03"
+      }
+    },
+    {
+      "beat_id": "B10",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "The biggest risk: the sponsorship data is an incomplete historical sample, so someone could read 'no record' as 'doesn't sponsor.' So every lookup will print the dataset's date range next to the answer.",
+      "estimated_duration_s": 13.2,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "CONSTRUCTED. A 'no record' tag with an arrow to 'doesn't sponsor', crossed out; a date-range tag clips on beside it. Labels: 'Misread', 'Date range'.",
+        "show": [
+          {
+            "at": 0.2,
+            "event": "arrow from 'no record' to 'doesn't sponsor', label 'Misread'"
+          },
+          {
+            "at": 0.45,
+            "event": "arrow crossed out"
+          },
+          {
+            "at": 0.75,
+            "event": "date-range tag clips on, label 'Date range'"
+          }
+        ],
+        "manim": {
+          "class": "B10_Misread"
+        },
+        "motion_claim": "CONSTRUCTED. A 'no record' tag with an arrow to 'doesn't sponsor', crossed out; a date-range tag clips on beside it. Labels: 'Misread', 'Date range'."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "show-tell style: one drawn object or scene on a cream stage per beat, minimal labels, with the voice carrying the explanation. The negative space is the style, so only underfill and clustered are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "audio_file": "mp3/beat-B10.mp3",
+      "actual_duration_s": 12.39,
+      "render_duration_s": 12.416666666666666,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B10.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-10T19:38:03"
+      }
+    },
+    {
+      "beat_id": "B11",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "Why this project? It's a real problem for international students like me, and it's a mix: Python and data cleaning I already have, with last assignment's scripts as evidence. Prompt contracts and evaluation logs are new to me.",
+      "estimated_duration_s": 15.2,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "CONSTRUCTED. Two shelves: one with tools I already have, one with new boxes being added. Labels: 'Already have', 'Learning'.",
+        "show": [
+          {
+            "at": 0.2,
+            "event": "shelf of tools, label 'Already have'"
+          },
+          {
+            "at": 0.6,
+            "event": "new boxes added, label 'Learning'"
+          }
+        ],
+        "manim": {
+          "class": "B11_Shelves"
+        },
+        "motion_claim": "CONSTRUCTED. Two shelves: one with tools I already have, one with new boxes being added. Labels: 'Already have', 'Learning'."
+      },
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "show-tell style: one drawn object or scene on a cream stage per beat, minimal labels, with the voice carrying the explanation. The negative space is the style, so only underfill and clustered are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "audio_file": "mp3/beat-B11.mp3",
+      "actual_duration_s": 14.72,
+      "render_duration_s": 14.75,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B11.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-10T19:38:03"
+      }
+    },
+    {
+      "beat_id": "B12",
+      "act": "show-tell",
+      "lane": "card",
+      "proof_gate": "CARD",
+      "narration_text": "So, where things stand. Today: a recipe, two scripts, sixteen passing tests, and a break test, in an open pull request not yet reviewed. The single command, live check, and evaluation log come later. This film does not establish that the tool works on real postings.",
+      "estimated_duration_s": 18.4,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "'Exists' panel rows"
+          },
+          {
+            "at": 0.55,
+            "event": "tab slides to 'Will exist'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ShowTellCard",
+          "props": {
+            "kind": "tabs",
+            "labels": [
+              "Exists",
+              "Will exist"
+            ],
+            "items": [
+              {
+                "label": "Recipe + 2 scripts",
+                "value": "",
+                "sub": ""
+              },
+              {
+                "label": "16 tests pass",
+                "value": "",
+                "sub": ""
+              },
+              {
+                "label": "Break test + open PR",
+                "value": "",
+                "sub": ""
+              }
+            ],
+            "items2": [
+              {
+                "label": "One command",
+                "value": "",
+                "sub": ""
+              },
+              {
+                "label": "Live check",
+                "value": "",
+                "sub": ""
+              },
+              {
+                "label": "Evaluation log",
+                "value": "",
+                "sub": ""
+              }
+            ],
+            "cues": [
+              0.55
+            ],
+            "durationSeconds": 18.03
+          }
+        }
+      },
+      "motion_claim": "CONSTRUCTED. The tab switches from what exists today to what will exist.",
+      "audio_file": "mp3/beat-B12.mp3",
+      "actual_duration_s": 18.03,
+      "render_duration_s": 18.041666666666668,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B12.mp4",
+        "filled_by": "media",
+        "at": "2026-10-10T19:38:03"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "act": "your turn",
+      "lane": "bookend",
+      "proof_gate": "SHOW",
+      "narration_text": "Your turn. Before researching your next posting: is it still accepting applications, and does the start date fit your work window? Note where each answer came from.",
+      "estimated_duration_s": 10.8,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "Composer opens, 'Your turn.'"
+          },
+          {
+            "at": 0.1,
+            "event": "the prompt types in full"
+          },
+          {
+            "at": 0.8,
+            "event": "two check lines land"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "YOUR TURN",
+            "tag": "Constructed",
+            "segment": "Check A Posting",
+            "command": "Before researching your next posting: is it still accepting applications, and does the start date fit your work window? Note where each answer came from.",
+            "runningText": "paste this into Claude…",
+            "output": [
+              "Still live?",
+              "Start date fits?"
+            ],
+            "folderLabel": "Dhruvi Mehta",
+            "modelLabel": "",
+            "effortLabel": "",
+            "largeText": true
+          }
+        }
+      },
+      "motion_claim": "CONSTRUCTED. Prompt only; no Claude answer is shown. The two output lines are the viewer's own checks.",
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 9.96,
+      "render_duration_s": 10.0,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-10-10T19:38:03"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "act": "outro",
+      "lane": "bookend",
+      "proof_gate": "SHOW",
+      "narration_text": "Ghost-Job Trust Radar. Dhruvi Mehta.",
+      "estimated_duration_s": 4.0,
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "show": [
+          {
+            "at": 0.0,
+            "event": "title restates; name; mascot"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Ghost-Job Trust Radar",
+            "slug": "ghost-job-radar-pitch",
+            "handle": "Dhruvi Mehta",
+            "subline": ""
+          }
+        }
+      },
+      "kind": "outro_voice",
+      "tail_silence_s": 1.0,
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 3.6,
+      "render_duration_s": 3.625,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-10-10T19:38:03"
+      }
+    }
+  ]
+}

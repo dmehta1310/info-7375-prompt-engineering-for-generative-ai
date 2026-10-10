@@ -1,0 +1,130 @@
+=== B01_Problem static
+[OK   ]   [3 distinct / None beats]
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+=== B01_Problem layout --curve-strict
+  File "/opt/anaconda3/lib/python3.12/site-packages/manim/utils/space_ops.py", line 10, in <module>
+    from scipy.spatial.transform import Rotation
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/__init__.py", line 110, in <module>
+    from ._kdtree import *
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/_kdtree.py", line 4, in <module>
+    from ._ckdtree import cKDTree, cKDTreeNode
+  File "_ckdtree.pyx", line 1, in init scipy.spatial._ckdtree
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+=== B02_Gates static
+[OK   ]   [4 distinct / None beats]
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+=== B02_Gates layout --curve-strict
+  File "/opt/anaconda3/lib/python3.12/site-packages/manim/utils/space_ops.py", line 10, in <module>
+    from scipy.spatial.transform import Rotation
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/__init__.py", line 110, in <module>
+    from ._kdtree import *
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/_kdtree.py", line 4, in <module>
+    from ._ckdtree import cKDTree, cKDTreeNode
+  File "_ckdtree.pyx", line 1, in init scipy.spatial._ckdtree
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+=== B03_Alternatives static
+[OK   ]   [4 distinct / None beats]
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+=== B03_Alternatives layout --curve-strict
+  File "/opt/anaconda3/lib/python3.12/site-packages/manim/utils/space_ops.py", line 10, in <module>
+    from scipy.spatial.transform import Rotation
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/__init__.py", line 110, in <module>
+    from ._kdtree import *
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/_kdtree.py", line 4, in <module>
+    from ._ckdtree import cKDTree, cKDTreeNode
+  File "_ckdtree.pyx", line 1, in init scipy.spatial._ckdtree
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+=== B04_StopEarly static
+[OK   ]   [4 distinct / None beats]
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+=== B04_StopEarly layout --curve-strict
+  File "/opt/anaconda3/lib/python3.12/site-packages/manim/utils/space_ops.py", line 10, in <module>
+    from scipy.spatial.transform import Rotation
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/__init__.py", line 110, in <module>
+    from ._kdtree import *
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/_kdtree.py", line 4, in <module>
+    from ._ckdtree import cKDTree, cKDTreeNode
+  File "_ckdtree.pyx", line 1, in init scipy.spatial._ckdtree
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+=== B05_Reader static
+[OK   ]   [5 distinct / None beats]
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+=== B05_Reader layout --curve-strict
+  File "/opt/anaconda3/lib/python3.12/site-packages/manim/utils/space_ops.py", line 10, in <module>
+    from scipy.spatial.transform import Rotation
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/__init__.py", line 110, in <module>
+    from ._kdtree import *
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/_kdtree.py", line 4, in <module>
+    from ._ckdtree import cKDTree, cKDTreeNode
+  File "_ckdtree.pyx", line 1, in init scipy.spatial._ckdtree
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+=== B07_BreakTest static
+[OK   ]   [4 distinct / None beats]
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+=== B07_BreakTest layout --curve-strict
+  File "/opt/anaconda3/lib/python3.12/site-packages/manim/utils/space_ops.py", line 10, in <module>
+    from scipy.spatial.transform import Rotation
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/__init__.py", line 110, in <module>
+    from ._kdtree import *
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/_kdtree.py", line 4, in <module>
+    from ._ckdtree import cKDTree, cKDTreeNode
+  File "_ckdtree.pyx", line 1, in init scipy.spatial._ckdtree
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+=== B08_Skills static
+[OK   ]   [6 distinct / None beats]
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+=== B08_Skills layout --curve-strict
+  File "/opt/anaconda3/lib/python3.12/site-packages/manim/utils/space_ops.py", line 10, in <module>
+    from scipy.spatial.transform import Rotation
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/__init__.py", line 110, in <module>
+    from ._kdtree import *
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/_kdtree.py", line 4, in <module>
+    from ._ckdtree import cKDTree, cKDTreeNode
+  File "_ckdtree.pyx", line 1, in init scipy.spatial._ckdtree
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+=== B09_InOutFirst static
+[OK   ]   [4 distinct / None beats]
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+=== B09_InOutFirst layout --curve-strict
+  File "/opt/anaconda3/lib/python3.12/site-packages/manim/utils/space_ops.py", line 10, in <module>
+    from scipy.spatial.transform import Rotation
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/__init__.py", line 110, in <module>
+    from ._kdtree import *
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/_kdtree.py", line 4, in <module>
+    from ._ckdtree import cKDTree, cKDTreeNode
+  File "_ckdtree.pyx", line 1, in init scipy.spatial._ckdtree
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+=== B10_Misread static
+[OK   ]   [6 distinct / None beats]
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+=== B10_Misread layout --curve-strict
+  File "/opt/anaconda3/lib/python3.12/site-packages/manim/utils/space_ops.py", line 10, in <module>
+    from scipy.spatial.transform import Rotation
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/__init__.py", line 110, in <module>
+    from ._kdtree import *
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/_kdtree.py", line 4, in <module>
+    from ._ckdtree import cKDTree, cKDTreeNode
+  File "_ckdtree.pyx", line 1, in init scipy.spatial._ckdtree
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+=== B11_Shelves static
+[OK   ]   [4 distinct / None beats]
+
+[static-check] 1 scene(s): 1 clean · 0 warn · 0 error
+=== B11_Shelves layout --curve-strict
+  File "/opt/anaconda3/lib/python3.12/site-packages/manim/utils/space_ops.py", line 10, in <module>
+    from scipy.spatial.transform import Rotation
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/__init__.py", line 110, in <module>
+    from ._kdtree import *
+  File "/opt/anaconda3/lib/python3.12/site-packages/scipy/spatial/_kdtree.py", line 4, in <module>
+    from ._ckdtree import cKDTree, cKDTreeNode
+  File "_ckdtree.pyx", line 1, in init scipy.spatial._ckdtree
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
