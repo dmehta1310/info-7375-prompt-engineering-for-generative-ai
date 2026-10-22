@@ -22,6 +22,9 @@
 ## What Claude contributed
 All dates are 2026-10-10, the date recorded in FRICTIONAL.md for each piece of work.
 - **Claude (claude.ai chat), 2026-10-10:** planning, drafting PROJECT-BRIEF.md and the beat plan from my existing work, researching the alternatives with web search, and reviewing drafts. I reviewed and edited all of it.
+
+- 2026-10-22: Claude (chat) helped me with a fill-in template and finding the facts in my screenshots. The checks and decisions are mine.
+
 - **Claude Code, 2026-10-10:**
   - wrote make_sheet.py (which generates beat_sheet.json) from the beat plan, and scenes.py (the ten Manim scenes);
   - wrote FACTCHECK.md, SHOTLIST.md, PROMPTS.md and PEDAGOGY.md;

@@ -1,4 +1,8 @@
+
+
 # FRICTIONAL.md — Final Project Pitch Film
+
+Note: the 2026-10-10 entries were written by Claude Code during the build. The 2026-10-22 entries at the bottom are written by me.
 
 ## 2026-10-10
 - Chose Ghost-Job Trust Radar as my final project. I picked it because part of it already exists from the Reallocation Engine assignment, so the film can honestly show real work instead of only plans.
@@ -61,3 +65,6 @@ MyVisaJobs shows job title, which my 80 Days data doesn't. It does not show whet
 On Oct 10 I watched the full cut with sound. I noticed the voice matched the pictures in each part, and I decided it was ready to submit, with no changes. I did not notice then that some drawings of the planned tool had no 'planned' label.
 
 On Oct 10 I also listened to B08, B11 and B03 myself. They sounded fine, so I kept the audio as it was.
+
+2026-10-22: Manual check (done myself)
+To check one posting by hand, I opened 3 tabs (Stripe careers, Greenhouse API, MyVisaJobs). It took me about 20 minutes. The hardest part was reading the long API text and finding the right Stripe name. I had no record of what I checked, except the screenshots I took myself.
