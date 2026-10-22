@@ -5,6 +5,7 @@
 - My own Reallocation Engine work: fork of nikbearbrown/the-reallocation-engine, PR #1, branch contrib/2026fa-dmehta1310-ghost-job-radar. Scripts at scripts/contrib/2026fa/dmehta1310-ghost-job-radar/ (README, timeline_gate.py, build_roles_json.py, two test files). My WORKED-RUN.md in that repo documents the hand check against the raw CSV (grep "AVY INC").
 - Course sample data used in that work: 80 Days to Stay sponsorship/funding sample CSV (data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv, 30,370 lines).
 - Alternatives reviewed on 2026-10-10: MyVisaJobs (myvisajobs.com), and the manual sponsor-check process described in F1Jobs career guides (f1jobs.io).
+- Claude did that first research with web search on 2026-10-10. I opened MyVisaJobs, the Stripe posting and the Greenhouse API myself on 2026-10-22. My screenshots (browser bar cropped) are in evidence/2026-10-22-my-checks/, and my notes are in FRICTIONAL.md.
 - PROJECT-BRIEF.md (in this folder): the film's source text.
 - faster-whisper (small.en), used only to check the generated narration against the script.
 

@@ -8,7 +8,7 @@ When done, it will be a GitHub repository with one command that runs every check
 
 ## 2. Why would anyone care?
 It will save an international student on CPT the time they would otherwise spend researching a posting that is already dead or that their work authorization timeline can't meet.
-Alternatives I looked at (2026-10-10):
+Alternatives (Claude researched these with web search on 2026-10-10. I opened MyVisaJobs myself on 2026-10-22; see FRICTIONAL.md and evidence/2026-10-22-my-checks/):
 - **MyVisaJobs (a sponsor database).** You can search employers' past H-1B and green-card filings by company, job title, and location. It answers "has this company sponsored before?" Nothing I saw checks whether a specific posting is still live or whether its start date fits a CPT window. It is also history: sponsoring last year doesn't mean sponsoring this year.
 - **The manual checklist that student career guides recommend.** Look the company up in a sponsor database, cross-check Department of Labor filing data, search the posting for words like "sponsor" or "visa," then ask the recruiter. This works, but it's four or five separate steps across tabs, it doesn't check whether the posting is live first, and it leaves no record of what was checked.
 

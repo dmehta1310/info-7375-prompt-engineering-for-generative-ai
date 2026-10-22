@@ -5,7 +5,9 @@
 - Drafted PROJECT-BRIEF.md with Claude. I still need to confirm the alternatives I looked at and my own reasons for picking this project.
 - Lesson from the Week 1 video feedback: every entry in this file gets a date, and every beat gets checked frame by frame before I submit.
 - Checked PR #1 status: open, review requested from the instructor, no review or comments yet. Updated PROJECT-BRIEF.md to say exactly that, so the film doesn't imply the work was approved or merged.
-- Claude researched alternatives with web search (MyVisaJobs, plus the manual sponsor-check process from student career guides) and filled in Q2 and Q7 of PROJECT-BRIEF.md. I need to open MyVisaJobs myself and check one company before filming, so I can explain this part of the pitch.
+- Claude researched alternatives with web search (MyVisaJobs, plus the manual sponsor-check process from student career guides) and filled i
+
+n Q2 and Q7 of PROJECT-BRIEF.md. I need to open MyVisaJobs myself and check one company before filming, so I can explain this part of the pitch.
 - Read the Brutalist HOW-TO.md. My checkout has no show-tell skill; the skills are ai-explainer, cli-explainer, and deep-explainer. Chose ai-explainer because it's a 1–3 minute reel for one idea.
 - Found two traps in the toolkit: the default personas (nbb, hai) carry channel chips and sign-off lines, and the cold open shows a Claude answer. The assignment bans the instructor persona and credit line, and only allows Claude responses I actually got. The plan uses voice af_bella with no persona, and a plain title card instead of the Claude cold open.
 - Wrote BEAT-PLAN.md (14 beats, ~530 words, about 3.5 min). Labeled every beat REAL or CONSTRUCTED. Gave "what this does not establish" its own beat (B12), because leaving that out cost marks in Week 1.
@@ -40,3 +42,22 @@
 - 2026-10-10 Phase 5, step 1: the BUILD-PROMPT.md and FRICTIONAL.md copies in the submission folder now carry the exact original wording from plan/ again (the redaction and its note are removed), because the instructor names there only record my overrides, which is evidence, not persona use. The earlier Phase 4 line above about rewording those copies describes the state before this change. The zip was re-made, re-tested, and compared with the folder using diff -r.
 - 2026-10-10 Phase 5, step 2: git pull in the course repo clone (main, a7faf71) found nothing new. git check-ignore shows that the repo's root .gitignore (line 33, `*.[mM][pP]4`, plus the earlier `youtube/**/*.mp4` rule) would ignore my master ghost-job-radar-pitch.mp4; the other 41 files in the submission folder are not ignored. I stopped there, as the prompt says: nothing has been copied into the course repo, committed, or pushed.
 - 2026-10-10 Phase 5, GitHub: the course repo's .gitignore excludes *.mp4 (line 33), but the assignment requires the film in the GitHub folder to match Canvas, so I am force-adding only my own file with `git add -f` (ghost-job-radar-pitch.mp4, 16.9 MB, under GitHub's 100 MB limit). I did not edit .gitignore, and other students' mp4s are already tracked in the repo (16 media files). The folder, the zip and the GitHub copy are the same files; the master's sha256 is 912b2de2096f8358acbd4f5f4a9f0872bc378f2341942eb5afb67a5db6b9399c.
+
+
+## My own checks and notes (added 2026-10-22, after feedback)
+
+2026-10-22: Stripe posting check (done myself)
+I opened the Stripe Data Analyst posting. The title was Data Analyst, NYC, the location was New York. It was open, and the apply button was available and on.
+The Greenhouse API page showed job details. It was first posted on 2026-09-10 and updated on 2026-10-22. It asks for 6+ years of experience, which means 6+ years of full-time experience in Data Engineering, Analytics Engineering, Business Intelligence Engineering, or a related analytical role.
+
+2026-10-22: MyVisaJobs check (done myself)
+I searched "Stripe". It showed 269 results.
+Stripe appears under 4 different names, for example Stripe, Llc (219), Stripe, Inc. (45), Stripe Malpb (3), Stripe Payments Company (2). My tool only matches "STRIPE INC".
+For the Stripe Malpb filings, the Data Analyst filings were labeled as the occupation Operations Research Analysts, but my mode uses SOC 15-2051. When I searched Stripe, Inc. with job title Data Analyst, it showed 3 results, all Certified, labeled Data Scientists.
+Some filings were Certified and some were Denied.
+MyVisaJobs shows job title, which my 80 Days data doesn't. It does not show whether a job posting is open right now.
+
+2026-10-22: Watching the film
+On Oct 10 I watched the full cut with sound. I noticed the voice matched the pictures in each part, and I decided it was ready to submit, with no changes. I did not notice then that some drawings of the planned tool had no 'planned' label.
+
+On Oct 10 I also listened to B08, B11 and B03 myself. They sounded fine, so I kept the audio as it was.
