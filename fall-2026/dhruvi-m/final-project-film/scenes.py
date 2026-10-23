@@ -206,6 +206,13 @@ def clip(pt):
                   Line(a + np.array([0.14, 0.5, 0]), a + np.array([0.14, 0.05, 0]), color=INK, stroke_width=5))
 
 
+def planned_tag(side="left"):
+    """Corner tag marking a drawing of the tool that is not built yet (same style as B05's 'Constructed' tag)."""
+    x0 = -5.9 if side == "left" else 3.4
+    fold = Polygon([x0, 2.8, 0], [x0 + 0.5, 2.8, 0], [x0 + 0.5, 3.15, 0], fill_color=BOX_L, fill_opacity=1, stroke_color=DK, stroke_width=2)
+    return VGroup(fold, lab("Planned", (x0 + 0.8, 2.95), edge=LEFT))
+
+
 # ═════════════════════════════ B01 · the problem ═════════════════════════════
 class B01_Problem(Scene):
     ISO = (-0.181, -3.385, 1.046)
@@ -249,6 +256,7 @@ class B02_Gates(Scene):
         o["ck"] = check(*iso.p(7.65, 1.0, 0.1)[:2], s=0.22)
         names = ("Live?", "CPT fit?", "Sponsor record?")
         o["labs"] = [lab(n, iso.p(x, -0.45, 0), dx=0.05, dy=-0.6, edge=LEFT) for n, x in zip(names, GX)]
+        o["planned"] = planned_tag("left")
         return o
 
     def construct(self):
@@ -257,7 +265,7 @@ class B02_Gates(Scene):
         self.add(o["belt"])
         go(self, 0.02, 0.16, LaggedStart(*[FadeIn(g, shift=UP * 0.5) for g in o["gates"]], lag_ratio=0.3))
         go(self, 0.18, 0.28, FadeIn(o["pb"], shift=DOWN * 0.6), FadeIn(o["rep"]))
-        go(self, 0.30, 0.42, LaggedStart(*[FadeIn(l) for l in o["labs"]], lag_ratio=0.25))
+        go(self, 0.30, 0.42, LaggedStart(*[FadeIn(l) for l in o["labs"]], lag_ratio=0.25), FadeIn(o["planned"]))
         go(self, 0.56, 0.66, o["pb"].animate.shift(iso.v(5.0, 0, 0)), rate_func=linear)
         go(self, 0.66, 0.70, *[g.lamp.animate.set_color(TERRA) for g in o["gates"]], Create(o["ck"]))
         finish(self)
@@ -305,6 +313,7 @@ class B04_StopEarly(Scene):
         o["tag"] = tag_shape(iso, 7.2, 1.9, 0.0)
         o["l_stop"] = lab("Stop early", iso.p(GX[0], -0.45, 0), dx=0.05, dy=-0.6, edge=LEFT)
         o["l_rec"] = lab("No record", iso.p(8.3, 0.4, 0), dx=0.35, dy=-0.5, edge=LEFT)
+        o["planned"] = planned_tag("left")
         return o
 
     def construct(self):
@@ -314,7 +323,7 @@ class B04_StopEarly(Scene):
         self.add(o["belt"])
         go(self, 0.02, 0.14, LaggedStart(*[FadeIn(x, shift=UP * 0.5) for x in g], lag_ratio=0.3))
         go(self, 0.16, 0.26, FadeIn(o["pb"], shift=DOWN * 0.6), FadeIn(o["rep"]))
-        go(self, 0.28, 0.42, FadeIn(o["l_stop"]), FadeIn(o["l_rec"]))
+        go(self, 0.28, 0.42, FadeIn(o["l_stop"]), FadeIn(o["l_rec"]), FadeIn(o["planned"]))
         go(self, 0.57, 0.66, g[0].lamp.animate.set_color(TERRA), g[0].arm.animate.shift(iso.v(0, 0, -0.8)),
            g[1].animate.set_opacity(0.3), g[2].animate.set_opacity(0.3))
         go(self, 0.66, 0.70, FadeIn(o["tag"], shift=DOWN * 0.3))
@@ -427,6 +436,7 @@ class B09_InOutFirst(Scene):
         o["rep"] = iso.page(7.2, 0.0, 0.0, 1.2, 1.5)
         o["log"] = [iso.page(7.2, -2.0, 0.0 + 0.1 * i, 1.2, 1.5) for i in range(3)]
         o["l_first"] = lab("First run", iso.p(7.2, -2.0, 0), dx=0.1, dy=-0.6)
+        o["planned"] = planned_tag("right")
         return o
 
     def construct(self):
@@ -437,7 +447,7 @@ class B09_InOutFirst(Scene):
         go(self, 0.15, 0.24, Create(o["x1"]), Create(o["x2"]))
         go(self, 0.25, 0.32, FadeIn(o["l_not"]))
         go(self, 0.32, 0.40, FadeIn(o["pb"], shift=DOWN * 0.5), FadeIn(o["cmd"]))
-        go(self, 0.40, 0.44, FadeIn(o["l_first"]))
+        go(self, 0.40, 0.44, FadeIn(o["l_first"]), FadeIn(o["planned"]))
         go(self, 0.57, 0.67, o["pb"].animate.shift(iso.v(3.0, 0, 0)), rate_func=linear)
         go(self, 0.67, 0.70, FadeIn(o["rep"]), *[FadeIn(p) for p in o["log"]])
         finish(self)
@@ -464,6 +474,7 @@ class B10_Misread(Scene):
         o["cl"] = clip(iso.p(6.5, 1.4, 0.06))
         o["l_mis"] = lab("Misread", iso.p(1.2, 4.0, 0), dy=-1.0)
         o["l_rng"] = lab("Date range", iso.p(5.7, 0.4, 0), dy=-0.8)
+        o["planned"] = planned_tag("right")
         return o
 
     def construct(self):
@@ -473,7 +484,7 @@ class B10_Misread(Scene):
         go(self, 0.15, 0.26, GrowFromCenter(o["arrow"]))
         go(self, 0.26, 0.34, FadeIn(o["l_mis"]))
         go(self, 0.34, 0.40, Create(o["x1"]), Create(o["x2"]))
-        go(self, 0.40, 0.44, FadeIn(o["l_rng"]))
+        go(self, 0.40, 0.44, FadeIn(o["l_rng"]), FadeIn(o["planned"]))
         go(self, 0.57, 0.64, FadeIn(o["rng"], shift=LEFT * 0.4), Create(o["bar"]), Create(o["tk"]))
         go(self, 0.64, 0.69, FadeIn(o["cl"], shift=DOWN * 0.3))
         finish(self)

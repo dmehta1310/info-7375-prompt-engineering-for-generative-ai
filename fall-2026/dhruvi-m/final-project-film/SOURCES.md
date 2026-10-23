@@ -68,3 +68,5 @@ SOFTWARE.
 
 - No licence file ships alongside the model weights in the toolkit's runtime/models/kokoro/ folder, so the licence of the model weights themselves is not confirmed from anything on this machine.
 - No other third-party images, music, or footage.
+
+- 2026-10-22 revision: Claude (chat) drafted the revised narration, which I read and approved, and wrote apply_2026-10-22.py and finish_2026-10-22.py. I ran every command myself, listened to the new audio, and watched the new cut.

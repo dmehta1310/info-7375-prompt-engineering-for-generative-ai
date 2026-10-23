@@ -1,0 +1,51 @@
+[run] skip B01_Problem — B01 already filled
+[run] skip B02_Gates — B02 already filled
+[run] skip B03_Alternatives — B03 already filled
+[run] skip B04_StopEarly — B04 already filled
+[run] skip B05_Reader — B05 already filled
+[run] skip B07_BreakTest — B07 already filled
+[run] skip B08_Skills — B08 already filled
+[run] skip B09_InOutFirst — B09 already filled
+[run] skip B10_Misread — B10 already filled
+[run] skip B11_Shelves — B11 already filled
+[run] nothing to render — recompiling only
+[run] GATE L — beat-mix lint
+[beat-lint] clean — beat mix OK (beat_sheet.json)
+[run] GATE SHAPE — finance chart-shape enforcement
+[gate-shape] skip — not a finance reel (beat_sheet.json)
+[remotion] BIDEA: filled already (skip)
+[remotion] BDEFS: filled already (skip)
+[remotion] B06: filled already (skip)
+[remotion] B12: filled already (skip)
+[remotion] BHTF: filled already (skip)
+[remotion] BOUT: filled already (skip)
+[remotion] done — run `bash scripts/run.sh <REEL>` to compile the cut
+[art] BIDEA: clip 10.1s slowed 2.02x to fill 20.3s beat
+[art] compiled BIDEA  VIDEO    20.3s  ← BIDEA.mp4
+[art] compiled BDEFS  VIDEO    18.2s  ← BDEFS.mp4
+[art] compiled B02  MANIM    17.6s  ← B02.mp4
+[art] compiled B03  MANIM    16.3s  ← B03.mp4
+[art] B04: clip 13.3s slowed 1.28x to fill 17.0s beat
+[art] compiled B04  MANIM    17.0s  ← B04.mp4
+[art] compiled B05  MANIM    12.2s  ← B05.mp4
+[art] B06: clip 14.7s center-cut to 13.8s (skip 0.4s head/tail)
+[art] compiled B06  VIDEO    13.8s  ← B06.mp4
+[art] B08: clip 15.2s slowed 1.06x to fill 16.1s beat
+[art] compiled B08  MANIM    16.1s  ← B08.mp4
+[art] B09: clip 16.8s slowed 1.06x to fill 17.9s beat
+[art] compiled B09  MANIM    17.9s  ← B09.mp4
+[art] compiled B10  MANIM    12.3s  ← B10.mp4
+[art] B11: clip 14.7s center-cut to 12.7s (skip 1.0s head/tail)
+[art] compiled B11  MANIM    12.7s  ← B11.mp4
+[art] compiled B12  VIDEO    18.3s  ← B12.mp4
+[art] motion histogram: graphic:10  remotion:6
+[art] SKIN LINT: BIDEA: palette=claude but the cold open is 'BrutalistHesitantWriter' — COLD OPEN LAW wants ClaudeComposerAsk
+[art] build stamp → beat_sheet.json (16/16 filled)
+[art] QC contact sheet → /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/qc-sheet.png
+[art] wrote /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/ghost-job-radar-pitch-slate.mp4  (227.6s, audio: per-beat timeline (source audio preserved), drawtext: no — PIL overlays)
+[art] slots: 16/16 filled — BIDEA:VIDEO BDEFS:VIDEO B01:MANIM B02:MANIM B03:MANIM B04:MANIM B05:MANIM B06:VIDEO B07:MANIM B08:MANIM B09:MANIM B10:MANIM B11:MANIM B12:VIDEO BHTF:VIDEO BOUT:VIDEO
+[run] GATE V — frame-level visual QC on the compiled reel
+[gate-v] frames=32 BLOCKER=0 MAJOR=0 → /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/_qc/REPORT.md
+[run] done → /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch  (QC gates: on)
+[run] REVIEW built; no final exported. Use ./art final <reel> for a verified master.
+[run] any remaining slates are YOUR slots — see /Users/dhruvi/Documents/final-project-film/dhruvi/youtube/ghost-job-radar-pitch/SHOTLIST.md

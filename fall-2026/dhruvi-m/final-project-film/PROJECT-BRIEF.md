@@ -46,6 +46,8 @@ It's a mix. It comes from a real problem for international students like me: res
 - One worked run on the course sample data, checked by hand, plus one deliberate break test
 - PR #1 against the course repo: open, 14 commits, 16 files, review requested from the instructor, not yet reviewed or merged (checked 2026-10-10). Recipe status is DRAFT and self-attested.
 
+- A live liveness run with the class engine (npm run ats:liveness) on one real Stripe posting, plus a made-up job number that came back 'uncertain' (2026-10-19, Reallocation Engine PR #57, which replaces PR #1)
+
 ## Will exist
 - One command that runs every check in order
 - A live liveness check run for real (in the worked run, liveness was supplied manually)

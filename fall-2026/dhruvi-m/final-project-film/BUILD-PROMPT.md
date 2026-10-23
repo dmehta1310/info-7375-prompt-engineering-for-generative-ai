@@ -303,3 +303,26 @@ git add -n -f fall-2026/dhruvi-m/final-project-film/ghost-job-radar-pitch.mp4 ; 
 #   git commit -m "Add Dhruvi Mehta final project film: Ghost-Job Trust Radar (INFO7375)"
 #   git push origin main
 ~~~
+
+## Revision 2026-10-22 (done by hand; Claude Code was unavailable)
+Run from ~/Documents/final-project-film unless noted.
+```
+python3 ~/Downloads/apply_2026-10-22.py                       # narration, card text, 'Planned' tags, revision notes
+cd dhruvi/youtube/ghost-job-radar-pitch && python3 make_sheet.py
+cd ~/Documents/final-project-film && python3 brutalist.art/runtime/scripts/generate_audio_kokoro.py dhruvi/youtube/ghost-job-radar-pitch
+cd dhruvi/youtube/ghost-job-radar-pitch
+cp mp3/beat-BOUT.mp3 _superseded/2026-10-22/beat-BOUT-unpadded.mp3
+ffmpeg -y -loglevel error -i _superseded/2026-10-22/beat-BOUT-unpadded.mp3 -af "apad=pad_dur=1.0" -c:a libmp3lame -q:a 2 mp3/beat-BOUT.mp3
+python3 make_sheet.py
+# art run reuses existing clips, so move the changed beats' renders aside first:
+D=_superseded/2026-10-22/render-old; mkdir -p $D/manim $D/media $D/clips
+for b in B02 B03 B04 B05 B08 B09 B10 B11; do mv manim/$b.mp4 $D/manim/; done
+for b in BIDEA BDEFS B06 B12; do mv media/$b.mp4 $D/media/; done
+for b in BIDEA BDEFS B02 B03 B04 B05 B06 B08 B09 B10 B11 B12; do mv clips/$b.mp4 $D/clips/; done
+mv media/videos $D/media-videos-cache
+python3 make_sheet.py
+cd ~/Documents/final-project-film && export PATH="$HOME/Documents/final-project-film/.venv/bin:$PATH"
+./brutalist.art/art run dhruvi/youtube/ghost-job-radar-pitch --height 2160
+./brutalist.art/art final dhruvi/youtube/ghost-job-radar-pitch --height 2160 --out dhruvi/youtube/ghost-job-radar-pitch/exports/landscape
+python3 ~/Downloads/finish_2026-10-22.py                      # copies the master and paperwork into the submission folder
+```

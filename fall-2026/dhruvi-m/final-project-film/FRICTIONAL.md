@@ -68,3 +68,9 @@ On Oct 10 I also listened to B08, B11 and B03 myself. They sounded fine, so I ke
 
 2026-10-22: Manual check (done myself)
 To check one posting by hand, I opened 3 tabs (Stripe careers, Greenhouse API, MyVisaJobs). It took me about 20 minutes. The hardest part was reading the long API text and finding the right Stripe name. I had no record of what I checked, except the screenshots I took myself.
+
+
+2026-10-22: Revising the film after TA feedback (done myself)
+I added who I am at the start (a master's student in Information Systems at Northeastern), because the TAs asked for who is doing the project. I explained the terms in plain words, because the TAs asked that a non-technical person can follow the film. I added my real findings: the live Stripe check, the "uncertain" result, Stripe's 4 company names, and the 6+ years posting. I also added "Planned" tags to the drawings of the tool that isn't built yet (B02, B04, B09, B10), because the grader said they had none.
+The first render reused the old pictures (it said "already filled") and only stretched them to the new audio. Claude spotted it in the log. I moved the old clips aside and rendered again, and this time every changed beat was drawn fresh. Re-recording the audio also removed the 1-second silent ending on the outro, so I added it back.
+I listened to BIDEA, B03 and B04, checked the contact sheet for the "Planned" tags, the new terms card and the new B12 card, and watched the full new cut with sound. It looked right, so I made the final master, and GATE T passed.

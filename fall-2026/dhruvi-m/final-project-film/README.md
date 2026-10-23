@@ -146,3 +146,8 @@ Expected: 6 tests OK, 10 tests OK, and a `NoRecordInSample` result for the break
 | `gate-A_*.txt`, `margins_*.txt` | My Gate A pre-audit runs (static check and layout audit with `--curve-strict`) and the label and drawing margin check. |
 | `audio_whisper-transcripts.json`, `audio_whisper_check.py` | Transcripts of every narration beat and the script that compares them to the text. |
 | `contact-sheet-3a-v2_stills.png`, `contact-sheet-3b_review-cut.png` | Contact sheets of the stills and of the review cut at 50% of each beat. |
+
+## Revision 2026-10-22 (after TA feedback)
+- Runtime is now 227.6 s (about 3:47), 3840x2160.
+- Changes: narrator says who she is; plain-language terms; real findings added (live Stripe check from the Mode Build, the 'uncertain' result, Stripe's four filing names, the six-plus-years posting); 'Planned' tags on B02, B04, B09, B10.
+- To rebuild this version: run `python3 apply_2026-10-22.py` on the 2026-10-10 reel, re-run `make_sheet.py`, regenerate audio, pad BOUT with 1.0 s of silence, move the old clips aside, then `art run` and `art final` (exact commands in BUILD-PROMPT.md).

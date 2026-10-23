@@ -35,3 +35,16 @@
 | 31 | B12 | The film does not establish that the tool works on real postings | PASS | plan/PROJECT-BRIEF.md section 4 | |
 | 32 | BHTF | Before researching a posting, check whether it is still accepting applications and whether the start date fits your work window, noting where each answer came from | EXEMPT | Advice framed as the viewer's own checks; no figures. Narration reads the composer prompt in full | |
 | 33 | BOUT | Title Ghost-Job Trust Radar; narrator Dhruvi Mehta | PASS | plan/PROJECT-BRIEF.md header | |
+
+## Revision 2026-10-22 (after TA feedback)
+| # | Beat | Claim | Verdict | Source | Fix |
+|---|---|---|---|---|---|
+| R1 | BIDEA | Narrator is an international master's student in Information Systems at Northeastern | PASS | the narrator herself | none |
+| R2 | BDEFS | CPT: permission for an international student to work during their degree | PASS (plain-language simplification) | general definition | simplified from "work authorization tied to a degree program" |
+| R3 | B03 | On MyVisaJobs, Stripe appears under four company names, and nothing says whether a posting is still open | PASS | evidence/2026-10-22-my-checks/ (Stripe search, 269 results); FRICTIONAL.md 2026-10-22 | none |
+| R4 | B03 | Checking one posting by hand took three tabs and about twenty minutes, no record except own screenshots | PASS (self-reported) | FRICTIONAL.md 2026-10-22 manual check | none |
+| R5 | B04 | The class engine's live check (npm run ats:liveness) on a real Stripe posting came back active | PASS | the-reallocation-engine PR #57, assignments/submissions/dmehta1310/evidence/2026-10-19/04a-liveness-live.txt | none |
+| R6 | B04 | A made-up job number came back 'uncertain', not 'dead' | PASS | same PR, evidence/2026-10-19/04b-liveness-dead-madeup-id.txt | none |
+| R7 | B06 | One script pulls sponsorship history from the class data | PASS | build_roles_json.py reads the 80 Days to Stay CSV | none |
+| R8 | B09 | The Stripe posting tested asks for six-plus years of experience | PASS | evidence/2026-10-22-my-checks/ (Greenhouse API screenshot) | none |
+| R9 | B12 | One live check on a real posting, in an open pull request | PASS if PR #57 is still open on render day | github.com/nikbearbrown/the-reallocation-engine/pull/57 | re-check before submitting |

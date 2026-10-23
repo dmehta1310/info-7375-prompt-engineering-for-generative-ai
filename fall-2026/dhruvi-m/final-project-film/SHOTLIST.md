@@ -22,3 +22,7 @@ Voice af_bella for every beat. REAL = genuine captured output; CONSTRUCTED = dra
 | BOUT | Remotion | Title restated with the name Dhruvi Mehta; mascot; 1.0 s silent tail | Ghost-Job Trust Radar, Dhruvi Mehta | CONSTRUCTED | bookend |
 
 Card count: 2 of 12 body beats (B06, B12), not back to back, different kinds.
+
+## Revision 2026-10-22
+- B02, B04, B09, B10: a 'Planned' corner tag (same style as B05's 'Constructed' tag), because these drawings show the tool that is not built yet. Added after grading feedback (P6).
+- BDEFS meanings and the B12 'Exists / Will exist' rows updated to match the revised narration.
