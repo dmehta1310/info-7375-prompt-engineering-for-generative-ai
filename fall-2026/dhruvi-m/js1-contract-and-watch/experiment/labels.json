@@ -1,0 +1,82 @@
+{
+  "5601879": {
+    "my_label": "not relevant",
+    "why": "lowest option is PhD + 3 years (> 2); first said 2 or less, fixed after reading the text"
+  },
+  "7923653": {
+    "my_label": "not relevant",
+    "why": "Bengaluru, not US; 10+ years"
+  },
+  "8142302": {
+    "my_label": "not relevant",
+    "why": "Security Analyst: not a data title under rule v1; passes under v2 but needs 5+ years"
+  },
+  "8186442": {
+    "my_label": "not relevant",
+    "why": "Singapore, not US; first tapped apply, fixed after checking rule 2"
+  },
+  "8190059": {
+    "my_label": "not relevant",
+    "why": "Account Executive: no data title and no 'Analyst'; first tapped apply, fixed"
+  },
+  "8194287": {
+    "my_label": "not relevant",
+    "why": "Toronto, not US"
+  },
+  "8194291": {
+    "my_label": "relevant",
+    "why": "Data Analyst title; US; no years stated (enrolled student)"
+  },
+  "8201680": {
+    "my_label": "not relevant",
+    "why": "rule v2 title passes; US; but 7+ years (> 2); first ticked years as passing, fixed after reading the text"
+  },
+  "8230296": {
+    "my_label": "not relevant",
+    "why": "Singapore, not US; first tapped apply, fixed after checking rule 2"
+  },
+  "8230306": {
+    "my_label": "not relevant",
+    "why": "rule v2 title passes; US; 5+ years (> 2)"
+  },
+  "5895430": {
+    "my_label": "not relevant",
+    "why": "Toronto, not US"
+  },
+  "7230921": {
+    "my_label": "not relevant",
+    "why": "rule v2 title passes; Remote counts as US; but 5+ years (> 2); first ticked years as passing, fixed after reading the text"
+  },
+  "7813411": {
+    "my_label": "not relevant",
+    "why": "Bengaluru, not US"
+  },
+  "8044924": {
+    "my_label": "not relevant",
+    "why": "Singapore, not US"
+  },
+  "8079783": {
+    "my_label": "not relevant",
+    "why": "title passes; US; years > 2"
+  },
+  "8113100": {
+    "my_label": "not relevant",
+    "why": "Toronto, not US"
+  },
+  "8194283": {
+    "my_label": "not relevant",
+    "why": "title passes; US; years check fails"
+  },
+  "8194285": {
+    "my_label": "not relevant",
+    "why": "Toronto, not US"
+  },
+  "8231575": {
+    "my_label": "not relevant",
+    "why": "title passes; US; years > 2"
+  },
+  "8245230": {
+    "my_label": "not relevant",
+    "why": "Bangalore, not US"
+  }
+}
