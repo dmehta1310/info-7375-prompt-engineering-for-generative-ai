@@ -1,0 +1,6 @@
+posting_id | rule verdict | Claude verdicts (runs 1-4) | valid | resume fields cited per run
+8189909 | not relevant | ['not relevant', 'not relevant', 'not relevant', 'not relevant'] | 4/4 | ['locations,skills,target_titles,years_experience', 'locations,target_titles,years_experience', 'locations,target_titles,years_experience', 'locations,skills,target_titles,years_experience']
+5416444 | not relevant | ['not relevant', 'not relevant', 'not relevant', 'not relevant'] | 4/4 | ['locations,target_titles,years_experience', 'locations,target_titles', 'locations,target_titles,years_experience', 'locations,target_titles']
+8222149 | not relevant | ['not relevant', 'not relevant', 'not relevant', 'not relevant'] | 4/4 | ['locations,target_titles,years_experience', 'locations,target_titles,years_experience', 'target_titles,years_experience', 'locations,target_titles,years_experience']
+8026689 | relevant | ['not relevant', 'not relevant', 'not relevant', 'not relevant'] | 4/4 | ['target_titles,years_experience', 'target_titles,years_experience', 'locations,skills,target_titles,years_experience', 'skills,target_titles,years_experience']
+7440963 | not relevant | ['not relevant', 'not relevant', 'not relevant', 'not relevant'] | 4/4 | ['target_titles,years_experience', 'target_titles,years_experience', 'target_titles,years_experience', 'target_titles,years_experience']
