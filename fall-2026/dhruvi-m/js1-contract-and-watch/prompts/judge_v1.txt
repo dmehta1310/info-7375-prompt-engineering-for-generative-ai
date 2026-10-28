@@ -1,0 +1,19 @@
+You are judging whether one job posting is relevant for one candidate.
+
+CANDIDATE (fictional résumé, JSON):
+{{PERSONA}}
+
+POSTING:
+posting_id: {{POSTING_ID}}
+title: {{TITLE}}
+location: {{LOCATION}}
+description: {{CONTENT}}
+
+Decide if this posting is relevant for this candidate.
+
+Reply with ONLY one JSON object. No code fences, no text before or after. Use exactly these keys:
+{"posting_id": <the posting_id above, as a number>,
+ "verdict": "relevant" or "not relevant",
+ "cited_resume_fields": [one or more of "target_titles", "skills", "locations", "years_experience"],
+ "cited_posting_fields": [one or more of "title", "location", "description"],
+ "reason": "<one or two sentences, under 300 characters>"}
