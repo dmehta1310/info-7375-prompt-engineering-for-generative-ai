@@ -41,4 +41,4 @@
 - The v1 prompt's persona says "see rule 3", but the prompt does not include rule 3.
 
 ## In my own words
-______ (2–3 sentences: what surprised me, what I'd change)
+There were two surprises. First, Claude always delivered the same output for all 20 repetitions. Second, it proved much easier than anticipated to accidentally save the wrong text. Several times, my clipboard had either my prompt or an order rather than the answer of Claude. I understood that being consistently right does not mean being correct. The accuracy check did not look through the years of my experience, thus it evaluated 8026689 as incorrect. Also, I will need to check the actual text of the job myself since I can not rely on guesses. For future work, I will make sure to take pictures and write down the name of the model for each repetition.
