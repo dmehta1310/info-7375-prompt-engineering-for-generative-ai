@@ -1,0 +1,1 @@
+{"posting_id": 8222149, "verdict": "not relevant", "cited_resume_fields": ["target_titles", "locations", "years_experience"], "cited_posting_fields": ["title", "location", "description"], "reason": "The title and US location match, but the posting requires at least 5 years of data science experience and 4 years each in SQL and Python. The candidate has only 2 years."}
