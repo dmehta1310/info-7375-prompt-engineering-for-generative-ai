@@ -1,0 +1,5 @@
+[
+  {"posting_id": 8189909, "my_verdict": "not relevant", "my_skills_found": ["SQL", "Python"], "note": "title and location pass; only 2 skills; job also asks 6+ years (rule does not check years)"},
+  {"posting_id": 5416444, "my_verdict": "not relevant", "my_skills_found": ["SQL", "Python"], "note": "location 'Canada' fails rule 3; only 2 skills"},
+  {"posting_id": 8222149, "my_verdict": "not relevant", "my_skills_found": ["SQL", "Python"], "note": "title and location pass; 'production experiments' is not the words 'A/B testing'; only 2 skills"}
+]
