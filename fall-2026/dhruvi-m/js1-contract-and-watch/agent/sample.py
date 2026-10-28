@@ -30,11 +30,11 @@ print("1) New INCOGNITO chat on claude.ai  2) Cmd+V, Enter  3) Screenshot  4) Co
 input("5) Come back here and press Enter... ")
 while True:
     text = subprocess.run("pbpaste", capture_output=True, text=True).stdout
-    bad = (text.lstrip().startswith("You are judging") or "python3 " in text
-           or "(base) " in text or "agent/sample.py" in text or not text.strip())
+    bad = (text.lstrip().startswith("You are judging") or '"posting_id"' not in text
+           or str(a.id) not in text)
     if not bad:
         break
-    print("That is not Claude's reply (looks like the prompt, a command, or terminal text). Nothing saved.")
+    print("That is not Claude's reply for THIS job (it needs posting_id and the right job number). Nothing saved.")
     input("Copy Claude's reply from the incognito chat, then press Enter... ")
 out.write_text(text)
 ok, errs, obj = validate(text, a.id)
