@@ -1,0 +1,515 @@
+{
+  "run_at_utc": "2026-10-28T182823Z",
+  "kind": "FOLLOW-UP",
+  "mode": "LIVE",
+  "raw_response": "evidence/raw/stripe_2026-10-28T182823Z.json",
+  "total_postings": 720,
+  "new_postings": 16,
+  "results": [
+    {
+      "posting_id": 8280266,
+      "title": "Account Executive, Startups (Grower)",
+      "location": "San Francisco",
+      "rule_verdict": "not relevant",
+      "rule_justification": {
+        "title": {
+          "pass": false,
+          "resume_field": "target_titles",
+          "posting_field": "title",
+          "posting_value": "Account Executive, Startups (Grower)",
+          "matched": []
+        },
+        "skills": {
+          "pass": false,
+          "resume_field": "skills",
+          "posting_field": "content",
+          "matched": [
+            "SQL",
+            "Excel"
+          ],
+          "count": 2,
+          "needed": 3
+        },
+        "location": {
+          "pass": true,
+          "resume_field": "locations",
+          "posting_field": "location.name",
+          "posting_value": "San Francisco",
+          "why": "location names US tag \"San Francisco\""
+        }
+      },
+      "claude_verdict": null
+    },
+    {
+      "posting_id": 8284978,
+      "title": "Account Executive - Travel, Ticketing & Hospitality (Hunter) ",
+      "location": "London",
+      "rule_verdict": "not relevant",
+      "rule_justification": {
+        "title": {
+          "pass": false,
+          "resume_field": "target_titles",
+          "posting_field": "title",
+          "posting_value": "Account Executive - Travel, Ticketing & Hospitality (Hunter) ",
+          "matched": []
+        },
+        "skills": {
+          "pass": false,
+          "resume_field": "skills",
+          "posting_field": "content",
+          "matched": [],
+          "count": 0,
+          "needed": 3
+        },
+        "location": {
+          "pass": false,
+          "resume_field": "locations",
+          "posting_field": "location.name",
+          "posting_value": "London",
+          "why": "no US place or tag; not exactly Remote or N/A; no North America, US / Canada, or Remote-Canada"
+        }
+      },
+      "claude_verdict": null
+    },
+    {
+      "posting_id": 8311069,
+      "title": "Android Engineer, Identity ",
+      "location": "Seattle, WA; San Francisco, CA; New York City, NY",
+      "rule_verdict": "not relevant",
+      "rule_justification": {
+        "title": {
+          "pass": false,
+          "resume_field": "target_titles",
+          "posting_field": "title",
+          "posting_value": "Android Engineer, Identity ",
+          "matched": []
+        },
+        "skills": {
+          "pass": false,
+          "resume_field": "skills",
+          "posting_field": "content",
+          "matched": [],
+          "count": 0,
+          "needed": 3
+        },
+        "location": {
+          "pass": true,
+          "resume_field": "locations",
+          "posting_field": "location.name",
+          "posting_value": "Seattle, WA; San Francisco, CA; New York City, NY",
+          "why": "location names US tag \"New York\""
+        }
+      },
+      "claude_verdict": null
+    },
+    {
+      "posting_id": 8275558,
+      "title": "Customer Support Specialist, Clerky",
+      "location": "Canada",
+      "rule_verdict": "not relevant",
+      "rule_justification": {
+        "title": {
+          "pass": false,
+          "resume_field": "target_titles",
+          "posting_field": "title",
+          "posting_value": "Customer Support Specialist, Clerky",
+          "matched": []
+        },
+        "skills": {
+          "pass": false,
+          "resume_field": "skills",
+          "posting_field": "content",
+          "matched": [],
+          "count": 0,
+          "needed": 3
+        },
+        "location": {
+          "pass": false,
+          "resume_field": "locations",
+          "posting_field": "location.name",
+          "posting_value": "Canada",
+          "why": "no US place or tag; not exactly Remote or N/A; no North America, US / Canada, or Remote-Canada"
+        }
+      },
+      "claude_verdict": null
+    },
+    {
+      "posting_id": 8314318,
+      "title": "Federal Government Relations Director ",
+      "location": "Washington DC metro area",
+      "rule_verdict": "not relevant",
+      "rule_justification": {
+        "title": {
+          "pass": false,
+          "resume_field": "target_titles",
+          "posting_field": "title",
+          "posting_value": "Federal Government Relations Director ",
+          "matched": []
+        },
+        "skills": {
+          "pass": false,
+          "resume_field": "skills",
+          "posting_field": "content",
+          "matched": [],
+          "count": 0,
+          "needed": 3
+        },
+        "location": {
+          "pass": false,
+          "resume_field": "locations",
+          "posting_field": "location.name",
+          "posting_value": "Washington DC metro area",
+          "why": "no US place or tag; not exactly Remote or N/A; no North America, US / Canada, or Remote-Canada"
+        }
+      },
+      "claude_verdict": null
+    },
+    {
+      "posting_id": 8267847,
+      "title": "Head of AMER Startups (AI Sales)",
+      "location": "San Francisco",
+      "rule_verdict": "not relevant",
+      "rule_justification": {
+        "title": {
+          "pass": false,
+          "resume_field": "target_titles",
+          "posting_field": "title",
+          "posting_value": "Head of AMER Startups (AI Sales)",
+          "matched": []
+        },
+        "skills": {
+          "pass": false,
+          "resume_field": "skills",
+          "posting_field": "content",
+          "matched": [],
+          "count": 0,
+          "needed": 3
+        },
+        "location": {
+          "pass": true,
+          "resume_field": "locations",
+          "posting_field": "location.name",
+          "posting_value": "San Francisco",
+          "why": "location names US tag \"San Francisco\""
+        }
+      },
+      "claude_verdict": null
+    },
+    {
+      "posting_id": 8311082,
+      "title": "iOS Engineer, Identity",
+      "location": "Seattle, WA; San Francisco, CA; New York City, NY",
+      "rule_verdict": "not relevant",
+      "rule_justification": {
+        "title": {
+          "pass": false,
+          "resume_field": "target_titles",
+          "posting_field": "title",
+          "posting_value": "iOS Engineer, Identity",
+          "matched": []
+        },
+        "skills": {
+          "pass": false,
+          "resume_field": "skills",
+          "posting_field": "content",
+          "matched": [],
+          "count": 0,
+          "needed": 3
+        },
+        "location": {
+          "pass": true,
+          "resume_field": "locations",
+          "posting_field": "location.name",
+          "posting_value": "Seattle, WA; San Francisco, CA; New York City, NY",
+          "why": "location names US tag \"New York\""
+        }
+      },
+      "claude_verdict": null
+    },
+    {
+      "posting_id": 7337544,
+      "title": "Manager, Sales Development",
+      "location": "Dublin ",
+      "rule_verdict": "not relevant",
+      "rule_justification": {
+        "title": {
+          "pass": false,
+          "resume_field": "target_titles",
+          "posting_field": "title",
+          "posting_value": "Manager, Sales Development",
+          "matched": []
+        },
+        "skills": {
+          "pass": false,
+          "resume_field": "skills",
+          "posting_field": "content",
+          "matched": [],
+          "count": 0,
+          "needed": 3
+        },
+        "location": {
+          "pass": false,
+          "resume_field": "locations",
+          "posting_field": "location.name",
+          "posting_value": "Dublin ",
+          "why": "no US place or tag; not exactly Remote or N/A; no North America, US / Canada, or Remote-Canada"
+        }
+      },
+      "claude_verdict": null
+    },
+    {
+      "posting_id": 8329719,
+      "title": "Marketing Strategy & Operations Business Partner",
+      "location": "San Francisco, New York, Seattle, Chicago, Atlanta, Remote in the US ",
+      "rule_verdict": "not relevant",
+      "rule_justification": {
+        "title": {
+          "pass": false,
+          "resume_field": "target_titles",
+          "posting_field": "title",
+          "posting_value": "Marketing Strategy & Operations Business Partner",
+          "matched": []
+        },
+        "skills": {
+          "pass": false,
+          "resume_field": "skills",
+          "posting_field": "content",
+          "matched": [
+            "SQL"
+          ],
+          "count": 1,
+          "needed": 3
+        },
+        "location": {
+          "pass": true,
+          "resume_field": "locations",
+          "posting_field": "location.name",
+          "posting_value": "San Francisco, New York, Seattle, Chicago, Atlanta, Remote in the US ",
+          "why": "location names US tag \"US\""
+        }
+      },
+      "claude_verdict": null
+    },
+    {
+      "posting_id": 7964568,
+      "title": "Partner Solutions Architect, Consulting Partners",
+      "location": "United States",
+      "rule_verdict": "not relevant",
+      "rule_justification": {
+        "title": {
+          "pass": false,
+          "resume_field": "target_titles",
+          "posting_field": "title",
+          "posting_value": "Partner Solutions Architect, Consulting Partners",
+          "matched": []
+        },
+        "skills": {
+          "pass": false,
+          "resume_field": "skills",
+          "posting_field": "content",
+          "matched": [],
+          "count": 0,
+          "needed": 3
+        },
+        "location": {
+          "pass": false,
+          "resume_field": "locations",
+          "posting_field": "location.name",
+          "posting_value": "United States",
+          "why": "no US place or tag; not exactly Remote or N/A; no North America, US / Canada, or Remote-Canada"
+        }
+      },
+      "claude_verdict": null
+    },
+    {
+      "posting_id": 8331124,
+      "title": "Product Marketing Manager, Subscriptions",
+      "location": "New York, San Francisco, Seattle, Remote",
+      "rule_verdict": "not relevant",
+      "rule_justification": {
+        "title": {
+          "pass": false,
+          "resume_field": "target_titles",
+          "posting_field": "title",
+          "posting_value": "Product Marketing Manager, Subscriptions",
+          "matched": []
+        },
+        "skills": {
+          "pass": false,
+          "resume_field": "skills",
+          "posting_field": "content",
+          "matched": [],
+          "count": 0,
+          "needed": 3
+        },
+        "location": {
+          "pass": true,
+          "resume_field": "locations",
+          "posting_field": "location.name",
+          "posting_value": "New York, San Francisco, Seattle, Remote",
+          "why": "location names US tag \"New York\""
+        }
+      },
+      "claude_verdict": null
+    },
+    {
+      "posting_id": 8311067,
+      "title": "Program Manager, Go-to-Market Experience and Productivity",
+      "location": "Dublin ",
+      "rule_verdict": "not relevant",
+      "rule_justification": {
+        "title": {
+          "pass": false,
+          "resume_field": "target_titles",
+          "posting_field": "title",
+          "posting_value": "Program Manager, Go-to-Market Experience and Productivity",
+          "matched": []
+        },
+        "skills": {
+          "pass": false,
+          "resume_field": "skills",
+          "posting_field": "content",
+          "matched": [
+            "SQL"
+          ],
+          "count": 1,
+          "needed": 3
+        },
+        "location": {
+          "pass": false,
+          "resume_field": "locations",
+          "posting_field": "location.name",
+          "posting_value": "Dublin ",
+          "why": "no US place or tag; not exactly Remote or N/A; no North America, US / Canada, or Remote-Canada"
+        }
+      },
+      "claude_verdict": null
+    },
+    {
+      "posting_id": 8048266,
+      "title": "Sales Development Associate  ",
+      "location": "Dublin",
+      "rule_verdict": "not relevant",
+      "rule_justification": {
+        "title": {
+          "pass": false,
+          "resume_field": "target_titles",
+          "posting_field": "title",
+          "posting_value": "Sales Development Associate  ",
+          "matched": []
+        },
+        "skills": {
+          "pass": false,
+          "resume_field": "skills",
+          "posting_field": "content",
+          "matched": [],
+          "count": 0,
+          "needed": 3
+        },
+        "location": {
+          "pass": false,
+          "resume_field": "locations",
+          "posting_field": "location.name",
+          "posting_value": "Dublin",
+          "why": "no US place or tag; not exactly Remote or N/A; no North America, US / Canada, or Remote-Canada"
+        }
+      },
+      "claude_verdict": null
+    },
+    {
+      "posting_id": 8130876,
+      "title": "Software Engineer, New Grad",
+      "location": "Bangalore",
+      "rule_verdict": "not relevant",
+      "rule_justification": {
+        "title": {
+          "pass": false,
+          "resume_field": "target_titles",
+          "posting_field": "title",
+          "posting_value": "Software Engineer, New Grad",
+          "matched": []
+        },
+        "skills": {
+          "pass": false,
+          "resume_field": "skills",
+          "posting_field": "content",
+          "matched": [],
+          "count": 0,
+          "needed": 3
+        },
+        "location": {
+          "pass": false,
+          "resume_field": "locations",
+          "posting_field": "location.name",
+          "posting_value": "Bangalore",
+          "why": "no US place or tag; not exactly Remote or N/A; no North America, US / Canada, or Remote-Canada"
+        }
+      },
+      "claude_verdict": null
+    },
+    {
+      "posting_id": 8040052,
+      "title": "Staff Product Manager, Risk",
+      "location": "Toronto, Canada",
+      "rule_verdict": "not relevant",
+      "rule_justification": {
+        "title": {
+          "pass": false,
+          "resume_field": "target_titles",
+          "posting_field": "title",
+          "posting_value": "Staff Product Manager, Risk",
+          "matched": []
+        },
+        "skills": {
+          "pass": false,
+          "resume_field": "skills",
+          "posting_field": "content",
+          "matched": [],
+          "count": 0,
+          "needed": 3
+        },
+        "location": {
+          "pass": false,
+          "resume_field": "locations",
+          "posting_field": "location.name",
+          "posting_value": "Toronto, Canada",
+          "why": "no US place or tag; not exactly Remote or N/A; no North America, US / Canada, or Remote-Canada"
+        }
+      },
+      "claude_verdict": null
+    },
+    {
+      "posting_id": 7746721,
+      "title": "Staff Software Engineer, Stripe Dashboard",
+      "location": "Seattle",
+      "rule_verdict": "not relevant",
+      "rule_justification": {
+        "title": {
+          "pass": false,
+          "resume_field": "target_titles",
+          "posting_field": "title",
+          "posting_value": "Staff Software Engineer, Stripe Dashboard",
+          "matched": []
+        },
+        "skills": {
+          "pass": false,
+          "resume_field": "skills",
+          "posting_field": "content",
+          "matched": [
+            "A/B testing"
+          ],
+          "count": 1,
+          "needed": 3
+        },
+        "location": {
+          "pass": true,
+          "resume_field": "locations",
+          "posting_field": "location.name",
+          "posting_value": "Seattle",
+          "why": "location names US tag \"Seattle\""
+        }
+      },
+      "claude_verdict": null
+    }
+  ]
+}
