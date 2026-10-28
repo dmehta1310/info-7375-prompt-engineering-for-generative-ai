@@ -2,7 +2,7 @@
 
 **Date run:** 2026-10-28 (UTC times in `responses/log.csv`)
 **Where:** claude.ai, a new incognito chat for every run (not inside my Prompt AI project)
-**Model shown in the chat:** ______ (from my screenshots)
+**Model shown in the chat:** not recorded. I did not take screenshots of the chats, so I cannot prove which model answered.
 **Prompt:** `prompts/judge_v1.txt` (filled copies in `prompts/filled/`)
 **Postings:** 5 from the manual snapshot `evidence/manual-snapshots/stripe_2026-10-27T232715Z.json`
 **Runs:** 4 per posting = 20 replies, saved in `responses/v1_<id>_run<n>.json`
