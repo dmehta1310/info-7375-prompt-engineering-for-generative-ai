@@ -41,6 +41,6 @@
 - The v1 prompt's persona says "see rule 3", but the prompt does not include rule 3.
 
 ## In my own words
-There were two surprises. First, Claude always delivered the same output for all 20 repetitions. Second, it proved much easier than anticipated to accidentally save the wrong text. Several times, my clipboard had either my prompt or an order rather than the answer of Claude. I understood that being consistently right does not mean being correct. The accuracy check did not look through the years of my experience, thus it evaluated 8026689 as incorrect. Also, I will need to check the actual text of the job myself since I can not rely on guesses. For future work, I will make sure to take pictures and write down the name of the model for each repetition.
+There were two surprises. First, Claude gave the same verdict on all 20 runs, even though its reasons and cited fields changed. Second, it was much easier than I expected to save the wrong text by accident. Several times my clipboard held my prompt or a command instead of Claude's answer. I learned that getting the same answer every time does not mean it is correct. My rule never checked years of experience, so it wrongly marked 8026689 as relevant. I also learned that I need to read the actual job text myself instead of relying on guesses. Next time I will take screenshots and write down the model name for each run.
 
-*(I picked these points from a list of options; Claude turned them into sentences.)*
+*(I picked these points from a list of options; Claude turned them into sentences; I reworded them with a paraphrasing tool, then Claude corrected the facts the rewording had changed.)*
