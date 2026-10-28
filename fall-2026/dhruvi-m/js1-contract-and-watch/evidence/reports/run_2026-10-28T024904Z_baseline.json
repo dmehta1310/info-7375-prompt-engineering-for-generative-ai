@@ -1,0 +1,9 @@
+{
+  "run_at_utc": "2026-10-28T024904Z",
+  "kind": "BASELINE",
+  "mode": "LIVE",
+  "raw_response": "evidence/raw/stripe_2026-10-28T024904Z.json",
+  "total_postings": 714,
+  "new_postings": 0,
+  "results": []
+}
