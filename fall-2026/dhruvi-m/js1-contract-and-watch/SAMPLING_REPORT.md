@@ -43,4 +43,4 @@
 ## In my own words
 There were two surprises. First, Claude gave the same verdict on all 20 runs, even though its reasons and cited fields changed. Second, it was much easier than I expected to save the wrong text by accident. Several times my clipboard held my prompt or a command instead of Claude's answer. I learned that getting the same answer every time does not mean it is correct. My rule never checked years of experience, so it wrongly marked 8026689 as relevant. I also learned that I need to read the actual job text myself instead of relying on guesses. Next time I will take screenshots and write down the model name for each run.
 
-*(I picked these points from a list of options; Claude turned them into sentences; I reworded them with a paraphrasing tool, then Claude corrected the facts the rewording had changed.)*
+*(I picked these points from a list of options; Claude turned them into sentences; I then rewrote them myself in VS Code, and Claude corrected facts my rewrite had accidentally changed.)*

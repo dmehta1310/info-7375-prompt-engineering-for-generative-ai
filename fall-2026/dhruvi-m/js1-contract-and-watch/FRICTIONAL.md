@@ -10,9 +10,9 @@ How this file was written: I picked which events were real friction for me from 
 - **Clipboard kept overwriting itself.** Several times my clipboard held my own prompt or a terminal command instead of Claude's reply, so the wrong text got saved. The validator rejected those files and I deleted them. In the end I pasted each reply into my tutoring chat and saved it from there, which worked every time.
 - **Labeled too fast on 8026689.** I first marked it "apply" before finding the years. After searching "Minimum requirements" I saw 5–10 years, so by my labeling rule it is "not relevant".
 - **Read the wrong job's text for 7440963.** I said "6+ years", but that came from an older job (8189909) still on my terminal screen. After clearing the screen and printing only 7440963's requirements, it said 10 years plus 3 years of management, so it is "not relevant".
-- **Rewording changed my facts.** I ran my sampling reflection through a paraphrasing tool, and it changed the meaning (e.g. it said my rule marked 8026689 "incorrect" instead of wrongly "relevant"). Claude caught it and we fixed it in 91fc49e.
+- **Rewording changed my facts.** I rewrote my sampling reflection myself in VS Code, and some facts accidentally changed (e.g. it said my rule marked 8026689 "incorrect" instead of wrongly "relevant"). Claude caught it and we fixed it in 91fc49e.
 
 ## What I learned from the friction
 - I have to read the actual posting myself, on a clean screen, before I label it.
 - Copy-paste is the weakest part of my process. Next time I'd save replies automatically.
-- Rewording tools can change facts, so I must check anything they produce.
+- When I reword something, I must re-check the facts against my results.
