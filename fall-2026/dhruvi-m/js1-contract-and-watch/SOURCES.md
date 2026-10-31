@@ -11,7 +11,7 @@
    - Gave me multiple-choice options for my labeling rule, report conclusions, FRICTIONAL.md, and sign-off. I picked; Claude turned my picks into sentences.
    - Drafted the factual parts of SAMPLING_REPORT.md, EXPERIMENT_REPORT.md, ACTION_SURFACE.md, and README.md from my real results. I checked them.
    - When I rewrote my sampling reflection myself, a few facts changed by accident. Claude pointed them out and they were corrected (commit 91fc49e).
-2. **Judge** (claude.ai, a new incognito chat per run): produced the 20 sampling replies, the 30 experiment replies, and 1 file-upload reply. These are **model judgments**, not facts. The model name was not recorded.
+2. **Judge** (claude.ai, a new incognito chat per run): produced the 20 sampling replies, the 30 experiment replies, the 16 run-2 replies (one per new posting), and 1 file-upload reply. These are **model judgments**, not facts. The model name was not recorded.
 
 ## Other tools
 - Python 3, git/GitHub, VS Code, macOS Terminal. No other AI or rewording tools.

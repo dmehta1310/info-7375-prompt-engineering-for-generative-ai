@@ -1,0 +1,42 @@
+You are judging whether one job posting is relevant for one candidate.
+
+CANDIDATE (fictional résumé, JSON):
+{
+  "fictional": true,
+  "name": "Priya Nair",
+  "email": "priya.nair@example.com",
+  "phone": "555-0142",
+  "target_titles": [
+    "Data Analyst",
+    "Data Scientist",
+    "Data Science",
+    "Analytics"
+  ],
+  "skills": [
+    "SQL",
+    "Python",
+    "Tableau",
+    "dbt",
+    "A/B testing",
+    "Excel"
+  ],
+  "years_experience": 2,
+  "locations": [
+    "United States (any US location, see rule 3)"
+  ]
+}
+
+POSTING:
+posting_id: 8284978
+title: Account Executive - Travel, Ticketing & Hospitality (Hunter) 
+location: London
+description: Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career. About the team The UK Enterprise sales team works with our largest users in the UK Travel, Ticketing & Hospitality space. We help our users improve their customers' buying experiences, increase their domestic presence whilst expanding to new territories and unlock new revenue streams. As a key member to the UK Travel, Ticketing & Hospitality team, you will target net new Enterprise businesses from a named account list of some of the largest UK companies to transform their payment operations using Stripe’s payment and product suite. If you’re motivated, smart, persistent, and a great teammate, we want to hear from you! What you’ll do The UK Enterprise TTH sales team works with our largest users in the Travel, Ticketing and Hospitality industries. We help our users improve their customers' buying experiences, increase their domestic presence whilst expanding to new territories and unlock new revenue streams. Market leaders in their respective industries already using Stripe include the Accor Group, IHG, SeatGeek & Deliveroo. As a key member to the UK Enterprise TTH team, you will target net new Enterprise businesses from a named account list of some of the largest UK TTH companies to transform their payment operations using Stripe’s payment and product suite. If you’re motivated, smart, persistent, and a great teammate, we want to hear from you! Responsibilities Work with both new and existing Stripe customers to develop and execute long-term sales strategies to expand Stripe’s revenue Own the full sales cycle, from business case development, to deal structuring and negotiating, to close Own a named account list and develop account plans for winning and expanding business with high growth technology companies Develop outbound strategies to create and nurture opportunities Work with both new and existing Stripe customers to develop and execute long-term sales strategies to expand Stripe’s revenue Drive deal strategy and commercial negotiations for large, complex renewals Develop relationships with executive stakeholders within your book of business Be responsible for account mapping and coordinating effective meetings with the appropriate external stakeholders expanding the customer relationship Lead and contribute to team projects to develop and refine our sales process and help shape the Stripe sales culture Who you are We’re looking for someone who meets the minimum requirements to be considered for the role. If you meet these requirements, you are encouraged to apply. The preferred qualifications are a bonus, not a requirement. Minimum requirements 8+ years of sales experience, preferably selling a highly technical product to enterprise customers, with a track record of top performance Ability to understand technical requirements and craft solutions across multiple products Ability to develop and execute account plans spanning multiple business units across complex organizations A knack for working well with a wide range of people, both internally and externally Strong presentation skills, particularly for in-person meetings with multiple stakeholders Proven ability to lead complex negotiations involving bespoke commercial agreements Superior verbal and written communication skills Ability to operate in a highly ambiguous and fast-paced environment Strong interest in technology and a deep understanding of the space Preferred requirements Prior experience working in the payment industry Prior experience selling into Travel, Ticketing and Hospitality companies A track record of closing complex, seven figure+ Enterprise deals
+
+Decide if this posting is relevant for this candidate.
+
+Reply with ONLY one JSON object. No code fences, no text before or after. Use exactly these keys:
+{"posting_id": <the posting_id above, as a number>,
+ "verdict": "relevant" or "not relevant",
+ "cited_resume_fields": [one or more of "target_titles", "skills", "locations", "years_experience"],
+ "cited_posting_fields": [one or more of "title", "location", "description"],
+ "reason": "<one or two sentences, under 300 characters>"}

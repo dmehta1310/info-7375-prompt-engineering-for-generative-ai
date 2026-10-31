@@ -1,0 +1,42 @@
+You are judging whether one job posting is relevant for one candidate.
+
+CANDIDATE (fictional résumé, JSON):
+{
+  "fictional": true,
+  "name": "Priya Nair",
+  "email": "priya.nair@example.com",
+  "phone": "555-0142",
+  "target_titles": [
+    "Data Analyst",
+    "Data Scientist",
+    "Data Science",
+    "Analytics"
+  ],
+  "skills": [
+    "SQL",
+    "Python",
+    "Tableau",
+    "dbt",
+    "A/B testing",
+    "Excel"
+  ],
+  "years_experience": 2,
+  "locations": [
+    "United States (any US location, see rule 3)"
+  ]
+}
+
+POSTING:
+posting_id: 8275558
+title: Customer Support Specialist, Clerky
+location: Canada
+description: Who we are About Stripe & Clerky Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career. Here at Clerky, we build software to make legal paperwork easier for startups and their attorneys. Recently acquired by Stripe, Clerky is now part of Stripe. We're profitable and growing sustainably. We're the most popular way for high-growth technology startups to form, and are also used by many top-tier startups for hiring and fundraising. As a Customer Support Specialist at Clerky, you will be the voice of the company to thousands of startup founders, investors, and attorneys. These customers use Clerky to get critical legal paperwork done, often on a tight timeline. Our success is based on word-of-mouth, so we have a strong culture of providing world-class service (ask us about our satisfaction ratings!). We are rabidly customer-centric. About the team It’s a lot harder here. Helping our customers can be unusually challenging due to the nuanced and specialized nature of their questions. Doing the job well can require a lot of iterative feedback, so we're looking for someone who thinks critically about their writing and is always looking for ways to improve. Along the way, you'll also pick up a lot of knowledge about startups and startup law. The challenges never stop. The level of learning and craftsmanship that goes into writing responses to our customers requires intense focus. If you’re looking for the kind of position where you can easily master all the information at the beginning and work in a way that does not require intense focus, this position will probably not be a good fit for you. On the other hand, if you love learning and constantly challenging yourself, this position could be a good fit for you. There are often no right answers. We’re often not able to provide definitive answers to the questions we receive. In many cases, the best we can do is to equip our customers with the information they need to be able to figure out the right answer on their own, or to understand that it isn’t possible to figure out what the right answer is. If you prefer an environment more oriented around providing definitive answers, this position may not be a good fit for you. What you’ll do Responsibilities Writing thoughtful and empathetic replies to customer emails using our help desk software, Help Scout Writing and maintaining help center articles, and identifying topics for new articles based on customer inquiries Working with our engineering team to debug software issues our customers encounter Using our software to develop and manage new ways for our customers to complete legal paperwork Assisting product team by testing new features and bug fixes, and conveying customer feedback Spotting trends in customer issues that other team members should be alerted to Who you are We’re looking for someone who meets the minimum requirements to be considered for the role. If you meet these requirements, you are encouraged to apply. Minimum requirements Genuine love for helping people High emotional intelligence Logical / analytical thinker Exceptional written English communication skills, including the ability to write precisely and succinctly Extremely detail-oriented Comfort with working remotely and independently Technologically savvy - you should be confident in your ability to use new software without training Appreciation for giving and receiving feedback often (often several times a day) Natural internal motivation to constantly strive for excellence in everything you do
+
+Decide if this posting is relevant for this candidate.
+
+Reply with ONLY one JSON object. No code fences, no text before or after. Use exactly these keys:
+{"posting_id": <the posting_id above, as a number>,
+ "verdict": "relevant" or "not relevant",
+ "cited_resume_fields": [one or more of "target_titles", "skills", "locations", "years_experience"],
+ "cited_posting_fields": [one or more of "title", "location", "description"],
+ "reason": "<one or two sentences, under 300 characters>"}

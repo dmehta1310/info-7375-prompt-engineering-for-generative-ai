@@ -1,0 +1,42 @@
+You are judging whether one job posting is relevant for one candidate.
+
+CANDIDATE (fictional résumé, JSON):
+{
+  "fictional": true,
+  "name": "Priya Nair",
+  "email": "priya.nair@example.com",
+  "phone": "555-0142",
+  "target_titles": [
+    "Data Analyst",
+    "Data Scientist",
+    "Data Science",
+    "Analytics"
+  ],
+  "skills": [
+    "SQL",
+    "Python",
+    "Tableau",
+    "dbt",
+    "A/B testing",
+    "Excel"
+  ],
+  "years_experience": 2,
+  "locations": [
+    "United States (any US location, see rule 3)"
+  ]
+}
+
+POSTING:
+posting_id: 8311067
+title: Program Manager, Go-to-Market Experience and Productivity
+location: Dublin 
+description: Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies from the world’s largest enterprises to the most ambitious startups use Stripe to accept payments, grow their revenue and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career. About the team The Seller Experience & Insights team is responsible for ensuring Stripe’s Go-to-Market teams have the tools, systems, processes and policies they need to sell effectively. We identify friction in how sellers get work done, translate seller needs into scalable solutions and partner across Product, Engineering, Data Science, Sales Operations and Enablement to improve productivity and the quality of Stripe’s customer engagement. What you’ll do Stripe is evolving how Sales Development Representatives identify, engage and qualify prospective users. Agentic workflows can remove repetitive work and help SDRs focus their time on judgement-rich customer conversations. Realising that value requires more than introducing new tools: it requires a coherent end-to-end experience across targeting, outreach, task execution, lead handoff, follow-up, qualification and reporting. You will own the business experience and improvement roadmap for Stripe’s SDR workflows. You will work closely with SDRs and their leaders to understand how work happens today, identify the highest-value sources of friction and shape tools, processes and policies that make the organisation more effective. Your initial coverage will be Stripe’s agentic outreach solution and Gong Engage , including how these capabilities interact with Salesforce, Orum, Gmail, LinkedIn and supporting routing and data services. Over time, the remit may expand to other parts of the SDR tooling and workflow ecosystem. You will act as the connective tissue between frontline sellers and the teams that build and operate these capabilities. You will turn ambiguous problems into clear requirements, prioritised roadmaps, measurable launches and continuously improving workflows. Responsibilities Own the end-to-end SDR experience roadmap across account and contact sourcing, targeting, outreach, task execution, handraiser management, meeting disposition and qualification. Lead the business product and operational strategy for Stripe’s agentic outreach solution and Gong Engage within Sales Development, ensuring agentic and seller-led workflows solve meaningful seller problems and fit coherently into the broader SDR operating model. Own the experience across the hand-offs between Stripe’s agentic outreach solution and Gong Engage, including cadence creation, SDR task execution, prospect responses, meeting hand-offs and downstream activity capture. Map current workflows and redesign them to reduce manual work, duplicate actions, context switching and avoidable failure points across SDR tools and systems. Establish scalable mechanisms to capture, synthesise and prioritise SDR and manager feedback, combining qualitative insight with product usage, workflow, support and pipeline data. Translate frontline needs into clear business requirements, user journeys, success criteria and prioritised recommendations for Product, Engineering, Data Science, Sales Systems and Operations partners. Define and monitor the metrics that matter across productivity, adoption, workflow health, data quality, follow-up speed, pipeline quality and prospect experience. Partner with Sales Development leadership, Sales Operations and policy owners to ensure tooling and workflow design reflects routing, territory, rules-of-engagement and qualification requirements. Build launch and change-management plans with Enablement and Communications so that new capabilities are understood, adopted and embedded in daily SDR work. Create governance and operating rhythms for agentic workflows, including release readiness, feedback triage, incident escalation, experiment review and post-launch iteration. Identify opportunities to simplify or consolidate the SDR tooling landscape and develop evidence-based business cases for investment, deprecation or process change. Represent the SDR experience in cross-functional planning and communicate trade-offs, progress, risks and results clearly to frontline teams and senior leaders. Who you are We’re looking for someone who meets the minimum requirements to be considered for the role. If you meet these requirements, you are encouraged to apply. The preferred qualifications are a bonus, not a requirement. Minimum requirements 3-5+ years of experience in program management, product operations, revenue operations, sales operations, product management or process improvement in a technology or high-growth environment. 2+ years of experience building, improving or supporting Sales Development or broader GTM workflows, data and systems. Demonstrated success leading complex, global and cross-functional initiatives from problem definition through launch, adoption and iteration. Strong understanding of how modern prospecting and sales-development workflows operate, including targeting, contact sourcing, outreach, lead routing, qualification and CRM activity capture. Ability to map complex user journeys, identify root causes and translate ambiguous seller problems into clear requirements and prioritised solutions. Strong analytical skills, including the ability to define success metrics, interpret workflow and funnel data and use evidence to make trade-offs. Experience partnering effectively with technical teams and communicating across frontline, operational, product and executive audiences. A proactive, low-ego and hands-on working style, with comfort moving between strategy and detailed execution in a rapidly changing environment. Strong change-management skills and a track record of driving adoption, not just delivering a launch. Preferred qualifications Direct experience in Sales Development, SDR Operations or the design of SDR productivity programs. Familiarity with Salesforce and sales-engagement, conversation-intelligence, dialing, enrichment or routing platforms such as Gong, Orum, Salesloft, LinkedIn Sales Navigator or comparable tools. Experience designing or operating AI-assisted or agentic workflows, including human-in-the-loop controls, quality measurement and responsible-use guardrails. Experience with experimentation, funnel analysis, SQL or business-intelligence tools. A strong understanding of data quality, routing, rules of engagement and the downstream effects of workflow changes on reporting and seller incentives. Experience developing enablement, documentation or operating mechanisms for global sales teams. A passion for understanding seller behaviour and improving both employee and prospective-user experiences.
+
+Decide if this posting is relevant for this candidate.
+
+Reply with ONLY one JSON object. No code fences, no text before or after. Use exactly these keys:
+{"posting_id": <the posting_id above, as a number>,
+ "verdict": "relevant" or "not relevant",
+ "cited_resume_fields": [one or more of "target_titles", "skills", "locations", "years_experience"],
+ "cited_posting_fields": [one or more of "title", "location", "description"],
+ "reason": "<one or two sentences, under 300 characters>"}

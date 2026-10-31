@@ -32,6 +32,7 @@ Every new posting gets two verdicts:
 - Claude's replies follow the fixed format → validator plus 6 tests; all 20 sampling replies and all 30 experiment replies were VALID.
 - Claude's sampled verdicts vs. my hand labels → 20/20 agree (`SAMPLING_REPORT.md`). My rule agreed 4/5.
 - v1 vs v2 on held-out postings that I labeled before any Claude run → both 10/10 (`EXPERIMENT_REPORT.md`).
+- Every new posting from run 2 got both verdicts → all 16 Claude judgments are in `responses/run2/` (judged on 2026-10-31, after the run; all VALID). Rule and Claude agree on all 16: not relevant.
 - 15 tests pass (`python3 -m unittest discover -s tests -b`).
 
 **Not checked**
