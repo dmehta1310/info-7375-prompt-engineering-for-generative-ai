@@ -16,3 +16,8 @@ How this file was written: I picked which events were real friction for me from 
 - I have to read the actual posting myself, on a clean screen, before I label it.
 - Copy-paste is the weakest part of my process. Next time I'd save replies automatically.
 - When I reword something, I must re-check the facts against my results.
+
+## 2026-10-31: Missed requirement found in my final check
+- **What happened:** during a final check against the assignment with Claude, I found that the 16 new postings from my second live run (2026-10-28) only had the rule's verdict. None had a Claude judgment, even though every new posting needs both. I ran all 16 through Claude today (`responses/run2/`). All 16 were VALID and all agreed with the rule: not relevant.
+- **Friction:** my clipboard kept getting overwritten. Every time I copied terminal output to check it, the prompt I had just copied was gone, and once I pasted my terminal text into a judge chat by mistake. I threw that chat away and redid it.
+- **What I'd do differently:** run the Claude judging right after each live run, not days later.
