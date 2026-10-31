@@ -1,0 +1,42 @@
+You are judging whether one job posting is relevant for one candidate.
+
+CANDIDATE (fictional résumé, JSON):
+{
+  "fictional": true,
+  "name": "Priya Nair",
+  "email": "priya.nair@example.com",
+  "phone": "555-0142",
+  "target_titles": [
+    "Data Analyst",
+    "Data Scientist",
+    "Data Science",
+    "Analytics"
+  ],
+  "skills": [
+    "SQL",
+    "Python",
+    "Tableau",
+    "dbt",
+    "A/B testing",
+    "Excel"
+  ],
+  "years_experience": 2,
+  "locations": [
+    "United States (any US location, see rule 3)"
+  ]
+}
+
+POSTING:
+posting_id: 7813411
+title: Strategy and Analytics Business Partner
+location: Bengaluru
+description: Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies - from the world’s largest enterprises to the most ambitious startups - use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone's reach while doing the most important work of your career. About the team The Internal System Org is at the core of Stripe to empower mission-critical financial domains including Finance & Strategy (F&S), Accounting, Tax, Treasury, Product Experience, GTM. We are the Financial Enablement team, acting as the centralized data analytics team for Internal System Org. Enable and empower F&S, GTM, Accounting, Product teams to achieve business goals, through dataset development, data analytics support, dashboards, AI, and operation efficiency enhancements. What you’ll do Responsibilities Perform data analysis, identify trends, conduct research, build visualizations, all to deliver objective, critical insights that fulfill team stakeholders’ business needs Work closely with cross-functional teams, including Finance & Strategy, Accounting, Product, Tax, User billing, Seller System, and Sales Ops teams, to align on financial goals and drive revenue growth Be the data strategy partner for our business stakeholders Reconcile complex dataset across complex finance systems Coordinate cross-functional projects to identify and drive operational efficiencies that support our stakeholders ability to run more efficiently and effectively Work closely with Engineering and Product teams to help define product solutions Leverage AI tools to improve team work efficiency Conduct internal knowledge sharing sessions to strengthen team Who you are You’re passionate about solving business problems and making a direct impact on business. You thrive in environments with many moving parts and quickly pick up new domain knowledge and technologies (e.g. AI). We’re seeking someone with excellent communication and advanced SQL/analytics abilities. Strong background in Accounting/Finance or prior AI experience is highly preferred, though these can also be developed on the job. Minimum requirements Bachelor's degree in STEM major (i.e. Computer Science, Math, Stat, Engineering, etc.) and 4+ years of prior working experience in data analysis fields Strong analytical ability, proficiency with SQL (minimum of 3 years advanced SQL) and strong understanding of data relationships Experience working with extremely large datasets Outstanding communication skills Expertise working cross-functionally to drive business and operational goals Excellent project management skills and ability to hold others accountable for results Ability to connect the big picture to minute details Operating as part of a team adhering to established norms and values Ability to identify opportunities to improve the data management processes Domain knowledge in Finance/Accounting/GTM Preferred qualifications Experience working in fast-paced environments (e.g. high-growth fintech/tech company, management consulting) Experience working with PM, Engineers, GTM, Accounting Team or Finance Team Experience working with financial datasets Experience working in fast-paced environments (e.g. high-growth fintech/tech company, management consulting) Experience with visualization tools Experience with AI tools (Claude Code, Kai, etc.) Domain knowledge in FinTech Products Bachelor's or Master degree in Accounting/Finance major CPA/CFA certification
+
+Decide if this posting is relevant for this candidate.
+
+Reply with ONLY one JSON object. No code fences, no text before or after. Use exactly these keys:
+{"posting_id": <the posting_id above, as a number>,
+ "verdict": "relevant" or "not relevant",
+ "cited_resume_fields": [one or more of "target_titles", "skills", "locations", "years_experience"],
+ "cited_posting_fields": [one or more of "title", "location", "description"],
+ "reason": "<one or two sentences, under 300 characters>"}

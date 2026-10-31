@@ -1,0 +1,44 @@
+You are judging whether one job posting is relevant for one candidate.
+
+CANDIDATE (fictional résumé, JSON):
+Extra rule (v2): if the posting is an internship or requires the candidate to be currently enrolled in a degree program, the verdict is "not relevant", because the candidate is a working professional, not a student.
+
+{
+  "fictional": true,
+  "name": "Priya Nair",
+  "email": "priya.nair@example.com",
+  "phone": "555-0142",
+  "target_titles": [
+    "Data Analyst",
+    "Data Scientist",
+    "Data Science",
+    "Analytics"
+  ],
+  "skills": [
+    "SQL",
+    "Python",
+    "Tableau",
+    "dbt",
+    "A/B testing",
+    "Excel"
+  ],
+  "years_experience": 2,
+  "locations": [
+    "United States (any US location, see rule 3)"
+  ]
+}
+
+POSTING:
+posting_id: 8113100
+title: Data Scientist, Fraud
+location: Toronto
+description: Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world's largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone's reach while doing the most important work of your career. About the team Our Data Science team partners deeply with teams across Stripe to ensure that our users, our products, and our business have the models, data products, and insights needed to make decisions and grow responsibly. We're looking for data scientists with a passion for analyzing data, building machine learning and statistical models, and running experiments to drive impact. Our Fraud, Losses, and Financial Crime Data Science team builds the models and data products that protect Stripe and its users from fraud, account takeover, and financial crime. We own the full fraud and loss modeling stack - from account takeover detection and card fraud classification to merchant-level loss estimation, unsupervised anomaly detection, and financial crime risk modeling. We partner with Fraud Engineering, Financial Crimes Engineering, and Risk Operations to bring these systems into production and ensure they have measurable impact on Stripe's financial integrity and user trust. What you'll do We're looking for a Data Scientist to join the Fraud Data Science team. In this role, you'll build and improve the models that power Stripe's fraud detection and loss management systems. You'll work closely with Fraud Engineering and Risk Operations to move models from research to production, and you'll use data to surface insights that shape fraud strategy across the business. Data scientists on this team apply supervised and unsupervised machine learning, statistical modeling, causal inference, optimization, and experimentation to some of the most consequential risk problems in global payments. Who you are We're looking for someone who meets the minimum requirements to be considered for the role. If you meet these requirements, you are encouraged to apply. The preferred qualifications are a bonus, not a requirement. Minimum requirements PhD with 1-3 years, MS or MA with 2-6 years, or BS or BA with 4-8 years of data science or quantitative modeling experience Experience with Fraud, Risk or Financial Crimes Proficiency in SQL and a computing language such as Python or R Experience in working with cross-functional teams to deliver results Ability to communicate results clearly and a focus on driving impact A demonstrated ability to manage and deliver on multiple projects with a high attention to detail Strong business acumen and experience in synthesizing complex analyses into actionable recommendations Proficiency with AI tools to accelerate model development, analysis, and coding Preferred qualifications Strong knowledge and hands-on experience in several of the following areas: machine learning, statistics, optimization, causal inference, and experimentation Experience deploying models in production and adjusting model thresholds to improve performance Experience designing, running, and analyzing complex experiments or leveraging causal inference designs A builder's mindset with a willingness to question assumptions and conventional wisdom Experience with distributed tools such as Spark, Hadoop, etc. A PhD or MS in a quantitative field (e.g., Statistics, Engineering, Mathematics, Economics, Quantitative Finance, Sciences, Operations Research)
+
+Decide if this posting is relevant for this candidate.
+
+Reply with ONLY one JSON object. No code fences, no text before or after. Use exactly these keys:
+{"posting_id": <the posting_id above, as a number>,
+ "verdict": "relevant" or "not relevant",
+ "cited_resume_fields": [one or more of "target_titles", "skills", "locations", "years_experience"],
+ "cited_posting_fields": [one or more of "title", "location", "description"],
+ "reason": "<one or two sentences, under 300 characters>"}
