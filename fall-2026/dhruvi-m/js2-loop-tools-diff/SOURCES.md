@@ -12,6 +12,7 @@
    - **Wrote all the code and tests** in `agent/` and `tests/`, and ran the tests in its own sandbox with a fake network while writing them. I ran every test and run on my own machine.
    - Wrote the relevance rule with the years check (`agent/rule.py`, `tests/test_rule.py`) after I shared my JS1 feedback; the test data are two real postings from my own JS1 files.
    - Wrote the review-packet test (`tests/test_review_timeout.py`) before the fix.
+   - Wrote the sentences in FRICTIONAL.md from events and decisions I picked (disclosed at the top of that file).
    - Drafted RUNS.md, REVIEW_PACKET.md, README.md, and this file from my real outputs; I checked the numbers.
 2. **Claude Code 2.1.303** (2026-11-09 15:37 EST): made the one change in the review packet (`agent/loop.py`, 6 lines), with read/edit tools only; model **claude-sonnet-5-5** (from its session log; I did not pin `--model`). Prompt, reply, and model log are in `evidence/review/`.
 

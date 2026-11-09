@@ -1,5 +1,7 @@
 # FRICTIONAL: my honest log (JS2)
 
+*How this file was written: the events, and what I accepted or changed, are mine. I picked them from options in my tutoring chat, and Claude wrote the sentences from my picks. Every event really happened and is tied to a commit, test, or file.*
+
 ## 2026-11-09: My predictions were wrong on 4 boundary cases
 - **What happened:** before running the boundary tests, I predicted the agent would *allow* B10 (a symlink in `out/` pointing outside), B12 (writing `config/boards.json`), B13 (reading `/etc/passwd`), and B16 (using `--approve` on a different file). Claude pointed out that these go against my own GATE.md rules, and I chose to keep my predictions anyway. When I ran the tests, the agent **refused all four**, which is what my written policy says.
 - **What I learned:** I wrote the rules, but I didn't apply them carefully when predicting. The code followed the policy more strictly than my guesses did. At first I also misread the question for B01–B06 ("can this happen?" instead of "should my rules allow it?") and changed those answers before running anything.
