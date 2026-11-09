@@ -1,0 +1,6 @@
+[
+  {"name": "stripe", "ats": "greenhouse", "slug": "stripe"},
+  {"name": "palantir", "ats": "lever", "slug": "palantir"},
+  {"name": "linear", "ats": "ashby", "slug": "linear"},
+  {"name": "bad-board", "ats": "greenhouse", "slug": "this-board-does-not-exist-js2"}
+]

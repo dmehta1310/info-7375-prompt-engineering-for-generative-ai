@@ -1,0 +1,33 @@
+test_404_not_retried_and_no_invented_value (test_loop.TestLoop.test_404_not_retried_and_no_invented_value) ... ok
+test_all_ok_is_finished (test_loop.TestLoop.test_all_ok_is_finished) ... ok
+test_empty_board_is_suspicious_not_finished (test_loop.TestLoop.test_empty_board_is_suspicious_not_finished) ... ok
+test_failed_board_never_counts_as_finished (test_loop.TestLoop.test_failed_board_never_counts_as_finished) ... ok
+test_new_ids_against_state (test_loop.TestLoop.test_new_ids_against_state) ... ok
+test_repeat_blocked (test_loop.TestLoop.test_repeat_blocked) ... ok
+test_request_budget_exhausted (test_loop.TestLoop.test_request_budget_exhausted) ... ok
+test_server_error_retried_once_and_counted (test_loop.TestLoop.test_server_error_retried_once_and_counted) ... ok
+test_time_budget_exhausted (test_loop.TestLoop.test_time_budget_exhausted) ... ok
+test_timeout_then_success (test_loop.TestLoop.test_timeout_then_success) ... ok
+test_wrong_version_reports_empty_board_as_finished (test_loop.TestLoop.test_wrong_version_reports_empty_board_as_finished)
+Documents the WRONG version used in the demo: it ends 'finished'. ... ok
+test_B14_state_write_without_approval_refused (test_policy.TestApproval.test_B14_state_write_without_approval_refused) ... ok
+test_B15_state_write_with_approval_allowed (test_policy.TestApproval.test_B15_state_write_with_approval_allowed) ... ok
+test_B16_approval_does_not_unlock_other_paths (test_policy.TestApproval.test_B16_approval_does_not_unlock_other_paths) ... ok
+test_B01_host_off_allow_list_refused (test_policy.TestHosts.test_B01_host_off_allow_list_refused) ... ok
+test_B02_lookalike_host_refused (test_policy.TestHosts.test_B02_lookalike_host_refused) ... ok
+test_B03_http_not_https_refused (test_policy.TestHosts.test_B03_http_not_https_refused) ... ok
+test_B04_post_refused (test_policy.TestHosts.test_B04_post_refused) ... ok
+test_B05_allowed_get_passes (test_policy.TestHosts.test_B05_allowed_get_passes) ... ok
+test_B06_credentials_in_url_refused (test_policy.TestHosts.test_B06_credentials_in_url_refused) ... ok
+test_B07_write_inside_out_allowed (test_policy.TestPaths.test_B07_write_inside_out_allowed) ... ok
+test_B08_dotdot_escape_refused (test_policy.TestPaths.test_B08_dotdot_escape_refused) ... ok
+test_B09_prefix_trick_refused (test_policy.TestPaths.test_B09_prefix_trick_refused) ... ok
+test_B10_symlink_escape_refused (test_policy.TestPaths.test_B10_symlink_escape_refused) ... ok
+test_B11_read_config_allowed (test_policy.TestPaths.test_B11_read_config_allowed) ... ok
+test_B12_write_config_refused (test_policy.TestPaths.test_B12_write_config_refused) ... ok
+test_B13_read_outside_refused (test_policy.TestPaths.test_B13_read_outside_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.004s
+
+OK
