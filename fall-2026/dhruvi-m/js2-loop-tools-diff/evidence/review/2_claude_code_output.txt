@@ -1,0 +1,11 @@
+Asked on: Mon Nov  9 15:37:00 EST 2026
+I fixed the timeout in `agent/loop.py`, but I haven't run any tests yet. The test command needed approval, which this session can't give, so `tests/test_review_timeout.py` and the rest of the suite are unrun.
+
+Before each request, the loop now works out how many seconds are left in `max_seconds`:
+- **Timeout:** the request gets `min(REQUEST_TIMEOUT, time_left)` instead of the fixed 15 seconds.
+- **Under 1 second left:** the request isn't sent. The loop sets `budget_hit = "max_seconds"` and stops, so the run ends as `budget-exhausted`.
+- **Retries:** the same check applies, since a retry goes through the same loop.
+
+I changed only `agent/loop.py` and left the tests alone.
+
+To check it, run `python3 -m unittest discover -s tests` from the `js2-loop-tools-diff` directory. By my reading, `test_R1` should now pass. After the first board takes 55 seconds, the second request gets a 5-second timeout.

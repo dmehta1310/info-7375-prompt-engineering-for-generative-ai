@@ -69,11 +69,15 @@ def run_loop(boards, budget, seen, fetch=http_get, clock=time.monotonic, empty_r
             if requests >= budget["max_requests"]:
                 budget_hit = "max_requests"
                 break
+            time_left = budget["max_seconds"] - (clock() - start)
+            if time_left < 1:
+                budget_hit = "max_seconds"
+                break
             requests += 1
             tries += 1
             log(name, "request", url=url, attempt=tries, requests_used=requests)
             try:
-                status, body = fetch(url, timeout=REQUEST_TIMEOUT)
+                status, body = fetch(url, timeout=min(REQUEST_TIMEOUT, time_left))
             except TimeoutError as e:
                 status, body, kind = None, b"", "timeout"
             else:

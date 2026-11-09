@@ -1,0 +1,6 @@
+In agent/loop.py, the per-request timeout is a fixed REQUEST_TIMEOUT = 15 seconds, even when less
+time is left in the run's max_seconds budget, so one slow request can push a run past its budget.
+Fix it so that each request's timeout is the smaller of REQUEST_TIMEOUT and the seconds left in the
+budget. If less than 1 second is left, do not send the request: stop the run as budget-exhausted
+(budget_hit = "max_seconds"). Only edit agent/loop.py. Do not edit any test or any other file.
+The failing test that shows the defect is tests/test_review_timeout.py.
