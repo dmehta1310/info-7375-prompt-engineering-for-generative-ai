@@ -10,9 +10,10 @@
    - Suggested the boards (I checked them in my browser) and proposed the budget (5 boards / 10 requests / 60 s), which I accepted.
    - Gave me options for GATE.md and turned my picks into its sentences.
    - **Wrote all the code and tests** in `agent/` and `tests/`, and ran the tests in its own sandbox with a fake network while writing them. I ran every test and run on my own machine.
+   - Wrote the relevance rule with the years check (`agent/rule.py`, `tests/test_rule.py`) after I shared my JS1 feedback; the test data are two real postings from my own JS1 files.
    - Wrote the review-packet test (`tests/test_review_timeout.py`) before the fix.
    - Drafted RUNS.md, REVIEW_PACKET.md, README.md, and this file from my real outputs; I checked the numbers.
-2. **Claude Code 2.1.303** (2026-11-09 15:37 EST): made the one change in the review packet (`agent/loop.py`, 6 lines), with read/edit tools only. Prompt and reply are in `evidence/review/`.
+2. **Claude Code 2.1.303** (2026-11-09 15:37 EST): made the one change in the review packet (`agent/loop.py`, 6 lines), with read/edit tools only; model **claude-sonnet-5-5** (from its session log; I did not pin `--model`). Prompt, reply, and model log are in `evidence/review/`.
 
 ## What stayed mine
 The GATE.md rules (boards, error policy, approval rule, accepting the budget); my 16 boundary predictions, including the 4 that were wrong; running every command; approving the state file; reading the diff; and the decision to accept Claude Code's fix.

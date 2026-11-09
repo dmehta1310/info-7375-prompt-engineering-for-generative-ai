@@ -33,3 +33,7 @@ Evidence: the test failed before and passes after; all 28 tests pass, so the 27 
 
 ## 8. One case my test would still miss
 Python's `urllib` timeout limits **each wait for data**, not the **total** download time. A server that sends a big response very slowly, a little at a time, could keep every single wait under 5 s and still take longer overall, pushing the run past 60 s. My test uses a fake network, so it cannot show this. It also does not count time spent *after* the last request (parsing and saving files).
+
+## 9. Model and settings (added after checking Claude Code's log)
+- Claude Code 2.1.303, run with `claude -p "<prompt>" --permission-mode acceptEdits --allowedTools "Read,Edit"`. I did **not** pin `--model`.
+- Its local session log shows the `Edit` to `agent/loop.py` was made by **claude-sonnet-5-5** at 2026-11-09T20:37:08Z (`evidence/review/5_claude_code_model.txt`). The log also lists one claude-opus-5-5 entry and one Edit entry with no model field; I can't tell more from the log.

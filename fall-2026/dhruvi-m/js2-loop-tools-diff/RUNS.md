@@ -25,3 +25,14 @@ Command: `python3 agent/run.py --seed out/seed_empty_stripe --boards config/boar
 ## 3. Same seeded data, correct version: `out/runs/2026-11-09T203531Z_SEEDED/`
 Command: `python3 agent/run.py --seed out/seed_empty_stripe --boards config/boards_demo.json`
 - Exit status **`incomplete`**, with stripe marked **`suspicious-empty`** (GATE.md's empty-board rule).
+
+## 4. LIVE run 2 (after the years-check rule): `out/runs/2026-11-09T220326Z_LIVE/`
+Command: `python3 agent/run.py` (with the state I approved after run 1)
+| Board | Result |
+|---|---|
+| stripe | ok, 771 jobs, **2 new** since my approved run, 0 relevant by rule |
+| palantir | ok, 304 jobs, 0 new, 0 relevant by rule |
+| linear | ok, 32 jobs, 0 new, 0 relevant by rule |
+| bad-board | failed: not-found (again; no retry) |
+- Exit status `incomplete`; 4 requests; 3.48 s. Independent check: **PASS**. Per-job rule results are in `relevance.json`.
+- I did **not** approve run 2's state, so `state/seen_ids.json` is still run 1's.
