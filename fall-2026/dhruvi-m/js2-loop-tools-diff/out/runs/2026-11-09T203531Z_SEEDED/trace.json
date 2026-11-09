@@ -1,0 +1,94 @@
+[
+  {
+    "t": 0.0,
+    "board": null,
+    "event": "start",
+    "budget": {
+      "max_boards": 5,
+      "max_requests": 10,
+      "max_seconds": 60
+    },
+    "boards": [
+      "stripe",
+      "palantir",
+      "linear"
+    ]
+  },
+  {
+    "t": 0.0,
+    "board": "stripe",
+    "event": "request",
+    "url": "https://boards-api.greenhouse.io/v1/boards/stripe/jobs",
+    "attempt": 1,
+    "requests_used": 1
+  },
+  {
+    "t": 0.0,
+    "board": "stripe",
+    "event": "response",
+    "http_status": 200,
+    "kind": "ok",
+    "bytes": 13
+  },
+  {
+    "t": 0.0,
+    "board": "stripe",
+    "event": "board-suspicious",
+    "reason": "0 jobs but had jobs last run",
+    "previous": 771
+  },
+  {
+    "t": 0.0,
+    "board": "palantir",
+    "event": "request",
+    "url": "https://api.lever.co/v0/postings/palantir?mode=json",
+    "attempt": 1,
+    "requests_used": 2
+  },
+  {
+    "t": 0.002,
+    "board": "palantir",
+    "event": "response",
+    "http_status": 200,
+    "kind": "ok",
+    "bytes": 5927545
+  },
+  {
+    "t": 0.02,
+    "board": "palantir",
+    "event": "board-ok",
+    "count": 304,
+    "new": 0,
+    "baseline": false
+  },
+  {
+    "t": 0.02,
+    "board": "linear",
+    "event": "request",
+    "url": "https://api.ashbyhq.com/posting-api/job-board/linear",
+    "attempt": 1,
+    "requests_used": 3
+  },
+  {
+    "t": 0.02,
+    "board": "linear",
+    "event": "response",
+    "http_status": 200,
+    "kind": "ok",
+    "bytes": 452742
+  },
+  {
+    "t": 0.021,
+    "board": "linear",
+    "event": "board-ok",
+    "count": 32,
+    "new": 0,
+    "baseline": false
+  },
+  {
+    "t": 0.021,
+    "board": null,
+    "event": "exit",
+    "status": "incomplete"
+  }
+]
