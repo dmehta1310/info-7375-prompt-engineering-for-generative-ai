@@ -56,3 +56,9 @@ A loop that stops is not a loop that succeeded. Every run ends with exactly one 
 7. The state file overwritten without `--approve`.
 
 *(Decisions are mine: the boards, the error policy, the approval rule, and accepting the budget Claude proposed. Claude turned my picks into these sentences.)*
+
+## Decision added 2026-11-09 (after JS1 feedback, before the code for it)
+- **Relevance rule (the record) with a years check.** JS2 now also judges each posting with a deterministic rule: (1) the title contains a target title, (2) 3+ of Priya's skills appear, (3) the location is US, **and (4) the lowest number of years the posting asks for is ≤ 2 (no number stated = pass).** Check 4 is new: my JS1 rule had no years check and wrongly marked posting 8026689 (5–10 years) as relevant.
+- **"United States" now counts as a US location.** My JS1 list missed it (posting 7964568).
+- To read job descriptions, the Greenhouse request now adds `?content=true`. Same host and still GET only, so the permission policy is unchanged.
+- **No Claude judge in JS2.** Relevance comes from the rule only, so no Claude call needs a model name here. Claude Code was used once, for the review packet.
