@@ -9,7 +9,7 @@ Author: Dhruvi Mehta · Date: 2026-11-09 · Persona: Priya Nair (fictional)
 | linear | Ashby | api.ashbyhq.com/posting-api/job-board/linear | jobs |
 | this-board-does-not-exist-js2 | Greenhouse | boards-api.greenhouse.io/v1/boards/this-board-does-not-exist-js2/jobs | **fails on purpose (404)** |
 
-I opened all four in my browser on 2026-11-09 (screenshots in `evidence/browser_checks/`).
+I opened all four in my browser on 2026-11-09. *(Correction, 2026-11-09: my screenshots did not save as files, so the saved evidence is the agent's own raw responses in `out/runs/`.)*
 
 ## Exits: every way a run can end
 A loop that stops is not a loop that succeeded. Every run ends with exactly one status:
