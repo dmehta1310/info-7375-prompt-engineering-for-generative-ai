@@ -1,0 +1,14 @@
+test_R1_request_timeout_never_exceeds_time_left (tests.test_review_timeout.TestTimeoutRespectsBudget.test_R1_request_timeout_never_exceeds_time_left) ... FAIL
+
+======================================================================
+FAIL: test_R1_request_timeout_never_exceeds_time_left (tests.test_review_timeout.TestTimeoutRespectsBudget.test_R1_request_timeout_never_exceeds_time_left)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/dhruvi/Documents/week01-video/info-7375-prompt-engineering-for-generative-ai/fall-2026/dhruvi-m/js2-loop-tools-diff/tests/test_review_timeout.py", line 34, in test_R1_request_timeout_never_exceeds_time_left
+    self.assertLessEqual(timeouts[1], 5, f"timeout {timeouts[1]}s is more than the 5s left")
+AssertionError: 15 not less than or equal to 5 : timeout 15s is more than the 5s left
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)
