@@ -1,0 +1,118 @@
+[
+  {
+    "t": 0.0,
+    "board": null,
+    "event": "start",
+    "budget": {
+      "max_boards": 5,
+      "max_requests": 10,
+      "max_seconds": 60
+    },
+    "boards": [
+      "stripe",
+      "palantir",
+      "linear",
+      "bad-board"
+    ]
+  },
+  {
+    "t": 0.0,
+    "board": "stripe",
+    "event": "request",
+    "url": "https://boards-api.greenhouse.io/v1/boards/stripe/jobs?content=true",
+    "attempt": 1,
+    "requests_used": 1
+  },
+  {
+    "t": 1.776,
+    "board": "stripe",
+    "event": "response",
+    "http_status": 200,
+    "kind": "ok",
+    "bytes": 6015105
+  },
+  {
+    "t": 1.81,
+    "board": "stripe",
+    "event": "board-ok",
+    "count": 771,
+    "new": 2,
+    "baseline": false
+  },
+  {
+    "t": 1.81,
+    "board": "palantir",
+    "event": "request",
+    "url": "https://api.lever.co/v0/postings/palantir?mode=json",
+    "attempt": 1,
+    "requests_used": 2
+  },
+  {
+    "t": 3.138,
+    "board": "palantir",
+    "event": "response",
+    "http_status": 200,
+    "kind": "ok",
+    "bytes": 5927545
+  },
+  {
+    "t": 3.164,
+    "board": "palantir",
+    "event": "board-ok",
+    "count": 304,
+    "new": 0,
+    "baseline": false
+  },
+  {
+    "t": 3.164,
+    "board": "linear",
+    "event": "request",
+    "url": "https://api.ashbyhq.com/posting-api/job-board/linear",
+    "attempt": 1,
+    "requests_used": 3
+  },
+  {
+    "t": 3.368,
+    "board": "linear",
+    "event": "response",
+    "http_status": 200,
+    "kind": "ok",
+    "bytes": 452742
+  },
+  {
+    "t": 3.369,
+    "board": "linear",
+    "event": "board-ok",
+    "count": 32,
+    "new": 0,
+    "baseline": false
+  },
+  {
+    "t": 3.369,
+    "board": "bad-board",
+    "event": "request",
+    "url": "https://boards-api.greenhouse.io/v1/boards/this-board-does-not-exist-js2/jobs?content=true",
+    "attempt": 1,
+    "requests_used": 4
+  },
+  {
+    "t": 3.48,
+    "board": "bad-board",
+    "event": "response",
+    "http_status": 404,
+    "kind": "not-found",
+    "bytes": 38
+  },
+  {
+    "t": 3.48,
+    "board": "bad-board",
+    "event": "board-failed",
+    "reason": "not-found"
+  },
+  {
+    "t": 3.48,
+    "board": null,
+    "event": "exit",
+    "status": "incomplete"
+  }
+]

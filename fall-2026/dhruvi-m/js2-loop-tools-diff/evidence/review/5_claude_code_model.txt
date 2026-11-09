@@ -1,0 +1,5 @@
+   1 "model":"claude-opus-5-5"
+   9 "model":"claude-sonnet-5-5"
+--- which model made each Edit (from Claude Code's session log) ---
+2026-11-09T20:37:08.800Z claude-sonnet-5-5 Edit /Users/dhruvi/Documents/week01-video/info-7375-prompt-engineering-for-generative-ai/fall-2026/dhruvi-m/js2-loop-tools-diff/agent/loop.py
+None None Edit /Users/dhruvi/Documents/week01-video/info-7375-prompt-engineering-for-generative-ai/fall-2026/dhruvi-m/js2-loop-tools-diff/agent/loop.py
