@@ -16,6 +16,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from loop import run_loop  # noqa: E402
 from policy import (CONFIG, OUT, STATE_FILE, check_read, check_state_write,  # noqa: E402
                     check_write)
+from rule import evaluate  # noqa: E402
 
 
 def write(path: Path, text: str):
@@ -68,6 +69,16 @@ def main():
     report = run_loop(boards, budget, seen, empty_rule=not a.wrong_empty_rule, **fetch_kw)
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H%M%SZ")
     run_dir = OUT / "runs" / f"{stamp}_{label}"
+    persona = json.loads(check_read(CONFIG / "persona.json").read_text())
+    relevance = {}
+    for name, r in report["boards"].items():
+        if r["status"] == "ok":
+            judged = [dict(id=j["id"], title=j["title"], location=j["location"],
+                           **evaluate(j, persona)) for j in r["jobs"]]
+            r["relevant_ids"] = [j["id"] for j in judged if j["relevant"]]
+            r["new_relevant_ids"] = sorted(set(r["relevant_ids"]) & set(r["new_ids"]))
+            relevance[name] = judged
+    write(run_dir / "relevance.json", json.dumps(relevance, indent=2))
     for name, r in report["boards"].items():
         raw = r.pop("raw", None)
         r.pop("jobs", None)
@@ -83,6 +94,7 @@ def main():
           f"requests: {report['requests_used']}  seconds: {report['seconds']}")
     for n, r in report["boards"].items():
         extra = (f"{r['count']} jobs, {len(r['new_ids'])} new" + (" (baseline)" if r.get("baseline") else "")
+                 + f", {len(r['relevant_ids'])} relevant by rule"
                  if r["status"] == "ok" else r.get("reason", ""))
         print(f"  {n:10} {r['status']:16} {extra}")
     if report["never_attempted"]:

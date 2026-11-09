@@ -1,0 +1,10 @@
+{
+  "fictional": true,
+  "name": "Priya Nair",
+  "email": "priya.nair@example.com",
+  "phone": "555-0142",
+  "target_titles": ["Data Analyst", "Data Scientist", "Data Science", "Analytics"],
+  "skills": ["SQL", "Python", "Tableau", "dbt", "A/B testing", "Excel"],
+  "years_experience": 2,
+  "locations": ["United States (any US location, see rule 3)"]
+}
