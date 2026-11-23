@@ -1,0 +1,16 @@
+Scene length vs audio. 24 fps preview render of each Manim scene; length = frame count / 24.
+B02  audio   5.14 s ( 123.4 frames)  video  123 frames =   5.125 s  diff -0.015 s
+B03  audio  10.07 s ( 241.7 frames)  video  242 frames =  10.083 s  diff +0.013 s
+B04  audio  13.25 s ( 318.0 frames)  video  318 frames =  13.250 s  diff +0.000 s
+B05  audio  23.04 s ( 553.0 frames)  video  553 frames =  23.042 s  diff +0.002 s
+B06  audio   9.30 s ( 223.2 frames)  video  223 frames =   9.292 s  diff -0.008 s
+B07  audio  13.12 s ( 314.9 frames)  video  315 frames =  13.125 s  diff +0.005 s
+B08  audio   1.07 s (  25.7 frames)  video   26 frames =   1.083 s  diff +0.013 s
+B09  audio  24.26 s ( 582.2 frames)  video  582 frames =  24.250 s  diff -0.010 s
+B10  audio  24.79 s ( 595.0 frames)  video  595 frames =  24.792 s  diff +0.002 s
+B11  audio  18.79 s ( 451.0 frames)  video  451 frames =  18.792 s  diff +0.002 s
+B12  audio  21.25 s ( 510.0 frames)  video  510 frames =  21.250 s  diff +0.000 s
+B13  audio  20.69 s ( 496.6 frames)  video  497 frames =  20.708 s  diff +0.018 s
+B14  audio  12.74 s ( 305.8 frames)  video  306 frames =  12.750 s  diff +0.010 s
+B15  audio   5.42 s ( 130.1 frames)  video  130 frames =   5.417 s  diff -0.003 s
+total  audio 202.93 s   video 202.958 s   (the 3.00 s closing card is a Remotion card, not in this total)

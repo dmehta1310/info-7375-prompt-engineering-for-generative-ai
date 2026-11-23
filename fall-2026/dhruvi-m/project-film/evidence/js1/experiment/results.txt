@@ -1,0 +1,28 @@
+DEV (v1 only)
+  5601879 | mine: not relevant | v1: not relevant | match
+  7923653 | mine: not relevant | v1: not relevant | match
+  8142302 | mine: not relevant | v1: not relevant | match
+  8186442 | mine: not relevant | v1: not relevant | match
+  8190059 | mine: not relevant | v1: not relevant | match
+  8194287 | mine: not relevant | v1: not relevant | match
+  8194291 | mine: relevant     | v1: not relevant | DISAGREE
+  8201680 | mine: not relevant | v1: not relevant | match
+  8230296 | mine: not relevant | v1: not relevant | match
+  8230306 | mine: not relevant | v1: not relevant | match
+  v1 DEV: 9/10
+
+HELDOUT (v1 vs v2)
+  5895430 | mine: not relevant | v1: not relevant | v2: not relevant
+  7230921 | mine: not relevant | v1: not relevant | v2: not relevant
+  7813411 | mine: not relevant | v1: not relevant | v2: not relevant
+  8044924 | mine: not relevant | v1: not relevant | v2: not relevant
+  8079783 | mine: not relevant | v1: not relevant | v2: not relevant
+  8113100 | mine: not relevant | v1: not relevant | v2: not relevant
+  8194283 | mine: not relevant | v1: not relevant | v2: not relevant
+  8194285 | mine: not relevant | v1: not relevant | v2: not relevant
+  8231575 | mine: not relevant | v1: not relevant | v2: not relevant
+  8245230 | mine: not relevant | v1: not relevant | v2: not relevant
+  v1 HELDOUT: 10/10
+  v2 HELDOUT: 10/10
+  v1 and v2 gave the same verdict on 10/10
+  relevant postings in HELDOUT (by my labels): 0

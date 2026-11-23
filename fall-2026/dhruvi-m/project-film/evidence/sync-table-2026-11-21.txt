@@ -1,0 +1,91 @@
+SYNC TABLE — ghost-job-radar-project-film, 2026-11-21 (updated after the B05/B09/B14 edits)
+spoken-at = start of the cue word in the narration audio (faster-whisper small.en word timestamps).
+appears-at = when the element's fade-in starts in the scene (scene clock = audio clock, 24 fps).
+shift = appears-at minus spoken-at. Negative = early. Waits are whole frames (1/24 s), so up to +-0.04 s is rounding.
+A move that would touch the +-0.25 s guard around the clip midpoint is nudged to the nearest legal start.
+Static from frame 0 (no cue): B05 heading 'Existing tools'; B14 card + heading 'What this doesn't establish'; B08-B10 pipeline.
+Not scheduled by words: B01 (Remotion card) and the closing card (silent). B08 plays in 1.07 s.
+
+beat  element                                                    cue word(s)                 spoken  appears   shift
+B02   question 1                                                 checks                        0.12     0.12   +0.00
+B02   question 2                                                 fits                          2.04     2.04   +0.00
+B02   question 3                                                 sponsored                     4.10     4.10   +0.00
+B03   calendar + label 'CPT clock'                               CPT                           1.70     1.70   +0.00
+B03   week 1 crossed off                                         keeps                         3.24     3.24   +0.00
+B03   week 2 crossed off                                         while                         3.90     3.90   +0.00
+B03   week 3 crossed off + job card                              chase                         4.36     4.36   +0.00
+B03   week 4 crossed off                                         dead                          4.64     4.58   -0.06
+B03   job card fades                                             If it works                   5.92     5.92   +0.00
+B03   'less guessing → right jobs'                               less                          7.12     7.12   +0.00
+B04   ~70% number                                                70                            2.94     2.94   +0.00
+B04   ~70% statement                                             companies                     3.92     3.92   +0.00
+B04   ~70% source caption                                        Greenhouse                    4.54     4.54   +0.00
+B04   40% source caption                                         2024                          8.14     8.14   +0.00
+B04   40% number                                                 40                           10.28    10.28   +0.00
+B04   40% statement                                              companies                    10.96    10.96   +0.00
+B05   GhostJob panel                                             Ghost Job|GhostJob            2.56     2.56   +0.00
+B05   tag 'no visa / CPT'                                        nothing                       6.56     6.56   +0.00
+B05   Subspace panel (GhostJob out)                              Subspaces|Subspace            9.50     9.50   +0.00
+B05   tag 'no sponsorship'                                       nothing                      12.40    12.40   +0.00
+B05   MyVisaJobs panel (Subspace out)                            my visa jobs|MyVisaJobs      14.88    14.88   +0.00
+B05   Stripe, Llc (219) + highlight                              LLC                          18.14    18.14   +0.00
+B05   Stripe, Inc. (45)                                          Inc                          21.16    21.16   +0.00
+B06   tool box 1                                                 one                           0.36     0.36   +0.00
+B06   tool box 2                                                 answers                       0.92     0.92   +0.00
+B06   tool box 3                                                 three                         1.72     1.72   +0.00
+B06   one box: Liveness → CPT → Sponsorship (tool boxes out together) mine                          4.72     4.90   +0.18
+B06   liveness highlighted                                       liveness                      5.42     5.42   +0.00
+B07   company job board icon                                     company's|company             3.98     3.98   +0.00
+B07   MyVisaJobs icon                                            my visa|visa jobs             7.96     7.96   +0.00
+B07   program dates icon                                         program                      10.84    10.84   +0.00
+B08   BUILT tags on all five steps                               five                          0.24     0.09   -0.15
+B08   PLANNED notes (steps 2 and 4)                              steps                         0.44     0.79   +0.35
+B09   step 1 highlighted                                         one                           0.22     0.22   +0.00
+B09   'Oct 27: 714 postings' (label and number together)         714                          13.12    13.12   +0.00
+B09   'Oct 28: 720 postings, 16 new' (one line, together)        720                          16.10    16.10   +0.00
+B09   source caption                                             16                           17.46    17.46   +0.00
+B09   step 2 highlighted (step 1 off)                            two                          19.46    19.46   +0.00
+B09   'fix PLANNED' note                                         liveness                     20.12    20.12   +0.00
+B10   step 3 highlighted                                         3                             0.24     0.24   +0.00
+B10   '6 passing tests'                                          6                             7.08     7.08   +0.00
+B10   step 4 highlighted (step 3 off)                            4                             9.12     9.12   +0.00
+B10   'name-variant matching PLANNED'                            lookup                       10.10    10.10   +0.00
+B10   '10 passing tests'                                         10                           11.44    11.44   +0.00
+B10   step 5 highlighted (step 4 off)                            5                            12.84    12.84   +0.00
+B10   'rule'                                                     rule                         15.40    15.40   +0.00
+B10   '+ Claude'                                                 clawed|Claude                16.02    16.02   +0.00
+B10   '+ validator'                                              validator                    18.04    18.04   +0.00
+B10   JS2 note                                                   second                       21.88    21.88   +0.00
+B11   PLANNED: 404 → dead                                        404                           1.52     1.52   +0.00
+B11   PLANNED: company name variants                             company                       3.96     3.96   +0.00
+B11   PLANNED: one combined run                                  joining                       5.68     5.68   +0.00
+B11   ✓ Claude Pro + Claude Code                                 ClaudePro|Claude Pro          9.72     9.72   +0.00
+B11   ✓ GitHub                                                   GitHub                       11.34    11.34   +0.00
+B11   ✓ public APIs (no key)                                     public                       12.02    12.02   +0.00
+B11   ✓ laptop / Python 3.12                                     laptop                       14.34    14.34   +0.00
+B12   left column: 10 known-gone (404)                           10                            3.24     3.24   +0.00
+B12   right column: 10 known-open                                10                            7.52     7.52   +0.00
+B12   pass line: all 10 gone → dead                              all                           9.82     9.82   +0.00
+B12   result: Stripe 404 → uncertain                             Stripe                       13.36    13.36   +0.00
+B12   ✗ mark                                                     uncertain                    17.02    17.02   +0.00
+B13   heading: 4 name variants                                   Stripe                        1.56     1.56   +0.00
+B13   name chip 1: Stripe, Llc                                   four                          3.34     3.34   +0.00
+B13   name chip 2: Stripe, Inc.                                  different                     3.68     3.68   +0.00
+B13   name chip 3: Stripe Malpb                                  company                       4.04     4.04   +0.00
+B13   name chip 4: Stripe Payments Company                       names                         4.34     4.34   +0.00
+B13   'Held-out: mix of relevant + not relevant'                 Judging                       9.08     9.08   +0.00
+B13   ten held-out squares                                       ten                          10.54    10.60   +0.06
+B13   '· agree ≥ 9 of 10'                                        agrees                       15.16    15.16   +0.00
+B13   'same answer across repeated runs'                         same                         18.48    18.48   +0.00
+B14   line 1: Not advice on whether to apply.                    doesn't tell                  5.44     5.44   +0.00
+B14   line 2: Not a promise of sponsorship                       promise                       8.16     8.16   +0.00
+B15   1 Executive summary (what I'm building)                    building                      1.64     1.64   +0.00
+B15   2 Introduction (what's out there)                          what's                        2.30     2.26   -0.04
+B15   3 Methods (how I'll build it)                              how                           3.06     3.06   +0.00
+B15   4 Evaluation (how I'll know it worked)                     know                          4.62     4.62   +0.00
+B15   appendix line                                              worked                        4.94     4.94   +0.00
+
+77 elements. Shifts larger than 0.10 s: 3
+  B06 one box: Liveness → CPT → Sponsorship: +0.18 s
+  B08 BUILT tags on all five steps: -0.15 s
+  B08 PLANNED notes (steps 2 and 4): +0.35 s

@@ -1,0 +1,1 @@
+{"posting_id": 5601879, "verdict": "not relevant", "cited_resume_fields": ["years_experience", "target_titles", "skills"], "cited_posting_fields": ["description", "title"], "reason": "Title and skills (SQL, Python, A/B testing) match, but the posting requires at least 3 years with a PhD, 6 with an MS, or 8 with a BS, and the candidate has only 2 years of experience."}

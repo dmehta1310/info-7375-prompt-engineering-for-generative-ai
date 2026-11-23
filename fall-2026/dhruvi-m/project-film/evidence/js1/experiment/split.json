@@ -1,0 +1,28 @@
+{
+  "seed": 7375,
+  "dev": [
+    5601879,
+    7923653,
+    8142302,
+    8186442,
+    8190059,
+    8194287,
+    8194291,
+    8201680,
+    8230296,
+    8230306
+  ],
+  "heldout": [
+    5895430,
+    7230921,
+    7813411,
+    8044924,
+    8079783,
+    8113100,
+    8194283,
+    8194285,
+    8231575,
+    8245230
+  ],
+  "note": "20 postings from the 2026-10-27 snapshot, none from sampling. 14 data-titled + 6 US non-data Analyst roles. Chosen with Claude's help; split by seeded shuffle."
+}

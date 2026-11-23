@@ -1,0 +1,59 @@
+B01 SAME
+  script: I'm Dhruvi, an international student at Northeastern, and I'm building the Ghost-Job Trust Radar.
+  heard : I'm Dhruvi, an international student at Northeastern, and I'm building the Ghost Job Trust Radar.
+
+B02 SAME
+  script: It checks if a job is real, fits my CPT, and if they've sponsored before.
+  heard : It checks if a job is real, fits my CPT, and if they've sponsored before.
+
+B03 SAME
+  script: Why does that matter? Because our CPT and visa clock keeps running while we chase dead jobs. If it works, there's less guessing, and more applying to the right jobs.
+  heard : Why does that matter? Because our CPT and Visa clock keeps running while we chase dead jobs. If it works, there's less guessing and more applying to the right jobs.
+
+B04 SAME
+  script: Ghost jobs are a real problem. Almost 70 percent of companies on Greenhouse posted at least one ghost job. And in a 2024 survey, 40 percent of companies admitted posting a fake job.
+  heard : Ghost jobs are a real problem. Almost 70% of companies on Greenhouse posted at least one ghost job. And in a 2024 survey, 40% of companies admitted posting a fake job.
+
+B05 DIFF
+  script: Some tools already try to catch them. GhostJob gives LinkedIn posts a 0 to 100 trust score, but nothing on visas or CPT. Subspace's scanner checks lots of signals, but nothing about visa sponsorship. And on MyVisaJobs, most of Stripe's filings are under Stripe LLC, 219 of them, not Stripe Inc., which has 45.
+  heard : Some tools already try to catch them. Ghost Job gives LinkedIn posts a 0 to 100 trust score, but nothing on visas or CPT. Subspaces Scanner checks lots of signals, but nothing about visa sponsorship. And on my visa jobs, most of Stripe's filings are under Stripe LLC, 219 of them not Stripe Inc, which has 45.
+
+B06 SAME
+  script: So no one tool answers all three questions. That's the gap, and it's why mine checks liveness first: if the job is gone, nothing else matters.
+  heard : So no one tool answers all three questions. That's the gap, and it's why mine checks liveness first. If the job is gone, nothing else matters.
+
+B07 DIFF
+  script: Here's the plan. The data comes from public places: a company's job board through Greenhouse's public API, MyVisaJobs for sponsorship history, and my program dates for the CPT check.
+  heard : Here's the plan. The data comes from public places. A company's job bored through Greenhouse's public API, my visa jobs for sponsorship history, and my program dates for the CPT check.
+
+B08 SAME
+  script: There are five steps.
+  heard : There are five steps.
+
+B09 SAME
+  script: Step one is the watch. The agent fetches one board, saves the raw response, and remembers which postings it's seen. That's built. I ran it on Stripe's board on October 27 and 28: the first run saw 714 postings, and the second saw 720, with 16 new ones. Step two is the liveness gate: before anything else, confirm the posting still exists.
+  heard : Step one is the watch. The agent fetches one board, saves the raw response, and remembers which postings it's seen. That's built. I ran it on Stripe's board on October 27 and 28. The first run saw 714 postings, and the second saw 720 with 16 new ones. Step two is the liveness gate. Before anything else, confirm the posting still exists.
+
+B10 DIFF
+  script: Step three is the CPT check, which compares the job's start date and length against my program window. That's built, with 6 passing tests. Step four is the sponsorship lookup, built with 10 more. Step five is two judges: my hand-checkable rule, and Claude in a fixed format checked by a validator. Those came from my first agent assignment, and the second one added a loop with budgets and a permission gate.
+  heard : Step 3 is the CPT check, which compares the job's start date and length against my program window. That's built with 6 passing tests. Step 4 is the sponsorship lookup, built with 10 more. Step 5 is two judges, my hand-checkable rule and clawed in a fixed format checked by a validator. Those came from my first agent assignment and the second one added a loop with budgets and a permission gate.
+
+B11 DIFF
+  script: Still planned: making a 404 come back as dead, matching company name variants, and joining the steps into one run. And I have what I need: Claude Pro with Claude Code, GitHub, public data that needs no key, and my laptop running Python 3.12 with no extra packages.
+  heard : Still planned, making a 404 come back as dead, matching company name variants, and joining the steps into one run. And I have what I need. ClaudePro with Claude code, GitHub, public data that needs no key, and my laptop running Python 3. 12 with no extra packages.
+
+B12 SAME
+  script: I'll check three things. Liveness: I'll run 10 postings I know are gone, because they return a 404, and 10 I know are open. It works if all 10 gone ones come back dead. Right now, a Stripe job link that returns a 404 still comes back uncertain, not dead, so that's the first test that has to pass.
+  heard : I'll check three things. Liveness. I'll run 10 postings I know are gone because they return a 404 and 10 I know are open. It works if all 10 gone ones come back dead. Right now, a Stripe job link that returns a 404 still comes back uncertain, not dead. So that's the first test that has to pass.
+
+B13 DIFF
+  script: Sponsorship: Stripe appears in MyVisaJobs under four different company names. It works if the lookup finds all four, not just one. Judging: I'll hold out 10 postings with both relevant and not relevant ones. It works if the agent agrees with me on at least 9 of them, and Claude gives the same answer across repeated runs.
+  heard : Sponsorship. Stripe appears in my visa jobs under four different company names. It works if the lookup finds all four, not just one. Judging. I'll hold out ten postings with both relevant and not relevant ones. It works if the agent agrees with me on at least nine of them, and Claude gives the same answer across repeated runs.
+
+B14 SAME
+  script: If something fails, I'll report it as a failure. And what this doesn't establish: it doesn't tell anyone whether to apply, and it doesn't promise a company will sponsor them. It only shows whether it has before.
+  heard : If something fails, I'll report it as a failure. And what this doesn't establish, it doesn't tell anyone whether to apply and it doesn't promise a company will sponsor them. It only shows whether it has before.
+
+B15 SAME
+  script: That's the Radar: what I'm building, what's out there, how I'll build it, and how I'll know it worked.
+  heard : That's the radar. What I'm building, what's out there, how I'll build it, and how I'll know it worked.
