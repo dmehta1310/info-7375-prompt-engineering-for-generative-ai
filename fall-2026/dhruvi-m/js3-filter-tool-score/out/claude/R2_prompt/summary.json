@@ -1,0 +1,16 @@
+{
+ "label": "R2_prompt",
+ "prompt_file": "prompts/judge_v2.txt",
+ "context": "full",
+ "model_requested": "claude-sonnet-5-5",
+ "max_text_chars": 4000,
+ "part": "heldout",
+ "cwd": "empty temp folder",
+ "command": "claude -p --model claude-sonnet-5-5 --output-format json",
+ "n": 35,
+ "agree": 26,
+ "shown_but_me_n": 1,
+ "hidden_but_me_y": 8,
+ "unparsed_or_unsure": 3,
+ "finished_at": "2026-11-26T01:14:52+00:00"
+}

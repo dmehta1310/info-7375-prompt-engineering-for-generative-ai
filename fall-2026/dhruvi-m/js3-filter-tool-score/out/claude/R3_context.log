@@ -1,0 +1,37 @@
+[R3_context]  1/35 stripe:8237244                           claude=? me=y  Only a title and location are given; the posting has no deta
+[R3_context]  2/35 stripe:8335413                           claude=n me=y  A Manager-level role is likely a stretch for someone with on
+[R3_context]  3/35 stripe:8175824                           claude=? me=y  The posting text was not provided, so there is no informatio
+[R3_context]  4/35 palantir:26032bad-d713-429d-8b04-2de7db9 claude=? me=y  The posting text was not provided, so there is only a title 
+[R3_context]  5/35 stripe:8230306                           claude=? me=y  Posting text is missing, so seniority, requirements, and wor
+[R3_context]  6/35 stripe:8194291                           claude=y me=y  An entry-level Data Analyst intern role in US locations (New
+[R3_context]  7/35 stripe:8231575                           claude=y me=y  A Finance & Strategy Analyst role in major US cities is a pl
+[R3_context]  8/35 stripe:8354566                           claude=y me=y  The title is a data analyst role in sales strategy and opera
+[R3_context]  9/35 stripe:8142302                           claude=? me=y  The posting has only a title and location with no descriptio
+[R3_context] 10/35 stripe:8079783                           claude=y me=y  The title is an entry-level analytics role that fits a 2-yea
+[R3_context] 11/35 stripe:7230921                           claude=? me=y  The posting text was not provided, so there is no informatio
+[R3_context] 12/35 stripe:8189909                           claude=? me=y  The posting text is missing, so there are no details on requ
+[R3_context] 13/35 palantir:4d3986f0-4c01-4327-a0e4-e7d9bc7 claude=? me=y  The posting provides only a title and location with no descr
+[R3_context] 14/35 palantir:bc803bd5-7793-452d-9ae5-9301ee2 claude=? me=y  The posting has only a title and location with no descriptio
+[R3_context] 15/35 palantir:c6f9eaaf-b397-476f-8b7d-c511cfb claude=? me=y  The posting gives only a title and location with no descript
+[R3_context] 16/35 stripe:8267519                           claude=n me=n  The role is a London-based partner development/business role
+[R3_context] 17/35 stripe:8247127                           claude=n me=n  The role is located in Bangalore, India, and Priya is based 
+[R3_context] 18/35 stripe:6570253                           claude=n me=n  A Sales Development Representative role is a sales/outreach 
+[R3_context] 19/35 stripe:7861422                           claude=n me=n  A Product Designer role in Ireland is a different field from
+[R3_context] 20/35 palantir:b4aa51a2-bc43-4d67-bf55-12db7fe claude=n me=n  The role is a New Grad software engineering position in Lond
+[R3_context] 21/35 palantir:6b4b087c-4fc6-476d-9e72-e1bc6ac claude=n me=n  A Software Engineer role in Applied AI for defense is an eng
+[R3_context] 22/35 stripe:8231234                           claude=n me=n  The role is a Product Manager (not data analyst) based in Lo
+[R3_context] 23/35 palantir:7dc7e7c3-39bf-4f4e-a8eb-e38a4a0 claude=? me=n  The posting text was not provided, and a tax analyst role ma
+[R3_context] 24/35 stripe:8031833                           claude=n me=n  The role is a software engineering internship in Bengaluru, 
+[R3_context] 25/35 palantir:d879b190-b6a1-41e1-9eca-bf94d36 claude=n me=n  The role is based in London, UK, and the posting gives no in
+[R3_context] 26/35 stripe:8273713                           claude=n me=n  The role is a corporate accounting position based in Bengalu
+[R3_context] 27/35 stripe:7393071                           claude=n me=n  The role is located in Mexico, and Priya is US-based, so it 
+[R3_context] 28/35 stripe:8202299                           claude=n me=n  The role is a new-grad software engineering position located
+[R3_context] 29/35 stripe:8026689                           claude=? me=n  The posting text is missing, and the 'Lead' title suggests s
+[R3_context] 30/35 palantir:2da72708-a7b0-4178-9cb2-6b009eb claude=n me=n  The role is based in Warsaw, Poland, and the posting gives n
+[R3_context] 31/35 stripe:7960875                           claude=n me=n  The role is based in Singapore, and Priya is US-based with n
+[R3_context] 32/35 stripe:8190416                           claude=n me=n  This is a sales role (Account Executive), not a data analyst
+[R3_context] 33/35 stripe:8093103                           claude=n me=n  The role is an on-site operations support job in Mexico City
+[R3_context] 34/35 palantir:d7030550-f80f-422c-965f-3120db4 claude=n me=n  A Senior Software Engineer role in autonomous systems is a p
+[R3_context] 35/35 linear:d8890a6d-ce76-4c3d-aacc-34c1ed150 claude=n me=n  The role is a Solutions Engineer based in Singapore, which d
+
+[R3_context] agree 24/35  shown,me=n 0  hidden,me=y 11  '?'/unparsed 12

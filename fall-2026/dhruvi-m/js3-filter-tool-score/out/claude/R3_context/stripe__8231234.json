@@ -1,0 +1,24 @@
+{
+ "key": "stripe:8231234",
+ "asked_at": "2026-11-26T01:14:15+00:00",
+ "settings": {
+  "label": "R3_context",
+  "prompt_file": "prompts/judge_v1.txt",
+  "context": "title",
+  "model_requested": "claude-sonnet-5-5",
+  "max_text_chars": 4000,
+  "part": "heldout",
+  "cwd": "empty temp folder",
+  "command": "claude -p --model claude-sonnet-5-5 --output-format json"
+ },
+ "models_reported": [
+  "claude-sonnet-5-5"
+ ],
+ "prompt": "You are screening job postings for Priya Nair, a fictional data analyst with 2 years of experience who is based in the United States.\nUsing ONLY the posting below (no outside knowledge), decide whether it is worth her time to apply.\nReply with JSON only, no other text: {\"verdict\": \"y\" or \"n\" or \"?\", \"reason\": \"<one short sentence>\"}\nUse \"?\" if the posting does not give enough information to decide.\n\nTITLE: Product Manager, Foreign Exchange\nLOCATION: London\nPOSTING TEXT: (not provided)\n",
+ "raw_stdout": "{\"duration_api_ms\":1828,\"stop_reason\":\"end_turn\",\"session_id\":\"831c54db-4dfb-4913-bbe0-6b91bb08c711\",\"total_cost_usd\":0.0376929,\"usage\":{\"input_tokens\":2,\"cache_creation_input_tokens\":9013,\"cache_read_input_tokens\":10269,\"output_tokens\":61,\"output_tokens_details\":{\"thinking_tokens\":0},\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":9013,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"global\",\"iterations\":[{\"input_tokens\":2,\"output_tokens\":61,\"cache_read_input_tokens\":10269,\"cache_creation_input_tokens\":9013,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":9013},\"type\":\"message\"}],\"speed\":\"standard\",\"fallback_credit\":null},\"modelUsage\":{\"claude-sonnet-5-5\":{\"inputTokens\":2,\"outputTokens\":61,\"cacheReadInputTokens\":10269,\"cacheCreationInputTokens\":9013,\"webSearchRequests\":0,\"costUSD\":0.0376929,\"contextWindow\":1000000,\"maxOutputTokens\":128000,\"thinkingTokens\":0,\"cacheCreationEphemeral5mInputTokens\":0,\"cacheCreationEphemeral1hInputTokens\":9013,\"canonicalModel\":\"claude-sonnet-5-5\",\"provider\":\"firstParty\",\"costBasis\":\"list\"}},\"permission_denials\":[],\"terminal_reason\":\"completed\",\"fast_mode_state\":\"off\",\"fast_mode_disabled_reason\":\"sdk_opt_in_required\",\"subagent_stats\":{\"spawned\":0,\"requested\":{\"background\":0,\"foreground\":0,\"unset\":0},\"started_in_background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":false,\"num_turns\":1,\"subtype\":\"success\",\"api_error_status\":null,\"result\":\"{\\\"verdict\\\": \\\"n\\\", \\\"reason\\\": \\\"The role is a Product Manager (not data analyst) based in London, which is outside the US, and no posting details were provided to suggest otherwise.\\\"}\",\"ttft_ms\":1952,\"type\":\"result\",\"duration_ms\":1970,\"uuid\":\"c69e51f2-a06b-4f30-b17f-5354e2d14013\",\"ttft_stream_ms\":1361,\"time_to_request_ms\":142,\"first_content_frame_ms\":1361,\"queued_turn_count\":0,\"result_index\":0,\"credential_expires_at\":\"2026-12-06T07:36:01.455Z\"}\n",
+ "stderr": "",
+ "exit_code": 0,
+ "verdict": "n",
+ "reason": "The role is a Product Manager (not data analyst) based in London, which is outside the US, and no posting details were provided to suggest otherwise.",
+ "my_verdict": "n"
+}

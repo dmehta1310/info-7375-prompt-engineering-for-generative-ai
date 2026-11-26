@@ -1,0 +1,37 @@
+[R2_prompt]  1/35 stripe:8237244                           claude=n me=y  This is a Security GRC/program management role requiring 8+ 
+[R2_prompt]  2/35 stripe:8335413                           claude=n me=y  This is a people-management role (Manager of an analytics te
+[R2_prompt]  3/35 stripe:8175824                           claude=? me=y  Role is an analyst-type fit with 3 years required, but the l
+[R2_prompt]  4/35 palantir:26032bad-d713-429d-8b04-2de7db9 claude=y me=y  US-based (Washington, D.C.) operations analyst role requirin
+[R2_prompt]  5/35 stripe:8230306                           claude=n me=y  Although it's a US-based analyst role, it requires 5+ years 
+[R2_prompt]  6/35 stripe:8194291                           claude=y me=y  US-based (New York/Seattle/South San Francisco) data analyst
+[R2_prompt]  7/35 stripe:8231575                           claude=y me=y  US-based (SF/SEA/CHI/NYC) analyst role; the 4–6 years requir
+[R2_prompt]  8/35 stripe:8354566                           claude=y me=y  US-remote data analyst role in sales strategy and operations
+[R2_prompt]  9/35 stripe:8142302                           claude=y me=y  It's a US-remote analyst role, not engineering, sales, desig
+[R2_prompt] 10/35 stripe:8079783                           claude=y me=y  US-based strategy and analytics analyst role (SQL-heavy, not
+[R2_prompt] 11/35 stripe:7230921                           claude=? me=y  The role is an analyst-type risk operations job and its 5+ y
+[R2_prompt] 12/35 stripe:8189909                           claude=y me=y  US-based (San Francisco) Data Analyst role requiring BS plus
+[R2_prompt] 13/35 palantir:4d3986f0-4c01-4327-a0e4-e7d9bc7 claude=? me=y  It's a US-based (Washington, D.C.) analyst role, but the wor
+[R2_prompt] 14/35 palantir:bc803bd5-7793-452d-9ae5-9301ee2 claude=n me=y  This is a security/SOC engineering-style role requiring TS/S
+[R2_prompt] 15/35 palantir:c6f9eaaf-b397-476f-8b7d-c511cfb claude=n me=y  This is a security/compliance role requiring auditing SaaS e
+[R2_prompt] 16/35 stripe:8267519                           claude=n me=n  The role is based in London (outside the US) and is a partne
+[R2_prompt] 17/35 stripe:8247127                           claude=n me=n  The role is located in Bangalore, India, which is outside th
+[R2_prompt] 18/35 stripe:6570253                           claude=n me=n  This is a Sales Development Representative role, and Priya s
+[R2_prompt] 19/35 stripe:7861422                           claude=n me=n  This is a design role located in Ireland, so it falls outsid
+[R2_prompt] 20/35 palantir:b4aa51a2-bc43-4d67-bf55-12db7fe claude=n me=n  The role is based in London, UK (outside the US) and is a so
+[R2_prompt] 21/35 palantir:6b4b087c-4fc6-476d-9e72-e1bc6ac claude=n me=n  This is a Software Engineer role requiring React/TypeScript 
+[R2_prompt] 22/35 stripe:8231234                           claude=n me=n  The role is a Product Manager based in London, which is outs
+[R2_prompt] 23/35 palantir:7dc7e7c3-39bf-4f4e-a8eb-e38a4a0 claude=y me=n  US-based (Palo Alto, CA) analyst role that requires only 2+ 
+[R2_prompt] 24/35 stripe:8031833                           claude=n me=n  This is a software engineering internship based in Bengaluru
+[R2_prompt] 25/35 palantir:d879b190-b6a1-41e1-9eca-bf94d36 claude=n me=n  The role is based in London, United Kingdom, which is outsid
+[R2_prompt] 26/35 stripe:8273713                           claude=n me=n  The role is based in Bengaluru, India, which is outside the 
+[R2_prompt] 27/35 stripe:7393071                           claude=n me=n  The role is based in Mexico (outside the US) and is a techni
+[R2_prompt] 28/35 stripe:8202299                           claude=n me=n  This is a software engineering role located in Taiwan, which
+[R2_prompt] 29/35 stripe:8026689                           claude=n me=n  The role is a 'Lead' position requiring 5-10 years of audit 
+[R2_prompt] 30/35 palantir:2da72708-a7b0-4178-9cb2-6b009eb claude=n me=n  The role is based in Warsaw, Poland, requires on-site work a
+[R2_prompt] 31/35 stripe:7960875                           claude=n me=n  The role is based in Singapore, outside the US, which Priya'
+[R2_prompt] 32/35 stripe:8190416                           claude=n me=n  This is a quota-carrying sales (Account Executive) role requ
+[R2_prompt] 33/35 stripe:8093103                           claude=n me=n  The role is located in Mexico City, which is outside the US,
+[R2_prompt] 34/35 palantir:d7030550-f80f-422c-965f-3120db4 claude=n me=n  This is a Senior Software Engineer role requiring 5+ years o
+[R2_prompt] 35/35 linear:d8890a6d-ce76-4c3d-aacc-34c1ed150 claude=n me=n  The role is based in Singapore (outside the US), is a sales-
+
+[R2_prompt] agree 26/35  shown,me=n 1  hidden,me=y 8  '?'/unparsed 3

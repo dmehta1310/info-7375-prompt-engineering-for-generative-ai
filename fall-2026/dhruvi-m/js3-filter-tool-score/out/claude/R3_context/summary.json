@@ -1,0 +1,16 @@
+{
+ "label": "R3_context",
+ "prompt_file": "prompts/judge_v1.txt",
+ "context": "title",
+ "model_requested": "claude-sonnet-5-5",
+ "max_text_chars": 4000,
+ "part": "heldout",
+ "cwd": "empty temp folder",
+ "command": "claude -p --model claude-sonnet-5-5 --output-format json",
+ "n": 35,
+ "agree": 24,
+ "shown_but_me_n": 0,
+ "hidden_but_me_y": 11,
+ "unparsed_or_unsure": 12,
+ "finished_at": "2026-11-26T01:14:53+00:00"
+}

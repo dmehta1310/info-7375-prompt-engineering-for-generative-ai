@@ -1,0 +1,10 @@
+{
+ "label": "R1_base",
+ "prompt_file": "prompts/judge_v1.txt",
+ "context": "full",
+ "model_requested": "claude-sonnet-5-5",
+ "max_text_chars": 4000,
+ "part": "heldout",
+ "cwd": "empty temp folder",
+ "command": "claude -p --model claude-sonnet-5-5 --output-format json"
+}
