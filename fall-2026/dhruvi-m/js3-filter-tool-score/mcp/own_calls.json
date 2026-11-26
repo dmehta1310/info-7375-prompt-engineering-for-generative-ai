@@ -1,0 +1,8 @@
+[
+ {"why": "normal use: a shortlisted posting", "name": "score_posting", "arguments": {"board": "stripe", "id": "8189909"}},
+ {"why": "normal use: a rejected posting", "name": "score_posting", "arguments": {"board": "palantir", "id": "146aba99-2a9a-44ee-9fb3-42dd1e211221"}},
+ {"why": "a posting that does not exist", "name": "score_posting", "arguments": {"board": "stripe", "id": "999999999"}},
+ {"why": "path-escape attempt in board", "name": "score_posting", "arguments": {"board": "../../etc", "id": "passwd"}},
+ {"why": "extra argument the schema does not allow", "name": "score_posting", "arguments": {"board": "stripe", "id": "8189909", "write_to": "/tmp/x"}},
+ {"why": "a tool that was never declared", "name": "delete_posting", "arguments": {"board": "stripe", "id": "8189909"}}
+]

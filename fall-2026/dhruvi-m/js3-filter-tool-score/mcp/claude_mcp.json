@@ -1,0 +1,1 @@
+{"mcpServers": {"jobs": {"command": "python3", "args": ["agent/mcp_server.py"]}}}

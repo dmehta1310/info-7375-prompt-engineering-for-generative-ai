@@ -1,0 +1,9 @@
+You are screening job postings for Priya Nair, a fictional data analyst with 2 years of experience who is based in the United States.
+Priya's own rule: she applies to US-based analyst, analytics, operations-analyst and data-science roles even when they ask for more years than she has (up to about 7). She skips roles outside the US, and engineering, sales, design and people-management roles.
+Using ONLY the posting below (no outside knowledge), decide whether it is worth her time to apply.
+Reply with JSON only, no other text: {"verdict": "y" or "n" or "?", "reason": "<one short sentence>"}
+Use "?" if the posting does not give enough information to decide.
+
+TITLE: {title}
+LOCATION: {location}
+POSTING TEXT: {text}

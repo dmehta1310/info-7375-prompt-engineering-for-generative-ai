@@ -1,0 +1,7 @@
+[
+ {"why": "what it says it may touch", "name": "list_allowed_directories", "arguments": {}},
+ {"why": "read inside the allowed folder", "name": "read_text_file", "arguments": {"path": "/tmp/js3_fs_test/hello.txt"}},
+ {"why": "read OUTSIDE the allowed folder", "name": "read_text_file", "arguments": {"path": "/etc/hosts"}},
+ {"why": "path escape with ..", "name": "read_text_file", "arguments": {"path": "/tmp/js3_fs_test/../../etc/hosts"}},
+ {"why": "can it WRITE? (yes = it can change data)", "name": "write_file", "arguments": {"path": "/tmp/js3_fs_test/written_by_server.txt", "content": "written by the filesystem server during my JS3 evaluation"}}
+]
