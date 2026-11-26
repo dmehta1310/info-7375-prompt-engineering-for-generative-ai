@@ -70,3 +70,5 @@ Decides which collected postings reach me and why: a **filter I can read** (FILT
 | The shortlist | Label claims against the posting text, with quotes | Read the labels; decide whether a posting is worth my time | Relevance is not entailment: matching words is not a reason to apply | SHORTLIST.md |
 | The tool | Write the server and client | Decide what it may read, write and send; make the trust decisions | A tool that can act on my files needs my permission, not the model's | MCP_EVALUATION.md, `a7c6f63` |
 | The score | Run the judge by script, pinned model, saved replies | Pick what to change, one thing at a time; read held-out results | **The judgment that a posting is worth my time stays mine**: Claude's verdicts are compared *against* my labels, never used *as* them | SCORE_REPORT.md, `69e5519` |
+
+**Fresh-clone test:** see `evidence/fresh_clone_test.txt` (tests run from a new clone of GitHub).
