@@ -54,6 +54,7 @@ Decides which collected postings reach me and why: a **filter I can read** (FILT
 3. **Claude's run-to-run variation, properly.** I have one extra R1 summary line, not a planned repeat of every run.
 4. **The years parser on words.** 10 postings state years in words ("five years"); the parser reads digits only.
 5. **The filesystem server beyond 5 calls.** I did not test symlinks, large files, or its other write tools.
+6. **The shortlist claim labels by hand.** The supported / contradicted / insufficient labels in SHORTLIST.md were made by keyword rules in `agent/shortlist.py` (with a quote as evidence); I did not check each of the 140 labels myself, so a keyword can match for the wrong reason (for example "reporting" in a tax role).
 
 **Not claiming**
 - That my filter or Claude finds **every** job worth Priya's time, or that the shortlist verdicts are **true**: they are consistent with my rules and labels, nothing more.

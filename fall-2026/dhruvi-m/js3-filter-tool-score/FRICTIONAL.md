@@ -2,6 +2,8 @@
 
 *How this file was written: the events, and what I accepted, changed or rejected, are mine; Claude (my tutoring chat) wrote the sentences from events I confirmed. Each entry points to a commit, test or file.*
 
+**My reflection (chosen by me from options Claude offered):** "Judging 69 jobs by hand took much longer than I expected."
+
 ## 2026-11-20: I widened the title rule to any "Analyst"
 - **What happened:** my first FILTER.md draft listed only data titles. I changed it to accept **any** title with the word "Analyst", before any code (`24a0b4b`).
 - **What it led to:** this produced my false friend, *Mobility Tax Analyst*, and most of my 28 shortlisted jobs are Analyst roles outside data (Compliance, Operations, Security, Finance). I kept the rule after measuring, because cutting it hid 12 jobs I said yes to (dev 22/34 vs 31/34).
