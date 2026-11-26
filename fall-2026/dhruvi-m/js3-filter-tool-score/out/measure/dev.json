@@ -1,0 +1,42 @@
+[
+ {
+  "filter": "v1",
+  "n": 34,
+  "agree": 31,
+  "shown_but_me_n": 0,
+  "hidden_but_me_y": 3,
+  "cannot_tell": 0
+ },
+ {
+  "filter": "cand_A_north_america",
+  "n": 34,
+  "agree": 32,
+  "shown_but_me_n": 0,
+  "hidden_but_me_y": 2,
+  "cannot_tell": 0
+ },
+ {
+  "filter": "cand_B_years",
+  "n": 34,
+  "agree": 20,
+  "shown_but_me_n": 0,
+  "hidden_but_me_y": 14,
+  "cannot_tell": 4
+ },
+ {
+  "filter": "cand_C_no_bare_analyst",
+  "n": 34,
+  "agree": 22,
+  "shown_but_me_n": 0,
+  "hidden_but_me_y": 12,
+  "cannot_tell": 0
+ },
+ {
+  "filter": "cand_D_skills",
+  "n": 34,
+  "agree": 20,
+  "shown_but_me_n": 0,
+  "hidden_but_me_y": 14,
+  "cannot_tell": 0
+ }
+]

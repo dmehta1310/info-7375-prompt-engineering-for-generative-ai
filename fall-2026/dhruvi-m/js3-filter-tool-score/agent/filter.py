@@ -36,7 +36,7 @@ def _parts(location):
     return [p.strip() for p in re.split(r"[,;/|()]| - | or | and ", location.lower()) if p.strip()]
 
 
-def location_is_us(location, wrong_contains_us=False, wrong_missing_is_us=False):
+def location_is_us(location, wrong_contains_us=False, wrong_missing_is_us=False, extra=()):
     """True = US, False = not US, None = I cannot tell (missing, or 'Remote' with no country)."""
     loc = (location or "").strip()
     if not loc:
@@ -45,7 +45,7 @@ def location_is_us(location, wrong_contains_us=False, wrong_missing_is_us=False)
         return "us" in loc.lower()
     parts = _parts(loc)
     for p in parts:
-        if (p in US_STATES or p in US_ABBR or p in US_CITIES or COUNTRY_US.search(p)
+        if (p in US_STATES or p in US_ABBR or p in US_CITIES or p in extra or COUNTRY_US.search(p)
                 or p.startswith("us-") or p.endswith("-us")):
             return True
     if all(p in REMOTE_ONLY for p in parts):
@@ -84,7 +84,8 @@ def judge(p, cfg, **wrong):
     checks["title_word"] = hit
     if not hit:
         return {"verdict": "rejected", "reasons": ["title has none of the target words"], "checks": checks}
-    us = location_is_us(p["location"], wrong.get("wrong_contains_us", False), wrong.get("wrong_missing_is_us", False))
+    us = location_is_us(p["location"], wrong.get("wrong_contains_us", False), wrong.get("wrong_missing_is_us", False),
+                        extra=tuple(x.lower() for x in cfg.get("extra_us_places", [])))
     checks["us_location"] = us
     if us is None:
         return {"verdict": "cannot_tell", "reasons": [f"location '{p['location']}' does not say the country"], "checks": checks}

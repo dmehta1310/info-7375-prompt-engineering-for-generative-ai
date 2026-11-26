@@ -1,0 +1,22 @@
+{
+  "version": "cand_A_north_america",
+  "title_words": [
+    "Analyst",
+    "Data Scientist",
+    "Data Science",
+    "Analytics"
+  ],
+  "max_years": null,
+  "min_skills": null,
+  "skills": [
+    "SQL",
+    "Python",
+    "Tableau",
+    "dbt",
+    "A/B testing",
+    "Excel"
+  ],
+  "extra_us_places": [
+    "North America"
+  ]
+}

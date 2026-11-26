@@ -1,0 +1,19 @@
+{
+  "version": "cand_C_no_bare_analyst",
+  "title_words": [
+    "Data Analyst",
+    "Data Scientist",
+    "Data Science",
+    "Analytics"
+  ],
+  "max_years": null,
+  "min_skills": null,
+  "skills": [
+    "SQL",
+    "Python",
+    "Tableau",
+    "dbt",
+    "A/B testing",
+    "Excel"
+  ]
+}
