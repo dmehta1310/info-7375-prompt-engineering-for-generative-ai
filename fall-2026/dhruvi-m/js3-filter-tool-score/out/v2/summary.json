@@ -1,0 +1,22 @@
+{
+ "filter": "v2",
+ "raw": "../js2-loop-tools-diff/out/runs/2026-11-09T220326Z_LIVE/raw",
+ "postings": 1107,
+ "verdicts": {
+  "rejected": 1077,
+  "relevant": 28,
+  "cannot_tell": 2
+ },
+ "by_board": {
+  "linear/rejected": 31,
+  "linear/relevant": 1,
+  "palantir/rejected": 292,
+  "palantir/relevant": 12,
+  "stripe/cannot_tell": 2,
+  "stripe/rejected": 754,
+  "stripe/relevant": 15
+ },
+ "boards_not_judged": {
+  "bad-board": "not an expected source (see FILTER.md)"
+ }
+}

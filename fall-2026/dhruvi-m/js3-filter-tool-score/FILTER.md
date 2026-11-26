@@ -6,8 +6,16 @@ Started from: my Job-Search Agent 2 (`../js2-loop-tools-diff/`) and its saved ra
 | Version | Date | Change | Why |
 |---|---|---|---|
 | v1 | 2026-11-20 | Title words + US location only | Start simple, so every later rule is added as one measured change |
+| v2 | 2026-11-21 | **Added:** "North America" counts as a US location | Measured on my 34 dev labels: 31/34 → 32/34. It found *Analytics Engineer (North America)*, a job I judged worth Priya's time that v1 hid. |
 
 *(Later versions are added here only after measuring, with the result. Rules I try and reject are recorded too.)*
+
+### Rules I tried and rejected after measuring (2026-11-21, on my 34 dev labels; v1 = 31/34)
+| Rule tried | Dev result | Decision | Why |
+|---|---|---|---|
+| Years of experience ≤ 2 | 20/34 (hid 14 jobs I said yes to; 4 became "cannot tell") | **Rejected** | My own labels say Priya would apply to jobs asking up to ~7 years, so a strict ≤ 2 rule hides jobs she wants. |
+| Cut the bare word "Analyst" (keep only "Data Analyst") | 22/34 (hid 12 jobs I said yes to) | **Rejected** | It would remove my false friend (*Mobility Tax Analyst*), but it also hides many Analyst jobs I judged worth her time (Compliance, Operations, Security). |
+| Require 3+ of Priya's skills | 20/34 (hid 14 jobs I said yes to) | **Rejected** | Many postings I said yes to don't list these skills by name. |
 
 ## v1 rules: a posting is **relevant** only if both pass
 | # | Rule | Reason |

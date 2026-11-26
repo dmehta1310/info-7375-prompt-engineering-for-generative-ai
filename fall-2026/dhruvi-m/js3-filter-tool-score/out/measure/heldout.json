@@ -1,0 +1,18 @@
+[
+ {
+  "filter": "v1",
+  "n": 35,
+  "agree": 31,
+  "shown_but_me_n": 2,
+  "hidden_but_me_y": 2,
+  "cannot_tell": 2
+ },
+ {
+  "filter": "v2",
+  "n": 35,
+  "agree": 31,
+  "shown_but_me_n": 2,
+  "hidden_but_me_y": 2,
+  "cannot_tell": 2
+ }
+]
