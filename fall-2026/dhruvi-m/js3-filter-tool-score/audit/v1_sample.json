@@ -1,0 +1,867 @@
+{
+ "version": "v1",
+ "seed": 7375,
+ "drawn_at": "2026-11-26T00:11:55+00:00",
+ "population": {
+  "rejected": 1078,
+  "relevant": 27,
+  "cannot_tell": 2
+ },
+ "items": [
+  {
+   "key": "stripe:8093103",
+   "board": "stripe",
+   "id": "8093103",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:8250483",
+   "board": "stripe",
+   "id": "8250483",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "palantir:d7030550-f80f-422c-965f-3120db433dea",
+   "board": "palantir",
+   "id": "d7030550-f80f-422c-965f-3120db433dea",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:6570253",
+   "board": "stripe",
+   "id": "6570253",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:8031833",
+   "board": "stripe",
+   "id": "8031833",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:8090244",
+   "board": "stripe",
+   "id": "8090244",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:8267519",
+   "board": "stripe",
+   "id": "8267519",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:7861422",
+   "board": "stripe",
+   "id": "7861422",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:7663023",
+   "board": "stripe",
+   "id": "7663023",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "palantir:b4aa51a2-bc43-4d67-bf55-12db7feefb3a",
+   "board": "palantir",
+   "id": "b4aa51a2-bc43-4d67-bf55-12db7feefb3a",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:8120494",
+   "board": "stripe",
+   "id": "8120494",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "palantir:fdbc68df-8817-49dc-96f3-18a53f4fcd4c",
+   "board": "palantir",
+   "id": "fdbc68df-8817-49dc-96f3-18a53f4fcd4c",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:8202299",
+   "board": "stripe",
+   "id": "8202299",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:8128496",
+   "board": "stripe",
+   "id": "8128496",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:8190416",
+   "board": "stripe",
+   "id": "8190416",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:7960875",
+   "board": "stripe",
+   "id": "7960875",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:8361184",
+   "board": "stripe",
+   "id": "8361184",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:7812856",
+   "board": "stripe",
+   "id": "7812856",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:8248088",
+   "board": "stripe",
+   "id": "8248088",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "palantir:146aba99-2a9a-44ee-9fb3-42dd1e211221",
+   "board": "palantir",
+   "id": "146aba99-2a9a-44ee-9fb3-42dd1e211221",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:7618977",
+   "board": "stripe",
+   "id": "7618977",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:8130805",
+   "board": "stripe",
+   "id": "8130805",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "palantir:c44510a1-9537-4c52-ae81-51546979fe47",
+   "board": "palantir",
+   "id": "c44510a1-9537-4c52-ae81-51546979fe47",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:8129956",
+   "board": "stripe",
+   "id": "8129956",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:7553098",
+   "board": "stripe",
+   "id": "7553098",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "linear:d8890a6d-ce76-4c3d-aacc-34c1ed150d91",
+   "board": "linear",
+   "id": "d8890a6d-ce76-4c3d-aacc-34c1ed150d91",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "palantir:6b4b087c-4fc6-476d-9e72-e1bc6ac6c62a",
+   "board": "palantir",
+   "id": "6b4b087c-4fc6-476d-9e72-e1bc6ac6c62a",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:8231234",
+   "board": "stripe",
+   "id": "8231234",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:8232358",
+   "board": "stripe",
+   "id": "8232358",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "stripe:7393071",
+   "board": "stripe",
+   "id": "7393071",
+   "tags": [
+    "random_reject"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "title has none of the target words"
+   ]
+  },
+  {
+   "key": "linear:f272fc4a-91a7-4dcf-9cb5-3600ebaf14e1",
+   "board": "linear",
+   "id": "f272fc4a-91a7-4dcf-9cb5-3600ebaf14e1",
+   "tags": [
+    "close_call"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "location 'North America' is not in the US"
+   ]
+  },
+  {
+   "key": "palantir:d879b190-b6a1-41e1-9eca-bf94d36037e1",
+   "board": "palantir",
+   "id": "d879b190-b6a1-41e1-9eca-bf94d36037e1",
+   "tags": [
+    "close_call"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "location 'London, United Kingdom' is not in the US"
+   ]
+  },
+  {
+   "key": "palantir:2da72708-a7b0-4178-9cb2-6b009eb6e07f",
+   "board": "palantir",
+   "id": "2da72708-a7b0-4178-9cb2-6b009eb6e07f",
+   "tags": [
+    "close_call"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "location 'Warsaw, Poland' is not in the US"
+   ]
+  },
+  {
+   "key": "palantir:98bbe55b-f591-4272-a486-d82404d2c576",
+   "board": "palantir",
+   "id": "98bbe55b-f591-4272-a486-d82404d2c576",
+   "tags": [
+    "close_call"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "location 'London, United Kingdom' is not in the US"
+   ]
+  },
+  {
+   "key": "palantir:e6be4159-c8d1-481d-ad15-13274861b795",
+   "board": "palantir",
+   "id": "e6be4159-c8d1-481d-ad15-13274861b795",
+   "tags": [
+    "close_call"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "location 'Abu Dhabi, United Arab Emirates' is not in the US"
+   ]
+  },
+  {
+   "key": "stripe:8247127",
+   "board": "stripe",
+   "id": "8247127",
+   "tags": [
+    "close_call"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "location 'Bangalore' is not in the US"
+   ]
+  },
+  {
+   "key": "stripe:8273713",
+   "board": "stripe",
+   "id": "8273713",
+   "tags": [
+    "close_call"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "location 'Bengaluru' is not in the US"
+   ]
+  },
+  {
+   "key": "stripe:8287916",
+   "board": "stripe",
+   "id": "8287916",
+   "tags": [
+    "close_call"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "location 'Singapore' is not in the US"
+   ]
+  },
+  {
+   "key": "stripe:7456167",
+   "board": "stripe",
+   "id": "7456167",
+   "tags": [
+    "close_call"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "location 'Mexico City' is not in the US"
+   ]
+  },
+  {
+   "key": "stripe:5416444",
+   "board": "stripe",
+   "id": "5416444",
+   "tags": [
+    "close_call"
+   ],
+   "filter_verdict": "rejected",
+   "filter_reasons": [
+    "location 'Canada' is not in the US"
+   ]
+  },
+  {
+   "key": "palantir:4d3986f0-4c01-4327-a0e4-e7d9bc7bc0c3",
+   "board": "palantir",
+   "id": "4d3986f0-4c01-4327-a0e4-e7d9bc7bc0c3",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "palantir:d505f854-d339-448b-bf7e-46e2f32cff78",
+   "board": "palantir",
+   "id": "d505f854-d339-448b-bf7e-46e2f32cff78",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "stripe:8222149",
+   "board": "stripe",
+   "id": "8222149",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Data Scientist'",
+    "US location"
+   ]
+  },
+  {
+   "key": "stripe:8194291",
+   "board": "stripe",
+   "id": "8194291",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "palantir:26032bad-d713-429d-8b04-2de7db93b5c3",
+   "board": "palantir",
+   "id": "26032bad-d713-429d-8b04-2de7db93b5c3",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "palantir:7dc7e7c3-39bf-4f4e-a8eb-e38a4a0af238",
+   "board": "palantir",
+   "id": "7dc7e7c3-39bf-4f4e-a8eb-e38a4a0af238",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "stripe:8142302",
+   "board": "stripe",
+   "id": "8142302",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "palantir:bc803bd5-7793-452d-9ae5-9301ee24615a",
+   "board": "palantir",
+   "id": "bc803bd5-7793-452d-9ae5-9301ee24615a",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "palantir:b14585f4-9a68-49e8-97af-3f03f2a6c357",
+   "board": "palantir",
+   "id": "b14585f4-9a68-49e8-97af-3f03f2a6c357",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "stripe:8354566",
+   "board": "stripe",
+   "id": "8354566",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "palantir:c6f9eaaf-b397-476f-8b7d-c511cfb7e5c6",
+   "board": "palantir",
+   "id": "c6f9eaaf-b397-476f-8b7d-c511cfb7e5c6",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "stripe:8201680",
+   "board": "stripe",
+   "id": "8201680",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "stripe:8230306",
+   "board": "stripe",
+   "id": "8230306",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "palantir:5174e95b-2e0a-46f8-8db7-e2c837a0ac94",
+   "board": "palantir",
+   "id": "5174e95b-2e0a-46f8-8db7-e2c837a0ac94",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "stripe:8237244",
+   "board": "stripe",
+   "id": "8237244",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "palantir:66955c3b-c530-4c4a-9d48-63b4aad61b9c",
+   "board": "palantir",
+   "id": "66955c3b-c530-4c4a-9d48-63b4aad61b9c",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "stripe:8346831",
+   "board": "stripe",
+   "id": "8346831",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Data Scientist'",
+    "US location"
+   ]
+  },
+  {
+   "key": "stripe:8079783",
+   "board": "stripe",
+   "id": "8079783",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "stripe:8234710",
+   "board": "stripe",
+   "id": "8234710",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analytics'",
+    "US location"
+   ]
+  },
+  {
+   "key": "stripe:8335413",
+   "board": "stripe",
+   "id": "8335413",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analytics'",
+    "US location"
+   ]
+  },
+  {
+   "key": "stripe:8249865",
+   "board": "stripe",
+   "id": "8249865",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "stripe:8189909",
+   "board": "stripe",
+   "id": "8189909",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "palantir:a468565d-8502-4baf-8788-b7ffe233b725",
+   "board": "palantir",
+   "id": "a468565d-8502-4baf-8788-b7ffe233b725",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "palantir:62d74def-2134-427d-baa0-4783f2187266",
+   "board": "palantir",
+   "id": "62d74def-2134-427d-baa0-4783f2187266",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "stripe:8231575",
+   "board": "stripe",
+   "id": "8231575",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "palantir:5f3f9547-2aea-4ac2-995d-e8fa53b16e39",
+   "board": "palantir",
+   "id": "5f3f9547-2aea-4ac2-995d-e8fa53b16e39",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analyst'",
+    "US location"
+   ]
+  },
+  {
+   "key": "stripe:8026689",
+   "board": "stripe",
+   "id": "8026689",
+   "tags": [
+    "kept"
+   ],
+   "filter_verdict": "relevant",
+   "filter_reasons": [
+    "title has 'Analytics'",
+    "US location"
+   ]
+  },
+  {
+   "key": "stripe:7230921",
+   "board": "stripe",
+   "id": "7230921",
+   "tags": [
+    "cannot_tell"
+   ],
+   "filter_verdict": "cannot_tell",
+   "filter_reasons": [
+    "location 'Remote' does not say the country"
+   ]
+  },
+  {
+   "key": "stripe:8175824",
+   "board": "stripe",
+   "id": "8175824",
+   "tags": [
+    "cannot_tell"
+   ],
+   "filter_verdict": "cannot_tell",
+   "filter_reasons": [
+    "location 'Remote' does not say the country"
+   ]
+  }
+ ]
+}
