@@ -1,0 +1,415 @@
+{
+ "palantir:d879b190-b6a1-41e1-9eca-bf94d36037e1": {
+  "verdict": "n",
+  "why": "\u201cAnalyst\u201d but not data work",
+  "judged_at": "2026-11-26T00:14:02+00:00"
+ },
+ "stripe:8335413": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:c44510a1-9537-4c52-ae81-51546979fe47": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8230306": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8201680": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:c6f9eaaf-b397-476f-8b7d-c511cfb7e5c6": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8273713": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "linear:f272fc4a-91a7-4dcf-9cb5-3600ebaf14e1": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8267519": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:5416444": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8346831": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:5174e95b-2e0a-46f8-8db7-e2c837a0ac94": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:7393071": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:6570253": {
+  "verdict": "n",
+  "why": "code 6: different field",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:6b4b087c-4fc6-476d-9e72-e1bc6ac6c62a": {
+  "verdict": "n",
+  "why": "code 6: different field",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8231234": {
+  "verdict": "n",
+  "why": "code 6: different field",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:a468565d-8502-4baf-8788-b7ffe233b725": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:7dc7e7c3-39bf-4f4e-a8eb-e38a4a0af238": {
+  "verdict": "n",
+  "why": "code 2: says 'Analyst' but not data work",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:7230921": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:bc803bd5-7793-452d-9ae5-9301ee24615a": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8247127": {
+  "verdict": "n",
+  "why": "code 2: says 'Analyst' but not data work",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:d7030550-f80f-422c-965f-3120db433dea": {
+  "verdict": "n",
+  "why": "code 6: different field",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:e6be4159-c8d1-481d-ad15-13274861b795": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:5f3f9547-2aea-4ac2-995d-e8fa53b16e39": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8237244": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "linear:d8890a6d-ce76-4c3d-aacc-34c1ed150d91": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8093103": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:7553098": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8287916": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:2da72708-a7b0-4178-9cb2-6b009eb6e07f": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:146aba99-2a9a-44ee-9fb3-42dd1e211221": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8079783": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8222149": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8190416": {
+  "verdict": "n",
+  "why": "code 6: different field",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8142302": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8026689": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:b4aa51a2-bc43-4d67-bf55-12db7feefb3a": {
+  "verdict": "n",
+  "why": "code 6: different field",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8129956": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:d505f854-d339-448b-bf7e-46e2f32cff78": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8202299": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:7456167": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8130805": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:7960875": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:62d74def-2134-427d-baa0-4783f2187266": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:66955c3b-c530-4c4a-9d48-63b4aad61b9c": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8090244": {
+  "verdict": "n",
+  "why": "code 6: different field",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8250483": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8175824": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:7861422": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:7663023": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8194291": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8120494": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:98bbe55b-f591-4272-a486-d82404d2c576": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:4d3986f0-4c01-4327-a0e4-e7d9bc7bc0c3": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8248088": {
+  "verdict": "n",
+  "why": "code 6: different field",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8031833": {
+  "verdict": "n",
+  "why": "code 3: not in the US",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8354566": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:b14585f4-9a68-49e8-97af-3f03f2a6c357": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8128496": {
+  "verdict": "n",
+  "why": "code 6: different field",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8234710": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8231575": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:7812856": {
+  "verdict": "n",
+  "why": "code 6: different field",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:fdbc68df-8817-49dc-96f3-18a53f4fcd4c": {
+  "verdict": "n",
+  "why": "code 6: different field",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8361184": {
+  "verdict": "n",
+  "why": "code 6: different field",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8232358": {
+  "verdict": "n",
+  "why": "code 6: different field",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8249865": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:7618977": {
+  "verdict": "n",
+  "why": "code 6: different field",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "stripe:8189909": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ },
+ "palantir:26032bad-d713-429d-8b04-2de7db93b5c3": {
+  "verdict": "y",
+  "why": "code 1: data/analytics work that fits Priya",
+  "judged_at": "2026-11-26T00:34:42+00:00",
+  "method": "sheet"
+ }
+}

@@ -1,0 +1,12 @@
+random_reject judged 30 of 30 (rest '?')  filter wrong:  2   95% Wilson interval 2%-21%
+     WRONG: stripe:8250483  filter=rejected  me=y  why: code 1: data/analytics work that fits Priya
+     WRONG: palantir:146aba99-2a9a-44ee-9fb3-42dd1e211221  filter=rejected  me=y  why: code 1: data/analytics work that fits Priya
+close_call    judged 10 of 10 (rest '?')  filter wrong:  1   95% Wilson interval 2%-40%
+     WRONG: linear:f272fc4a-91a7-4dcf-9cb5-3600ebaf14e1  filter=rejected  me=y  why: code 1: data/analytics work that fits Priya
+kept          judged 27 of 27 (rest '?')  filter wrong:  2   95% Wilson interval 2%-23%
+     WRONG: palantir:7dc7e7c3-39bf-4f4e-a8eb-e38a4a0af238  filter=relevant  me=n  why: code 2: says 'Analyst' but not data work
+     WRONG: stripe:8026689  filter=relevant  me=n  why: code 3: not in the US
+cannot_tell   judged  2 of  2 (rest '?')  filter wrong:  0   (my verdicts: y=2, n=0, ?=0)
+
+random rejects: 2 wrong of 30 judged, from 1078 rejected postings in all.
+A sample this size is consistent with a true miss rate anywhere from 2% to 21% of all 1078 rejects (95% Wilson interval). It is an estimate, not a measured rate.
