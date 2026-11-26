@@ -30,3 +30,6 @@ Every call ran by script (`agent/claude_judge.py`), from an empty temporary fold
 
 ## What persistence is not proof of
 If Claude gives the same answers tomorrow, or remembers Priya across sessions, **that does not mean anything was trained.** Nothing in this project trains or fine-tunes a model. Same answers come from the same prompt, context, model and settings; different answers come from changing one of those (or from sampling randomness). A changed behavior across sessions could also come from a different model version, a different system prompt, or saved context, so it must be explained by one of those objects, not by "it learned."
+
+## R1 ran twice
+The first R1 run (deleted by the parallel re-run) and the re-run gave the **same summary: 21/35, hidden-but-I-said-yes 14**. The answers repeated because the prompt, context, model and settings were the same, **not because Claude learned anything** between runs. Two runs are too few to measure how much answers vary in general.

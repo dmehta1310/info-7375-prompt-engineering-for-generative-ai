@@ -25,3 +25,5 @@
 ## 2026-11-25: The other MCP server can write
 - **What happened:** the official filesystem server refused reads outside its folder, but `write_file` **succeeded** (`written_by_server.txt`, `a7c6f63`). My own server has one read-only tool and refused all 4 bad calls.
 - **Decision:** I'd only run the filesystem server on a throwaway folder (MCP_EVALUATION.md).
+
+- **Follow-up:** the re-run of R1 gave the same 21/35 as the deleted first run.
