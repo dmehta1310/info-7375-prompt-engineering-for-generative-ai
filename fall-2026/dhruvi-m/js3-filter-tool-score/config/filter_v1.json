@@ -1,0 +1,7 @@
+{
+  "version": "v1",
+  "title_words": ["Analyst", "Data Scientist", "Data Science", "Analytics"],
+  "max_years": null,
+  "min_skills": null,
+  "skills": ["SQL", "Python", "Tableau", "dbt", "A/B testing", "Excel"]
+}
